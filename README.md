@@ -4,9 +4,21 @@
 * Introduction
 * Agile Planning
 * Project Goal
-The goal of the project to create a store for handmade items which can also be made to order according to customer specifications
+
+The goal of the project is to create a store for handmade items.
+
 * Business Goals
+
+To showcase the products in an attractive online store and provide an easy means to purchase items.
+
 * Customer Goals
+
+To buy 
+
+* Target audience
+
+Shoppers who like colourful, handmade, good quality items. 
+
 * User Stories
 
 | User Story ID | As A/An            | I want to be able to                                                | So that I can                                                                                                 |                 |
@@ -49,12 +61,13 @@ The goal of the project to create a store for handmade items which can also be m
 |           5.3 | Store Owner        | Delete a product                                                    | Remove items that are no longer for sale                                                                      |                 |
 |           5.4 | Store Owner        | Add a blog post                                                     | Share articles related to my products to broaden interest in my site                                          |                 |
 |           5.5 | Store Owner        | Edit/Update a blog post                                             | Control the blog content                                                                                      |                 |
-|           5.6 | Store Owner        | Delete a blog post/comment                                          | Remove content that is not appropraite                                                                        |                 |
+|           5.6 | Store Owner        | Delete a blog post/comment                                          | Remove content that is not appropriate                                                                        |                 |
 |           5.7 | Store Owner        | Approve comments on blog posts                                      | Control the site content                                                                                      |                 |
 |             6 |                    | User Interaction                                                    |                                                                                                               |                 |
 |           6.1 | Registered Shopper | Review a product that I have bought                                 | So that I can share my opinion of my purchase on the website                                                  |                 |
 |           6.1 | Shopper            | Comment on a blog post                                              | Interact with the site content                                                                                |                 |
 |           6.2 | Registered Shopper | Update/Delete my comments                                           | Control my own contribution to the site                                                                       |                 |
+
 * SEO and Web Marketing
 
 ### Scope
@@ -65,9 +78,14 @@ The goal of the project to create a store for handmade items which can also be m
 * Information Architecture
 * Userflow
 * Database Structure
+* Models
+
+![](documentation/screenshots/models_checkout_profiles.png)
+![](documentation/screenshots/models_products.png)
+
 ### Skeleton
 * Wireframes
-The pdf files can be seen [here](#)
+The pdf files can be seen [here](#))
 
 * Home Page
 
