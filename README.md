@@ -81,11 +81,14 @@ Shoppers who like colourful, handmade, good quality items.
 * Models
 
 ![](documentation/screenshots/models_checkout_profiles.png)
+
 ![](documentation/screenshots/models_products.png)
 
 ### Skeleton
 * Wireframes
 The pdf files can be seen [here](#))
+
+![](documentation/screenshots/home_wire1.png)
 
 * Home Page
 
