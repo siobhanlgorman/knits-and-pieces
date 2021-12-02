@@ -5,19 +5,31 @@
 * Agile Planning
 * Project Goal
 
-The goal of the project is to create a store for handmade items.
-
-* Business Goals
-
-To showcase the products in an attractive online store and provide an easy means to purchase items.
-
-* Customer Goals
-
-To buy 
+The goal of the project is to create an online store for this developer's handmade items; primarily crocheted throws and blankets, knitted hats and cotton facemasks. This is a real-world application to create a store for this developer's products which have been custom-made and sold on a word-of-mouth basis over ten years. Buyers have encouraged the set-up of an online store to increase sales and customer base.
 
 * Target audience
 
-Shoppers who like colourful, handmade, good quality items. 
+- People who like colourful, handmade, good quality items. 
+- People who like knitted and crocheted items.
+- People who want to order custom made throws and blankets in colours of their choosing.
+- People looking for unique gifts
+
+* Business Goals
+
+- To create a professional online store
+- To provide an easy and secure means to purchase items.
+- To increase the customer base
+- To create a brand for the store and increase brand awareness
+- To encourage subscriptions to the site newsletter
+
+* Customer Goals
+
+- To view the products available
+- To buy colourful, handmade items
+- To navigate easily through the website
+- To be able to pay securely for items
+- To be confident that the site is genuine and trustworthy
+
 
 * User Stories
 
@@ -74,11 +86,15 @@ Shoppers who like colourful, handmade, good quality items.
 * Functional Requirements
 * Content Requirements
 * Constraints
+
+- This project is constrained by time. Since this project is firstly to fulfil the requirements of Project Portfolio 5 and must meet a deadline, some of the requirements necessary to make this project a real-world application will be left in the Future Features section for addition after completion of the course.
+
 ### Structure
 * Information Architecture
 * Userflow
 * Database Structure
 * Models
+
 
 ![](documentation/screenshots/models_checkout_profiles.png)
 
@@ -93,7 +109,12 @@ The pdf files can be seen [here](#))
 * Home Page
 
 ![](documentation/wireframes/home.png)
+
 ### Surface
+
+* Overall Design Choice
+- The emphasis is to look professional and modern and to showcase the high quality artisan goods for sale. Research on websites selling similar handmade goods often have either a very traditional and amateur look or a very cluttered look. The site should look clean and elegant with a plain background to highlight the colorful products. 
+
 * Colours
 * Typography
 * Images
@@ -102,6 +123,9 @@ The pdf files can be seen [here](#))
 ## Features
 ### Existing Features
 ### Future Features
+
+- stock levels
+- postage according to country/limiting country
 ## Languages and Technologies
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) was used to build the front-end website
 * [CSS](https://en.wikipedia.org/wiki/CSS) was used to style the HTML and add responsiveness
