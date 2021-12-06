@@ -15,7 +15,7 @@ body {
 
 /* keep fontawesome icons consistent (from Bulma/Boutique Ado)*/
 .icon {
-    align-itmes: center;
+    align-items: center;
     display: inline-flex;
     justify-content: center;
     height: 1.5rem;
@@ -53,4 +53,3 @@ body {
     }
 }
 
-© 2021 GitHub,
