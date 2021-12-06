@@ -41,7 +41,143 @@
 </head>
 
 <body>
-  <header class="container-fluid fixed-top"></header>
+  <!-- <header class="container-fluid fixed-top">
+    <div class="row">
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+        <a href="{% url 'home' %}" class="nav-link main-logo-link">Logo</a>
+      </div>
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+
+      </div>
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+        <form method="GET" action="">
+          <div class="input-group d-flex">
+
+            <input class="form-control me-2" type="text" name="q" placeholder="Search shop" aria-label="Search">
+            <div input-group-append>
+              <button class="form-control btn btn-outline-success" type="submit"><i class="fas fa-search"></i> </button>
+            </div>
+        </form>
+        <div>
+          <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+            <li class="list-inline-item dropdown">
+              <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div>
+                  <div><i class="fas fa-user"></i></div>
+                  <p class="my-0">My Account</p>
+                </div>
+              </a>
+              </li>
+            <li>Login</li>
+            <li>Register</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </header> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="#" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-expanded="false">
+            Shop
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Throws</a>
+            <a class="dropdown-item" href="#">Cushion Covers</a>
+            <a class="dropdown-item" href="#">Bedcovers</a>
+            <a class="dropdown-item" href="#">Baby blankets</a>
+            <a class="dropdown-item" href="#">Hats</a>
+            <a class="dropdown-item" href="#">Mittens</a>
+            <a class="dropdown-item" href="#">Wristwarmers</a>
+            <a class="dropdown-item" href="#">Face Masks</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Order</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Order <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <form class="form-inline my-2 my-lg-0" method="GET" action="">
+            <div class="input-group">
+              <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search Shop" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </form>
+        </li>
+        <li class="nav-item">
+          <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+            <li class="list-inline-item dropdown">
+              <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="text-center">
+                      <div><i class="fas fa-user"></i></div>
+                      <p class="my-0">Account</p>
+                  </div>
+              </a>
+              <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                  {% if request.user.is_authenticated %}
+                      {% if request.user.is_superuser %}
+                          <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                      {% endif %}
+                      <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                      <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                  {% else %}
+                      <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                      <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                  {% endif %}
+              </div>
+          </li>
+          <li class="list-inline-item">
+              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="#">
+                  <div class="text-center">
+                      <div><i class="fas fa-shopping-basket"></i></div>
+                      <p class="my-0">
+                          {% if grand_total %}
+                              ${{ grand_total|floatformat:2 }}
+                          {% else %}
+                          €0.00
+                          {% endif %}
+                      </p>
+                  </div>
+              </a>
+          </li>
+          </ul>
+
+    </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   {% if messages %}
   <div class="message-container"></div>
@@ -95,11 +231,13 @@
             <div class="col text-center">
               <div class="row">
                 <div class="col text-center">
-                <a href="#">Logo</a></div></div>
+                  <a href="#">Logo</a></div>
+              </div>
               <div class="row">
                 <div class="col text-center">
-                <a href="#">Sign Up</a>
-                <p>to hear more</p></div>
+                  <a href="#">Sign Up</a>
+                  <p>to hear more</p>
+                </div>
               </div>
             </div>
           </div>
