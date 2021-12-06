@@ -1,0 +1,27 @@
+/* set html element height for h-100 class and vertical centering */
+html {
+    height: 100%;  
+}
+
+/* set body height, colour, font */
+body {
+    height: cal(100vh - 164px);
+    font-family: 'Roboto';
+}
+
+
+/* keep fontawesome icons consistent (from Bulma/Boutique Ado)*/
+.icon {
+    align-itmes: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+
+}
+
+.shop-button {
+    background: yellow;
+    color: black;
+}
+
