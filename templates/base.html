@@ -51,39 +51,7 @@
       <img src="#" alt="logo" class="logo-img">
     </a>
 
-    <div class="navbar d-lg-none">
-      <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="#">
-
-        <div><span class="icon"><i class="fas fa-shopping-basket"></i></span>
-          <!-- <p class="my-0">
-            {% if grand_total %}
-            ${{ grand_total|floatformat:2 }}
-            {% else %}
-            €0.00
-            {% endif %}
-          </p> -->
-        </div>
-      </a>
-      <a class="text-black nav-link drop-down-toggle" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            <div class="text-center">
-              <div><span class="icon"><i class="fas fa-user"></i></span></div>
-            </div>
-          </a>
-          <div class="dropdown-menu border-0" aria-labelledby="user-options">
-            {% if request.user.is_authenticated %}
-            {% if request.user.is_superuser %}
-            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-            {% endif %}
-            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-            {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-            {% endif %}
-          </div>
-
-    </div>
+    
     {% include 'includes/mobile-top-header.html' %}
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -101,18 +69,27 @@
             aria-expanded="false">
             Shop
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Throws</a>
-            <a class="dropdown-item" href="#">Cushion Covers</a>
-            <a class="dropdown-item" href="#">Bedcovers</a>
-            <a class="dropdown-item" href="#">Baby blankets</a>
-            <a class="dropdown-item" href="#">Hats</a>
-            <a class="dropdown-item" href="#">Mittens</a>
-            <a class="dropdown-item" href="#">Wristwarmers</a>
-            <a class="dropdown-item" href="#">Face Masks</a>
+          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">All Products</a>
+              <ul>
+                <li><a class="dropdown-item" href="#">By Price</a></li>
+                <li><a class="dropdown-item" href="#">By Category</a></li>
+                <li><a class="dropdown-item" href="#">By Colour</a></li>
+
+              </ul>
+            </li>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Specials</a>
-          </div>
+            <li><a class="dropdown-item" href="#">Throws</a></li>
+            <li><a class="dropdown-item" href="#">Cushion Covers</a></li>
+            <li><a class="dropdown-item" href="#">Bedcovers</a></li>
+            <li><a class="dropdown-item" href="#">Baby blankets</a></li>
+            <li><a class="dropdown-item" href="#">Hats</a></li>
+            <li><a class="dropdown-item" href="#">Mittens</a></li>
+            <li><a class="dropdown-item" href="#">Wristwarmers</a></li>
+            <li><a class="dropdown-item" href="#">Face Masks</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a class="dropdown-item" href="#">Specials</a></li>
+          </ul>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
@@ -139,8 +116,8 @@
           </form>
         </li>
         <li class="nav-item dropdown d-none d-lg-inline-block">
-          <a class="text-black nav-link drop-down-toggle" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
+          <a class="text-black nav-link drop-down-toggle" href="#" id="user-options" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
               <div><span class="icon"><i class="fas fa-user"></i></span></div>
             </div>
@@ -162,13 +139,13 @@
           <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="#">
 
             <div><span class="icon"><i class="fas fa-shopping-basket"></i></span>
-              <!-- <p class="my-0">
+              <p class="my-0">
                 {% if grand_total %}
                 ${{ grand_total|floatformat:2 }}
                 {% else %}
                 €0.00
                 {% endif %}
-              </p> -->
+              </p>
             </div>
           </a>
         </li>
