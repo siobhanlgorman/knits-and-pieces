@@ -45,87 +45,21 @@
   <title>Knits and Pieces {% block extra_title %}{% endblock %}</title>
 </head>
 
-<!-- <body>
-  <header class="container-fluid fixed-top">
-    <div id="topnav" class="row bg-light pt-lg-2 d-none d-lg-flex">
-      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-        <a href="{% url 'home' %}" class="nav-link main-logo-link">
-          <img src="" alt="">
-          Logo</a>
-      </div>
-      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-        <ul class="list-inline list-unstyled text-center text-lg-left my-0">
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li class="dropdown">
-            
-              <a class="btn dropdown-toggle" href="#" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Shop
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Throws</a>
-                <a class="dropdown-item" href="#">Hats</a>
-                <a class="dropdown-item" href="#">Face Masks</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Custom Order</a>
-              </div>
-            </li>
-            <li>
-              <a href="">Order</a>
-            </li>
-        </ul>
-      </div>
-      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-        <form method="GET" action="">
-          <div class="input-group w-100">
-            <input class="form-control me-2" type="text" name="q" placeholder="Search shop" aria-label="Search">
-            <div input-group-append>
-              <button class="form-control btn btn-outline-success" type="submit"><span class="icon"><i
-                    class="fas fa-search"></i></span></button>
-            </div>
-        </form>
-      </div>
-      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-        <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-          <li class="list-inline-item dropdown">
-            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              <div>
-                <div><i class="fas fa-user"></i></div>
-                <p class="my-0">My Account</p>
-              </div>
-            </a>
-          </li>
-          <li>Login</li>
-          <li>Register</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-
-  </header> -->
-
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light topnav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">
-      <img src="#" alt="logo" class="logo-img"></a>
+      <img src="#" alt="logo" class="logo-img">
+    </a>
 
-    <div id="icons-mobile-view" class="d-lg-none">
-      <a class="nav-link nav-link-icon" href="#" title="Shopping cart">
-        <div>
-          <i class="fas fa-shopping-basket navbar-icon"></i>
+    
 
-        </div>
-      </a>
-    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
@@ -154,73 +88,66 @@
           <a class="nav-link" href="#">Order <span class="sr-only">(current)</span></a>
         </li>
       </ul>
+
       <ul class="navbar-nav ml-auto">
-        <li>
-          <div col-6 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left>
-            <form method="GET" action="">
-              <div class="input-group w-100">
-                <input class="form-control my-2 my-sm-0" type="text" name="q" placeholder="Search Shop"
-                  aria-label="Search box">
-                <div class="input-group-append">
-                  <button class="form-control btn btn-outline-dark my-2 my-sm-0" type="submit">
-                    <span class="icon">
-                      <i class="fas fa-search"></i>
-                    </span>
-                  </button>
-                </div>
+        <li class="nav-item">
+          <form method="GET" action="">
+            <div class="input-group w-100">
+              <input class="form-control my-2 my-sm-0" type="text" name="q" placeholder="Search Shop"
+                aria-label="Search box">
+              <div class="input-group-append">
+                <button class="form-control btn btn-outline-dark my-2 my-sm-0" type="submit">
+                  <span class="icon">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </button>
               </div>
-            </form>
+            </div>
+          </form>
+        </li>
+        <li class="nav-item d-none d-lg-inline-block">
+          <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <div class="text-center">
+              <div><span class="icon"><i class="fas fa-user"></i></span></div>
+            </div>
+          </a>
+          <div class="dropdown-menu border-0" aria-labelledby="user-options">
+            {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+            {% endif %}
+            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+            {% else %}
+            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+            {% endif %}
           </div>
         </li>
+        <li class="nav-item d-none d-lg-inline-block">
+          <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="#">
 
-        <li class="nav-item">
-          <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-            <li class="list-inline-item dropdown">
-              <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <div class="text-center">
-                  <div><span class="icon"><i class="fas fa-user"></i></span></div>
-                </div>
-              </a>
-              <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                {% if request.user.is_authenticated %}
-                {% if request.user.is_superuser %}
-                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                {% endif %}
-                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+            <div><span class="icon"><i class="fas fa-shopping-basket"></i></span>
+              <!-- <p class="my-0">
+                {% if grand_total %}
+                ${{ grand_total|floatformat:2 }}
                 {% else %}
-                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                €0.00
                 {% endif %}
-              </div>
-            </li>
-            <li class="list-inline-item">
-              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
-                href="#">
+              </p> -->
+            </div>
+          </a>
+        </li>
 
-                <div> <span class="icon"><i class="fas fa-shopping-basket"></i></span></div>
-                <!-- <p class="my-0">
-                    {% if grand_total %}
-                    ${{ grand_total|floatformat:2 }}
-                    {% else %}
-                    €0.00
-                    {% endif %}
-                  </p> -->
+      </ul>
     </div>
-    </a>
-    </li>
 
-    </ul>
-    {% include 'includes/mobile-top-header.html' %}
 
-    </div>
 
   </nav>
 
 </header>
-
-
 
 
 
