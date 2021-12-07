@@ -51,7 +51,10 @@
       <img src="#" alt="logo" class="logo-img">
     </a>
 
-    
+    <div class="d-lg-none">
+
+    </div>
+    {% include 'includes/mobile-top-header.html' %}
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,8 +108,8 @@
             </div>
           </form>
         </li>
-        <li class="nav-item d-none d-lg-inline-block">
-          <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+        <li class="nav-item dropdown d-none d-lg-inline-block">
+          <a class="text-black nav-link drop-down-toggle" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             <div class="text-center">
               <div><span class="icon"><i class="fas fa-user"></i></span></div>
