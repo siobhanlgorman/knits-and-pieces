@@ -1,3 +1,4 @@
+"""Imports"""
 from django.shortcuts import render
 from .models import Product
 # Create your views here.
@@ -5,7 +6,7 @@ from .models import Product
 
 def all_products(request):
     """ A view to show all products including search and sort queries """
-    
+
     products = Product.objects.all()
 
     context = {

@@ -1,13 +1,12 @@
-# imports
+"""Imports"""
 from django.contrib import admin
 from .models import Product, Category, Tag
 
 # Register your models here.
 
 
-
-
 class ProductAdmin(admin.ModelAdmin):
+    """Lists product fields to be displayed in admin panel"""
     list_display = (
         'name',
         'category',
@@ -15,14 +14,18 @@ class ProductAdmin(admin.ModelAdmin):
         'image1',
     )
 
+
 class CategoryAdmin(admin.ModelAdmin):
+    """Lists category fields to be displayed in admin panel"""
     list_display = (
         'id',
         'friendly_name',
         'name',
     )
 
+
 class TagAdmin(admin.ModelAdmin):
+    """Lists tag fields to be displayed in admin panel"""
     list_display = (
         'name',
         'friendly_name',

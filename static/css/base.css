@@ -20,7 +20,6 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-
 }
 
 .shop-button {
@@ -28,6 +27,9 @@ body {
     color: black;
 }
 
+logo-font {
+    text-transform: uppercase;
+}
 
 /* -------------------------------- Media Queries */
 

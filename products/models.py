@@ -6,7 +6,9 @@ from django.contrib.auth.models import User
 class Category(models.Model):
     """A model for the product category"""
     class Meta:
+        """Set spelling of category plural in admin panel"""
         verbose_name_plural = 'Categories'
+
     name = models.CharField(max_length=80)
     friendly_name = models.CharField(max_length=80, blank=True, default="")
 
@@ -115,7 +117,6 @@ class Product(models.Model):
     colour4 = models.CharField(
         max_length=50, blank=True, default="", choices=COLOUR_OPTIONS)
 
-
     DREAMS = 'Dreams'
     SUN = 'Sun'
     FLOWER = 'Flower'
@@ -138,10 +139,12 @@ class Product(models.Model):
         (MIX, 'Mix'),
     ]
 
-    pattern_name = models.CharField(max_length=100, blank=True, default="", choices=PATTERN_OPTIONS)
+    pattern_name = models.CharField(
+        max_length=100, blank=True, default="", choices=PATTERN_OPTIONS)
     designer = models.CharField(max_length=50, blank=True, default="")
     can_custom_design = models.BooleanField(default=False)
-    likes = models.ManyToManyField(User, related_name='product_likes', blank=True)
+    likes = models.ManyToManyField(
+        User, related_name='product_likes', blank=True)
 
     def __str__(self):
         return self.name
