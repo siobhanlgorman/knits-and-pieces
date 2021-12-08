@@ -66,9 +66,9 @@ class Product(models.Model):
     material = models.CharField(
         max_length=2, blank=False, default=ACRYLIC, choices=MATERIAL_TYPE)
     machine_wash = models.BooleanField(default=True)
-    product_image1 = models.ImageField(null=True, blank=True)
-    product_image1 = models.ImageField(null=True, blank=True)
-    product_image1 = models.ImageField(null=True, blank=True)
+    image1 = models.ImageField(null=True, blank=True)
+    image2 = models.ImageField(null=True, blank=True)
+    image3 = models.ImageField(null=True, blank=True)
 
     RED = 'RED'
     ORANGE = 'OR'
