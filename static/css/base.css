@@ -37,6 +37,13 @@ body {
     object-fit: contain;
 }
 
+.product-card-container {
+    padding: 10px;
+    
+}
+
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
