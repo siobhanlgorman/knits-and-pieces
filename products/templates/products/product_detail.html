@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div>
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block content  %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt3">
+            <h2 class="logo-font">{{ product.name }}</h2>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col product-container col-12 col-md-6 col-lg-4 offset-lg-2">
+        
+            <div class="row">
+               
+                    <div class="col h-100 border-1 shadow">
+                        <div class="row">
+                            <div class="col image-container">
+                                <a href=" {{ product.image.url }}" target="_blank">
+                                    <img class="card-img-top img-fluid" src="{{product.image1.url }}" alt="{{ product.name }}"  ></a>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>
+                                            designed by {{ product.designer }}
+                                        </p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        {{ product.price}}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        {{ product.colour1}}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        
+
+
+
+
+                    </div>
+
+                        <!-- <a href="">
+                            <img class="card-img-top img-fluid" src="{{product.image1.url }}" alt="{{ product.name }}" target="_blank" ></a>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                        </div>
+                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <div class="row">
+                               <div class="col">
+                                   {% if product.tag %}
+                                   <p class="lead mb-0 text-left font-weight-bold">{{ product.tag }}</p>
+                                   {% endif %}
+                                   <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                                   <small class="text-muted"><i class="fas fa-star mr-1"></i></small>
+
+                               </div>
+                            </div>
+                           
+                        </div> -->
+
+                    
+                </div>
+                
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}
