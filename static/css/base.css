@@ -27,8 +27,14 @@ body {
     color: black;
 }
 
-logo-font {
+.logo-font {
     text-transform: uppercase;
+}
+
+/* product image size to fit card without stretch */
+.card-img-top {
+    height: 25vh;
+    object-fit: contain;
 }
 
 /* -------------------------------- Media Queries */

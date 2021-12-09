@@ -23,12 +23,15 @@
     </div>
     <div class="row">
         <div class="col product-container col-10 offset-1">
+            
             <div class="row">
+                {{ product.image1 }}
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card h-100 border-0">
+                        
                         <a href="">
-                            <img class="card-img-top img-fluid" src="{{ product.image1 }}" alt="{{ product.name }}"></a>
+                            <img class="card-img-top img-fluid" src="{{product.image1.url }}" alt="{{ product.name }}"></a>
                         <div class="card-body">
                             <h5 class="card-title">{{ product.name }}</h5>
                         </div>
