@@ -19,52 +19,41 @@
     <div class="row">
         <div class="col text-center mt3">
             <h2 class="logo-font">{{ product.name }}</h2>
-            
+
         </div>
     </div>
-    <div class="row">
-        <div class="col product-container col-12 col-md-6 col-lg-4 offset-lg-2">
-        
-            <div class="row">
-               
-                    <div class="col h-100 border-1 shadow">
-                        <div class="row">
-                            <div class="col image-container">
-                                <a href=" {{ product.image.url }}" target="_blank">
-                                    <img class="card-img-top img-fluid" src="{{product.image1.url }}" alt="{{ product.name }}"  ></a>
-                                    </div>
-                                    <div class="card-body">
-                                        <p>
-                                            designed by {{ product.designer }}
-                                        </p>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <div class="row">
-
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        {{ product.price}}
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        {{ product.colour1}}
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        
-                        
 
 
+    <div class="card-group">
+        <div class="card">
+            <a href=" {{ product.image.url }}" target="_blank">
+                <img class="card-img-center img-fluid" src="{{product.image1.url }}" alt="{{ product.name }}"></a>
+            <div class="card-body">
+                <p class="card-text"><small class="text-muted">designed by {{ product.designer }}</small></p>
+            </div>
+        </div>
+        <div class="card">
 
+            <div class="card-body">
+                <small class="text-muted"><i class="fas fa-star mr-1"></i></small>
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.description }}</p>
+                <p class="card-text">Colour(s): {{ product.colour1 }} {{ product.colour2 }} {{ product.colour3 }}
+                    {{ product.colour4 }}</p>
+                <p class="card-text">Material: {{ product.material }}</p>
+                <p class="card-text">€{{ product.price }}</p>
+                {% if can_custom_design == true %}
+                <p>Contact us <a href="">here</a> if you would like to order this item in different colours</p>
+                <p class="card-text"><small class="text-muted">Pattern name: {{ product.pattern_name }}</small></p>
+                {% endif %}
+            </div>
+        </div>
 
-                    </div>
+    </div>
 
-                        <!-- <a href="">
+</div>
+
+<!-- <a href="">
                             <img class="card-img-top img-fluid" src="{{product.image1.url }}" alt="{{ product.name }}" target="_blank" ></a>
                         <div class="card-body">
                             <h5 class="card-title">{{ product.name }}</h5>
@@ -76,21 +65,21 @@
                                    <p class="lead mb-0 text-left font-weight-bold">{{ product.tag }}</p>
                                    {% endif %}
                                    <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                                   <small class="text-muted"><i class="fas fa-star mr-1"></i></small>
+                                   
 
                                </div>
                             </div>
                            
                         </div> -->
 
-                    
-                </div>
-                
 
-            </div>
-        </div>
+</div>
 
-    </div>
+
+</div>
+</div>
+
+</div>
 
 </div>
 {% endblock %}
