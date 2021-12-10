@@ -3,6 +3,8 @@
 ### Strategy
 * Introduction
 * Agile Planning
+User stories (Issues) with acceptance criteria and tasks are each linked to an Epic (Milestone) and placed in an Iteration kanban board (Projects 1, 2 and 3). Due to the project time constraints no dates are included. Each user story is labelled with a must-have should-have, could-have or won't have label to show prioritisation. (Include planning table with prioritistion list here)
+
 * Project Goal
 
 The goal of the project is to create an online store for this developer's handmade items; primarily crocheted throws and blankets, knitted hats and cotton facemasks. This is a real-world application to create a store for this developer's products which have been custom-made and sold on a word-of-mouth basis over ten years. Buyers have encouraged the set-up of an online store to increase sales and customer base.
