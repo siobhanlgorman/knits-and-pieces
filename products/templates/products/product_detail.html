@@ -27,7 +27,7 @@
     <div class="card-group">
         <div class="card">
             <a href=" {{ product.image.url }}" target="_blank">
-                <img class="card-img-center img-fluid" src="{{product.image1.url }}" alt="{{ product.name }}"></a>
+                <img class="card-img-top img-fluid" src="{{product.image1.url }}" alt="{{ product.name }}"></a>
             <div class="card-body">
                 <p class="card-text"><small class="text-muted">designed by {{ product.designer }}</small></p>
             </div>
@@ -38,9 +38,9 @@
                 <small class="text-muted"><i class="fas fa-star mr-1"></i></small>
                 <h5 class="card-title">{{ product.name }}</h5>
                 <p class="card-text">{{ product.description }}</p>
-                <p class="card-text">Colour(s): {{ product.colour1 }} {{ product.colour2 }} {{ product.colour3 }}
-                    {{ product.colour4 }}</p>
-                <p class="card-text">Material: {{ product.material }}</p>
+                <p class="card-text">Main Colour: {{ product.get_colour1_display }} 
+                    </p>
+                <p class="card-text">Material: {{ product.get_material_display }}</p>
                 <p class="card-text">€{{ product.price }}</p>
                 {% if can_custom_design == true %}
                 <p>Contact us <a href="">here</a> if you would like to order this item in different colours</p>
