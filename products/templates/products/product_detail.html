@@ -37,6 +37,8 @@
             <div class="card-body">
                 <small class="text-muted"><i class="fas fa-star mr-1"></i></small>
                 <h5 class="card-title">{{ product.name }}</h5>
+                {% if tag.exists %}
+                <p class="card-text">{{ product.tag }}</p>
                 <p class="card-text">{{ product.description }}</p>
                 <p class="card-text">Main Colour: {{ product.get_colour1_display }} 
                     </p>

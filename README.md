@@ -137,7 +137,21 @@ The pdf files can be seen [here](#))
 * [PyPI](https://pypi.org/) to install the python packages
 ## Testing
 ## Deployment
+
 ### Heroku Deployment
+1. Create Heroku app
+2. Add postgres database to app resources in heroku and copy db url
+3. Attach database to gitpod? : add copied db url
+4. Add secret key for django secret key to env.py and heroku config vars
+5. Make sure env.py is referenced in settings.py
+6. REmove Django insecure key and reference SECRET_KEY in settings.py
+7. Point to postgres db in settings.py
+8. Make migrations to postgres db
+9. aws/ DISABLE_COLLECTSTATIC
+10. Add heroku Hostname to allowed_hosts in settings.py
+11. Procfile: 
+
+requirements.txt
 ### Local Deployment: Forking and Cloning
 ## Credits
 ![#](documentation/screenshots/##.png)
