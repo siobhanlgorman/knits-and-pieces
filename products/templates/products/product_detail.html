@@ -14,7 +14,6 @@
 {% endblock %}
 
 {% block content  %}
-
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt3">
@@ -37,11 +36,13 @@
             <div class="card-body">
                 <small class="text-muted"><i class="fas fa-star mr-1"></i></small>
                 <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-title">{{ product.category }}</p>
                 {% if tag.exists %}
                 <p class="card-text">{{ product.tag }}</p>
+                {% endif %}
                 <p class="card-text">{{ product.description }}</p>
-                <p class="card-text">Main Colour: {{ product.get_colour1_display }} 
-                    </p>
+                <p class="card-text">Main Colour: {{ product.get_colour1_display }}
+                </p>
                 <p class="card-text">Material: {{ product.get_material_display }}</p>
                 <p class="card-text">€{{ product.price }}</p>
                 {% if can_custom_design == true %}
@@ -55,33 +56,4 @@
 
 </div>
 
-<!-- <a href="">
-                            <img class="card-img-top img-fluid" src="{{product.image1.url }}" alt="{{ product.name }}" target="_blank" ></a>
-                        <div class="card-body">
-                            <h5 class="card-title">{{ product.name }}</h5>
-                        </div>
-                        <div class="card-footer bg-white pt-0 border-0 text-left">
-                            <div class="row">
-                               <div class="col">
-                                   {% if product.tag %}
-                                   <p class="lead mb-0 text-left font-weight-bold">{{ product.tag }}</p>
-                                   {% endif %}
-                                   <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                                   
-
-                               </div>
-                            </div>
-                           
-                        </div> -->
-
-
-</div>
-
-
-</div>
-</div>
-
-</div>
-
-</div>
 {% endblock %}

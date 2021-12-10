@@ -84,16 +84,12 @@
                 </ul>
               </li>
               <div class="dropdown-divider"></div>
-              <li><a class="dropdown-item" href="#">Throws</a></li>
-              <li><a class="dropdown-item" href="#">Cushion Covers</a></li>
-              <li><a class="dropdown-item" href="#">Bedcovers</a></li>
-              <li><a class="dropdown-item" href="#">Baby blankets</a></li>
-              <li><a class="dropdown-item" href="#">Hats</a></li>
-              <li><a class="dropdown-item" href="#">Mittens</a></li>
-              <li><a class="dropdown-item" href="#">Wristwarmers</a></li>
-              <li><a class="dropdown-item" href="#">Face Masks</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=throws, bedcovers, baby_blankets">Throws & Blankets</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=cushion_covers">Cushion Covers</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=hats, gloves">Hats & Gloves</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=face_masks">Face Masks</a></li>
               <div class="dropdown-divider"></div>
-              <li><a class="dropdown-item" href="#">Specials</a></li>
+              <li><a class="dropdown-item" href="#">Don't Miss</a></li>
             </ul>
           </li>
           <li class="nav-item active">
