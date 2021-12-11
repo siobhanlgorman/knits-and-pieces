@@ -22,6 +22,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <link rel="icon" type="image/png" href="{% static 'favicon/favicon.ico' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
   {% endblock %}
 
   {% block extra_css %}
@@ -42,6 +46,7 @@
   {% block extra_js %}
   {% endblock %}
 
+  
   <title>Knits and Pieces {% block extra_title %}{% endblock %}</title>
 
 </head>
@@ -51,8 +56,8 @@
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="media/square_logo.png" alt="logo" class="logo-img">
+      <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="{% static 'img/square_logo.png' %}" alt="logo" class="logo-img">
       </a>
 
 
@@ -84,12 +89,13 @@
                 </ul>
               </li>
               <div class="dropdown-divider"></div>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=throws, bedcovers, baby_blankets">Throws & Blankets</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=throws,bedcovers,baby_blankets">Throws
+                  & Blankets</a></li>
               <li><a class="dropdown-item" href="{% url 'products' %}?category=cushion_covers">Cushion Covers</a></li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=hats, gloves">Hats & Gloves</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=hats,gloves">Hats & Gloves</a></li>
               <li><a class="dropdown-item" href="{% url 'products' %}?category=face_masks">Face Masks</a></li>
               <div class="dropdown-divider"></div>
-              <li><a class="dropdown-item" href="#">Don't Miss</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?tag=special_offer,last_few">Don't Miss</a></li>
             </ul>
           </li>
           <li class="nav-item active">
@@ -117,7 +123,7 @@
             </form>
           </li>
           <li class="nav-item dropdown d-none d-lg-inline-block">
-            <a class="text-black nav-link drop-down-toggle" href="#" id="user-options" data-toggle="dropdown"
+            <a class="text-black nav-link drop-down-toggle" href="#" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               <div class="text-center">
                 <div><span class="icon"><i class="fas fa-user"></i></span></div>
@@ -164,7 +170,7 @@
 
   </header>
 
-  
+
 
 
   {% if messages %}
