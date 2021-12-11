@@ -25,8 +25,14 @@
 
     <div class="card-group">
         <div class="card">
+            {% if product.image1 %}
             <a href=" {{ product.image.url }}" target="_blank">
                 <img class="card-img-top img-fluid" src="{{product.image1.url }}" alt="{{ product.name }}"></a>
+                {% else %}
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="card-img-top img-fluid" src="{% static 'img/knitsandpieces-purple2.png' %}" alt="{{ product.name }}"
+                        alt="{{ product.name }}"></a>
+                {% endif %} 
             <div class="card-body">
                 <p class="card-text"><small class="text-muted">designed by {{ product.designer }}</small></p>
             </div>
