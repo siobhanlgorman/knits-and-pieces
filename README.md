@@ -122,7 +122,9 @@ The pdf files can be seen [here](#))
 - created a palette using [Coolors](https://coolors.co/d20f35-e36477-3a445c-728668-bbb19d)
 - Picked from sample product square, used for logo
 - Crimson for Title font
+- Charcoal - main font colour #3a3a3a
 * Typography
+- Great Vibes for Titles - fancy, elegant, commanding
 * Images
 * Accessibility
 

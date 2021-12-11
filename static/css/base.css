@@ -11,18 +11,28 @@ body {
     flex-direction: column;
     margin: 0;
     font-family: 'Roboto';
+    color: #3a3a3a;
 }
 main {
     flex-grow: 1 auto;
 }
 
 footer {
-    flex-shrink: 0
+    flex-shrink: 0;
 }
 
-.main-title {
+.title-font {
     font-family: 'Great Vibes';
     color: #d20f35;
+}
+
+.logo-font {
+    text-transform: uppercase;
+
+}
+
+a {
+    color: #3a3a3a;
 }
 
 /* keep fontawesome icons consistent (from Bulma/Boutique Ado)*/
@@ -38,12 +48,10 @@ footer {
     background: yellow;
     color: black;
 }
-
-.logo-font {
-    text-transform: uppercase;
-}
+    
 
 /* product image size to fit card without stretch */
+
 .card-img-top {
     height: 25vh;
     object-fit: contain;
@@ -53,7 +61,6 @@ footer {
     padding: 10px;
     
 }
-
 
 
 /* -------------------------------- Media Queries */
