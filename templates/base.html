@@ -199,21 +199,31 @@
         <div class="col-md-3 mb-md-0 mb-3 text-center">
 
 
-          <h5 class="text-uppercase">Links</h5>
+          <h5 class="text-uppercase">Shop</h5>
 
           <ul class="list-unstyled">
             <li>
-              <a href="#!">Link 1</a>
+              <a href="{% url 'products' %}?category=throws">Throws</a>
             </li>
             <li>
-              <a href="#!">Link 2</a>
+              <a href="{% url 'products' %}?category=bedcovers">Bedcovers</a>
             </li>
             <li>
-              <a href="#!">Link 3</a>
+              <a href="{% url 'products' %}?category=cushion_covers">Cushion Covers</a>
             </li>
             <li>
-              <a href="#!">Link 4</a>
+              <a href="{% url 'products' %}?category=hats">Hats</a>
             </li>
+            <li>
+              <a href="{% url 'products' %}?category=mittens,wristwarmers">Gloves</a>
+            </li>
+            <li>
+              <a href="{% url 'products' %}?category=face_masks">Face Masks</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="{% url 'products' %}?tag=special_offer,last_few">Don't Miss</a>
+            </li>
+
           </ul>
 
         </div>
