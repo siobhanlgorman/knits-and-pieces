@@ -115,9 +115,13 @@ The pdf files can be seen [here](#))
 ### Surface
 
 * Overall Design Choice
-- The emphasis is to look professional and modern and to showcase the high quality artisan goods for sale. Research on websites selling similar handmade goods often have either a very traditional and amateur look or a very cluttered look. The site should look clean and elegant with a plain background to highlight the colorful products. 
+- The emphasis is to look professional and modern and to showcase the high quality artisan goods for sale. Research on websites selling similar handmade goods often have either a very traditional and amateur look or a very cluttered look. The site should look clean and elegant with a plain background to highlight the colorful products. Minimal colours used in keeping with the minimalist approach but making the site attractive to draw user's eye and tone with the products' colours. 
 
 * Colours
+- created a logo from a bright coloured suare from a product
+- created a palette using [Coolors](https://coolors.co/d20f35-e36477-3a445c-728668-bbb19d)
+- Picked from sample product square, used for logo
+- Crimson for Title font
 * Typography
 * Images
 * Accessibility
