@@ -28,11 +28,11 @@
             {% if product.image1 %}
             <a href=" {{ product.image.url }}" target="_blank">
                 <img class="card-img-top img-fluid" src="{{product.image1.url }}" alt="{{ product.name }}"></a>
-                {% else %}
-                <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top img-fluid" src="{% static 'img/knitsandpieces-purple2.png' %}" alt="{{ product.name }}"
-                        alt="{{ product.name }}"></a>
-                {% endif %} 
+            {% else %}
+            <a href="{% url 'product_detail' product.id %}">
+                <img class="card-img-top img-fluid" src="{% static 'img/knitsandpieces-purple2.png' %}"
+                    alt="{{ product.name }}" alt="{{ product.name }}"></a>
+            {% endif %}
             <div class="card-body">
                 <p class="card-text"><small class="text-muted">designed by {{ product.designer }}</small></p>
             </div>
@@ -42,7 +42,14 @@
             <div class="card-body">
                 <small class="text-muted"><i class="fas fa-star mr-1"></i></small>
                 <h5 class="card-title">{{ product.name }}</h5>
-                <p class="card-title">{{ product.category }}</p>
+                {% if product.category %}
+                <div class="p small mt-1 mb-0">
+                    <a href="{% url 'products' %}?category={{ product.category.name }}">
+                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                    </a>
+                </div>
+                {% endif %}
+                
                 {% if tag.exists %}
                 <p class="card-text">{{ product.tag }}</p>
                 {% endif %}
