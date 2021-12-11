@@ -82,9 +82,9 @@
             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a>
                 <ul>
-                  <li><a class="dropdown-item" href="#">By Price</a></li>
+                  <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a></li>
                   <li><a class="dropdown-item" href="#">By Category</a></li>
-                  <li><a class="dropdown-item" href="#">By Colour</a></li>
+                  <!-- <li><a class="dropdown-item" href="#">By Colour</a></li> -->
 
                 </ul>
               </li>
