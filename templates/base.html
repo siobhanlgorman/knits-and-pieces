@@ -82,8 +82,7 @@
               <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a>
                 <ul>
                   <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a></li>
-                  <li><a class="dropdown-item" href="#">By Category</a></li>
-                  <!-- <li><a class="dropdown-item" href="#">By Colour</a></li> -->
+                  <li><a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc">By Category</a></li>
 
                 </ul>
               </li>
