@@ -19,11 +19,7 @@
     <div class="row">
         <div class="col text-center mt3">
             <h2 class="title-font">Products</h2>
-            {% for c in current_categories %}
-                    <a class="category-badge text-decoration-none border" href="{% url 'products' %}?category={{ c.name }}">
-                        <span class="p-2 mt-2 badge badge-pill badge-light">{{ c.friendly_name }}</span>
-                    </a>
-                {% endfor %}
+            
                 <hr class="w-50 mb-1">
 
         </div>
@@ -64,7 +60,7 @@
                                 alt="{{ product.name }}"></a>
                         {% else %}
                         <a href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top img-fluid" src="{% static 'img/knitsandpieces-purple2.png' %}" alt="{{ product.name }}"
+                            <img class="card-img-top img-fluid" src="{% static 'img/red_logo2.png' %}" alt="{{ product.name }}"
                                 alt="{{ product.name }}"></a>
                         {% endif %}        
                         <div class="card-body">

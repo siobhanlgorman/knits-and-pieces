@@ -22,7 +22,7 @@ footer {
 }
 
 .title-font {
-    font-family: 'Great Vibes';
+    font-family: 'Cinzel', serif;
     color: #d20f35;
 }
 
@@ -61,7 +61,6 @@ a {
     padding: 10px;
     
 }
-
 
 /* -------------------------------- Media Queries */
 
