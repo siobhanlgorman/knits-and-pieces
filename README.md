@@ -161,4 +161,8 @@ requirements.txt
 ### Local Deployment: Forking and Cloning
 ## Credits
 ![#](documentation/screenshots/##.png)
+
+Logo created from ![Free Logo Design](https://www.freelogodesign.org/)
+Favicon created from ![Free Logo Design](https://www.freelogodesign.org/)
+
 ## Acknowledgements

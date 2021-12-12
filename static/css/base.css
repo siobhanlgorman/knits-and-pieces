@@ -55,11 +55,18 @@ a {
 .card-img-top {
     height: 25vh;
     object-fit: contain;
+    padding-top: 1.5rem;
 }
 
 .product-card-container {
     padding: 10px;
     
+}
+
+/* badge for categories */
+.badge {
+    background-color: #d20f35;
+    color: white;
 }
 
 /* -------------------------------- Media Queries */
