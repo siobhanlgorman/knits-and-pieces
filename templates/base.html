@@ -79,10 +79,10 @@
               Shop
             </a>
             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a>
+              <li><a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc">All Products</a>
                 <ul>
                   <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a></li>
-                  <li><a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc">By Category</a></li>
+                  <li><a class="dropdown-item" href="{% url 'products' %}?sort=name&direction=asc">By Name</a></li>
 
                 </ul>
               </li>
