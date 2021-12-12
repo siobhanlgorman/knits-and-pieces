@@ -13,6 +13,7 @@ body {
     font-family: 'Roboto';
     color: #3a3a3a;
 }
+
 main {
     flex-grow: 1 auto;
 }
@@ -31,9 +32,6 @@ footer {
 
 }
 
-.logo-img {
-    
-}
 
 a {
     color: #3a3a3a;

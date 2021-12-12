@@ -75,7 +75,7 @@
                         {% else %}
                         <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid" src="{% static 'img/red_logo2.png' %}"
-                                alt="{{ product.name }}" alt="{{ product.name }}"></a>
+                                alt="{{ product.name }}"></a>
                         {% endif %}
                         <div class="card-body">
                             <h5 class="card-title">{{ product.name }}</h5>
@@ -122,7 +122,7 @@
 {% block postloadjs %}
 {{ block.super }}
 
-<script type="text/javascript">
+<script>
     // Get the button element
     let mybutton = document.getElementById("btt-button");
 
@@ -153,7 +153,7 @@
 
 <!-- captures change event from sort selector, either resets sort value to default or gets new sort value and replaces GET values in url , jQuery code from Code Insitute Boutique Ado -->
 
-<script type="text/javascript">
+<script>
     $('#sort-selector').change(function () {
         var selector = $(this);
         var currentUrl = new URL(window.location);

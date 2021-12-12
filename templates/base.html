@@ -19,7 +19,9 @@
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Cinzel:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Cinzel:wght@600&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
   <link rel="icon" type="image/png" href="{% static 'favicon/favicon.ico' %}">
   <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
@@ -45,7 +47,7 @@
   {% block extra_js %}
   {% endblock %}
 
-  
+
   <title>Knits and Pieces {% block extra_title %}{% endblock %}</title>
 
 </head>
@@ -54,9 +56,9 @@
 
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <a class="navbar-brand" href="{% url 'home' %}">
-        <img src="{% static 'img/wool_logo_sml.png' %}" alt="logo" class="logo-img">
+        <img src="{% static 'img/wool_logo_sml.png' %}" alt="red ball of wool" class="logo-img">
       </a>
 
 
@@ -83,16 +85,15 @@
                 <ul>
                   <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a></li>
                   <li><a class="dropdown-item" href="{% url 'products' %}?sort=name&direction=asc">By Name</a></li>
-
                 </ul>
               </li>
-              <div class="dropdown-divider"></div>
+
               <li><a class="dropdown-item" href="{% url 'products' %}?category=throws,bedcovers,baby_blankets">Throws
                   & Blankets</a></li>
               <li><a class="dropdown-item" href="{% url 'products' %}?category=cushion_covers">Cushion Covers</a></li>
               <li><a class="dropdown-item" href="{% url 'products' %}?category=hats,gloves">Hats & Gloves</a></li>
               <li><a class="dropdown-item" href="{% url 'products' %}?category=face_masks">Face Masks</a></li>
-              <div class="dropdown-divider"></div>
+
               <li><a class="dropdown-item" href="{% url 'products' %}?tag=special_offer,last_few">Don't Miss</a></li>
             </ul>
           </li>
@@ -121,8 +122,8 @@
             </form>
           </li>
           <li class="nav-item dropdown d-none d-lg-inline-block">
-            <a class="text-black nav-link drop-down-toggle" href="#" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+            <a class="text-black nav-link drop-down-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
               <div class="text-center">
                 <div><span class="icon"><i class="fas fa-user"></i></span></div>
               </div>
@@ -233,8 +234,8 @@
             <div class="col text-center">
               <div class="row">
                 <div class="col text-center">
-                  <a href="#">Logo</a>
-                  <img src="" alt="" class="logo-img"></div>
+                  <a href="#"></a>
+                  <img src="{% static 'img/wool_logo_sml.png' %}" alt="red ball of wool" class="logo-img"></div>
               </div>
               <div class="row">
                 <div class="col text-center">
@@ -268,7 +269,7 @@
 
           <ul class="list-unstyled">
             <li>
-              <a href="#!">Home</a>
+              <a href="{% url 'home' %}">Home</a>
             </li>
             <li>
               <a href="#!">About</a>
