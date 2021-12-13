@@ -8,64 +8,93 @@
             <div class="col"></div>
         </div>
     </div>
-
 </div>
 
 {% endblock %}
 
 {% block content  %}
-<div class="container-fluid">
+<div class="container d-flex flex-column">
+    <!-- product information -->
     <div class="row">
-        <div class="col text-center mt3">
-            <h2 class="logo-font">{{ product.name }}</h2>
+        <!-- product image -->
 
-        </div>
-    </div>
-
-
-    <div class="card-group">
-        <div class="card">
-            {% if product.image1 %}
-            <a href=" {{ product.image.url }}" target="_blank">
-                <img class="card-img-top img-fluid" src="{{product.image1.url }}" alt="{{ product.name }}"></a>
-            {% else %}
-            <a href="{% url 'product_detail' product.id %}">
-                <img class="card-img-top img-fluid" src="{% static 'img/knitsandpieces-purple2.png' %}"
-                    alt="{{ product.name }}" alt="{{ product.name }}"></a>
-            {% endif %}
-            <div class="card-body">
-                <p class="card-text"><small class="text-muted">designed by {{ product.designer }}</small></p>
+        <div class="col-sm-6 card py-5 product-detail-image">
+            <div class="image-container my-5">
+                {% if product.image1 %}
+                <a href=" {{ product.image.url }}" target="_blank">
+                    <img class="product-detail-img card-img-top img-fluid" src="{{product.image1.url }}"
+                        alt="{{ product.name }}"></a>
+                {% else %}
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="card-img-top img-fluid" src="{% static 'img/knitsandpieces-purple2.png' %}"
+                        alt="{{ product.name }}" alt="{{ product.name }}"></a>
+                {% endif %}
             </div>
         </div>
-        <div class="card">
-
-            <div class="card-body">
-                <small class="text-muted"><i class="fas fa-star mr-1"></i></small>
-                <h5 class="card-title">{{ product.name }}</h5>
-                {% if product.category %}
-                <div class="p small mt-1 mb-0">
-                    <a href="{% url 'products' %}?category={{ product.category.name }}">
-                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                    </a>
+        <!-- product details -->
+        <div class="col-sm-6 py-5 card product-detail-text">
+            <!-- product likes -->
+            <div class="row">
+                <div class="card-body likes-icon">
+                    <small class="text-muted"><i class="fas fa-star mr-1"></i></small>
                 </div>
-                {% endif %}
-                
-                {% if tag.exists %}
-                <p class="card-text">{{ product.tag }}</p>
-                {% endif %}
-                <p class="card-text">{{ product.description }}</p>
-                <p class="card-text">Main Colour: {{ product.get_colour1_display }}
-                </p>
-                <p class="card-text">Material: {{ product.get_material_display }}</p>
-                <p class="card-text">€{{ product.price }}</p>
-                {% if can_custom_design == true %}
-                <p>Contact us <a href="">here</a> if you would like to order this item in different colours</p>
-                <p class="card-text"><small class="text-muted">Pattern name: {{ product.pattern_name }}</small></p>
-                {% endif %}
+                <div class="card-body product-tag">
+                    {% if product.tag %}
+                    <p class="card-text">{{ product.tag.friendly_name }}</p>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="row">
+                <h5 class="col card-title">{{ product.name }}</h5>
+            </div>
+            <div class="row">
+                <div class="col card-body">
+                    {% if product.category %}
+                    <div class="p card-text small mt-1 mb-0">
+                        <a href="{% url 'products' %}?category={{ product.category.name }}">
+                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col card-body">
+                    <p class="card-text">{{ product.description }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col card-body">
+                    <p class="card-text">Main Colour: {{ product.get_colour1_display }}
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col card-body">
+                    <p class="card-text">Material: {{ product.get_material_display }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col card-body">
+                    <p class="card-text">€{{ product.price }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col card-body">
+                    {% if can_custom_design == true %}
+                    <p class="card-text">Contact us <a href="">here</a> if you would like to order this item in different colours</p>
+                    <p class="card-text">Pattern name: {{ product.pattern_name }}>
+                    </p>
+                    {% endif %}
+                    <p class="card-text">designed by {{ product.designer }}</p>
+                </div>
             </div>
         </div>
-
     </div>
+
+
 
 </div>
 

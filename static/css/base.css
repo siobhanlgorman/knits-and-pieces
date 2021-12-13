@@ -5,7 +5,7 @@ html {
 
 /* set body height, colour, font */
 body {
-    /* height: cal(100vh - 164px); */
+    height: cal(100vh - 164px);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    flex-grow: 1 auto;
+    flex-grow: 1;
 }
 
 footer {
@@ -27,9 +27,14 @@ footer {
     color: #d20f35;
 }
 
+#banner {
+    background-color: gray;
+    color: white;
+   
+}
+
 .logo-font {
     text-transform: uppercase;
-
 }
 
 
@@ -70,11 +75,12 @@ a {
     
 
 /* product image size to fit card without stretch */
-
 .card-img-top {
-    height: 25vh;
-    object-fit: contain;
+    /* height: 25vh; */
+    /* object-fit: cover; */
+    /* object-fit: contain;
     padding-top: 1.5rem;
+    /* width: 100%; */
 }
 
 .product-card-container {
@@ -110,5 +116,18 @@ a {
     .header-container {
         padding-top: 164px;
     }
+
+    
 }
 
+@media (max-width: 992px) {
+    
+    /* .header-container {
+        padding-top: 164px;
+    } */
+
+    #banner h4 {
+        font-size: .8rem;
+        
+    }
+}
