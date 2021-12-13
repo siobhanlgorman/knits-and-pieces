@@ -69,10 +69,30 @@ a {
 }
 
 .shop-button {
-    background: yellow;
-    color: black;
+    background: grey;
+    color: white;
+    min-width: 260px;
 }
-    
+
+.shop-button:hover,
+.shop-button:active,
+.shop-button:focus {
+    background: grey;
+    color: white !important;
+}
+
+/* add to bag button */
+
+.btn-red {
+    background-color: #d20f35;
+}
+
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus {
+    background: grey;
+    color: white !important;
+}
 
 /* product image size to fit card without stretch on main shop page */
 
