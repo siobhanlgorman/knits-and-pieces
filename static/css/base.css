@@ -74,8 +74,15 @@ a {
 }
     
 
-/* product image size to fit card without stretch */
+/* product image size to fit card without stretch on main shop page */
+
+.all-products-img {
+    height: 25vh;
+    object-fit: contain;
+}
+
 .card-img-top {
+    
     /* height: 25vh; */
     /* object-fit: cover; */
     /* object-fit: contain;

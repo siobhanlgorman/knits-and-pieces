@@ -18,8 +18,8 @@
     <div class="row">
         <!-- product image -->
 
-        <div class="col-sm-6 card py-5 product-detail-image">
-            <div class="image-container my-5">
+        <div class="col-sm-6 card border shadow py-5 product-detail-image">
+            <div class="image-container my-auto">
                 {% if product.image1 %}
                 <a href=" {{ product.image.url }}" target="_blank">
                     <img class="product-detail-img card-img-top img-fluid" src="{{product.image1.url }}"
@@ -32,7 +32,7 @@
             </div>
         </div>
         <!-- product details -->
-        <div class="col-sm-6 py-5 card product-detail-text">
+        <div class="col-sm-6 py-5 card border shadow product-detail-text">
             <!-- product likes -->
             <div class="row">
                 <div class="card-body likes-icon">
@@ -85,7 +85,7 @@
                 <div class="col card-body">
                     {% if can_custom_design == true %}
                     <p class="card-text">Contact us <a href="">here</a> if you would like to order this item in different colours</p>
-                    <p class="card-text">Pattern name: {{ product.pattern_name }}>
+                    <p class="card-text">Pattern name: {{ product.pattern_name }}
                     </p>
                     {% endif %}
                     <p class="card-text">designed by {{ product.designer }}</p>
