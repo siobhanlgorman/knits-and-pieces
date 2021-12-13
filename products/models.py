@@ -16,6 +16,7 @@ class Category(models.Model):
         return self.name
 
     def get_friendly_name(self):
+        """Returns human readable name"""
         return self.friendly_name
 
 
@@ -28,6 +29,7 @@ class Tag(models.Model):
         return self.name
 
     def get_friendly_name(self):
+        """Returns human readable name"""
         return self.friendly_name
 
 
