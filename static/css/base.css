@@ -70,6 +70,12 @@ a {
     width: 1.5rem;
 }
 
+/* Makes search icon same colour as navigation items */
+
+.search-icon i {
+    color: #00000080;
+}
+
 .shop-button {
     background: #d3d3d3;
     color: #d20f35;
@@ -112,13 +118,15 @@ a {
     color: white !important;
 }
 
-/* shopping basket total badge */
-#basket-label {
-    /* position: absolute; */
+/* shopping basket icon and total badge */
+.basket-icon {
+    color: #00000080;
+}
+
+.basket-icon .basket-label {
     display: inline-block;
     color: #d20f35;
-    /* top: -2px;
-    right: -2px; */
+    font-size: 0.8rem;
 }
 
 /* product image size to fit card without stretch on main shop page */
@@ -147,6 +155,15 @@ a {
     background-color: #d20f35;
     color: white;
 }
+
+/* Get messages to appear on top */
+/* .message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 9999999999;
+    background: red;
+} */
 
 /* -------------------------------- Media Queries */
 

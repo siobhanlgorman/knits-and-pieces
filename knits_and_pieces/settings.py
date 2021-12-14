@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+# from django.contrib.messages import constants as messages
 
 if os.path.isfile("env.py"):
     import env
@@ -49,7 +50,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'bag',
-    
+
 ]
 
 MIDDLEWARE = [
@@ -83,6 +84,8 @@ TEMPLATES = [
         },
     },
 ]
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = [
 
