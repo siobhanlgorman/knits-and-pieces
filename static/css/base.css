@@ -69,8 +69,8 @@ a {
 }
 
 .shop-button {
-    background: grey;
-    color: white;
+    background: #dff0d8;
+    color: #d20f35;
     min-width: 260px;
 }
 
@@ -83,10 +83,21 @@ a {
 
 /* add to bag button */
 
-.btn-red {
-    background-color: #d20f35;
+.btn-grey {
+    /* background-color: gray; */
+    background: #dff0d8;
+    color: #d20f35;
 }
 
+.btn-red {
+    /* background-color: #d20f35; */
+    background: #d20f35;
+    color: #dff0d8;
+}
+
+.btn-grey:hover,
+.btn-grey:active,
+.btn-grey:focus,
 .btn-red:hover,
 .btn-red:active,
 .btn-red:focus {
