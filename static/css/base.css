@@ -71,7 +71,7 @@ a {
 }
 
 .shop-button {
-    background: #dff0d8;
+    background: #d3d3d3;
     color: #d20f35;
     min-width: 260px;
 }
@@ -86,13 +86,13 @@ a {
 /* button styling */
 
 .btn-grey-font {
-    background: #dff0d8;
+    background: #d3d3d3;
     color: #3a3a3a
 }
 
 .btn-grey {
     /* background-color: gray; */
-    background: #dff0d8;
+    background:#d3d3d3;
     color: #d20f35;
 }
 
