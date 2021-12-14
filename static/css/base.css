@@ -46,7 +46,7 @@ a {
 
 .btt-link,
 .update-link,
-.remove-link {
+.remove-item {
     color: white;
     cursor: pointer;
 }
