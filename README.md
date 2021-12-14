@@ -160,6 +160,8 @@ The pdf files can be seen [here](#))
 requirements.txt
 ### Local Deployment: Forking and Cloning
 ## Credits
+
+- heavily relied on Boutique Ado for the basis of the project with customisation as much as possible and custom models
 ![#](documentation/screenshots/##.png)
 
 Logo created from ![Free Logo Design](https://www.freelogodesign.org/)
