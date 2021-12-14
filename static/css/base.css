@@ -30,7 +30,7 @@ footer {
 #banner {
     background-color: gray;
     color: white;
-   
+
 }
 
 .logo-font {
@@ -58,7 +58,7 @@ a {
     bottom: 10px;
     right: 10px;
     background-color: #d20f35;
-    
+
 }
 
 /* keep fontawesome icons consistent (from Bulma/Boutique Ado)*/
@@ -92,7 +92,7 @@ a {
 
 .btn-grey {
     /* background-color: gray; */
-    background:#d3d3d3;
+    background: #d3d3d3;
     color: #d20f35;
 }
 
@@ -112,6 +112,15 @@ a {
     color: white !important;
 }
 
+/* shopping basket total badge */
+#basket-label {
+    /* position: absolute; */
+    display: inline-block;
+    color: #d20f35;
+    /* top: -2px;
+    right: -2px; */
+}
+
 /* product image size to fit card without stretch on main shop page */
 
 .all-products-img {
@@ -120,7 +129,7 @@ a {
 }
 
 .card-img-top {
-    
+
     /* height: 25vh; */
     /* object-fit: cover; */
     /* object-fit: contain;
@@ -130,7 +139,7 @@ a {
 
 .product-card-container {
     padding: 10px;
-    
+
 }
 
 /* badge for categories */
@@ -162,17 +171,17 @@ a {
         padding-top: 164px;
     }
 
-    
+
 }
 
 @media (max-width: 992px) {
-    
+
     /* .header-container {
         padding-top: 164px;
     } */
 
     #banner h4 {
         font-size: .8rem;
-        
+
     }
 }
