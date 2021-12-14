@@ -44,7 +44,9 @@ a {
 
 /* back to top button */
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-link {
     color: white;
     cursor: pointer;
 }
@@ -81,7 +83,12 @@ a {
     color: white !important;
 }
 
-/* add to bag button */
+/* button styling */
+
+.btn-grey-font {
+    background: #dff0d8;
+    color: #3a3a3a
+}
 
 .btn-grey {
     /* background-color: gray; */
