@@ -26,7 +26,7 @@
                         alt="{{ product.name }}"></a>
                 {% else %}
                 <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top img-fluid" src="{% static 'img/knitsandpieces-purple2.png' %}"
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}red_logo2.png"
                         alt="{{ product.name }}" alt="{{ product.name }}"></a>
                 {% endif %}
             </div>
@@ -84,7 +84,7 @@
             </div>
             <div class="row">
                 <div class="col card-body">
-                    {% if can_custom_design == true %}
+                    {% if can_custom_design is True %}
                     <p class="card-text">Contact us <a href="">here</a> if you would like to order this item in different colours</p>
                     <p class="card-text">Pattern name: {{ product.pattern_name }}
                     </p>
