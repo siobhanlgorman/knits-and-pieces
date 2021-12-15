@@ -20,9 +20,9 @@
 
         <div class="col-sm-6 card border shadow py-5 product-detail-image">
             <div class="image-container my-auto">
-                {% if product.image1 %}
+                {% if item.product.image1 %}
                 <a href=" {{ product.image.url }}" target="_blank">
-                    <img class="product-detail-img card-img-top img-fluid" src="{{product.image1.url }}"
+                    <img class="product-detail-img card-img-top img-fluid" src="{{ product.image1.url }}"
                         alt="{{ product.name }}"></a>
                 {% else %}
                 <a href="{% url 'product_detail' product.id %}">
