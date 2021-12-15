@@ -136,7 +136,7 @@
             <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
               href="{% url 'view_bag' %}">
               <div class="basket-icon"><span class="icon"><i class="fas fa-shopping-basket"></i></span>
-                <p class="my-0 basket-label" id="">
+                <p class="my-0 basket-label">
                   {% if grand_total %}
                   €{{ grand_total|floatformat:2 }}
                   {% else %}
@@ -184,7 +184,7 @@
   {% endblock %}
 
   {% block postloadjs %}
-  <script type="text/javascript">
+  <script>
     $('.toast').toast('show');
   </script>
    
