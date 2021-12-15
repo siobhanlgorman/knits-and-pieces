@@ -5,7 +5,7 @@ html {
 
 /* set body height, colour, font */
 body {
-    height: cal(100vh - 164px);
+    /* height: cal(100vh - 164px); # error here */
     min-height: 100vh;
     display: flex;
     flex-direction: column;

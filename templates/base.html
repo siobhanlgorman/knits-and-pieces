@@ -155,7 +155,11 @@
         <h4>Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
       </div>
     </div>
-
+    <div class="row text-center">
+      <div class="col title-font d-none d-md-block">
+        <h1>Knits and Pieces</h1>
+      </div>
+    </div>
   </header>
 
   {% if messages %}
@@ -163,15 +167,15 @@
     {% for message in messages %}
     {% with message.level as level %}
     {% if level == 40 %}
-        {% include 'includes/toasts/toast_error.html' %}
+    {% include 'includes/toasts/toast_error.html' %}
     {% elif level == 30 %}
-        {% include 'includes/toasts/toast_warning.html' %}
+    {% include 'includes/toasts/toast_warning.html' %}
     {% elif level == 25 %}
-        {% include 'includes/toasts/toast_success.html' %}
+    {% include 'includes/toasts/toast_success.html' %}
     {% else %}
-        {% include 'includes/toasts/toast_info.html' %}
+    {% include 'includes/toasts/toast_info.html' %}
     {% endif %}
-{% endwith %}
+    {% endwith %}
     {% endfor %}
   </div>
 
@@ -187,7 +191,7 @@
   <script>
     $('.toast').toast('show');
   </script>
-   
+
   {% endblock %}
 
 
