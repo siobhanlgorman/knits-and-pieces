@@ -32,7 +32,7 @@ class Order(models.Model):
 
 def _generate_order_number(self):
     """
-    Generate a random, unique order number using UUID
+    Generate a random, unique string for order number using UUID
     """
     return uuid.uuid4().hex.upper()
 
@@ -88,4 +88,4 @@ class OrderLineItem(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f'SKU {self.product.sku} on order {self.order.order_number}'
+        return f'Item No: {self.product.id} on order {self.order.order_number}'
