@@ -10,6 +10,7 @@ Bugs and Fixes
 3. Can-custom design - displaying text by default - FIX incorrect format of if statement
 4. Zip code error - indefinite number of numbers and error message pointing to order - error in views.py keys had values which were strings not variables ('' around the variables) - FIX '' removed
 5. checkout_success no reverse match found although payment in stripe succeeded. Discovered order number not being generated. Fix: Narrowed issue down to order generation in models.py update total function and found indentation errors.
+6. error after adding countryfield - could not migrgate. Folder still looking for max value of 2. Eventually deleted all orders in the database as they were created wth countries longer than 2 letters. Then the migration worked.
 
 ![#](documentation/screenshots/##.png)
 Code Validation

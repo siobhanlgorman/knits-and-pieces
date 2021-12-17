@@ -32,6 +32,16 @@
   color: #aab7c4;
 }
 
+select,
+select option {
+  color: grey
+}
+
+select:invalid,
+select option[value=""] {
+  color: green;
+}
+
 #loading-overlay {
   display: none;
   position: fixed;
