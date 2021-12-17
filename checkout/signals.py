@@ -12,6 +12,7 @@ def update_on_save(sender, instance, created, **kwargs):
     """
     print('save signal received')
     instance.order.update_total()
+    print ('order update total received')
 
 
 @receiver(post_delete, sender=OrderLineItem)

@@ -53,10 +53,11 @@ def checkout(request):
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
+                    print('view bag')
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse(
-                'checkout_success', args=[order.order_number]))
+            print('save-info')
+            return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'An error occurred with your form. \
                 Please check your information.')
@@ -98,7 +99,9 @@ def checkout_success(request, order_number):
     Takes order number and renders a success message that order is complete
     """
     save_info = request.session.get('save_info')
+    print('save-session')
     order = get_object_or_404(Order, order_number=order_number)
+    print('order')
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
