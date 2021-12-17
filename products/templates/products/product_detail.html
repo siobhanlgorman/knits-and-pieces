@@ -20,8 +20,8 @@
 
         <div class="col-sm-6 card border shadow py-5 product-detail-image">
             <div class="image-container my-auto">
-                {% if item.product.image1 %}
-                <a href=" {{ product.image.url }}" target="_blank">
+                {% if product.image1 %}
+                <a href=" {{ product.image1.url }}" target="_blank">
                     <img class="product-detail-img card-img-top img-fluid" src="{{ product.image1.url }}"
                         alt="{{ product.name }}"></a>
                 {% else %}
