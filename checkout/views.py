@@ -4,10 +4,10 @@ from django.contrib import messages
 from django.conf import settings
 
 import stripe
-from .forms import OrderForm
-from .models import Order, OrderLineItem
 from products.models import Product
 from bag.contexts import bag_contents
+from .forms import OrderForm
+from .models import Order, OrderLineItem
 
 
 def checkout(request):
