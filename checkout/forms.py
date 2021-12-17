@@ -4,7 +4,11 @@ from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    """
+    Fields for the order form
+    """
     class Meta:
+        """Sets the fields to be used in the order form"""
         model = Order
         fields = ('first_name', 'last_name', 'email', 'phone_number',
                   'street_address1', 'street_address2',
