@@ -1,4 +1,5 @@
 Manual Testing
+extensively tested during development especially with order creation, updating totals, editing line items (see bugs)
 User Stories Testing
 Features Testing
 Browser Compatibility
