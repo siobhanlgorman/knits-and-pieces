@@ -156,14 +156,14 @@ a {
     color: white;
 }
 
-/* Get messages to appear on top */
-/* .message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-    z-index: 9999999999;
-    background: red;
-} */
+/* Allauth form styling */
+
+.allauth-form-inner-content {
+    
+    background-color: rgb(210, 15, 54, .5);
+    color: white;
+}
+
 
 /* -------------------------------- Media Queries */
 
