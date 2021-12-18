@@ -22,6 +22,12 @@ footer {
     flex-shrink: 0;
 }
 
+.page-footer {
+    border-top: 1px solid hsl(348, 87%, 39%);
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
 .title-font {
     font-family: 'Cinzel', serif;
     color: #d20f35;
