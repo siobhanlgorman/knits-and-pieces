@@ -104,7 +104,7 @@ a {
 
 .btn-red {
     /* background-color: #d20f35; */
-    background: #d20f35;
+    background: hsl(348, 87%, 39%);
     color: #dff0d8;
 }
 
@@ -127,6 +127,10 @@ a {
     display: inline-block;
     color: #d20f35;
     font-size: 0.8rem;
+}
+
+.fa-shopping-basket:before {
+    color: #d20f35;
 }
 
 /* product image size to fit card without stretch on main shop page */
@@ -160,8 +164,8 @@ a {
 
 .allauth-form-inner-content {
     
-    background-color: rgb(210, 15, 54, .5);
-    color: white;
+    background-color: hsl(348, 87%, 95%);
+    color: #3a3a3a;
 }
 
 
