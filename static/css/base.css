@@ -97,6 +97,7 @@ a {
 
 /* button styling */
 
+
 .btn-grey-font {
     background: #d3d3d3;
     color: #3a3a3a
@@ -106,6 +107,7 @@ a {
     /* background-color: gray; */
     background: #d3d3d3;
     color: #d20f35;
+    border-color: #d3d3d3;
 }
 
 .btn-red {
