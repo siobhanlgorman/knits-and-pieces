@@ -216,9 +216,9 @@ a {
     border-color: #222;
 }
 
-/* .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
-/* }  */
+.allauth-form-inner-content a {
+	color: #17a2b8;
+} 
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
