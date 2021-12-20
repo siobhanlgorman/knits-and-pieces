@@ -3,6 +3,10 @@
     overflow-y: auto;
 }
 
+.profile-form-input {
+    
+}
+
 #profile-update-form .form-control {
     color: #008000;
 }
