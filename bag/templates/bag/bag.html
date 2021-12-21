@@ -41,7 +41,11 @@
                             {% for item in bag_items %}
                                 <tr>
                                     <td class="p-3 w-25">
+                                        {% if item.product.image1 %}
                                         <img class="img-fluid rounded" src="{{ item.product.image1.url }}" alt="">
+                                        {% else %}
+                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}red_logo2.png">
+                                        {% endif %}
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
@@ -76,10 +80,7 @@
                                                             </span>
                                                         </button>
                                                     </div>
-                                                    <!-- unnecessary as no size choices in db -->
-                                                    <!-- {% if item.product.has_sizes %}
-                                                        <input type="hidden" name="product_size" value="{{ item.size }}">
-                                                    {% endif %} -->
+                                                    
                                                 </div>
                                             </div>
                                         </form>

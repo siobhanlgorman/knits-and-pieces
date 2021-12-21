@@ -3,6 +3,7 @@ from .models import Product, Category
 
 
 class ProductForm(forms.ModelForm):
+    """Form for product management to add products"""
 
     class Meta:
         model = Product

@@ -7,8 +7,8 @@ from django.template.loader import render_to_string
 from django.conf import settings
 
 from products.models import Product
-from .models import Order, OrderLineItem
 from profiles.models import UserProfile
+from .models import Order, OrderLineItem
 
 
 class StripeWH_Handler:
@@ -35,7 +35,6 @@ class StripeWH_Handler:
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
         )
-
 
     def handle_event(self, event):
         """
