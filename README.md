@@ -146,6 +146,7 @@ The pdf files can be seen [here](#))
 
 ### Heroku Deployment
 1. Create Heroku app
+install psycopg2 and djdatabase and add to requirements
 2. Add postgres database to app resources in heroku and copy db url
 3. Attach database to gitpod? : add copied db url
 4. Add secret key for django secret key to env.py and heroku config vars
@@ -153,6 +154,7 @@ The pdf files can be seen [here](#))
 6. REmove Django insecure key and reference SECRET_KEY in settings.py
 7. Point to postgres db in settings.py
 8. Make migrations to postgres db
+9. install gunicorn and add to requirements
 9. aws/ DISABLE_COLLECTSTATIC
 10. Add heroku Hostname to allowed_hosts in settings.py
 11. Procfile: 
