@@ -155,10 +155,12 @@ install psycopg2 and djdatabase and add to requirements
 7. Point to postgres db in settings.py
 8. Make migrations to postgres db
 9. install gunicorn and add to requirements
-9. aws/ DISABLE_COLLECTSTATIC
-10. Add heroku Hostname to allowed_hosts in settings.py
-11. Procfile: 
-
+10. Create Procfile: `web: gunicorn knits_and_pieces.wsgi:application`
+9. DISABLE_COLLECTSTATIC = 1 in config vars
+10. Add heroku Hostname to allowed_hosts in settings.py and local host so gitpod will still work
+11. 
+`````
+```````
 requirements.txt
 ### Local Deployment: Forking and Cloning
 ## Credits
