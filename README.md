@@ -1,4 +1,6 @@
 # Knits and Pieces
+
+https://knits-and-pieces.herokuapp.com/
 ## UX Design
 ### Strategy
 * Introduction
@@ -158,7 +160,9 @@ install psycopg2 and djdatabase and add to requirements
 10. Create Procfile: `web: gunicorn knits_and_pieces.wsgi:application`
 9. DISABLE_COLLECTSTATIC = 1 in config vars
 10. Add heroku Hostname to allowed_hosts in settings.py and local host so gitpod will still work
-11. 
+11. Connect github to repo Knits and Pieces https://github.com/siobhanlgorman/knits-and-pieces
+12. Deploy branch
+13. Live site https://knits-and-pieces.herokuapp.com/
 `````
 ```````
 requirements.txt
