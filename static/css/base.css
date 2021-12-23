@@ -43,6 +43,24 @@ footer {
     text-transform: uppercase;
 }
 
+.carousel-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* .carousel .carousel-item {
+    height: 500px;
+  }
+  
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    max-height: 500px;
+} */
 
 a {
     color: #3a3a3a;
