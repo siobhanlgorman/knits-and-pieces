@@ -46,13 +46,13 @@
             </div>
 
             <div class="row">
-                <h5 class="col card-title">{{ product.name }}</h5>
+                <h5 class="col card-title font-weight-bold text-left">{{ product.name }}</h5>
                 
             </div>
             <div class="row">
                 {% if request.user.is_superuser %}
                         <small class="ml-3">
-                            <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                            <a class="text-success" href="{% url 'edit_product' product.id %}">Edit</a> | 
                             <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                         </small>
                     {% endif %}
@@ -70,37 +70,28 @@
             </div>
             <div class="row">
                 <div class="col card-body">
+                    <h5 class="card-text font-weight-bold">€{{ product.price }}</h5>
                     <p class="card-text">{{ product.description }}</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col card-body">
-                    <p class="card-text">Main Colour: {{ product.get_colour1_display }}
-                    </p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col card-body">
-                    <p class="card-text">Material: {{ product.get_material_display }}</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col card-body">
-                    <p class="card-text">€{{ product.price }}</p>
-                    <p class="card-text">Size: {{ product.item_sizes }}</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col card-body">
-                    {% if can_custom_design is True %}
-                    <p class="card-text">Contact us <a href="">here</a> if you would like to order this item in different colours</p>
-                    <p class="card-text">Pattern name: {{ product.pattern_name }}
+                    <p class="font-weight-bold" >Material and Sizing:</p>
+                    <p class="card-text small">Main Colour: {{ product.get_colour1_display }}
+                    </p>
+                    <p class="card-text small">Material: {{ product.get_material_display }}</p>
+                    <p class="card-text small">Size: {{ product.item_sizes }}</p>
+                    <p class="card-text small">Machine Wash: {% if product.machine_wash %}Yes{% endif %}{% if not product.machine_wash %}No {% endif %}</p>
+                    <p class="card-text small">designed by {{ product.designer }}</p>
+                    <p class="card-text small">Pattern name: {{ product.pattern_name }}
+                    {% if product.can_custom_design %}
+                    <p class="card-text small">Contact us <a class="text-crimson" href="">here</a> if you would like to order this item in different colours.</p>
                     </p>
                     {% endif %}
-                    <p class="card-text">designed by {{ product.designer }}</p>
                 </div>
             </div>
+
             <!-- form to add to basket -->
             <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                 {% csrf_token %}

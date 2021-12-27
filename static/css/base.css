@@ -193,6 +193,10 @@ a {
 
 }
 
+.text-crimson {
+    color: #D20F35;
+}
+
 /* badge for categories */
 .badge {
     background-color: #d20f35;
