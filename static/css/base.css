@@ -34,7 +34,7 @@ footer {
 }
 
 #banner {
-    background-color: gray;
+    background-color: #808080;
     color: white;
 
 }
@@ -47,20 +47,40 @@ footer {
     max-width: 1000px;
     position: relative;
     margin: auto;
+    background-color: white;
 }
 
 
-/* .carousel .carousel-item {
-    height: 500px;
-  }
-  
-.carousel-item img {
-    position: absolute;
-    object-fit:cover;
-    top: 0;
-    left: 0;
-    max-height: 500px;
-} */
+.carousel-caption {
+    color: #white;   
+}
+
+.carousel-caption a {
+    color: #D20F35;
+    text-decoration: none;
+    background-color: #d3d3d3;
+    /* border: 1px solid #D20F35; */
+    padding: 2px 8px;
+    margin: 2px;
+}
+
+.carousel-caption a:hover {
+    color: #3a3a3a;
+}
+
+.carousel-item {
+    /* max-height: 600px; */
+    
+}
+
+
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+    filter: invert(75%);
+}
+
+
 
 a {
     color: #3a3a3a;
