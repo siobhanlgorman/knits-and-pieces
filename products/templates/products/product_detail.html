@@ -38,9 +38,9 @@
                 <div class="card-body likes-icon">
                     <small class="text-muted"><i class="fas fa-star mr-1"></i></small>
                 </div>
-                <div class="card-body product-tag">
+                <div class="card-body">
                     {% if product.tag %}
-                    <p class="card-text">{{ product.tag.friendly_name }}</p>
+                    <p class="card-text text-right"><span class="product-tag">{{ product.tag.friendly_name }}!</span></p>
                     {% endif %}
                 </div>
             </div>
