@@ -253,7 +253,7 @@
               (opens in a new tab)"><i class="fab fa-twitter-square mx-1"></i></a>
               <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page 
               (opens in a new tab)"><i class="fab fa-instagram-square mx-1"></i></a>
-              <a href="#" target="_blank" rel="noopener" aria-label="Contact Us 
+              <a href="{% url 'contact' %}" target="_blank" rel="noopener" aria-label="Contact Us 
               (opens in a new tab)"><i class="fas fa-envelope"></i></a>
             </div>
           </div>
@@ -268,6 +268,9 @@
             </li>
             <li>
               <a href="{% url 'about' %}">About</a>
+            </li>
+            <li>
+              <a href="{% url 'contact' %}">Contact</a>
             </li>
 
             <li>
