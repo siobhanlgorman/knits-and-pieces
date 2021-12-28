@@ -43,6 +43,14 @@ footer {
     text-transform: uppercase;
 }
 
+.navbar {
+    padding: 0;
+}
+
+footer {
+    background-color: #F4F3EE;
+}
+
 /* home page carousel */
 
 .carousel-container {
@@ -50,6 +58,7 @@ footer {
     position: relative;
     margin: auto;
     background-color: white;
+    padding-top: 50px;
 }
 
 .carousel-caption a {
@@ -109,7 +118,8 @@ a {
     color: #00000080;
 }
 
-.shop-button {
+.shop-button,
+.more-button {
     background: #d3d3d3;
     color: #d20f35;
     min-width: 260px;
@@ -275,9 +285,10 @@ a {
         z-index: 1030;
     }
 
-    .header-container {
-        padding-top: 164px;
-    }
+
+    /* .header-container {
+        padding-top: 80px;
+    } */
 
 
 }
