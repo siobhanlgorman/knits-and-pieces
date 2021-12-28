@@ -4,9 +4,9 @@
 {% block page_header %}
 
 <div class="container header-container">
-    <div class="row">
-        <div class="col">
-            What's in here
+    <div class="row text-center">
+        <div class="col title-font d-none d-sm-block bg-white pt-4">
+            <h1>Shop</h1>
         </div>
     </div>
 </div>
@@ -18,7 +18,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt3">
-            <h2 class="title-font">Products</h2>
+            
             {% for c in current_categories %}
             <a class="badge badge-pill" href="{% url 'products' %}?category={{ c.name }}">
                 <span>{{c.friendly_name}}</span>
@@ -93,10 +93,10 @@
                                         <a href="{% url 'products' %}?category={{ product.category.name }}">
                                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                         </a>
-                                    
-                                    {% endif %}
-                                    
-                                        
+
+                                        {% endif %}
+
+
                                     </div>
                                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                                     <small class="text-muted"><i class="fas fa-star mr-1"></i></small>

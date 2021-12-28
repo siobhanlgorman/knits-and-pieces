@@ -26,8 +26,8 @@
                         alt="{{ product.name }}"></a>
                 {% else %}
                 <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}red_logo2.png"
-                        alt="{{ product.name }}" alt="{{ product.name }}"></a>
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}red_logo2.png" alt="{{ product.name }}"
+                        alt="{{ product.name }}"></a>
                 {% endif %}
             </div>
         </div>
@@ -40,22 +40,23 @@
                 </div>
                 <div class="card-body">
                     {% if product.tag %}
-                    <p class="card-text text-right"><span class="product-tag">{{ product.tag.friendly_name }}!</span></p>
+                    <p class="card-text text-right"><span class="product-tag">{{ product.tag.friendly_name }}!</span>
+                    </p>
                     {% endif %}
                 </div>
             </div>
 
             <div class="row">
                 <h5 class="col card-title font-weight-bold text-left">{{ product.name }}</h5>
-                
+
             </div>
             <div class="row">
                 {% if request.user.is_superuser %}
-                        <small class="ml-3">
-                            <a class="text-success" href="{% url 'edit_product' product.id %}">Edit</a> | 
-                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                        </small>
-                    {% endif %}
+                <small class="ml-3">
+                    <a class="text-success" href="{% url 'edit_product' product.id %}">Edit</a> |
+                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                </small>
+                {% endif %}
             </div>
             <div class="row">
                 <div class="col card-body">
@@ -77,7 +78,7 @@
 
             <div class="row">
                 <div class="col card-body">
-                    <p class="font-weight-bold" >Material and Sizing:</p>
+                    <p class="font-weight-bold">Material and Sizing:</p>
                     <p class="small"><strong> Main Colour(s)</strong>: {{ product.get_colour1_display }}
                         {% if product.colour2 %}, {{ product.get_colour2_display }}{% endif %}
                         {% if product.colour3 %}, {{ product.get_colour3_display }}{% endif %}
@@ -85,11 +86,16 @@
                     </p>
                     <p class="card-text small"><strong> Material:</strong> {{ product.get_material_display }}</p>
                     <p class="card-text small"><strong>Size:</strong> {{ product.item_sizes }}</p>
-                    <p class="card-text small"><strong>Machine Wash:</strong> {% if product.machine_wash %}Yes{% endif %}{% if not product.machine_wash %}No {% endif %}</p>
-                    <p class="card-text small"><strong>designed by:</strong> {{ product.designer }}</p>
+                    <p class="card-text small"><strong>Machine Wash:</strong>
+                        {% if product.machine_wash %}Yes{% endif %}{% if not product.machine_wash %}No {% endif %}</p>
+                    <p class="card-text small"><strong>Designed by:</strong> {{ product.designer }}</p>
+                    {% if product.pattern_name %}
                     <p class="card-text small"><strong>Pattern name:</strong> {{ product.pattern_name }}
-                    {% if product.can_custom_design %}
-                    <p class="card-text small"><strong>Contact us <a class="text-crimson" href="">here</a> if you would like to request a custom order of this item in your choice of colours or sizes.<strong></strong></p>
+                        {% endif %}
+                        {% if product.can_custom_design %}
+                        <p class="card-text small"><strong>Contact us <a class="text-crimson" href="">here</a> if you
+                                would like to request a custom order of this item in your choice of colours or
+                                sizes.<strong></strong></p>
                     </p>
                     {% endif %}
                 </div>
@@ -104,14 +110,15 @@
                         <div class="form-group w-50">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <button class="decrement-qty btn btn-grey-font btn-sm rounded-0" 
+                                    <button class="decrement-qty btn btn-grey-font btn-sm rounded-0"
                                         data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
                                         <span class="icon">
                                             <i class="fas fa-minus"></i>
                                         </span>
                                     </button>
                                 </div>
-                                <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                <input class="form-control qty_input" type="number" name="quantity" value="1" min="1"
+                                    max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                                 <div class="input-group-append">
                                     <button class="increment-qty btn btn-grey-font btn-sm rounded-0"
                                         data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
