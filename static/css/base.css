@@ -122,12 +122,15 @@ a {
 .more-button {
     background: #d3d3d3;
     color: #d20f35;
-    min-width: 260px;
+    /* min-width: 260px; */
 }
 
 .shop-button:hover,
 .shop-button:active,
-.shop-button:focus {
+.shop-button:focus 
+.more-button:hover,
+.more-button:active,
+.more-button:focus {
     background: grey;
     color: white !important;
 }
