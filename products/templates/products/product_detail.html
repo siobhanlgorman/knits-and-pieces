@@ -21,7 +21,7 @@
         <div class="col-sm-6 card border shadow py-5 product-detail-image">
             <div class="image-container my-auto">
                 {% if product.image1 %}
-                <a href=" {{ product.image1.url }}" target="_blank">
+                <a href=" {{ product.image1.url }}" target="_blank" class="img-link">
                     <img class="product-detail-img card-img-top img-fluid" src="{{ product.image1.url }}"
                         alt="{{ product.name }}"></a>
                 {% else %}
@@ -87,16 +87,15 @@
                     <p class="card-text small"><strong> Material:</strong> {{ product.get_material_display }}</p>
                     <p class="card-text small"><strong>Size:</strong> {{ product.item_sizes }}</p>
                     <p class="card-text small"><strong>Machine Wash:</strong>
-                        {% if product.machine_wash %}Yes{% endif %}{% if not product.machine_wash %}No {% endif %}</p>
+                    {% if product.machine_wash %}Yes{% endif %}{% if not product.machine_wash %}No {% endif %}</p>
                     <p class="card-text small"><strong>Designed by:</strong> {{ product.designer }}</p>
                     {% if product.pattern_name %}
-                    <p class="card-text small"><strong>Pattern name:</strong> {{ product.pattern_name }}
-                        {% endif %}
-                        {% if product.can_custom_design %}
-                        <p class="card-text small"><strong>Contact us <a class="text-crimson" href="">here</a> if you
-                                would like to request a custom order of this item in your choice of colours or
-                                sizes.<strong></strong></p>
-                    </p>
+                    <p class="card-text small"><strong>Pattern name:</strong> {{ product.pattern_name }}</p>
+                    {% endif %}
+                    {% if product.can_custom_design %}
+                    <p class="card-text small"><strong>Contact us <a class="text-crimson" href="">here</a> if you
+                            would like to request a custom order of this item in your choice of colours or
+                            sizes.</strong></p>
                     {% endif %}
                 </div>
             </div>
