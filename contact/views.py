@@ -3,6 +3,7 @@ from django.contrib import messages
 
 from .forms import ContactForm
 
+
 def contact(request):
     """ A view to return the contact page"""
     if request.method == 'POST':
