@@ -84,6 +84,14 @@ a {
     color: #3a3a3a;
 }
 
+a:hover,
+a:active,
+a:focus {
+    background: grey;
+    color: white !important;
+    text-decoration: none;
+}
+
 /* back to top button */
 
 .btt-link,
@@ -118,13 +126,13 @@ a {
     color: #00000080;
 }
 
-.shop-button,
+/* .shop-button,
 .more-button {
     background: #d3d3d3;
     color: #d20f35;
     /* min-width: 260px; */
-}
-
+} */
+/* 
 .shop-button:hover,
 .shop-button:active,
 .shop-button:focus 
@@ -133,7 +141,7 @@ a {
 .more-button:focus {
     background: grey;
     color: white !important;
-}
+} */
 
 /* button styling */
 
