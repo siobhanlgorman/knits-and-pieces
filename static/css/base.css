@@ -99,6 +99,7 @@ a:focus {
     text-decoration: none;
 }
 
+
 /* back to top button */
 
 .btt-link,
@@ -235,15 +236,15 @@ a:focus {
 
 .allauth-form-inner-content {
     border: 1px solid gray;
-    
     box-shadow: 5px 10px #888888;
 }
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
 }
+
 .allauth-form-inner-content input {
-    border-color: #3a3a3a;
+    /* border-color: #3a3a3a; */
     border-radius: 0;
 }
 
@@ -266,6 +267,7 @@ a:focus {
     -ms-user-select: none;
     user-select: none;
     background-color: hsl(348, 87%, 39%);
+    color: #dff0d8;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -276,13 +278,13 @@ a:focus {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
-    border-color: #222;
+	background: grey;
+    color: white;
+    text-decoration: none;
 }
 
-.allauth-form-inner-content a {
-	color: #17a2b8;
+.allauth-form-inner-content p a {
+	color: #d20f35;
 } 
 /* -------------------------------- Media Queries */
 
