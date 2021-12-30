@@ -10,7 +10,8 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Thanks for your message. We will be in touch shortly.')
+            messages.success(
+                request, 'Thanks for your message. We will be in touch shortly.')
             return redirect('contact')
 
     form = ContactForm()
