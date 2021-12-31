@@ -1,8 +1,6 @@
 """Imports"""
 from django.db import models
 
-from products.models import Product
-
 
 class CustomOrder(models.Model):
     name = models.CharField(max_length=100, blank=False)
@@ -104,9 +102,8 @@ class CustomOrder(models.Model):
         (MIX, 'Mix'),
     ]
 
-    pattern_name = models.CharField(
+    design = models.CharField(
         max_length=100, blank=True, default="", choices=PATTERN_OPTIONS)
-
 
     def __str__(self):
         return f'{ self.name }'

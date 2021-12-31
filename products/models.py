@@ -144,7 +144,8 @@ class Product(models.Model):
     pattern_name = models.CharField(
         max_length=100, blank=True, default="", choices=PATTERN_OPTIONS)
     designer = models.CharField(max_length=50, blank=True, default="")
-    can_custom_design = models.BooleanField(default=False, null=True, blank=True)
+    can_custom_design = models.BooleanField(
+        default=False, null=True, blank=True)
     likes = models.ManyToManyField(
         User, related_name='product_likes', blank=True)
 
