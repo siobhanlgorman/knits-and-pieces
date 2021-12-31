@@ -3,10 +3,10 @@ from django.db import models
 
 
 class CustomOrder(models.Model):
+    """Model for Custom Order Form"""
     name = models.CharField(max_length=100, blank=False)
     email = models.EmailField(max_length=500, blank=False)
     date_sent = models.DateTimeField(auto_now_add=True)
-    message = models.TextField()
 
     SMALL = 'S'
     MEDIUM = 'M'
@@ -103,7 +103,9 @@ class CustomOrder(models.Model):
     ]
 
     design = models.CharField(
-        max_length=100, blank=True, default="", choices=PATTERN_OPTIONS)
+        max_length=100, blank=True, default=MIX, choices=PATTERN_OPTIONS)
+
+    message = models.TextField(blank=True)
 
     def __str__(self):
         return f'{ self.name }'

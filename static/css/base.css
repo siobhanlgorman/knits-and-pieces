@@ -286,6 +286,19 @@ a:focus {
 .allauth-form-inner-content p a {
 	color: #d20f35;
 } 
+
+/* Custom order form carousel */
+
+/* .design-carousel {
+    background-color: grey;
+} */
+
+/* .design-carousel-container {
+    background-color: grey;
+} */
+
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
