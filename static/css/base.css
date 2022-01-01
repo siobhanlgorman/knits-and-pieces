@@ -70,9 +70,9 @@ footer i {
 }
 
 .carousel-caption a {
-    color: #D20F35;
+    color: #3a3a3a;
     text-decoration: none;
-    background-color: #d3d3d3;
+    background-color: #fff;
     padding: 2px 8px;
     margin: 2px;
 }
@@ -159,12 +159,13 @@ a:focus {
     color: #3a3a3a
 }
 
-.btn-grey {
+/* .btn-grey {
     /* background-color: gray; */
-    background: #d3d3d3;
+    /* background: white;
     color: #d20f35;
-    border-color: #d3d3d3;
-}
+    border: 1px solid;
+    border-color: #d20f35;
+} */
 
 .btn-red {
     /* background-color: #d20f35; */
@@ -204,14 +205,6 @@ a:focus {
     object-fit: contain;
 }
 
-.card-img-top {
-
-    /* height: 25vh; */
-    /* object-fit: cover; */
-    /* object-fit: contain;
-    padding-top: 1.5rem;
-    /* width: 100%; */
-}
 
 .product-tag {
     background-color: #FFBC0A;
@@ -279,7 +272,7 @@ a:focus {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-	background: grey;
+	background: #808080;
     color: white;
     text-decoration: none;
 }
@@ -288,7 +281,6 @@ a:focus {
 	color: #d20f35;
 } 
 
-/* Custom order form carousel */
 
 /* .design-carousel {
     background-color: grey;
@@ -298,8 +290,11 @@ a:focus {
     background-color: grey;
 } */
 
-.design-carousel.carousel-caption h5 {
-    background-color: silver;
+.design-carousel .carousel-caption h5 {
+    background-color: #fff;
+    color: #3a3a3a;
+    padding: 2px 8px;
+    margin: 2px;
 }
 
 /* About Page */
