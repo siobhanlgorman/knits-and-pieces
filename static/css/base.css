@@ -297,7 +297,13 @@ a:focus {
     margin: 2px;
 }
 
+.custom-order-form {
+    border: 1px solid gray;
+    box-shadow: 5px 10px #888888;
+}
+
 /* About Page */
+
 
 
 /* -------------------------------- Media Queries */

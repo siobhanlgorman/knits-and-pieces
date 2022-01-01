@@ -9,13 +9,12 @@
         </div>
     </div>
     <hr>
+
     <div class="row text-center pt-4 mb-1">
-        <div class="col">
-            <p>Fill in this form to order a blanket to your specification.</p>
-        </div>
+        
     </div>
     <div class="row justify-content-center pt-4">
-        <div class="col-4 design-carousel-container mb-4 pb-2">
+        <div class="col-8 design-carousel-container mb-4 pb-2">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -116,7 +115,10 @@
         </div>
     </div>
     <div class="row justify-content-center pt-2">
-        <div class="col-12 col-lg-8">
+        <div class="col-12 col-lg-8 custom-order-form pt-2">
+          <div class="col">
+            <p class="text-justify">To order a throw or bedcover made to your size and colour specifications please fill in this form. Choose from the designs pictured above. For a random pattern selection, please choose mix. We will get back to you with a quote shortly.</p>
+        </div>
             <form action="" method="POST" enctype='multipart/form-data'>
                 {% csrf_token %}
                 {{ form | crispy }}
