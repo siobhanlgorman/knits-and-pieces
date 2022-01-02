@@ -45,10 +45,17 @@ footer i {
 }
 
 #banner {
-    background-color: #808080;
+    background-color: hsl(0, 0%, 39%);
     color: white;
+    font-size: largest;
+
 
 }
+/* 
+#banner h4 {
+    font-size: large;
+    font-weight: 600;
+} */
 
 .logo-font {
     text-transform: uppercase;
@@ -161,7 +168,7 @@ a:focus {
 }
  
 .btn-grey {
-    background-color: gray;
+    background-color: hsl(0, 0%, 39%);
     
     color: #fff;
     
