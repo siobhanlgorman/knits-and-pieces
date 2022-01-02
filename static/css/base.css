@@ -158,14 +158,14 @@ a:focus {
     background: #d3d3d3;
     color: #3a3a3a
 }
-
-/* .btn-grey {
-    /* background-color: gray; */
-    /* background: white;
+ 
+ .btn-grey {
+    background-color: gray;
+    background: white;
     color: #d20f35;
     border: 1px solid;
     border-color: #d20f35;
-} */
+}
 
 .btn-red {
     /* background-color: #d20f35; */

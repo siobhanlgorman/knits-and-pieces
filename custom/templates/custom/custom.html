@@ -14,7 +14,7 @@
         
     </div>
     <div class="row justify-content-center pt-4">
-        <div class="col-8 design-carousel-container mb-4 pb-2">
+        <div class="col-10 col-lg-4 design-carousel-container mb-4 pb-2">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -24,105 +24,107 @@
                 <div class="carousel-inner design-carousel">
                   <div class="carousel-item active">
                     <img src="{{ MEDIA_URL }}dreams200.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                       <h5>Design: Dreams</h5>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="{{ MEDIA_URL }}flower200.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                       <h5>Design: Flower</h5>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="{{ MEDIA_URL }}flowerb200.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                       <h5>Design: Flower</h5>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="{{ MEDIA_URL }}flowerc200.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                       <h5>Design: Flower</h5>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="{{ MEDIA_URL }}granny200.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                       <h5>Design: Granny</h5>
                      
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="{{ MEDIA_URL }}grannyb200.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                       <h5>Design: Granny</h5>
                       
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="{{ MEDIA_URL }}ice200.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                       <h5>Design: Ice</h5>
                      
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="{{ MEDIA_URL }}lacy_sun200.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                       <h5>Design: Lacy Sun</h5>
                      
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="{{ MEDIA_URL }}spiked_stripe200.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                       <h5>Design: Spiked Stripe</h5>
                       
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="{{ MEDIA_URL }}stripe200.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                       <h5>Design: Stripe</h5>
                       
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="{{ MEDIA_URL }}sun200.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                       <h5>Design: Sun</h5>
                       
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="{{ MEDIA_URL }}ice200.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                       <h5>Design: Ice</h5>
                       
                     </div>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
               </div>
         </div>
     </div>
     <div class="row justify-content-center pt-2">
-        <div class="col-12 col-lg-8 custom-order-form pt-2">
+        <div class="col-10 col-lg-6 custom-order-form pt-2">
           <div class="col">
             <p class="text-justify">To order a throw or bedcover made to your size and colour specifications please fill in this form. Choose from the designs pictured above. For a random pattern selection, please choose mix. We will get back to you with a quote shortly.</p>
         </div>
             <form method="POST" enctype='multipart/form-data'>
                 {% csrf_token %}
                 {{ form | crispy }}
-                <input type="submit" value="Send" class="btn btn-red">
+                <input type="submit" value="Send" class="btn btn-red mb-2">
             </form>
         </div>
     </div>
