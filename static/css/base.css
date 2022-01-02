@@ -160,12 +160,11 @@ a:focus {
     color: #3a3a3a
 }
  
- .btn-grey {
+.btn-grey {
     background-color: gray;
-    background: white;
-    color: #d20f35;
-    border: 1px solid;
-    border-color: #d20f35;
+    
+    color: #fff;
+    
 }
 
 .btn-red {
