@@ -23,8 +23,8 @@
                 <hr>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
+        <div class="row justify-content-center pt-2">
+            <div class="col-10 form-border-style">
                 {% if bag_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
@@ -84,8 +84,9 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <a class="update-link text-info"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{item.item_id}}"><small>Remove</small></a>
+                                        <a class="update-link green-button"><small>Update</small></a>
+                                        <a class="remove-item bg-danger" id="remove_{{item.item_id}}"><small>Remove</small></a>
+                                        
                                         
                                     </td>
                                     <td class="py-3">

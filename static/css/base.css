@@ -29,9 +29,6 @@ footer {
     flex-shrink: 0;
 }
 
-
-
-
 .page-footer {
     border-top: 1px solid hsl(348, 87%, 39%);
     padding-top: 1rem;
@@ -58,11 +55,6 @@ footer i {
 
 
 }
-/* 
-#banner h4 {
-    font-size: large;
-    font-weight: 600;
-} */
 
 .logo-font {
     text-transform: uppercase;
@@ -125,6 +117,10 @@ a:focus {
     cursor: pointer;
 }
 
+.remove-item {
+    background: red;
+}
+
 .btt-button {
     height: 40px;
     width: 40px;
@@ -150,23 +146,6 @@ a:focus {
     color: #00000080;
 }
 
-/* .shop-button,
-.more-button {
-    background: #d3d3d3;
-    color: #d20f35;
-    /* min-width: 260px; */
-
-/* 
-.shop-button:hover,
-.shop-button:active,
-.shop-button:focus 
-.more-button:hover,
-.more-button:active,
-.more-button:focus {
-    background: grey;
-    color: white !important;
-} */
-
 /* button styling */
 
 .btn-grey-font {
@@ -178,7 +157,6 @@ a:focus {
     background-color: hsl(0, 0%, 39%);
     
     color: #fff;
-    
 }
 
 .btn-red {
@@ -196,11 +174,14 @@ a:focus {
     color: white !important;
 }
 
-.edit-button {
+.green-button {
     background-color: hsl(134deg 61% 33%);
     color: #fff;
 }
 
+.increment-qty, .decrement-qty {
+    padding: 0.25rem, 0.5rem;
+}
 
 /* shopping basket icon and total badge */
 .basket-icon {
@@ -224,7 +205,6 @@ a:focus {
     object-fit: contain;
 }
 
-
 .product-tag {
     background-color: #FFBC0A;
     padding: 2px 8px;
@@ -240,6 +220,7 @@ a:focus {
 }
 
 /* badge for categories */
+
 .badge {
     background-color: #d20f35;
     color: white;
@@ -300,15 +281,6 @@ a:focus {
 	color: #d20f35;
 } 
 
-
-/* .design-carousel {
-    background-color: grey;
-} */
-
-/* .design-carousel-container {
-    background-color: grey;
-} */
-
 .design-carousel .carousel-caption h5 {
     color: #3a3a3a;
     font-family: 'Cinzel', serif;
@@ -320,13 +292,12 @@ a:focus {
     margin: 2px;
 }
 
-.custom-order-form {
+.form-border-style {
     border: 1px solid gray;
     box-shadow: 5px 10px #888888;
 }
 
-/* About Page */
-
+/* Product Detail Page */
 
 
 /* -------------------------------- Media Queries */
