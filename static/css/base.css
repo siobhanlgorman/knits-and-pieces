@@ -148,7 +148,7 @@ a:focus {
     background: #d3d3d3;
     color: #d20f35;
     /* min-width: 260px; */
-} */
+
 /* 
 .shop-button:hover,
 .shop-button:active,
@@ -175,7 +175,6 @@ a:focus {
 }
 
 .btn-red {
-    /* background-color: #d20f35; */
     background: hsl(348, 87%, 39%);
     color: #dff0d8;
 }
@@ -189,6 +188,12 @@ a:focus {
     background: grey;
     color: white !important;
 }
+
+.edit-button {
+    background-color: hsl(134deg 61% 33%);
+    color: #fff;
+}
+
 
 /* shopping basket icon and total badge */
 .basket-icon {
