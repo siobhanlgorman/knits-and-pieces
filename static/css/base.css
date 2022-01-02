@@ -73,6 +73,7 @@ footer i {
     color: #3a3a3a;
     text-decoration: none;
     background-color: #fff;
+    border: 1px solid #3a3a3a;
     padding: 2px 8px;
     margin: 2px;
 }
@@ -291,8 +292,12 @@ a:focus {
 } */
 
 .design-carousel .carousel-caption h5 {
-    background-color: #fff;
     color: #3a3a3a;
+    font-family: 'Cinzel', serif;
+    background-color: #fff;
+    border: 1px solid #3a3a3a;
+    padding: 2px 8px;
+    margin: 2px;
     padding: 2px 8px;
     margin: 2px;
 }
