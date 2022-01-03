@@ -19,6 +19,7 @@
 
 {% block content  %}
 
+<section>
 <div class="container">
     <div class="row">
         <div class="col title-font text-center">
@@ -96,7 +97,7 @@
                     <div class="form-check form-check-inline float-right mr-0">
                         {% if user.is_authenticated %}
 
-                        <label class="form-check-label" for="id-save-info" name="save-info">Save this delivery information to my profile</label>
+                        <label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
                         <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info"
                             checked>
                         {% else %}
@@ -148,7 +149,7 @@
         </span>
     </div>
 </div>
-
+</section>
 {% endblock %}
 {% block postloadjs %}
 {{ block.super }}
