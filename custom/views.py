@@ -10,8 +10,7 @@ def custom(request):
         form = CustomOrderForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(
-                request, 'Thanks for your message. We will be in touch with your quote shortly.')
+            messages.success(request, 'Thanks for your message. We will be in touch with your quote shortly.')
             return redirect('custom')
 
     form = CustomOrderForm()

@@ -84,10 +84,10 @@ footer i {
     padding: 2px 8px;
     margin: 2px;
 }
-
+/* 
 .carousel-caption a:hover {
     color: #3a3a3a;
-}
+} */
 
 
 .carousel-control-next,
@@ -169,9 +169,17 @@ a:focus {
 .btn-grey:focus,
 .btn-red:hover,
 .btn-red:active,
-.btn-red:focus {
+.btn-red:focus,
+.delete-button a:hover,
+.delete-button a:active,
+.delete-button a:focus {
     background: grey;
     color: white !important;
+}
+
+.delete-button {
+    background-color: #d20f35;
+    color: #fff;
 }
 
 .green-button {

@@ -99,7 +99,7 @@
                                     {% if request.user.is_superuser %}
                                     <small>
                                         <a class="green-button text-light p-1" href="{% url 'edit_product' product.id %}">Edit</a>
-                                        <a class="bg-danger text-light p-1" href="{% url 'delete_product' product.id %}">Delete</a>
+                                        <a class="delete-button bg-danger text-light p-1" href="{% url 'delete_product' product.id %}">Delete</a>
                                     </small>
                                     {% endif %}
                                 </div>

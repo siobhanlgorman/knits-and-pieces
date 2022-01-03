@@ -15,7 +15,7 @@ class ProductForm(forms.ModelForm):
 
     image2 = forms.ImageField(
         label='Image2', required=False, widget=CustomClearableFileInput)
-        
+
     image3 = forms.ImageField(
         label='Image3', required=False, widget=CustomClearableFileInput)
 
