@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /bag/
+Sitemap: https://knits-and-pieces.herokuapp.com/sitemap.xml
