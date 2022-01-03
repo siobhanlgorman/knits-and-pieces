@@ -85,6 +85,14 @@ The goal of the project is to create an online store for this developer's handma
 |           6.2 | Registered Shopper | Update/Delete my comments                                           | Control my own contribution to the site                                                                       |                 |
 
 * SEO and Web Marketing
+- SEO 
+Keywords in titles as much as possible
+Research on short and long-tail keywords was conducted via google searches to find the search words and phrases thatm most related to a site like Knits and Pieces. Handmade was particularly crucial to a good search result when incorporated with the product categories and craft type. Keywords were incorporated into the meta tags and headings where appropriate while not overloading the site content and maintaining the usefulness of the site.
+- Web Marketing
+Paid web advertising is not currently within the scope of this project. However a newsletter link has been added to the website as an easy way for a small business such as Knits and Pieces to reach customers and keep them up to date with new products, special offers and to keep the ecommerce store fresh.
+Newsletter
+A Facebook business page was set up for the purposes of this project. This is another method for a small business to reach new customers and retain existing customers. Since the business is not currently live this site may have been taken down. A screenshot is provided: [#]
+A future intention to increase the site's usefulness to customers is to add a craft blog to the site with links to videos on interesting stitches and patterns and links to othe interesting websites and YouTube videos. This would evoke a positive emotional response in customers and in turn build trust and loyalty to the business. It would also provide a means to keep the site up to date, relevant and fresh in customers' minds. 
 
 ### Scope
 * Functional Requirements
