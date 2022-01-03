@@ -39,10 +39,8 @@
                     {% endif %}
                 </div>
             </div>
-
             <div class="row">
                 <h5 class="col card-title font-weight-bold text-left">{{ product.name }}</h5>
-
             </div>
             <div class="row">
                 {% if request.user.is_superuser %}
@@ -56,25 +54,29 @@
             <div class="row">
                 <div class="col card-body">
                     {% if product.category %}
-                    <div class="p card-text small mt-2 mb-0">
+                    <p class="card-text small mt-2 mb-0">
                         <a href="{% url 'products' %}?category={{ product.category.name }}">
                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                         </a>
-                    </div>
+                    </p>
                     {% endif %}
                 </div>
             </div>
             <div class="row">
                 <div class="col card-body">
                     <h5 class="card-text font-weight-bold">€{{ product.price }}</h5>
-                    <p class="card-text">{{ product.description }}</p>
+                    <br>
+                    <p class="font-weight-bold">Description:</p> 
+                    <hr>
+                    <p class="card-text small">{{ product.description }}</p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col card-body">
-                    <p class="font-weight-bold">Material and Sizing:</p>
-                    <p class="small"><strong> Main Colour(s)</strong>: {{ product.get_colour1_display }}
+                    <p class="font-weight-bold">Details:</p>
+                    <hr>
+                    <p class="card-text small"><strong> Main Colour(s)</strong>: {{ product.get_colour1_display }}
                         {% if product.colour2 %}, {{ product.get_colour2_display }}{% endif %}
                         {% if product.colour3 %}, {{ product.get_colour3_display }}{% endif %}
                         {% if product.colour4 %}, {{ product.get_colour4_display }}{% endif %}
