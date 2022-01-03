@@ -21,13 +21,11 @@
         <div class="col-sm-6 card border shadow py-5 product-detail-image">
             <div class="image-container my-auto">
                 {% if product.image1 %}
-                <a href=" {{ product.image1.url }}" target="_blank" class="img-link">
-                    <img class="product-detail-img card-img-top img-fluid" src="{{ product.image1.url }}"
-                        alt="{{ product.name }}"></a>
+                <img class="product-detail-img card-img-top img-fluid" src="{{ product.image1.url }}"
+                    alt="{{ product.name }}">
                 {% else %}
-                <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}red_logo2.png" alt="{{ product.name }}"
-                        alt="{{ product.name }}"></a>
+                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}red_logo2.png" alt="{{ product.name }}"
+                    alt="{{ product.name }}">
                 {% endif %}
             </div>
         </div>
