@@ -8,7 +8,6 @@
             <div class="col"></div>
         </div>
     </div>
-
 {% endblock %}
 
 {% block content  %}
@@ -75,7 +74,6 @@
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
-
                             {% for item in bag_items %}
                                 <tr>
                                     <td class="p-3 w-25">
@@ -103,7 +101,6 @@
                             <td colspan="5" class="text-right">
                                 {% include "bag/checkout-buttons.html" %}
                             </td></tr>
-
                         </table>
                     </div>
 
@@ -115,13 +112,9 @@
                 <span>Back to Shop</span>
             </a>
                 {% endif %}
-
             </div>
         </div>
-
-
     </div>
-    
 </section>
 {% endblock %}
 
