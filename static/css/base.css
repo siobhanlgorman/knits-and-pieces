@@ -314,6 +314,10 @@ a:focus {
     font: 14px Helvetica, Arial, sans-serif;
   }
 
+#mc_embed_signup .button {
+    background-color: #d20f35;
+    
+  }
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
