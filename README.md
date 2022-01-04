@@ -91,7 +91,7 @@ Research on short and long-tail keywords was conducted via google searches to fi
 - Web Marketing
 Paid web advertising is not currently within the scope of this project. However a newsletter link has been added to the website as an easy way for a small business such as Knits and Pieces to reach customers and keep them up to date with new products, special offers and to keep the ecommerce store fresh.
 Newsletter
-A Facebook business page was set up for the purposes of this project. This is another method for a small business to reach new customers and retain existing customers. Since the business is not currently live this site may have been taken down. A screenshot is provided: [#] https://www.facebook.com/Knits-and-Pieces-111739761381732
+A Facebook business page was set up for the purposes of this project. This is another method for a small business to reach new customers and retain existing customers. Since the business is not currently live this site may have been taken down. A screenshot is provided. [Link to Facebook business page](https://www.facebook.com/Knits-and-Pieces-111739761381732)
 
 ![](documentation/screenshots/fbpage800.png)
 
