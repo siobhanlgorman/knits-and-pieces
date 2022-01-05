@@ -42,9 +42,18 @@ footer i {
     color: #d20f35;
 }
 
+.title-container {
+    margin-bottom: 4px;
+}
+
 .title-font {
     font-family: 'Cinzel', serif;
     color: #d20f35;
+}
+
+.title-container h1 {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 #banner {
@@ -338,19 +347,9 @@ a:focus {
     }
 
 
-    /* .header-container {
-        padding-top: 80px;
-    } */
-
-
-}
-
 @media (max-width: 992px) {
 
-    /* .header-container {
-        padding-top: 164px;
-    } */
-
+    
     #banner h4 {
         font-size: .8rem;
 
