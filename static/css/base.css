@@ -59,11 +59,7 @@ footer i {
 #banner {
     /* background-color: hsl(0, 0%, 39%); */
     background-color: #d20f35;
-
     color: white;
-    font-size: largest;
-
-
 }
 
 .logo-font {
@@ -73,7 +69,6 @@ footer i {
 .navbar {
     padding: 0;
 }
-
 
 /* home page carousel */
 
@@ -197,7 +192,7 @@ a:focus {
 }
 
 .increment-qty, .decrement-qty {
-    padding: 0.25rem, 0.5rem;
+    padding: 0.25rem 0.5rem;
 }
 
 /* shopping basket icon and total badge */
@@ -338,18 +333,18 @@ a:focus {
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
-    .fixed-top-desktop-only {
+    /* .fixed-top-desktop-only {
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
         z-index: 1030;
-    }
-
+    } */
+}
 
 @media (max-width: 992px) {
 
-    
+
     #banner h4 {
         font-size: .8rem;
 
