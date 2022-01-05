@@ -119,7 +119,7 @@ A future intention to increase the site's usefulness to customers is to add a cr
 * Wireframes
 The pdf files can be seen [here](#))
 
-![](documentation/screenshots/home_wire1.png)
+![](documentation/wireframes/home-page.png)
 
 * Home Page
 
