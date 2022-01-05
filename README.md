@@ -117,13 +117,20 @@ A future intention to increase the site's usefulness to customers is to add a cr
 
 ### Skeleton
 * Wireframes
-The pdf files can be seen [here](#))
+The wireframes can be seen here [here](https://github.com/siobhanlgorman/knits-and-pieces/tree/main/documentation/wireframes))
 
-![](documentation/wireframes/home-page.png)
 
-* Home Page
-
-![](documentation/wireframes/home.png)
+* [Home Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/home-page.png))
+* [About Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/about-page.png))
+* [Bag Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/bag-page.png))
+* [Checkout Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/checkout-page.png))
+* [Contact Form Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/contact-form-page.png))
+* [Custom Order Form Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/custom-order-form.png))
+* [Products Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/products-page.png))
+* [Product Detail Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/product-detail-page.png))
+* [Register Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/register-page.png))
+* [Sign In Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/signin-page.png))
+* [Sign Out Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/signout-page.png))
 
 ### Surface
 
