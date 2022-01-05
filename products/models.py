@@ -37,7 +37,7 @@ class Product(models.Model):
     """A model for the product"""
     category = models.ForeignKey(
         'Category', null=True, blank=True, on_delete=models.SET_NULL)
-    name = models.CharField(max_length=200)
+    name = models.CharField(max_length=200, unique=True)
 
     ONE_SIZE = 'OS'
     SMALL = 'S'
