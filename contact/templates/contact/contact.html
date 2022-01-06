@@ -16,7 +16,7 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-10 col-lg-8 form-border-style">
-            <form action="" method="post">
+            <form method="post">
                 {% csrf_token %}
                 {{ form | crispy }}
                 <input type="submit" value="Send" class="btn btn-red">

@@ -26,32 +26,14 @@ body > header > nav > a:hover {
     background-color: transparent;
 }
 
+
+
+
+
 body > footer > div.container-fluid.text-center > div > div.col-md-6.mt-md-0.mt-3 > div:nth-child(1) > div > div:nth-child(1) > div > a:hover {
     background-color: transparent;
 }
 
-
-
-.logo-img img a:hover {
-    color: green;
-}
-
-.navbar-brand > a:hover {
-    color: green;
-}
-
-
-.navbar-brand:hover {
-    color: green!important;
-}
-
-.nav > .navbar > navbar-brand:hover {
-    color: green;
-}
-
-.navbar-brand:hover {
-    color: green;
-}
 
 footer {
     flex-shrink: 0;
@@ -108,6 +90,13 @@ footer i {
 
 /* navbar links */
 
+#navbarSupportedContent > ul > li > a:hover,
+#navbarSupportedContent > ul > li > a:active,
+#navbarSupportedContent > ul > li > a:focus {
+    background-color:grey;
+    color: #fff;
+} 
+
 .dropdown-menu > li > ul> li > a:hover, .dropdown-menu > li > ul > li > a:focus, 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     background-color:grey;
@@ -116,6 +105,7 @@ footer i {
 .dropdown-menu > .dropdown-menu.active, .dropdown-item:hover,
 .dropdown-menu > .dropdown-menu.active, .dropdown-item:active {
     background-color: grey;
+    color: white;
 }
 
 .dropdown-menu > li > ul> li,
@@ -155,32 +145,52 @@ a {
     color: #3a3a3a;
     text-decoration: none;
     transition: all 0.2 ease-in-out;
-}
-
-
-
-.info-text a {
-    color: #d20f35;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 a:hover,
 a:focus {
+    text-decoration: none;
+}
+
+.info-text a {
+    color: #d20f35;
+    transition: all 0.2 ease-in-out;
+}
+
+.info-text a:hover,
+.info-text a:active,
+.info-text a:focus {
+    color: #ba0d30;
+}
+
+
+
+footer a:hover,
+footer a:focus {
+    background: grey;
+    color: white;
+}
+/* a:hover,
+a:focus {
     background: grey;
     color: white !important;
-}
+} */
 
 
 /* back to top button */
 
 .btt-link,
-.update-link,
-.remove-item {
+.update-btn,
+.remove-btn {
     color: white;
     cursor: pointer;
 }
 
-.remove-item {
+.remove-btn {
     background: red;
+    color: #fff;
 }
 
 .btt-button {
@@ -217,36 +227,60 @@ a:focus {
  
 .btn-grey {
     background-color: hsl(0, 0%, 39%);
-    
     color: #fff;
 }
 
 .btn-red {
+    background: #d20f35;
+    color: white;
+}
+
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus {
     background: #ba0d30;
     color: #dff0d8;
 }
 
 .btn-grey:hover,
 .btn-grey:active,
-.btn-grey:focus,
-.btn-red:hover,
-.btn-red:active,
-.btn-red:focus,
-.delete-button a:hover,
-.delete-button a:active,
-.delete-button a:focus {
-    background: #808080;
+.btn-grey:focus {
+    background: hsl(0, 0%, 32%);
+    color: white;
+}
+
+
+.remove-btn:hover,
+.remove-btn:active,
+.remove-btn:focus,
+.delete-button:hover,
+.delete-button:active,
+.delete-button:focus {
+    background: #ba0d30;
     color: white !important;
 }
 
+.remove-btn,
 .delete-button {
     background-color: #d20f35;
     color: #fff;
 }
 
-.green-button {
+.update-btn,
+.edit-btn {
     background-color: hsl(134deg 61% 33%);
     color: #fff;
+
+}
+
+.update-btn:hover,
+.update-btn:active,
+.update-btn:focus,
+.edit-button:hover,
+.edit-button:active,
+.edit-button:focus {
+    background: hsl(134deg 61% 23%);
+    color: white !important;
 }
 
 .increment-qty, .decrement-qty {
@@ -377,12 +411,21 @@ a:focus {
   }
 
 #mc_embed_signup .button {
-    background-color: #ba0d30;
-    color: #dff0d8;
+    background-color: #d20f35;
+    color: #fff;
     text-transform: uppercase;
     font-family: 'Cinzel', serif;
-    
   }
+
+#mc_embed_signup .button:hover,
+#mc_embed_signup .button:active,
+#mc_embed_signup .button:focus {
+    background-color: #ba0d30;
+    color: #dff0d8;
+
+  }
+
+
 
 #mc_embed_signup form {
     padding: 10px;

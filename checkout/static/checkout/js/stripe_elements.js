@@ -2,7 +2,7 @@
     Core logic/payment flow for this comes from here:
     https://stripe.com/docs/payments and Boutique Ado walkthrough
 */
-
+/* jshint esversion: 8, jquery: true */
 const stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
 const clientSecret = $('#id_client_secret').text().slice(1, -1);
 const stripe = Stripe(stripePublicKey);
