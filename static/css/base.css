@@ -342,7 +342,7 @@ a:focus {
 
 /* Mailchimp */
 #mc_embed_signup {
-    background: #fff;
+    /* background: #fff; */
     clear: left;
     font: 14px 'Roboto', sans-serif;
   }
@@ -354,6 +354,14 @@ a:focus {
     font-family: 'Cinzel', serif;
     
   }
+
+#mc_embed_signup form {
+    padding: 10px;
+}
+
+#mc_embedsignu .mc-field-group {
+    width: 100%;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
