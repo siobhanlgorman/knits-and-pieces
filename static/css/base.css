@@ -72,9 +72,6 @@ footer i {
     text-transform: uppercase;
 }
 
-a a:hover {
-    color: hotpink;
-}
 
 .navbar {
     padding: 0;
@@ -92,6 +89,10 @@ a a:hover {
     background-color: grey;
 }
 
+.dropdown-menu > li > ul> li,
+.dropdown-menu > li {
+    transition: all 0.2 ease-in-out;
+}
 
 /* home page carousel */
 
@@ -111,10 +112,6 @@ a a:hover {
     padding: 2px 8px;
     margin: 2px;
 }
-/* 
-.carousel-caption a:hover {
-    color: #3a3a3a;
-} */
 
 
 .carousel-control-next,
@@ -128,6 +125,7 @@ a a:hover {
 a {
     color: #3a3a3a;
     text-decoration: none;
+    transition: all 0.2 ease-in-out;
 }
 
 
@@ -140,7 +138,6 @@ a:hover,
 a:focus {
     background: grey;
     color: white !important;
-    /* text-decoration: none; */
 }
 
 
