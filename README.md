@@ -158,8 +158,9 @@ The wireframes can be seen here [here](https://github.com/siobhanlgorman/knits-a
 - Crimson for Title font
 - Charcoal - main font colour #3a3a3a
 * Typography
-- Great Vibes for Titles - fancy, elegant, commanding
+- Cinzel for Titles - fancy, elegant, commanding
 * Images
+- The images used for the website were all taken and edited by this developer as the ecommerce products are all the developer's own. The approach was to create transparent backgrounds to highlight the products and their colours in isolation and against a plain white background. This was a learning experience and proved more time-consuming than anticipated. As a result some images could be improved given more time but are satisfactory for the purposes of this project. Paint 3D was used to remove the backgrounds, crop and resize the images. [removebg](https://www.remove.bg/upload) was also used where the size reduction did not compromise the quality.
 * Accessibility
 
 ## Features
@@ -175,6 +176,12 @@ The wireframes can be seen here [here](https://github.com/siobhanlgorman/knits-a
 * [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) was used to style the website, add responsiveness and interactivity
 * [Python](https://www.python.org/) was used to code the back end of the project
 * [PyPI](https://pypi.org/) to install the python packages
+
+Photo Editing
+* [Paint3D]
+* [Paint]
+* [TinyPNG]
+* [removebg](https://www.remove.bg/upload)
 ## Testing
 ## Deployment
 
