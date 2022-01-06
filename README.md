@@ -113,6 +113,8 @@ A future intention to increase the site's usefulness to customers is to add a cr
 * Userflow
 * Database Structure
 * Models
+
+There are eight models in this project (excluding those which are automatically created by Django). Four models have been specifically customised for the purposes of this ecommerce store: Product, Tag, ContactForm and CustomOrderForm
 - Product (Product app)
 - Category (Product app)
 - Tag (Product app)
