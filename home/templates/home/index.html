@@ -5,7 +5,7 @@
 <div>
     <div class="container title-container">
         <div class="row text-center">
-            <div class="col title-font d-none d-sm-block bg-white">
+            <div class="col title-font display-colour d-none d-sm-block bg-white">
               <h1>Knits and Pieces</h1>
             </div>
           </div>
@@ -36,14 +36,14 @@
                 <div class="carousel-item">
                     <img src="{{ MEDIA_URL }}masks7x4.png" class="d-sm-block w-100" alt="handmade cotton facemasks">
                     <div class="carousel-caption d-block">
-                        <h5 class="title-font"><a href="{% url 'products' %}?category=face_masks">Facemasks</a></h3>
+                        <h5 class="title-font"><a href="{% url 'products' %}?category=face_masks">Facemasks</a></h5>
                         
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="{{ MEDIA_URL }}throws7x4.png" class="d-sm-block w-100" alt="handmade crocheted throws">
                     <div class="carousel-caption d-block">
-                        <h5 class="title-font"><a href="{% url 'products' %}?category=throws,bedcovers,baby_blankets"">Throws</a></h3>
+                        <h5 class="title-font"><a href="{% url 'products' %}?category=throws,bedcovers,baby_blankets">Throws</a></h5>
                         
                     </div>
                 </div>
@@ -62,7 +62,7 @@
             </button>
         </div>
     </div>
-
+<div class="container-fluid">
     <div class="row text-center">
         <div class="col-8 offset-2">
             <h4>Cosy colourful handmade accessories for you and your home</h4>
@@ -71,7 +71,7 @@
             Be cosy inside with our luxury throws and blankets and outside in our slouchy beanie hats and mittens. 
             <p>
                 <hr>
-            <strong><p>If you'd like one of our throws in different colours we will happily make it to<a href="{% url 'custom' %}"> order</a> for you.</p></strong>
+            <p class="info-text"><strong> If you'd like one of our throws in different colours we will happily make it to <a href="{% url 'custom' %}"> order</a> for you.</strong></p>
 
 
             <a href="{% url 'products' %}" class="btn-red text-uppercase btn-sm rounded-0 title-font">Shop</a>

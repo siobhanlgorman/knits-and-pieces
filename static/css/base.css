@@ -48,6 +48,11 @@ footer i {
 
 .title-font {
     font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    /* color: #d20f35; */
+}
+
+.display-colour {
     color: #d20f35;
 }
 
@@ -58,6 +63,7 @@ footer i {
 
 #banner {
     /* background-color: hsl(0, 0%, 39%); */
+
     background-color: #d20f35;
     color: white;
 }
@@ -104,9 +110,13 @@ a {
     color: #3a3a3a;
 }
 
+.info-text a {
+    color: #d20f35;
+}
+
 a:hover,
 a:focus {
-    background: grey;
+    background: #808080;
     color: white !important;
     text-decoration: none;
 }
@@ -177,7 +187,7 @@ a:focus {
 .delete-button a:hover,
 .delete-button a:active,
 .delete-button a:focus {
-    background: grey;
+    background: #808080;
     color: white !important;
 }
 
