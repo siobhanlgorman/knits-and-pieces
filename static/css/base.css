@@ -72,8 +72,47 @@ footer i {
     text-transform: uppercase;
 }
 
+a a:hover {
+    color: hotpink;
+}
+
 .navbar {
     padding: 0;
+}
+
+/* navbar links */
+
+.dropdown-menu > li > ul> li > a:hover, .dropdown-menu > li > ul > li > a:focus, 
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color:grey;
+}
+
+.dropdown-item a:hover {
+    color: hotpink;
+    background-color: hotpink;
+}
+
+ul.nav a:hover {
+    color: hotpink!important;
+}
+
+.dropdown-item a:hover {
+    color: hotpink;
+}
+
+.nav-item .dropdown a:hover {
+    color: hotpink;
+    background: green;
+    background-color: yellow;
+}
+
+
+/* nav .navbar-nav li a {
+    color: green;
+} */
+
+.navbarDropdown.nav-link.dropdown-toggle {
+    
 }
 
 /* home page carousel */
@@ -106,9 +145,14 @@ footer i {
     filter: invert(75%);
 }
 
+/* all links */
+
 a {
     color: #3a3a3a;
+    text-decoration: none;
 }
+
+
 
 .info-text a {
     color: #d20f35;
@@ -116,9 +160,9 @@ a {
 
 a:hover,
 a:focus {
-    background: #808080;
+    background: grey;
     color: white !important;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 
