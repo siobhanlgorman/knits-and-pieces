@@ -194,15 +194,12 @@ a:focus {
     cursor: pointer;
 }
 
-#btt-button > a:hover {
+#btt-button > a:hover,
+#btt-button > a:active, 
+#btt-button > a:focus {
     color: #d20f35;
     border: solid 1px #d20f35;
     background-color: #fff;
-}
-
-.remove-btn {
-    background: red;
-    color: #fff;
 }
 
 .btt-button {
