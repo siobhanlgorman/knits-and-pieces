@@ -21,19 +21,15 @@ main {
     height: 50px;
     width: 50px;
 }
-/* 
+
+
 body > header > nav > a:hover {
     background-color: transparent;
-} */
-
-
-
-
-
-body > footer > div.container-fluid.text-center > div > div.col-md-6.mt-md-0.mt-3 > div:nth-child(1) > div > div:nth-child(1) > div > a:hover {
+}
+ 
+body>footer>div.container-fluid.text-center>div>div.col-md-6.mt-md-0.mt-3>div:nth-child(1)>div>div:nth-child(1)>div>a:hover {
     background-color: transparent;
 }
-
 
 footer {
     flex-shrink: 0;
@@ -90,26 +86,30 @@ footer i {
 
 /* navbar links */
 
-#navbarSupportedContent > ul > li > a:hover,
-#navbarSupportedContent > ul > li > a:active,
-#navbarSupportedContent > ul > li > a:focus {
-    background-color:grey;
+#navbarSupportedContent>ul>li>a:hover,
+#navbarSupportedContent>ul>li>a:active,
+#navbarSupportedContent>ul>li>a:focus {
+    background-color: grey;
     color: #fff;
-} 
-
-.dropdown-menu > li > ul> li > a:hover, .dropdown-menu > li > ul > li > a:focus, 
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-    background-color:grey;
 }
 
-.dropdown-menu > .dropdown-menu.active, .dropdown-item:hover,
-.dropdown-menu > .dropdown-menu.active, .dropdown-item:active {
+.dropdown-menu>li>ul>li>a:hover,
+.dropdown-menu>li>ul>li>a:focus,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    background-color: grey;
+}
+
+.dropdown-menu>.dropdown-menu.active,
+.dropdown-item:hover,
+.dropdown-menu>.dropdown-menu.active,
+.dropdown-item:active {
     background-color: grey;
     color: white;
 }
 
-.dropdown-menu > li > ul> li,
-.dropdown-menu > li {
+.dropdown-menu>li>ul>li,
+.dropdown-menu>li {
     transition: all 0.2 ease-in-out;
 }
 
@@ -135,7 +135,7 @@ footer i {
 .carousel-caption a:hover,
 .carousel-caption a:hover:active,
 .carousel-caption a:hover:focus {
-    background-color: #3a3a3a;
+    background-color: #808080;
     color: #fff;
 }
 
@@ -171,19 +171,11 @@ a:focus {
     color: #ba0d30;
 }
 
-
-
 footer a:hover,
 footer a:focus {
-    background: grey;
+    background: #808080;
     color: white;
 }
-/* a:hover,
-a:focus {
-    background: grey;
-    color: white !important;
-} */
-
 
 /* back to top button */
 
@@ -194,9 +186,9 @@ a:focus {
     cursor: pointer;
 }
 
-#btt-button > a:hover,
-#btt-button > a:active, 
-#btt-button > a:focus {
+#btt-button>a:hover,
+#btt-button>a:active,
+#btt-button>a:focus {
     color: #d20f35;
     border: solid 1px #d20f35;
     background-color: #fff;
@@ -232,7 +224,7 @@ a:focus {
     background: #d3d3d3;
     color: #3a3a3a
 }
- 
+
 .btn-grey {
     background-color: hsl(0, 0%, 39%);
     color: #fff;
@@ -256,7 +248,6 @@ a:focus {
     background: hsl(0, 0%, 32%);
     color: white;
 }
-
 
 .remove-btn:hover,
 .remove-btn:active,
@@ -291,14 +282,15 @@ a:focus {
     color: white !important;
 }
 
-.increment-qty, .decrement-qty {
+.increment-qty,
+.decrement-qty {
     padding: 0.25rem 0.5rem;
 }
 
 /* shopping basket icon and total badge */
-.basket-icon {
+/* .basket-icon {
     color: #00000080;
-}
+} */
 
 .basket-icon .basket-label {
     display: inline-block;
@@ -364,8 +356,8 @@ a:focus {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
@@ -379,19 +371,19 @@ a:focus {
     line-height: 1.5;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	background: #808080;
+.allauth-form-inner-content input[type='submit']:hover {
+    background: #808080;
     color: white;
     text-decoration: none;
 }
 
 .allauth-form-inner-content p a {
-	color: #d20f35;
-} 
+    color: #d20f35;
+}
 
 .design-carousel .carousel-caption h5 {
     color: #3a3a3a;
@@ -416,14 +408,15 @@ a:focus {
     /* background: #fff; */
     clear: left;
     font: 14px 'Roboto', sans-serif;
-  }
+
+}
 
 #mc_embed_signup .button {
     background-color: #d20f35;
     color: #fff;
     text-transform: uppercase;
     font-family: 'Cinzel', serif;
-  }
+}
 
 #mc_embed_signup .button:hover,
 #mc_embed_signup .button:active,
@@ -431,9 +424,7 @@ a:focus {
     background-color: #ba0d30;
     color: #dff0d8;
 
-  }
-
-
+}
 
 #mc_embed_signup form {
     padding: 10px;
@@ -442,6 +433,7 @@ a:focus {
 #mc_embedsignu .mc-field-group {
     width: 100%;
 }
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -466,6 +458,7 @@ a:focus {
     #banner h4 {
         font-size: .8rem;
     }
+
     header {
         padding: 0;
     }
