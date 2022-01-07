@@ -106,11 +106,12 @@
 
                 {% else %}
                 <p class="mb-5">There's nothing in your shopping basket!</p>
-                <a" href="{% url 'products' %}"><span class="icon">
-                    <i class="fas fa-chevron-left"></i>
-                </span>
-                <span class="btn-grey p-1">Back to Shop</span>
-            </a>
+                <a href="{% url 'products' %}" class="btn btn-grey rounded-0 mt-2">
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase">Keep Shopping</span>
+                </a>
                 {% endif %}
             </div>
         </div>
@@ -122,11 +123,11 @@
 {{ block.super }}
 
 <script>
-// Get the button element
-let mybutton = document.getElementById("btt-button");
+    // Get the button element
+    let mybutton = document.getElementById("btt-button");
 
-// When user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
+    // When user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
     scrollFunction();
 };
 
