@@ -75,6 +75,10 @@ footer i {
     color: white;
 }
 
+#banner a {
+    color: #fff;
+}
+
 .logo-font {
     text-transform: uppercase;
 }
