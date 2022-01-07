@@ -3,11 +3,11 @@
 {% load bag_tools %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content  %}
@@ -43,8 +43,9 @@
                                 {% include "bag/product-image.html" %}</div>
                             <div class="col-12 col-sm-6 mb-1">
                                 {% include "bag/product-info.html" %}</div>
-                            <div class="col-12 col-sm-6 order-sm-last"><p>
-                                Price Each: €{{ item.product.price }}</p>
+                            <div class="col-12 col-sm-6 order-sm-last">
+                                <p>
+                                    Price Each: €{{ item.product.price }}</p>
                                 <hr>
                                 <p><strong>Subtotal:</strong>€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                 <hr>
@@ -53,7 +54,9 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col"><hr></div>
+                            <div class="col">
+                                <hr>
+                            </div>
                         </div>
                         {% endfor %}
                         <div class="btt-button shadow-sm rounded-0 border" id="btt-button">
@@ -63,46 +66,48 @@
                         </div>
                     </div>
                 </div>
-                    <div class="table-responsive rounded d-none d-md-block">
-                        <table class="table table-sm table-borderless">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Product Info</th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Qty</th>
-                                    <th scope="col">Subtotal</th>
-                                </tr>
-                            </thead>
-                            {% for item in bag_items %}
-                                <tr>
-                                    <td class="p-3 w-25">
-                                        {% include "bag/product-image.html" %}
-                                    </td>
-                                    <td class="py-3">
-                                        {% include "bag/product-info.html" %}
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0">{{ item.product.price }}</p>
-                                    </td>
-                                    <td class="py-3 w-25">
-                                        {% include "bag/quantity-form.html" %}                                   
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0">{{ item.product.price | calc_subtotal:item.quantity }} </p>
-                                    </td>
-                                </tr>
-                            {% endfor %}
-                            <tr><td colspan="5" class="pt-5 text-right">
+                <div class="table-responsive rounded d-none d-md-block">
+                    <table class="table table-sm table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col">Product Info</th>
+                                <th scope="col"></th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col">Subtotal</th>
+                            </tr>
+                        </thead>
+                        {% for item in bag_items %}
+                        <tr>
+                            <td class="p-3 w-25">
+                                {% include "bag/product-image.html" %}
+                            </td>
+                            <td class="py-3">
+                                {% include "bag/product-info.html" %}
+                            </td>
+                            <td class="py-3">
+                                <p class="my-0">{{ item.product.price }}</p>
+                            </td>
+                            <td class="py-3 w-25">
+                                {% include "bag/quantity-form.html" %}
+                            </td>
+                            <td class="py-3">
+                                <p class="my-0">{{ item.product.price | calc_subtotal:item.quantity }} </p>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        <tr>
+                            <td colspan="5" class="pt-5 text-right">
                                 {% include "bag/bag-total.html" %}
                             </td>
                         </tr>
                         <tr>
                             <td colspan="5" class="text-right">
                                 {% include "bag/checkout-buttons.html" %}
-                            </td></tr>
-                        </table>
-                    </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
 
                 {% else %}
                 <p class="mb-5">There's nothing in your shopping basket!</p>
@@ -128,49 +133,49 @@
 
     // When user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {
-    scrollFunction();
-};
+        scrollFunction();
+    };
 
-function scrollFunction() {
-    if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-    ) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
+    function scrollFunction() {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
     }
-}
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
 
-function backToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
+    function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 </script>
 
 {% include 'products/includes/quantity_input_script.html' %}
 
 <script>
     // Update quantity on click
-    $('.update-link').click(function(e) {
+    $('.update-link').click(function (e) {
         var form = $(this).prev('.update-form');
         form.submit();
     })
     // Remove item and reload on click
-    $('.remove-item').click(function(e) {
+    $('.remove-item').click(function (e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('data-id').split('remove_')[1];
         var url = `/bag/remove/${itemId}/`;
-        var data = {'csrfmiddlewaretoken': csrfToken};
+        var data = {
+            'csrfmiddlewaretoken': csrfToken
+        };
 
         $.post(url, data)
-         .done(function() {
-             location.reload();
-        });
+            .done(function () {
+                location.reload();
+            });
     })
-
-    
 </script>
 {% endblock %}
