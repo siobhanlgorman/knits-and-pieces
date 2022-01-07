@@ -21,10 +21,10 @@ main {
     height: 50px;
     width: 50px;
 }
-
+/* 
 body > header > nav > a:hover {
     background-color: transparent;
-}
+} */
 
 
 
@@ -132,6 +132,12 @@ footer i {
     margin: 2px;
 }
 
+.carousel-caption a:hover,
+.carousel-caption a:hover:active,
+.carousel-caption a:hover:focus {
+    background-color: #3a3a3a;
+    color: #fff;
+}
 
 .carousel-control-next,
 .carousel-control-prev,
@@ -437,25 +443,28 @@ a:focus {
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
+/* @media (min-width: 1200px) {
+    .container-fluid {
         max-width: 80%;
     }
-}
+} */
 
 /* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    /* .fixed-top-desktop-only {
+/* @media (min-width: 992px) {
+    .fixed-top-desktop-only {
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
         z-index: 1030;
-    } */
-}
+    }
+} */
 
 @media (max-width: 992px) {
     #banner h4 {
         font-size: .8rem;
+    }
+    header {
+        padding: 0;
     }
 }
