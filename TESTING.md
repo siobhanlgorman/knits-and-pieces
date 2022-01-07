@@ -15,6 +15,7 @@ Thorough testing was conducted by the developer and multiple users among friends
 6. Error after adding countryfield - could not migrate. Folder still looking for max value of 2. Eventually deleted all orders in the database as they were created wth countries longer than 2 letters. Then the migration worked.
 7. After creating profile and linking to order history two orders being created in db with two different numbers. Fix - corrected stripe billing and shipping name fields. Due to subsequent ongoing issues with duplicate orders being created and non-recognition of two name fields in billing and shipping information, the order model field was reverted to full name and first and last name fields removed as they can be accessed from using the full name method
 8. Remove button bug with W3C validator - two ids as element on mobile and desktop views at same time (hidden on one). Fix: Id changed to data-id
+9. Error when scrolling in empty basket relating to btt button javascript
 
 ![#](documentation/screenshots/##.png)
 ## Code Validation
@@ -47,6 +48,12 @@ Sign In Page
 
 ![](documentation/screenshots/signin_valid.png)
 
+Sign Out Page
+![](documentation/screenshots/signout_valid.png)
+Confirmation Email Page
+![](documentation/screenshots/signout_valid.png)
+Sign Out Page
+![](documentation/screenshots/signout_valid.png)
 Sign Out Page
 ![](documentation/screenshots/signout_valid.png)
 
