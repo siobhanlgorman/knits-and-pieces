@@ -98,7 +98,7 @@
                                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                                     {% if request.user.is_superuser %}
                                     <small>
-                                        <a class="green-button text-light p-1" href="{% url 'edit_product' product.id %}">Edit</a>
+                                        <a class="edit-btn text-light p-1" href="{% url 'edit_product' product.id %}">Edit</a>
                                         <a class="delete-button bg-danger text-light p-1" href="{% url 'delete_product' product.id %}">Delete</a>
                                     </small>
                                     {% endif %}
