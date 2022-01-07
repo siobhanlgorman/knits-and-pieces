@@ -130,6 +130,7 @@ footer i {
     border: 1px solid #3a3a3a;
     padding: 2px 8px;
     margin: 2px;
+    transition: all 0.2 ease-in-out;
 }
 
 .carousel-caption a:hover,
@@ -153,6 +154,7 @@ a {
     transition: all 0.2 ease-in-out;
     cursor: pointer;
     text-decoration: none;
+    transition: all 0.2 ease-in-out;
 }
 
 a:hover,
@@ -184,6 +186,7 @@ footer a:focus {
 .remove-btn {
     color: white;
     cursor: pointer;
+    transition: all 0.2 ease-in-out;
 }
 
 #btt-button>a:hover,
