@@ -411,7 +411,6 @@ footer a:focus {
     /* background: #fff; */
     clear: left;
     font: 14px 'Roboto', sans-serif;
-
 }
 
 #mc_embed_signup .button {
@@ -426,7 +425,6 @@ footer a:focus {
 #mc_embed_signup .button:focus {
     background-color: #ba0d30;
     color: #dff0d8;
-
 }
 
 #mc_embed_signup form {

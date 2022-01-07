@@ -15,7 +15,7 @@ The contact phone number you have provided is {{ order.phone_number }}.
 
 We will email you once your order has been shipped.
 
-If you have any questions, please contact us at {{ contact.email }}.
+If you have any questions, please contact us at {{ contact_email }}.
 
 Thank you for ordering from Knits and Pieces. We value your business.
 

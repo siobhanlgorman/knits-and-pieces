@@ -1,10 +1,12 @@
-Manual Testing
-extensively tested during development especially with order creation, updating totals, editing line items (see bugs)
-User Stories Testing
-Features Testing
-Browser Compatibility
-Responsiveness
-Bugs and Fixes
+# Knits and Pieces Testing
+## Manual Testing
+Thorough testing was conducted by the developer and multiple users among friends and family especially with order creation, updating totals, editing line items. Bugs were found and fixed as detailed below in Bugs section. Testing steps and results are detailed as follows.
+
+## User Stories Testing
+## Features Testing
+## Browser Compatibility
+## Responsiveness
+## Bugs and Fixes
 1. Toast success message doesn't display if same item is added again to basket. Fix: Error in if statement in bag/views.py
 2. Image media url not working. FIx - add media context processor in settings.py
 3. Can-custom design - displaying text by default - FIX incorrect format of if statement
@@ -15,6 +17,74 @@ Bugs and Fixes
 8. Remove button bug with W3C validator - two ids as element on mobile and desktop views at same time (hidden on one). Fix: Id changed to data-id
 
 ![#](documentation/screenshots/##.png)
-Code Validation
-Lighthouse Scores
-Accessibility
+## Code Validation
+### HTML Validation
+HTML was validated by [The WEC Markup Validation Service](https://validator.w3.org/)
+
+No errors or warnings were found:
+
+Home Page: 
+
+![](documentation/screenshots/home_valid.png)
+
+About Page:
+
+![](documentation/screenshots/about_valid.png)
+
+Custom Order Page
+
+![](documentation/screenshots/custom_valid.png)
+
+Contact Page
+
+![](documentation/screenshots/contact_valid.png)
+
+Register Page
+
+![](documentation/screenshots/register_valid.png)
+
+Sign In Page
+
+![](documentation/screenshots/signin_valid.png)
+
+Sign Out Page
+![](documentation/screenshots/signout_valid.png)
+
+
+### CSS Validation
+
+![](documentation/screenshots/css_valid1.png)
+![](documentation/screenshots/css_valid2.png)
+![](documentation/screenshots/css_valid.png)
+
+### PEP 8 Validation
+
+The following files were checked:
+
+* **#/views.py**
+
+![](documentation/screenshots/pep8_views2.png)
+
+
+* **#/views.py**
+
+![](documentation/screenshots/pep8_views.png)
+
+* **models.py**
+
+![](documentation/screenshots/pep8_models.png)
+
+* **forms.py**
+
+![](documentation/screenshots/pep8_forms.png)
+
+* **urls.py**
+
+![](documentation/screenshots/pep8_urls.png)
+
+* **admin.py**
+
+![](documentation/screenshots/pep8_admin.png)
+
+## Lighthouse Scores
+## Accessibility
