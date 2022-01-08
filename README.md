@@ -1,17 +1,15 @@
 # Knits and Pieces
-
-https://knits-and-pieces.herokuapp.com/
+View the live site [here](https://knits-and-pieces.herokuapp.com)
 ## UX Design
 ### Strategy
-* Introduction
-* Agile Planning
-User stories (Issues) with acceptance criteria and tasks are each linked to an Epic (Milestone) and placed in an Iteration kanban board (Projects 1, 2 and 3). Due to the project time constraints no dates are included. Each user story is labelled with a must-have should-have, could-have or won't have label to show prioritisation. (Include planning table with prioritistion list here)
+#### Agile Planning
+User stories (Issues) with acceptance criteria and tasks are each linked to an Epic (Milestone) and placed in an Iteration kanban board (Projects 1, 2 and 3). Due to the project time constraints no dates are included. Each user story is labelled with a must-have should-have, could-have or won't have label to show prioritisation. See table [here](####user-stories)
 
-* Project Goal
+#### Project Goal
 
 The goal of the project is to create an online store for this developer's handmade items; primarily crocheted throws and blankets, knitted hats and cotton facemasks. This is a real-world application to create a store for this developer's products which have been custom-made and sold on a word-of-mouth basis over ten years. Buyers have encouraged the set-up of an online store to increase sales and customer base.
 
-* Target audience
+#### Target audience
 
 - People who like colourful, handmade, good quality items. 
 - People who like knitted and crocheted items.
@@ -26,7 +24,7 @@ The goal of the project is to create an online store for this developer's handma
 - To create a brand for the store and increase brand awareness
 - To encourage subscriptions to the site newsletter
 
-* Customer Goals
+#### Customer Goals
 
 - To view the products available
 - To buy colourful, handmade items
@@ -35,9 +33,9 @@ The goal of the project is to create an online store for this developer's handma
 - To be confident that the site is genuine and trustworthy
 
 
-* User Stories
+#### User Stories
 
-Using the Agile approach Epics (Github Milestones) were created and broken down into several User Stories (Github Issues). User Stories were fleshed out with Acceptance Criteria and Tasks assigned to each. Due to the time constraints and knowledge level of this developer it was not possible in every case to decide the tasks in advance of carrying out the work although this would be the ideal in a workplace environment. User Stories were sorted into four priority level with 1 as top priority and 4 as least prioritised. User Stories with Priority 1 were allocated a label of 'must-have', 2 as 'should-have', 3 as 'could-have'. These User Stories were divided into three Iterations (Github Projects). For the purposes of this project a timeframe was not assigned although in a real world environment it would be. Those User Stories allocated Priority 4 which would be 'won't have' were not placed in the table but are mentioned here as Future Features. Several stories marked as 'could-have' were not completed due to time constraints (#5, #7, #29 #30 )
+Using the Agile approach Epics (Github Milestones) were created and broken down into several User Stories (Github Issues). User Stories were fleshed out with Acceptance Criteria and Tasks assigned to each. Due to the time constraints and knowledge level of this developer it was not possible in every case to decide the tasks in advance of carrying out the work although this would be the ideal in a workplace environment. User Stories were sorted into four priority level with 1 as top priority and 4 as least prioritised. User Stories with Priority 1 were allocated a label of 'must-have', 2 as 'should-have', 3 as 'could-have'. These User Stories were divided into three Iterations (Github Projects). For the purposes of this project a timeframe was not assigned although in a real world environment it would be. Those User Stories allocated Priority 4 which would be 'won't have' were not placed in the table but are included in [Future Features](###future-features). Several stories marked as 'could-have' were not completed due to time constraints (#5, #7, #29 #30 )
 
 | User Story ID | As A/An            | I want to be able to                                                       | So that I can                                                                                                 |   | #   | Priority | Iteration |
 |---------------|--------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|---|-----|----------|----------:|
@@ -107,9 +105,8 @@ Using the Agile approach Epics (Github Milestones) were created and broken down 
 |           5.8 | Store Owner        | Keep account of current stock numbers and link to available stock for sale | Only sell products which I can supply                                                                         |   |     |          |           |
 
 
-* SEO and Web Marketing
+#### SEO and Web Marketing
 - SEO 
-Keywords in titles as much as possible
 Research on short and long-tail keywords was conducted via google searches to find the search words and phrases thatm most related to a site like Knits and Pieces. Handmade was particularly crucial to a good search result when incorporated with the product categories and craft type. Keywords were incorporated into the meta tags and headings where appropriate while not overloading the site content and maintaining the usefulness of the site.
 - Web Marketing
 Paid web advertising is not currently within the scope of this project. However a newsletter link has been added to the website as an easy way for a small business such as Knits and Pieces to reach customers and keep them up to date with new products, special offers and to keep the ecommerce store fresh.
@@ -125,19 +122,29 @@ View of Facebook Business page to prospective customer without Facebook account:
 A future intention to increase the site's usefulness to customers is to add a craft blog to the site with links to videos on interesting stitches and patterns and links to othe interesting websites and YouTube videos. This would evoke a positive emotional response in customers and in turn build trust and loyalty to the business. It would also provide a means to keep the site up to date, relevant and fresh in customers' minds. 
 
 ### Scope
-* Functional Requirements
-* Content Requirements
+* Requirements
+The approach taken was to create a minimum viable product which in this case was to create a functioning ecommerce store with the ability to view and purchase a product via a seamless payment facility (in this case Stripe).
+The User Stories were prioritised as described [above](###user-stories) and shown in the table with functional requirements prioritised as 1
 * Constraints
+The time frame for this project was extremely short and broken up with Christmas holidays. In addition the time to learn and become familiar with the language and tools necessary to have a good understanding of the development process was short. As a result there are many improvements to be made in the future but a basic and funcioning ecommerce store has been created.
 
-- This project is constrained by time. Since this project is firstly to fulfil the requirements of Project Portfolio 5 and must meet a deadline, some of the requirements necessary to make this project a real-world application will be left in the Future Features section for addition after completion of the course.
 
 ### Structure
-* Information Architecture
-* Userflow
-* Database Structure
+* Database
+For this project the PostgresSql database was used from the outset. Since fixtures were not being used and the number of products was relatively small this meant the products could be added to the deployed database from the beginning and so saving some time.
+
 * Models
 
 There are eight models in this project (excluding those which are automatically created by Django). Four models have been specifically customised for the purposes of this ecommerce store: Product, Tag, ContactForm and CustomOrderForm
+
+- Products App Models
+In the Products app there are three models: Product, Category and Tag. The Product model is specifically designed for this project with customised fields specific to handmade products. The tag model was developed to display special information relating to several products but not all. The Product model links to the Category and Tag model by a Foreign Key. The product model initially had two more image fields (highlighted as the intention was for a more detailed product template showing the product in different situations. However due to the time involved in creating and sizing professional photos it was decided not to include this feature in this initial version of the ecommerce store. These fields were then removed to keep the code clean. Also a likes field (highlighted was included initially to add to a function where the user would like a product and add to a wishlist. Again due to time constraints this was also removed.
+
+![Product Model](documentation/screenshots/product-model.png)
+![Category Model](documentation/screenshots/category-model.png)
+![Tag Model](documentation/screenshots/tag-model.png)
+
+
 - Product (Product app)
 - Category (Product app)
 - Tag (Product app)
@@ -148,8 +155,6 @@ There are eight models in this project (excluding those which are automatically 
 - CustomOrder (Custom app)
 
 
-
-![](documentation/screenshots/models_checkout_profiles.png)
 
 ![](documentation/screenshots/models_products.png)
 

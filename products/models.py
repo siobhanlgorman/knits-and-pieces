@@ -22,8 +22,8 @@ class Category(models.Model):
 
 class Tag(models.Model):
     """A model for a tag for a special addition to a product"""
-    name = models.CharField(max_length=80)
-    friendly_name = models.CharField(max_length=80, blank=True, default="")
+    name = models.CharField(max_length=100)
+    friendly_name = models.CharField(max_length=100, blank=True, default="")
 
     def __str__(self):
         return self.name
@@ -71,8 +71,6 @@ class Product(models.Model):
         max_length=2, blank=False, default=ACRYLIC, choices=MATERIAL_TYPE)
     machine_wash = models.BooleanField(default=True)
     image1 = models.ImageField(null=True, blank=True)
-    image2 = models.ImageField(null=True, blank=True)
-    image3 = models.ImageField(null=True, blank=True)
 
     RED = 'RED'
     ORANGE = 'OR'
@@ -146,8 +144,7 @@ class Product(models.Model):
     designer = models.CharField(max_length=50, blank=True, default="")
     can_custom_design = models.BooleanField(
         default=False, null=True, blank=True)
-    likes = models.ManyToManyField(
-        User, related_name='product_likes', blank=True)
+
 
     def __str__(self):
         return self.name
