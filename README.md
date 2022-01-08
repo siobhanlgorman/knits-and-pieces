@@ -138,25 +138,33 @@ For this project the PostgresSql database was used from the outset. Since fixtur
 There are eight models in this project (excluding those which are automatically created by Django). Four models have been specifically customised for the purposes of this ecommerce store: Product, Tag, ContactForm and CustomOrderForm
 
 - Products App Models
-In the Products app there are three models: Product, Category and Tag. The Product model is specifically designed for this project with customised fields specific to handmade products. The tag model was developed to display special information relating to several products but not all. The Product model links to the Category and Tag model by a Foreign Key. The product model initially had two more image fields (highlighted as the intention was for a more detailed product template showing the product in different situations. However due to the time involved in creating and sizing professional photos it was decided not to include this feature in this initial version of the ecommerce store. These fields were then removed to keep the code clean. Also a likes field (highlighted was included initially to add to a function where the user would like a product and add to a wishlist. Again due to time constraints this was also removed.
+In the Products app there are three models: Product, Category and Tag. The Product model is specifically designed for this project with customised fields specific to handmade products. The tag model was developed to display special information relating to several products but not all. The Product model links to the Category and Tag model by a Foreign Key. The product model initially had two more image fields (highlighted as the intention was for a more detailed product template showing the product in different situations. However due to the time involved in creating and sizing professional photos it was decided not to include this feature in this initial version of the ecommerce store. These fields were then removed to keep the code clean. Also a likes field (highlighted was included initially to add to a function where the user would like a product and add to a wishlist. Again due to time constraints this was removed as a feature for this version of the store.
 
 ![Product Model](documentation/screenshots/product-model.png)
 ![Category Model](documentation/screenshots/category-model.png)
 ![Tag Model](documentation/screenshots/tag-model.png)
 
+- Checkout App
+In the Checkout app there are two models. The Order and OrderLineItem contain the information for the user to create a purchase order. The Order model links to the user profile model in the Profiles App by a foreign key. The OrderLineItem model refers to each specific product in the order and links to the Order and Products models by a foreign key.
 
-- Product (Product app)
-- Category (Product app)
-- Tag (Product app)
-- Order (Checkout app)
-- OrderLineItem (Checkout app)
-- UserProfile (Profiles)
-- ContactForm (Contact app)
-- CustomOrder (Custom app)
+![Order Model](documentation/screenshots/order-model.png)
+![OrderLineItem Model](documentation/screenshots/lineitem-model.png)
 
+- Profiles App
+In the Profiles app there is a UserProfile model which uses the Django default User model.
 
+![User Profile Model](documentation/screenshots/user-profile-model.png)
 
-![](documentation/screenshots/models_products.png)
+- Contact App
+In the Contact App there is a custom ContactForm model for the customer to send a message to the Knits and Pieces store.
+
+![Contact Form Model](documentation/screenshots/contact-form-model.png)
+
+- Custom App
+The Custom App has a specifically customised CustomOrder model for a customer to request a quote to have a particular product (Blanket) made to order in a choice of colours, sizes and patterns. It was originally intended to link this to the Product model but in as this was being added later in development it was not possible as some of the fields should have been separate models from the beginning and linked via foreign keys. Due to time constraints and lack of expertise in the planning stage this was not foreseen and could not have been undertaken in the later stages of the project.
+
+![Custom Order Model](documentation/screenshots/custom-order-model.png)
+
 
 ### Skeleton
 * Wireframes
