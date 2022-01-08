@@ -184,21 +184,25 @@ The Custom App has a specifically customised CustomOrder model for a customer to
 
 ### Surface
 
-* Overall Design Choice
-- The emphasis is to look professional and modern and to showcase the high quality artisan goods for sale. Research on websites selling similar handmade goods often have either a very traditional and amateur look or a very cluttered look. The site should look clean and elegant with a plain background to highlight the colorful products. Minimal colours used in keeping with the minimalist approach but making the site attractive to draw user's eye and tone with the products' colours. 
+#### Overall Design Choice
+- The emphasis is to look professional and modern and to showcase the high quality artisan goods for sale. Research on websites selling similar handmade goods often have either a very traditional and amateur look or a very cluttered look. The more upmarket sites have a clean, elegant look with a plain background to highlight the colorful products. Minimal colours are used in keeping with this clean and fresh look and make the site attractive to draw user's eye. For this project minimal colours were used to highlight the colourful products against a plain background. Image backgrounds were removed to focus on the products and to look professionally created.  
 
-* Colours
+#### Colours
+Colours for the site were chosen by colour picking a main colour from a product using [Coolors](https://coolors.co/). The main colour selected was crimson and suitably plain shades of grey and beige were chosen to contrast. However during development contrast issues arose sothe shades of colours used were adjusted to fix the issues without changing colours completely.
 - colours changed due to contrast issues
-- created a logo from a bright coloured suare from a product
+
 - created a palette using [Coolors](https://coolors.co/d20f35-e36477-3a445c-728668-bbb19d)
-- Picked from sample product square, used for logo
-- Crimson for Title font
-- Charcoal - main font colour #3a3a3a
-* Typography
-- Cinzel for Titles - fancy, elegant, commanding
-* Images
+
+- The crimson colour was used for the main titles on pages. 
+- Charcoal was used for the main font colour as it is less harsh on a white background than black - #3a3a3a
+
+#### Typography
+- Cinzel was used for Titles and special text where the intention was to highlight the Knits and Pieces brand. This font is fancy, elegant and commanding
+
+#### Images
 - The images used for the website were all taken and edited by this developer as the ecommerce products are all the developer's own. The approach was to create transparent backgrounds to highlight the products and their colours in isolation and against a plain white background. This was a learning experience and proved more time-consuming than anticipated. As a result some images could be improved given more time but are satisfactory for the purposes of this project. Paint 3D was used to remove the backgrounds, crop and resize the images. [removebg](https://www.remove.bg/upload) was also used where the size reduction did not compromise the quality.
-* Accessibility
+
+#### Accessibility
 
 ## Features
 ### Existing Features

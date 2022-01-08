@@ -36,7 +36,7 @@ footer {
 }
 
 .page-footer {
-    border-top: 1px solid hsl(348, 87%, 39%);
+    border-top: 1px solid #ba0d30;
     padding-top: 1rem;
     margin-top: 1rem;
 }
@@ -47,6 +47,10 @@ footer {
 
 footer i {
     color: #d20f35;
+}
+
+body > footer > div.container-fluid.text-center > div > div.col-md-6.mt-md-0.mt-3 > div:nth-child(2) > div > a:hover {
+    background-color: white;
 }
 
 .title-container {
@@ -91,7 +95,7 @@ footer i {
 #navbarSupportedContent>ul>li>a:hover,
 #navbarSupportedContent>ul>li>a:active,
 #navbarSupportedContent>ul>li>a:focus {
-    background-color: grey;
+    background-color: #808080;
     color: #fff;
 }
 
@@ -231,7 +235,7 @@ footer a:focus {
 }
 
 .btn-grey {
-    background-color: hsl(0, 0%, 39%);
+    background-color: #636363;
     color: #fff;
 }
 
@@ -250,7 +254,7 @@ footer a:focus {
 .btn-grey:hover,
 .btn-grey:active,
 .btn-grey:focus {
-    background: hsl(0, 0%, 32%);
+    background: #525252;
     color: white;
 }
 
@@ -272,7 +276,7 @@ footer a:focus {
 
 .update-btn,
 .edit-btn {
-    background-color: hsl(134deg 61% 33%);
+    background-color: #218739;
     color: #fff;
 
 }
@@ -283,7 +287,7 @@ footer a:focus {
 .edit-button:hover,
 .edit-button:active,
 .edit-button:focus {
-    background: hsl(134deg 61% 23%);
+    background: #175e28;
     color: white !important;
 }
 
@@ -293,9 +297,6 @@ footer a:focus {
 }
 
 /* shopping basket icon and total badge */
-/* .basket-icon {
-    color: #00000080;
-} */
 
 .basket-icon .basket-label {
     display: inline-block;
