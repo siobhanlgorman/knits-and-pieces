@@ -130,10 +130,10 @@ The time frame for this project was extremely short and broken up with Christmas
 
 
 ### Structure
-* Database
+#### Database
 For this project the PostgresSql database was used from the outset. Since fixtures were not being used and the number of products was relatively small this meant the products could be added to the deployed database from the beginning and so saving some time.
 
-* Models
+#### Models
 
 There are eight models in this project (excluding those which are automatically created by Django). Four models have been specifically customised for the purposes of this ecommerce store: Product, Tag, ContactForm and CustomOrderForm
 
@@ -167,21 +167,20 @@ The Custom App has a specifically customised CustomOrder model for a customer to
 
 
 ### Skeleton
-* Wireframes
-The wireframes can be seen here [here](https://github.com/siobhanlgorman/knits-and-pieces/tree/main/documentation/wireframes))
+#### Wireframes
+- The wireframes can be seen here [here](https://github.com/siobhanlgorman/knits-and-pieces/tree/main/documentation/wireframes))
 
-
-* [Home Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/home-page.png))
-* [About Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/about-page.png))
-* [Bag Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/bag-page.png))
-* [Checkout Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/checkout-page.png))
-* [Contact Form Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/contact-form-page.png))
-* [Custom Order Form Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/custom-order-form.png))
-* [Products Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/products-page.png))
-* [Product Detail Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/product-detail-page.png))
-* [Register Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/register-page.png))
-* [Sign In Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/signin-page.png))
-* [Sign Out Page]((https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/signout-page.png))
+* [Home Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/home-page.png)
+* [About Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/about-page.png)
+* [Bag Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/bag-page.png)
+* [Checkout Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/checkout-page.png)
+* [Contact Form Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/contact-form-page.png)
+* [Custom Order Form Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/custom-order-form.png)
+* [Products Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/products-page.png)
+* [Product Detail Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/product-detail-page.png)
+* [Register Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/register-page.png)
+* [Sign In Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/signin-page.png)
+* [Sign Out Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/signout-page.png)
 
 ### Surface
 
