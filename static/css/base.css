@@ -49,8 +49,10 @@ footer i {
     color: #d20f35;
 }
 
-body > footer > div.container-fluid.text-center > div > div.col-md-6.mt-md-0.mt-3 > div:nth-child(2) > div > a:hover {
-    background-color: white;
+a.social:hover,
+a.social:active,
+a.social:focus {
+    background-color: transparent;
 }
 
 .title-container {
@@ -60,7 +62,6 @@ body > footer > div.container-fluid.text-center > div > div.col-md-6.mt-md-0.mt-
 .title-font {
     font-family: 'Cinzel', serif;
     text-transform: uppercase;
-
 }
 
 .display-colour {
