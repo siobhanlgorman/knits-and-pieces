@@ -347,7 +347,7 @@ footer a:focus {
 .badge:active,
 .badge:focus {
     background-color: #ba0d30;
-    color: #d3d3d3;
+    color: #dff0d8;
 }
 
 /* Allauth form styling */

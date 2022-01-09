@@ -71,7 +71,7 @@
                         {% if product.image1 %}
                         <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid all-products-img p-1" src="{{ product.image1.url }}"
-                                alt="{{ product.name }}" ></a>
+                                alt="{{ product.name }}"></a>
                         {% else %}
                         <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid" src="{% static 'img/red_logo2.png' %}"
@@ -83,28 +83,28 @@
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
+                                    {% if product.tag %}
+                                    <p class="mb-2 text-left"><span
+                                            class="product-tag">{{ product.tag.friendly_name }}!</span></p>
+                                    {% endif %}
                                     {% if product.category %}
-                                    <div class="p small mt-0 mb-0">
-                                        {% if product.tag %}
-                                        <p class="mb-2 text-left"><span
-                                                class="product-tag">{{ product.tag.friendly_name }}!</span></p>
-                                        {% endif %}
+                                    <p class="small mt-0 mb-0 info-text">
                                         <a href="{% url 'products' %}?category={{ product.category.name }}">
                                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                         </a>
-                                        {% endif %}
-
-                                    </div>
+                                    </p>
+                                    {% endif %}
                                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                                     {% if request.user.is_superuser %}
                                     <small>
-                                        <a class="edit-btn text-light p-1" href="{% url 'edit_product' product.id %}">Edit</a>
-                                        <a class="delete-button bg-danger text-light p-1" href="{% url 'delete_product' product.id %}">Delete</a>
+                                        <a class="edit-btn text-light p-1"
+                                            href="{% url 'edit_product' product.id %}">Edit</a>
+                                        <a class="delete-button bg-danger text-light p-1"
+                                            href="{% url 'delete_product' product.id %}">Delete</a>
                                     </small>
                                     {% endif %}
                                 </div>
                             </div>
-
                         </div>
 
                     </div>
