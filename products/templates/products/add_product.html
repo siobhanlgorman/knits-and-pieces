@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-12 col-md-6">
                 <hr>
-                <h2 class="logo-font mb-4">Product Management</h2>
+                <h2 class="title-font display-colour mb-4">Product Management</h2>
                 <h5 class="text-muted">Add a Product</h5>
                 <hr>
             </div>
@@ -28,7 +28,7 @@
                     {{ form | crispy }}
                     <div class="text-right">
                         <a class="btn btn-grey rounded-0" href="{% url 'products' %}">Cancel</a>
-                        <button class="btn btn-grey rounded-0" type="submit">Add Product</button>
+                        <button class="btn btn-red rounded-0" type="submit">Add Product</button>
                     </div>
                 </form>
             </div>            

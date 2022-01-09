@@ -295,6 +295,8 @@ footer a:focus {
     color: white !important;
 }
 
+/* Change item quantity for basket */
+
 .increment-qty,
 .decrement-qty {
     padding: 0.25rem 0.5rem;
@@ -318,6 +320,8 @@ footer a:focus {
     height: 25vh;
     object-fit: contain;
 }
+
+/* product tag */
 
 .product-tag {
     background-color: #FFBC0A;
@@ -344,7 +348,6 @@ footer a:focus {
 .badge:focus {
     background-color: #ba0d30;
     color: #d3d3d3;
-
 }
 
 /* Allauth form styling */
