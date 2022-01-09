@@ -227,37 +227,79 @@ Green was used to highlight edit or update buttons with red for remove/delete
 ### Existing Features
 #### Features on All Pages:
 * Navbar
-- logo
+- logo - links to home page. Sits on left as is usual.
+- title - 
 - desktop view links left: Home, Shop with Dropdown, About and Order
 - desktop view links right: Search box, Profile Icon  Shopping Basket
 - profile icon right for ddesktop, centre for mobile with dropdown
 - logged in user view
 - user who is not logged in view
-- shopping basket - right for desktop and middle for mobile
+- shopping basket - right for desktop and middle for mobile - Current basket total amount indicated beside. Both crimson 
 - mobile view hamburger on left: opens page links and search bar
 - hover over links - dark grey
+- search box - user enters search word and if search matches word in title or description products are displayed and s number of results found displayed above
+- Banner to draw attention to special information - free delivery threshold and an embedded link to special offers/special items tagged items
+
 
 
 * Footer
 - links to shop products by category / tag
 - quick links to pages Home Contact About and Orde
-- logo
+- logo with link to home page in center
 - Embedded mailchimp signup form with CTA Subscribe button with box for email
-- social media links including direct link to FB business page
+- social media links (although not currently linked up to a business page) including direct link to FB business page
 - copyright and link to developer's GitHub page
 - mobile view: Shop links top, newsletter and social media, quick links then copyright.
 
 #### Home Page
+- Carousel featuring three main product categories with links in the image title to the relevant category page
+- Introductory text about the store and embedded link to the Order page where Users can order a custom item
+- Two CTA buttons one to the main Shop page and the other to the About page with more information about the store. 
+
+#### About Page
+- Features a photograph of the store owner with information about the history of the store. 
+- CTA button to the Shop page
+
 #### Shop Page - Products
+- number of products
+- sort products by category, price, name
+- each product image links to its product detail page
+- when products listed have been selected by category in the navigation menu, category badges are seen from where the user can further sort the products
+
 #### Product Detail Page
+- Each product detail page features a large image of the product
+- Product details - name, price, description, colours(1-4), material, size, machine washable, designer
+- If the item is available to be custom ordered (currently only the various blankets), this is viewable in the description with a link to the custom order page
+- Category label can be clicked to view more of this category
+- Edit/delete buttons are visible to superuser/administrator under the product name
+- A quantity selector box with + - selector to increase/decrease quantity of item. Usere can also enter number or use arrows inside box to increase/decrease quantity of item
+- Two buttons - one grey to return to main Shop page and one crimson to add item(s) to shopping basket
+
 #### Order Page - Custom Order
+- carousel of pattern images from which customer can select design to order in the form
+- form for user to input name, email, choice of sizes/material/up to four colour choices and a designwith a default of 'mix' if they have no preference. Further details can also be entered in a message box.
+- A request quote button clearly indicates the purpose of the form and submits the form.
+
+#### Product Management Page
+- Form to add a product with fields from the product model: category options, name, size options, description, optional tag, price, material (with default acrylic), machine wash checkbox with default checked, image selection box, up to four colour selction boxes with at least one required, pattern name, deigner and whether the item can be custom ordered with no as default.
+- Form to edit a product is the same form as for add a product with the fields auto completed which can be changed by the administrator.
+
 #### My Profile Page
-#### Product Managenment Page
+- The link to this page can only be seen if a user is logged in
+- On the left the default delivery information is displayed if the user has selected save my information during the chackout process.
+- The user can change the default information by entering information into the fields
+- A green update button is below the delivery information form which can be clicked to submit and save changed information
+- This page can only be accessed by the user who is signed in
+- On the right the user's order history is displayed in a table with order number, date of order, items ordered and the order total. The Order number is truncated but on hover the full number can be viewed. On click the full past order confirmation is displayed
+
+
 #### Contact Page
+- 
 #### Register Page
 #### Login Page
 #### Basket Page
 #### Checkout Page
+#### Messages
 
 
 
