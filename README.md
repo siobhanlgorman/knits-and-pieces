@@ -225,17 +225,42 @@ Green was used to highlight edit or update buttons with red for remove/delete
 ## Features
 
 ### Existing Features
-Features on All Pages:
+#### Features on All Pages:
 * Navbar
 - logo
-- desktop view links left
-- desktop view links right
+- desktop view links left: Home, Shop with Dropdown, About and Order
+- desktop view links right: Search box, Profile Icon  Shopping Basket
+- profile icon right for ddesktop, centre for mobile with dropdown
 - logged in user view
 - user who is not logged in view
-- shopping basket
-- hover over 
+- shopping basket - right for desktop and middle for mobile
+- mobile view hamburger on left: opens page links and search bar
+- hover over links - dark grey
+
 
 * Footer
+- links to shop products by category / tag
+- quick links to pages Home Contact About and Orde
+- logo
+- Embedded mailchimp signup form with CTA Subscribe button with box for email
+- social media links including direct link to FB business page
+- copyright and link to developer's GitHub page
+- mobile view: Shop links top, newsletter and social media, quick links then copyright.
+
+#### Home Page
+#### Shop Page - Products
+#### Product Detail Page
+#### Order Page - Custom Order
+#### My Profile Page
+#### Product Managenment Page
+#### Contact Page
+#### Register Page
+#### Login Page
+#### Basket Page
+#### Checkout Page
+
+
+
 
 
 
