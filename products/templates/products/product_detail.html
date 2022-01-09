@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="col card-body">
                     {% if product.category %}
-                    <p class="card-text small mt-2 mb-0">
+                    <p class="card-text info-text small mt-2 mb-0">
                         <a href="{% url 'products' %}?category={{ product.category.name }}">
                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                         </a>
@@ -84,7 +84,7 @@
                     <p class="card-text small"><strong>Pattern name:</strong> {{ product.pattern_name }}</p>
                     {% endif %}
                     {% if product.can_custom_design %}
-                    <p class="card-text info-text small"><strong>Contact us <a class="text-crimson" href="">here</a> if you
+                    <p class="card-text info-text small"><strong>Contact us <a class="text-crimson" href="{% url 'custom' %}">here</a> if you
                             would like to request a custom order of this item in your choice of colours or
                             sizes.</strong></p>
                     {% endif %}

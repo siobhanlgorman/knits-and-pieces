@@ -5,16 +5,16 @@ html {
 
 /* set body height, colour, font */
 body {
-    min-height: 100vh;
+    /* min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #3a3a3a;
 }
 
 main {
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 .logo-img {
@@ -326,7 +326,6 @@ footer a:focus {
 
 .product-card-container {
     padding: 10px;
-
 }
 
 .text-crimson {
@@ -338,6 +337,14 @@ footer a:focus {
 .badge {
     background-color: #d20f35;
     color: white;
+}
+
+.badge:hover,
+.badge:active,
+.badge:focus {
+    background-color: #ba0d30;
+    color: #d3d3d3;
+
 }
 
 /* Allauth form styling */
