@@ -127,7 +127,7 @@
                 <div><span class="icon"><i class="fas fa-user"></i></span></div>
               </div>
             </a>
-            <div class="dropdown-menu dropdown-menu-right border-0" aria-labelledby="user-options">
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-options">
               {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
               <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
