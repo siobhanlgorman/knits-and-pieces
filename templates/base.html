@@ -121,13 +121,13 @@
             </form>
           </li>
           <li class="nav-item dropdown d-none d-lg-inline-block">
-            <a class="text-black nav-link drop-down-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+            <a class="nav-link drop-down-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               <div class="text-center">
                 <div><span class="icon"><i class="fas fa-user"></i></span></div>
               </div>
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+            <div class="dropdown-menu dropdown-menu-right border-0" aria-labelledby="user-options">
               {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
               <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
