@@ -1,4 +1,6 @@
 # Knits and Pieces
+![Mock up](documentation/screenshots/mockup.png)
+
 View the live site [here](https://knits-and-pieces.herokuapp.com)
 ## UX Design
 ### Strategy
@@ -130,7 +132,11 @@ The time frame for this project was extremely short and broken up with Christmas
 
 
 ### Structure
-#### Database
+
+????
+The website consists of  pages: Home, Shop, About, Custom Order, Profile
+
+### Database
 For this project the PostgresSql database was used from the outset. Since fixtures were not being used and the number of products was relatively small this meant the products could be added to the deployed database from the beginning and so saving some time.
 
 #### Models
@@ -158,7 +164,7 @@ In the Profiles app there is a UserProfile model which uses the Django default U
 - Contact App
 In the Contact App there is a custom ContactForm model for the customer to send a message to the Knits and Pieces store.
 
-![Contact Form Model](documentation/screenshots/contact-form-model.png)
+![Contact Form Model](documentation/screenshots/contactform-model.png)
 
 - Custom App
 The Custom App has a specifically customised CustomOrder model for a customer to request a quote to have a particular product (Blanket) made to order in a choice of colours, sizes and patterns. It was originally intended to link this to the Product model but in as this was being added later in development it was not possible as some of the fields should have been separate models from the beginning and linked via foreign keys. Due to time constraints and lack of expertise in the planning stage this was not foreseen and could not have been undertaken in the later stages of the project.
@@ -188,16 +194,28 @@ The Custom App has a specifically customised CustomOrder model for a customer to
 - The emphasis is to look professional and modern and to showcase the high quality artisan goods for sale. Research on websites selling similar handmade goods often have either a very traditional and amateur look or a very cluttered look. The more upmarket sites have a clean, elegant look with a plain background to highlight the colorful products. Minimal colours are used in keeping with this clean and fresh look and make the site attractive to draw user's eye. For this project minimal colours were used to highlight the colourful products against a plain background. Image backgrounds were removed to focus on the products and to look professionally created.  
 
 #### Colours
-Colours for the site were chosen by colour picking a main colour from a product using [Coolors](https://coolors.co/). The main colour selected was crimson and suitably plain shades of grey and beige were chosen to contrast. However during development contrast issues arose sothe shades of colours used were adjusted to fix the issues without changing colours completely.
-- colours changed due to contrast issues
+Colours for the site were chosen by colour picking a main colour from a product image using [Coolors](https://coolors.co/). The main colour selected was crimson and shades of grey chosen to contrast with beige for the footer. However during development contrast issues arose so the shades of colours used were adjusted to fix the issues without changing colours completely.
+
+![Main colours](documentation/screenshots/pp5-colours.png)
+
+Buttons were red and grey to match the overall colour scheme. On hover the buttons darken a shade.
+
+![Red and Grey buttons](documentation/screenshots/grey-red-btns.png)
+
+Green was used to highlight edit or update buttons with red for remove/delete
+
+![Red and Green buttons](documentation/screenshots/green-red-btns.png)
+
 
 - created a palette using [Coolors](https://coolors.co/d20f35-e36477-3a445c-728668-bbb19d)
 
-- The crimson colour was used for the main titles on pages. 
+- The crimson colour was used for the main titles on pages.
+
 - Charcoal was used for the main font colour as it is less harsh on a white background than black - #3a3a3a
 
 #### Typography
-- Cinzel was used for Titles and special text where the intention was to highlight the Knits and Pieces brand. This font is fancy, elegant and commanding
+- [Cinzel](https://fonts.google.com/specimen/Cinzel) was used for Titles and special text where the intention was to highlight the Knits and Pieces brand. This font is fancy, elegant and commanding
+- [Roboto](https://fonts.google.com/specimen/Roboto) was used for the body font
 
 #### Images
 - The images used for the website were all taken and edited by this developer as the ecommerce products are all the developer's own. The approach was to create transparent backgrounds to highlight the products and their colours in isolation and against a plain white background. This was a learning experience and proved more time-consuming than anticipated. As a result some images could be improved given more time but are satisfactory for the purposes of this project. Paint 3D was used to remove the backgrounds, crop and resize the images. [removebg](https://www.remove.bg/upload) was also used where the size reduction did not compromise the quality.
@@ -205,7 +223,22 @@ Colours for the site were chosen by colour picking a main colour from a product 
 #### Accessibility
 
 ## Features
+
 ### Existing Features
+Features on All Pages:
+* Navbar
+- logo
+- desktop view links left
+- desktop view links right
+- logged in user view
+- user who is not logged in view
+- shopping basket
+- hover over 
+
+* Footer
+
+
+
 ### Future Features
 
 - stock levels

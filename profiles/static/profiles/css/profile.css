@@ -3,24 +3,19 @@
     overflow-y: auto;
 }
 
-.profile-form-input {
-    
-}
-
 #profile-update-form .form-control {
-    color: #008000;
+    color: #3a3a3a;
 }
 
 #profile-update-form input::placeholder {
-    color: #800080;
+    color: #3a3a3a;
 }
-
 
 #id_default_country,
 #id_default_country option:not(:first-child) {
-    color: #008000;
+    color: #218739;
 }
 
 #id_default_country option:first-child {
-    color: #800080;
+    color: #ba0d30;
 }

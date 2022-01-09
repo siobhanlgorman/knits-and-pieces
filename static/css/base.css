@@ -117,7 +117,7 @@ a.social:focus {
 
 .dropdown-menu>li>ul>li,
 .dropdown-menu>li {
-    transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 /* home page carousel */
@@ -137,7 +137,7 @@ a.social:focus {
     border: 1px solid #3a3a3a;
     padding: 2px 8px;
     margin: 2px;
-    transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .carousel-caption a:hover,
@@ -158,10 +158,10 @@ a.social:focus {
 a {
     color: #3a3a3a;
     text-decoration: none;
-    transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
     text-decoration: none;
-    transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 a:hover,
@@ -171,7 +171,7 @@ a:focus {
 
 .info-text a {
     color: #d20f35;
-    transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .info-text a:hover,
@@ -193,7 +193,7 @@ footer a:focus {
 .remove-btn {
     color: white;
     cursor: pointer;
-    transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 #btt-button>a:hover,
@@ -240,6 +240,10 @@ footer a:focus {
     color: #fff;
 }
 
+#user-options > div > div > span > i {
+    color: #636363;
+}
+
 .btn-red {
     background: #d20f35;
     color: white;
@@ -279,7 +283,6 @@ footer a:focus {
 .edit-btn {
     background-color: #218739;
     color: #fff;
-
 }
 
 .update-btn:hover,
