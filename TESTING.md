@@ -4,41 +4,269 @@ Thorough testing was conducted by the developer and multiple users among friends
 
 ## User Stories Testing
 
-* As a shopper I want to be able to view a list of products[#1](https://github.com/siobhanlgorman/knits-and-pieces/issues/1) so that I can 
+For User Story testing first navigate to the [Knits and Pieces website](https://knits-and-pieces.herokuapp.com/)
+
+* As a shopper I want to be able to view a list of products[#1](https://github.com/siobhanlgorman/knits-and-pieces/issues/1) so that I can select some to purchase
+
+**Acceptance Criteria**: User can view list of products with image, title and price on Shop page
+
+**Testing Steps**:
+1. Click on Shop link in navigation menu to open dropdown menu
+2. Click on All Products link to open up Shop page
+3. Click on Category link??
+
+**Expected Result**:
+- Shop page opens
+- Products diplay
+- Image and summary detail are visible
+- Links in product card work correctly??
+
+**Actual Result**:
+- Shop page with list of individual products is displayed
+
+![](documentation/screenshots/shop-page.png)
+
 * As a shopper I want to be able to view individual products with all relevant details[#2](https://github.com/siobhanlgorman/knits-and-pieces/issues/2) so that I can select some to purchase
+
+**Acceptance Criteria**: User can click on product image or text in Shop page to open full page detail
+**Testing Steps**:
+1. From the Shop page (see User Story test #1), click on a product image
+
+**Expected Result**:
+- Product detail card opens when product image is clicked
+- Full product detail card is displayed
+- All links in card work correctly??????
+
+**Actual Result**:
+- Product detail card displays
+![](documentation/screenshots/product-detail-page.png)
+
 * As a shopper I want to be able to easily identify special information about products eg discounts[#3](https://github.com/siobhanlgorman/knits-and-pieces/issues/3) so that I can see the price, description, material, product image and size
-* As a shopper I want to be able to easily view the total of my purchases at any time[#4](https://github.com/siobhanlgorman/knits-and-pieces/issues/4) so that I can take advantage of special information on products I'd like to purchase
+
+**Acceptance Criteria**:  Tag is visible on products tagged with special information e.g. 'last few remaining', 'special offer' etc on Shop page and Product Detail Page. Products with tags can be accessed from navigation meny and link in banner
+
+**Testing Steps**:
+1. Click on Shop link in navigation menu to open dropdown menu
+2. Click on Don't Miss link
+1. Click on Home link in navigation menu to return to Home page
+2. Click on Special Offers now in banner
+
+
+**Expected Result**:
+- Don't Miss link in navigation dropdown opens list of tagged products
+- Special Offers Now link in banner opens list of tagged products
+
+**Actual Result**:
+- Don't Miss link in navigation dropdown opens list of tagged products
+- Special Offers Now link in banner opens list of tagged products
+
+![](documentation/screenshots/don't-miss-link.png)
+![](documentation/screenshots/don't-miss-products.png)
+![](documentation/screenshots/banner-link.png)
+
+* As a shopper I want to be able to easily view the total in euros of my purchases at any time[#4](https://github.com/siobhanlgorman/knits-and-pieces/issues/4) so that I can take advantage of special information on products I'd like to purchase
+
+**Acceptance Criteria**
+- Basket total visible on basket icon from all pages with total amount in euros beside icon
+
+**Testing Steps**:
+1. Check basket icon and amount ar visible in navbar
+2. Navigate to Shop page
+3. Click on product image to open product detail
+4. Click on add to basket
+5. Check amount beside icon in navbar
+6. Click on basket icon
+
+**Expected Result**:
+- Basket icon is visible in navbar
+- Total amount updates as basket changes
+- When clicked basket icon opens Shopping Basket page
+
+**Actual Result**:
+- Basket icon is visible in navbar with amount corresponding to basket total visible
+- When clicked basket icon opens Shopping Basket page
+![](documentation/screenshots/basket-total.png)
+![](documentation/screenshots/shopping-basket-page.png)
+
 * As a shopper I want to be able to view more information about the store[#6](https://github.com/siobhanlgorman/knits-and-pieces/issues/6) so that I can increase my confidence that the store is genuine, trustworthy and reliable to purchase from
+
+**Acceptance Criteria**
+- About page visible and linked in navigation
+
+
+**Testing Steps**:
+1. From the Home page navigation menu click the link for About
+
+**Expected Result**:
+- About Page opens
+
+**Actual Result**:
+- About Page opens when About link is clicked
+![](documentation/screenshots/about-page.png)
+
 *  As a shopper I want to be able to view store's social media pages[#8](https://github.com/siobhanlgorman/knits-and-pieces/issues/8) so that I can view the site content in different places that I use
+
+**Acceptance Criteria**
+- User can locate the store on facebook and other social media sites (or link to social media main site if no business page)
+
+**Testing Steps**:
+1. From any page navigate to the footer section
+2. In turn click on facebook, twitter, instagram icons
+
+**Expected Result**:
+1. When clicked Facebook icon opens Knits and Pieces Facebook business page in a new tab
+2. When clicked Twitter and Instagram main page sites open in a new tab
+
+**Actual Result**:
+- When icons are clicked Knits and Pieces Facebook business page opens and Twitter and Instagram main pages open in new tabs
+
+![](documentation/screenshots/fb-new-tab.png)
 *  As a shopper I want to be able to easily register for an account[#9](https://github.com/siobhanlgorman/knits-and-pieces/issues/9) so that I can have a personal account and be able to view my profile
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a registered shopper I want to be able to easily login and logout[#10](https://github.com/siobhanlgorman/knits-and-pieces/issues/10) so that I can access my personal account information
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a registered shopper I want to be able to easily recover my password if I forget it[#11](https://github.com/siobhanlgorman/knits-and-pieces/issues/11) so that I can recover access to my account
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a registered shopper I want to be able to receive an email confirmation after registering[#12](https://github.com/siobhanlgorman/knits-and-pieces/issues/12) so that I can verify my account information/ registration was successful
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a registered shopper I want to be able to have a personalised user profile[#13](https://github.com/siobhanlgorman/knits-and-pieces/issues/13) so that I can view my personal order history and order confirmations and save my payment information
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to sort the list of available products[#14](https://github.com/siobhanlgorman/knits-and-pieces/issues/14) so that I can easily identify the best rated, best priced and items sorted by category
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to sort a specific category of items[#15](https://github.com/siobhanlgorman/knits-and-pieces/issues/15) so that I can find the best priced, best rated product in a specific category or sort the products in that category by name
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to sort multiple categories of products simultaneously[#16](https://github.com/siobhanlgorman/knits-and-pieces/issues/16) so that I can find the best priced, best rated products across broad categories
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to search for a product by name or description[#17](https://github.com/siobhanlgorman/knits-and-pieces/issues/17) so that I can find a specific product to purchase
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to easily see what I have searched for and the number of results[#18](https://github.com/siobhanlgorman/knits-and-pieces/issues/18) so that I can quickly see how many products are available
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to easily select the quantity of a product when purchasing it[#19](https://github.com/siobhanlgorman/knits-and-pieces/issues/19) so that I can check that I am ordering the correct quantity that I intended
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to view items in my basket to be purchased[#20](https://github.com/siobhanlgorman/knits-and-pieces/issues/20) so that I can see the total cost of my items and all the items I will receive
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to adjust the quantity of individual items in my basket[#21](https://github.com/siobhanlgorman/knits-and-pieces/issues/21) so that I can easily make changes to my purchase before checkout
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to easily enter my payment information[#22](https://github.com/siobhanlgorman/knits-and-pieces/issues/22) so that I can checkout quickly and easily
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to feel that my personal and payment information is safe and secure[#23](https://github.com/siobhanlgorman/knits-and-pieces/issues/23) so that I can be confident in providing the necessary information to make a purchase
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to view an order confirmation after checkout[#24](https://github.com/siobhanlgorman/knits-and-pieces/issues/24) so that I can verify that the order is correct and as intended
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to receive an email confirmation after checking out[#25](https://github.com/siobhanlgorman/knits-and-pieces/issues/25) so that I can have a record of my purchases
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a store owner I want to be able to add a product[#26](https://github.com/siobhanlgorman/knits-and-pieces/issues/26) so that I can add new items to my store
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
+
 *  As a store owner I want to be able to edit/update a product[#27](https://github.com/siobhanlgorman/knits-and-pieces/issues/27) so that I can change product prices, descriptions, images and product criteria
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a store owner I want to be able to delete a product[#28](https://github.com/siobhanlgorman/knits-and-pieces/issues/28) so that I can remove items that are no longer for sale
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to request a quote for a custom order[#31](https://github.com/siobhanlgorman/knits-and-pieces/issues/31) so that I can purchase an item that meets my needs
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to easily contact the store owner with any queries about the products[#32](https://github.com/siobhanlgorman/knits-and-pieces/issues/32) so that I can find the answer to my questions
+
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 *  As a shopper I want to be able to receive feedback from the website when I perform an interaction[#33](https://github.com/siobhanlgorman/knits-and-pieces/issues/1) so that I can confirm an interaction has taken place and if an error has occurred
 
-
-
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 
 ## Features Testing
-?????
+
+**Expected Result**:
+**Testing Steps**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
 
 * Navbar
 - Logo - Ball of wool in crimson brand colour. links to home page. Sits on left as is usual.
