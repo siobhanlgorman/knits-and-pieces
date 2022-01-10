@@ -227,44 +227,46 @@ Green was used to highlight edit or update buttons with red for remove/delete
 ### Existing Features
 #### Features on All Pages:
 * Navbar
-- logo - links to home page. Sits on left as is usual.
-- title - 
-- desktop view links left: Home, Shop with Dropdown, About and Order
-- desktop view links right: Search box, Profile Icon  Shopping Basket
-- profile icon right for ddesktop, centre for mobile with dropdown
-- logged in user view
-- user who is not logged in view
-- shopping basket - right for desktop and middle for mobile - Current basket total amount indicated beside. Both crimson 
-- mobile view hamburger on left: opens page links and search bar
-- hover over links - dark grey
-- search box - user enters search word and if search matches word in title or description products are displayed and s number of results found displayed above
-- Banner to draw attention to special information - free delivery threshold and an embedded link to special offers/special items tagged items
+- Logo - Ball of wool in crimson brand colour. links to home page. Sits on left as is usual.
+- Page Links: On large screens the main page links are on the left: Home, Shop, About and Order pages. - On medium screens and smaller the main page links are compressed into a burger menu icon on the right which opens into a dropdown menu on the right
+- The Shop page link features a dropdown menu. Users can choose to view all products or to sort or filter products by price, name or category. Categories which can be chosen from the menu are grouped together into broad categories that a customer might choose to see together: throws and blankets, hats and gloves, cushion covers and facemasks. When a category is selected the specific category badges appear above the products listing to enable the customer to further sort by category
+- Search Box - On large screens a search box appears to the right of the top menu. Users can enter a single word to search within the title or description of a product. Users can click enter or the magnifying glass icon to enter the search. The products list is then filtered by the search term and resulting products are displayed with the number of results displayed above. If no products are found '0 products found' is displayed. On smaller screens the search box is contained in the burger dropdown menu.
+- Profile Icon: On large screens the profile icon is to the right of the search box. This contains a dropdown menu which opens when clicked. For a user who is not logged in the options in the dropdown are links to the Register page and the Login page. For a user who is logged in the dropdown options are Add a Product, My Profile and Logout. On smaller screens the profile icon appears centrally to the right of the shopping basket.
+- Shopping Basket: On large screens the shopping basket appears on the top right of the menu. The basket is coloured red in keeping with the brand colur and to make it stand out in the menu. When clicked the icon opens up the current basket page. Beside the basket is an indicator of the total cost of the items currently in the basket, also coloured red to match the basket. On smaller screens the basket icon is positioned centrally to the left of the profile icon.
+- When the navigation page menu links are hovered over their colours are inverted to grey background and white font colour. 
+- Header with navbar sticks to the top of the screen as the user scolls on larger screens but not on smaller screens where
 
-
+* A banner is at the top of each page under the navbar, coloured in the crimson brand colour to draw attention to special information - the free delivery threshold and an embedded link to special offers/special items tagged items
 
 * Footer
-- links to shop products by category / tag
-- quick links to pages Home Contact About and Orde
-- logo with link to home page in center
-- Embedded mailchimp signup form with CTA Subscribe button with box for email
-- social media links (although not currently linked up to a business page) including direct link to FB business page
-- copyright and link to developer's GitHub page
-- mobile view: Shop links top, newsletter and social media, quick links then copyright.
+- The footer is divided into three sections: Shop links to the shop products by category or tag, Quick Links to the main shop pages and a contact page, and a section with the social media and contact icons and newsletter links. 
+- When the user clicks on the Contact page link or the envelope icon the Contact page form opens. The two links to the contact contact page are only found in the footer as this is where the user expects to find them. 
+- The social media links include a direct link to FB business page while the other social media links do not currently link directly to business pagea as the business is not currently live. 
+- At the bottom is copyright information and a link to the developer's GitHub page. 
+- On medium and large screens the shop links are on the left, quick links on the right and social media, newsletter, copyright in the middle section. On smaller screens the Shop links are at the top, followed by newsletter and social media, then Quick Links and copyright at the bottom. 
+- The footer also features the brand logo image in the center which links to the home page.
+- The Subscribe section contains an embedded mailchimp signup form with CTA Subscribe button and an input box to enter the user's email address
+- A Page title features prominently on all pages in the title font and the brand colour.
+
 
 #### Home Page
-- Carousel featuring three main product categories with links in the image title to the relevant category page
-- Introductory text about the store and embedded link to the Order page where Users can order a custom item
-- Two CTA buttons one to the main Shop page and the other to the About page with more information about the store. 
+- Under the title is a carousel featuring images of three main product categories with links in the image title to the relevant category page
+- Under the carousel is some introductory text about the store and an embedded link to the Order page where Users can order a custom item
+- Below the text are two CTA buttons one to the main Shop page and the other to the About page with more information about the store. 
 
 #### About Page
 - Features a photograph of the store owner with information about the history of the store. 
 - CTA button to the Shop page
+- On larger screens the photo and text appear side by side which collapses to one underneath the other on smaller screens
 
 #### Shop Page - Products
-- number of products
-- sort products by category, price, name
-- each product image links to its product detail page
-- when products listed have been selected by category in the navigation menu, category badges are seen from where the user can further sort the products
+- When all products is selected in the navigation menu the product are listed in rows of four on extra-large screens, three on large screens, two on medium and one on small screens
+- Above the products list on the left on medium screens and up is text specifying the number of products. 
+- Above the products list on the right is a sort selector box to sort products by category, price, name
+- The number of products text and sort selector box appear in the centre above the products list on small screens
+- Each product image in the product list links to its product detail page
+- Edit/delete buttons are visible to superuser/administrator under the product price
+- When products listed have been selected by category in the navigation menu, category badges are seen from where the user can further sort the products
 
 #### Product Detail Page
 - Each product detail page features a large image of the product
@@ -274,15 +276,18 @@ Green was used to highlight edit or update buttons with red for remove/delete
 - Edit/delete buttons are visible to superuser/administrator under the product name
 - A quantity selector box with + - selector to increase/decrease quantity of item. Usere can also enter number or use arrows inside box to increase/decrease quantity of item
 - Two buttons - one grey to return to main Shop page and one crimson to add item(s) to shopping basket
+- On larger screens the photo appears on the left and description to the right which collapses vertically into two coloumns on smaller screens
 
 #### Order Page - Custom Order
-- carousel of pattern images from which customer can select design to order in the form
-- form for user to input name, email, choice of sizes/material/up to four colour choices and a designwith a default of 'mix' if they have no preference. Further details can also be entered in a message box.
+- This page features a form for the user to request a quote to custom order a throw or blanket to their size and colour specifications
+- At the top of the page is a carousel of pattern images from which customer can select the design they wish to order in the form
+- Below the carousel is a form for user to input name, email, choice of sizes/material/up to four colour choices and a design. Default options are set for size and material and a default of 'mix' for design if the user has no preference. Name, email and main colour are required fields for the user to input.  Further details can also be entered in a message box.
 - A request quote button clearly indicates the purpose of the form and submits the form.
 
-#### Product Management Page
-- Form to add a product with fields from the product model: category options, name, size options, description, optional tag, price, material (with default acrylic), machine wash checkbox with default checked, image selection box, up to four colour selction boxes with at least one required, pattern name, deigner and whether the item can be custom ordered with no as default.
-- Form to edit a product is the same form as for add a product with the fields auto completed which can be changed by the administrator.
+#### Add a Product Page
+- The Add a Product page can only be accessed by the administrator/superuser and is only visible in the navbar menu is te user is logged in as administrator or superuser.
+- This page features a form for the administrator/superuser to add a product with fields from the product model: category options, name, size options, description, optional tag, price, material (with default acrylic), machine wash checkbox with default checked, image selection box, up to four colour selction boxes with at least one required, pattern name, deigner and whether the item can be custom ordered with no as default.
+- The form to edit a product accessed by the admistrator from the products or product detail page is the same form as for add a product with the fields auto completed which can be changed by the administrator.
 
 #### My Profile Page
 - The link to this page can only be seen if a user is logged in
@@ -292,15 +297,34 @@ Green was used to highlight edit or update buttons with red for remove/delete
 - This page can only be accessed by the user who is signed in
 - On the right the user's order history is displayed in a table with order number, date of order, items ordered and the order total. The Order number is truncated but on hover the full number can be viewed. On click the full past order confirmation is displayed
 
-
 #### Contact Page
-- 
-#### Register Page
-#### Login Page
-#### Basket Page
-#### Checkout Page
-#### Messages
+- Accessed from envelope icon in footer and Contact link in Quick Links in footer
+- Features a form with input fields: name, subject, email address and text box for a message
+- All fields are required so that site owner has the necessary information to reply
+- At the bottom of the form is a Send button to submit the message
 
+#### Register Page
+- Features a form with input boxes for email and email confirmation, username, password and password confirmation
+- Two buttons, signup and back to login page
+
+#### Login Page
+- Features a form with input boxes for required fields username and password
+- Two buttons are featured at the bottom of the form for home and sign in
+
+#### Basket Page
+- Features summary information of products added to basket: image of products, title, size, price, delivery cost and total
+- A quantity selector box can be used to changed the quantity of basket items
+- Two buttons are visible to update quantity total and remove items in one go from the basket
+- Two CTA buttons are at the bottom of the form for users to return to the shop pr checkout
+
+
+#### Checkout Page
+- The Checkout page features input boxes for the necessary payment information inputs: name, email, phone number, street address, town or city, country, post code, country
+- At the bottom is the box for card payment information for Stripe. For testing purposes the number 4242 4242 4242 4242 is used
+- Two selectors are at the bottom to return to adjust the basket or complete order buttons to complete the payment process
+
+#### Messages
+- Feedback messages are shown whenever the user interacts with the site.
 
 
 

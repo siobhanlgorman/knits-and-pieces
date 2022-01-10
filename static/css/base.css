@@ -23,10 +23,10 @@ main {
 }
 
 
-body > header > nav > a:hover {
+body>header>nav>a:hover {
     background-color: transparent;
 }
- 
+
 body>footer>div.container-fluid.text-center>div>div.col-md-6.mt-md-0.mt-3>div:nth-child(1)>div>div:nth-child(1)>div>a:hover {
     background-color: transparent;
 }
@@ -86,7 +86,6 @@ a.social:focus {
     text-transform: uppercase;
 }
 
-
 .navbar {
     padding: 0;
 }
@@ -127,7 +126,7 @@ a.social:focus {
     position: relative;
     margin: auto;
     background-color: white;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .carousel-caption a {
@@ -240,7 +239,7 @@ footer a:focus {
     color: #fff;
 }
 
-#user-options > div > div > span > i {
+#user-options>div>div>span>i {
     color: #636363;
 }
 
@@ -351,6 +350,12 @@ footer a:focus {
 }
 
 /* Allauth form styling */
+
+
+.form-check-input {
+    color: #3a3a3a;
+}
+
 
 .allauth-form-inner-content {
     border: 1px solid gray;
@@ -476,8 +481,14 @@ footer a:focus {
     #banner h4 {
         font-size: .8rem;
     }
-
     header {
         padding: 0;
+    }
+}
+
+/* unstick header on smaller screens */
+@media screen and (max-width: 767px) {
+    .sticky-top {
+        position: relative !important;
     }
 }
