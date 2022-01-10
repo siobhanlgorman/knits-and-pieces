@@ -237,9 +237,12 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 2. Click on My Profile
 
 **Expected Result**:
-1. User can view ordere history and delivery information for their own account when they click on My Profile
+- User can view order history and delivery information for their own account when they click on My Profile
+
 **Actual Result**:
+- User can view order history and delivery information for their own account when they click on My Profile
 ![](documentation/screenshots/profile-page.png)
+
 *  As a shopper I want to be able to sort the list of available products[#14](https://github.com/siobhanlgorman/knits-and-pieces/issues/14) so that I can easily identify the best rated, best priced and items sorted by category
 **Acceptance Criteria**
 **Testing Steps**:
