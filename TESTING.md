@@ -6,7 +6,7 @@ Thorough testing was conducted by the developer and multiple users among friends
 
 For User Story testing first navigate to the [Knits and Pieces website](https://knits-and-pieces.herokuapp.com/)
 
-* As a shopper I want to be able to view a list of products[#1](https://github.com/siobhanlgorman/knits-and-pieces/issues/1) so that I can select some to purchase
+* As a shopper I want to be able to view a list of products so that I can select some to purchase [#1](https://github.com/siobhanlgorman/knits-and-pieces/issues/1)
 
 **Acceptance Criteria**: User can view list of products with image, title and price on Shop page
 
@@ -26,7 +26,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![](documentation/screenshots/shop-page.png)
 
-* As a shopper I want to be able to view individual products with all relevant details[#2](https://github.com/siobhanlgorman/knits-and-pieces/issues/2) so that I can select some to purchase
+* As a shopper I want to be able to view individual products with all relevant details so that I can select some to purchase [#2](https://github.com/siobhanlgorman/knits-and-pieces/issues/2)
 
 **Acceptance Criteria**: User can click on product image or text in Shop page to open full page detail
 **Testing Steps**:
@@ -41,7 +41,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - Product detail card displays
 ![](documentation/screenshots/product-detail-page.png)
 
-* As a shopper I want to be able to easily identify special information about products eg discounts[#3](https://github.com/siobhanlgorman/knits-and-pieces/issues/3) so that I can see the price, description, material, product image and size
+* As a shopper I want to be able to easily identify special information about products eg discounts so that I can see the price, description, material, product image and size [#3](https://github.com/siobhanlgorman/knits-and-pieces/issues/3)
 
 **Acceptance Criteria**:  Tag is visible on products tagged with special information e.g. 'last few remaining', 'special offer' etc on Shop page and Product Detail Page. Products with tags can be accessed from navigation meny and link in banner
 
@@ -64,7 +64,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 ![](documentation/screenshots/don't-miss-products.png)
 ![](documentation/screenshots/banner-link.png)
 
-* As a shopper I want to be able to easily view the total in euros of my purchases at any time[#4](https://github.com/siobhanlgorman/knits-and-pieces/issues/4) so that I can take advantage of special information on products I'd like to purchase
+* As a shopper I want to be able to easily view the total in euros of my purchases at any time so that I can take advantage of special information on products I'd like to purchase [#4](https://github.com/siobhanlgorman/knits-and-pieces/issues/4)
 
 **Acceptance Criteria**
 - Basket total visible on basket icon from all pages with total amount in euros beside icon
@@ -88,7 +88,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 ![](documentation/screenshots/basket-total.png)
 ![](documentation/screenshots/shopping-basket-page.png)
 
-* As a shopper I want to be able to view more information about the store[#6](https://github.com/siobhanlgorman/knits-and-pieces/issues/6) so that I can increase my confidence that the store is genuine, trustworthy and reliable to purchase from
+* As a shopper I want to be able to view more information about the store so that I can increase my confidence that the store is genuine, trustworthy and reliable to purchase from [#6](https://github.com/siobhanlgorman/knits-and-pieces/issues/6)
 
 **Acceptance Criteria**
 - About page visible and linked in navigation
@@ -104,7 +104,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - About Page opens when About link is clicked
 ![](documentation/screenshots/about-page.png)
 
-*  As a shopper I want to be able to view store's social media pages[#8](https://github.com/siobhanlgorman/knits-and-pieces/issues/8) so that I can view the site content in different places that I use
+*  As a shopper I want to be able to view store's social media pages so that I can view the site content in different places that I use [#8](https://github.com/siobhanlgorman/knits-and-pieces/issues/8)
 
 **Acceptance Criteria**
 - User can locate the store on facebook and other social media sites (or link to social media main site if no business page)
@@ -121,7 +121,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - When icons are clicked Knits and Pieces Facebook business page opens and Twitter and Instagram main pages open in new tabs
 ![](documentation/screenshots/fb-new-tab.png)
 
-*  As a shopper I want to be able to easily register for an account[#9](https://github.com/siobhanlgorman/knits-and-pieces/issues/9) so that I can have a personal account and be able to view my profile
+*  As a shopper I want to be able to easily register for an account so that I can have a personal account and be able to view my profile [#9](https://github.com/siobhanlgorman/knits-and-pieces/issues/9)
 
 **Acceptance Criteria**: User can register for an account with email and password
 
@@ -149,7 +149,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 ![](documentation/screenshots/email-confirm.png)
 
 
-*  As a registered shopper I want to be able to easily login and logout[#10](https://github.com/siobhanlgorman/knits-and-pieces/issues/10) so that I can access my personal account information
+*  As a registered shopper I want to be able to easily login and logout so that I can access my personal account information [#10](https://github.com/siobhanlgorman/knits-and-pieces/issues/10)
 
 **Acceptance Criteria**
 - When user clicks on login/logout they can access My Account page
@@ -170,7 +170,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![](documentation/screenshots/sign-in.png)
 
-*  As a registered shopper I want to be able to easily recover my password if I forget it[#11](https://github.com/siobhanlgorman/knits-and-pieces/issues/11) so that I can recover access to my account
+*  As a registered shopper I want to be able to easily recover my password if I forget it so that I can recover access to my account [#11](https://github.com/siobhanlgorman/knits-and-pieces/issues/11)
 
 **Acceptance Criteria**
 - User can recover/change password from user profile
@@ -193,7 +193,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 ![](documentation/screenshots/password-changed.png)
 ![](documentation/screenshots/jack-signin.png)
 
-*  As a registered shopper I want to be able to receive an email confirmation after registering[#12](https://github.com/siobhanlgorman/knits-and-pieces/issues/12) so that I can verify my account information/ registration was successful
+*  As a registered shopper I want to be able to receive an email confirmation after registering so that I can verify my account information/ registration was successful [#12](https://github.com/siobhanlgorman/knits-and-pieces/issues/12)
 
 **Acceptance Criteria**
 - Email is sent to user account with confirmation link
@@ -226,7 +226,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 ![](documentation/screenshots/email-confirmed.png)
 ![](documentation/screenshots/logged-in.png)
 
-*  As a registered shopper I want to be able to have a personalised user profile[#13](https://github.com/siobhanlgorman/knits-and-pieces/issues/13) so that I can view my personal order history and order confirmations and save my payment information
+*  As a registered shopper I want to be able to have a personalised user profile so that I can view my personal order history and order confirmations and save my payment information [#13](https://github.com/siobhanlgorman/knits-and-pieces/issues/13)
 
 **Acceptance Criteria**
 1: User clicks on my profile icon in navigation to open profile
@@ -243,110 +243,137 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - User can view order history and delivery information for their own account when they click on My Profile
 ![](documentation/screenshots/profile-page.png)
 
-*  As a shopper I want to be able to sort the list of available products[#14](https://github.com/siobhanlgorman/knits-and-pieces/issues/14) so that I can easily identify the best rated, best priced and items sorted by category
+*  As a shopper I want to be able to sort the list of available products so that I can easily identify the best rated, best priced and items sorted by category [#14](https://github.com/siobhanlgorman/knits-and-pieces/issues/14)
+
+**Acceptance Criteria**
+- User can sort all products by price and name from the navigation menu
+
+**Testing Steps**:
+1. Click on the Shop link in the navigation menu
+2. Click on the By Price link in the dropdown menu
+3. Click on the By Name link in the dropdown menu
+
+**Expected Result**:
+1. Products appear arranged by price in ascending order when By Price is clicked
+2. Products appear arranged by name in ascending alphabetical order when By Name is clicked
+
+**Actual Result**:
+1. Products appear arranged by price in ascending order when By Price is clicked
+2. Products appear arranged by name in ascending alphabetical order when By Name is clicked
+
+![](documentation/screenshots/by-price.png)
+![](documentation/screenshots/by-name.png)
+
+*  As a shopper I want to be able to sort a specific category of items so that I can find the best priced, best rated product in a specific category or sort the products in that category by name [#15](https://github.com/siobhanlgorman/knits-and-pieces/issues/15)
+
+**Acceptance Criteria**
+1: User can select how to sort products from navigation
+2: Badges display the categories viewed and can be clicked to narrow down categories
+3: User can click on options in sort box to sort categories
+
+**Testing Steps**:
+1. Click on the Shop link in the navigation menu
+2. Click on a category name link in the dropdown menu
+3. Click on th By Name link in the dropdown menu
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
+
+*  As a shopper I want to be able to sort multiple categories of products simultaneously so that I can find the best priced, best rated products across broad categories [#16](https://github.com/siobhanlgorman/knits-and-pieces/issues/16)
+**Acceptance Criteria**: 
+1. User can sort products by multiple categories when they select from the navigation menu dropdown
+2. Badges display the categories viewed and can be clicked to narrow down categories
+3. User can click on options in sort box to sort categories
+**Testing Steps**:
+**Expected Result**:
+**Actual Result**:
+![](documentation/screenshots/#.png)
+*  As a shopper I want to be able to search for a product by name or description so that I can find a specific product to purchase [#17](https://github.com/siobhanlgorman/knits-and-pieces/issues/17)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
 **Actual Result**:
 ![](documentation/screenshots/#.png)
-*  As a shopper I want to be able to sort a specific category of items[#15](https://github.com/siobhanlgorman/knits-and-pieces/issues/15) so that I can find the best priced, best rated product in a specific category or sort the products in that category by name
+*  As a shopper I want to be able to easily see what I have searched for and the number of results so that I can quickly see how many products are available [#18](https://github.com/siobhanlgorman/knits-and-pieces/issues/18)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
 **Actual Result**:
 ![](documentation/screenshots/#.png)
-*  As a shopper I want to be able to sort multiple categories of products simultaneously[#16](https://github.com/siobhanlgorman/knits-and-pieces/issues/16) so that I can find the best priced, best rated products across broad categories
+*  As a shopper I want to be able to easily select the quantity of a product when purchasing it so that I can check that I am ordering the correct quantity that I intended [#19](https://github.com/siobhanlgorman/knits-and-pieces/issues/19)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
 **Actual Result**:
 ![](documentation/screenshots/#.png)
-*  As a shopper I want to be able to search for a product by name or description[#17](https://github.com/siobhanlgorman/knits-and-pieces/issues/17) so that I can find a specific product to purchase
+*  As a shopper I want to be able to view items in my basket to be purchased so that I can see the total cost of my items and all the items I will receive [#20](https://github.com/siobhanlgorman/knits-and-pieces/issues/20)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
 **Actual Result**:
 ![](documentation/screenshots/#.png)
-*  As a shopper I want to be able to easily see what I have searched for and the number of results[#18](https://github.com/siobhanlgorman/knits-and-pieces/issues/18) so that I can quickly see how many products are available
+*  As a shopper I want to be able to adjust the quantity of individual items in my basket so that I can easily make changes to my purchase before checkout [#21](https://github.com/siobhanlgorman/knits-and-pieces/issues/21)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
 **Actual Result**:
 ![](documentation/screenshots/#.png)
-*  As a shopper I want to be able to easily select the quantity of a product when purchasing it[#19](https://github.com/siobhanlgorman/knits-and-pieces/issues/19) so that I can check that I am ordering the correct quantity that I intended
+*  As a shopper I want to be able to easily enter my payment information so that I can checkout quickly and easily [#22](https://github.com/siobhanlgorman/knits-and-pieces/issues/22)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
 **Actual Result**:
 ![](documentation/screenshots/#.png)
-*  As a shopper I want to be able to view items in my basket to be purchased[#20](https://github.com/siobhanlgorman/knits-and-pieces/issues/20) so that I can see the total cost of my items and all the items I will receive
+*  As a shopper I want to be able to feel that my personal and payment information is safe and secure so that I can be confident in providing the necessary information to make a purchase [#23](https://github.com/siobhanlgorman/knits-and-pieces/issues/23)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
 **Actual Result**:
 ![](documentation/screenshots/#.png)
-*  As a shopper I want to be able to adjust the quantity of individual items in my basket[#21](https://github.com/siobhanlgorman/knits-and-pieces/issues/21) so that I can easily make changes to my purchase before checkout
+*  As a shopper I want to be able to view an order confirmation after checkout so that I can verify that the order is correct and as intended [#24](https://github.com/siobhanlgorman/knits-and-pieces/issues/24)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
 **Actual Result**:
 ![](documentation/screenshots/#.png)
-*  As a shopper I want to be able to easily enter my payment information[#22](https://github.com/siobhanlgorman/knits-and-pieces/issues/22) so that I can checkout quickly and easily
+*  As a shopper I want to be able to receive an email confirmation after checking out so that I can have a record of my purchases [#25](https://github.com/siobhanlgorman/knits-and-pieces/issues/25)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
 **Actual Result**:
 ![](documentation/screenshots/#.png)
-*  As a shopper I want to be able to feel that my personal and payment information is safe and secure[#23](https://github.com/siobhanlgorman/knits-and-pieces/issues/23) so that I can be confident in providing the necessary information to make a purchase
-**Acceptance Criteria**
-**Testing Steps**:
-**Expected Result**:
-**Actual Result**:
-![](documentation/screenshots/#.png)
-*  As a shopper I want to be able to view an order confirmation after checkout[#24](https://github.com/siobhanlgorman/knits-and-pieces/issues/24) so that I can verify that the order is correct and as intended
-**Acceptance Criteria**
-**Testing Steps**:
-**Expected Result**:
-**Actual Result**:
-![](documentation/screenshots/#.png)
-*  As a shopper I want to be able to receive an email confirmation after checking out[#25](https://github.com/siobhanlgorman/knits-and-pieces/issues/25) so that I can have a record of my purchases
-**Acceptance Criteria**
-**Testing Steps**:
-**Expected Result**:
-**Actual Result**:
-![](documentation/screenshots/#.png)
-*  As a store owner I want to be able to add a product[#26](https://github.com/siobhanlgorman/knits-and-pieces/issues/26) so that I can add new items to my store
+*  As a store owner I want to be able to add a product so that I can add new items to my store [#26](https://github.com/siobhanlgorman/knits-and-pieces/issues/26)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
 **Actual Result**:
 ![](documentation/screenshots/#.png)
 
-*  As a store owner I want to be able to edit/update a product[#27](https://github.com/siobhanlgorman/knits-and-pieces/issues/27) so that I can change product prices, descriptions, images and product criteria
+*  As a store owner I want to be able to edit/update a product so that I can change product prices, descriptions, images and product criteria [#27](https://github.com/siobhanlgorman/knits-and-pieces/issues/27)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
 **Actual Result**:
 ![](documentation/screenshots/#.png)
-*  As a store owner I want to be able to delete a product[#28](https://github.com/siobhanlgorman/knits-and-pieces/issues/28) so that I can remove items that are no longer for sale
+*  As a store owner I want to be able to delete a product so that I can remove items that are no longer for sale [#28](https://github.com/siobhanlgorman/knits-and-pieces/issues/28)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
 **Actual Result**:
 ![](documentation/screenshots/#.png)
-*  As a shopper I want to be able to request a quote for a custom order[#31](https://github.com/siobhanlgorman/knits-and-pieces/issues/31) so that I can purchase an item that meets my needs
+*  As a shopper I want to be able to request a quote for a custom order so that I can purchase an item that meets my needs [#31](https://github.com/siobhanlgorman/knits-and-pieces/issues/31)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
 **Actual Result**:
 ![](documentation/screenshots/#.png)
-*  As a shopper I want to be able to easily contact the store owner with any queries about the products[#32](https://github.com/siobhanlgorman/knits-and-pieces/issues/32) so that I can find the answer to my questions
+*  As a shopper I want to be able to easily contact the store owner with any queries about the products so that I can find the answer to my questions [#32](https://github.com/siobhanlgorman/knits-and-pieces/issues/32)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
 **Actual Result**:
 ![](documentation/screenshots/#.png)
-*  As a shopper I want to be able to receive feedback from the website when I perform an interaction[#33](https://github.com/siobhanlgorman/knits-and-pieces/issues/1) so that I can confirm an interaction has taken place and if an error has occurred
+*  As a shopper I want to be able to receive feedback from the website when I perform an interaction so that I can confirm an interaction has taken place and if an error has occurred [#33](https://github.com/siobhanlgorman/knits-and-pieces/issues/33)
 **Acceptance Criteria**
 **Testing Steps**:
 **Expected Result**:
