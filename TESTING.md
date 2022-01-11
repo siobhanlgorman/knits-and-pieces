@@ -938,10 +938,17 @@ Click on each link in footer in turn and check correct page opens
 #### About Page
 - Features a photograph of the store owner with information about the history of the store. 
 - CTA button to the Shop page
+
 **Expected Result**:
 - CTA button to the Shop page links correctly to open products page with category badges
+
 **Testing Steps**:
+1. Navigate to About Page by clicking on link in navbar menu
+2. Click on Shop button
+
 **Actual Result**:
+- CTA button to the Shop page links correctly to open products page with category badges
+
 **Pass/Fail: Pass**
 ![](documentation/screenshots/about-page.png)
 - On larger screens the photo and text appear side by side which collapses to one underneath the other on smaller screens
