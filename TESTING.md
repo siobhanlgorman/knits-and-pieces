@@ -631,9 +631,10 @@ When logged in as Administrator
 
 **Testing Steps**:
 1. Click on Order link in navbar menu
-2. Complete form fields
-3. Click Send button
-4. Click on link to Request Quote in footer
+2. Click Request Quote to check empty field submission
+3. Complete form fields
+3. Click Request Quote button
+4. Click on link to Order in footer
 
 **Expected Result**:
 1. User can submit custom order form from either navbar or footer links
@@ -706,9 +707,9 @@ Examples:
 
 ![](documentation/screenshots/#.png)
 
-* Navbar
+### Navbar:
 
-- Logo
+**Logo**
 
 **Expected Result**: 
 - Links to home page
@@ -723,7 +724,7 @@ Examples:
 
 ![](documentation/screenshots/logo.png)
 
-- Page Links:
+**Page Links**:
 
 **Expected Result**:
 - All links to pages link to the corresponding pages
@@ -743,7 +744,7 @@ Examples:
 
 **Pass/Fail: Pass**
 
-- The Shop page link features a dropdown menu. Users can choose to view all products or to sort or filter products by price, name or category. Categories which can be chosen from the menu are grouped together into broad categories that a customer might choose to see together: throws and blankets, hats and gloves, cushion covers and facemasks. When a category is selected the specific category badges appear above the products listing to enable the customer to further sort by category
+**The Shop page link** features a dropdown menu. Users can choose to view all products or to sort or filter products by price, name or category. Categories which can be chosen from the menu are grouped together into broad categories that a customer might choose to see together: throws and blankets, hats and gloves, cushion covers and facemasks. When a category is selected the specific category badges appear above the products listing to enable the customer to further sort by category
 
 **Expected Result**:
 - Dropdown links open Shop page with relevant categories of products and respective category badges
@@ -764,7 +765,7 @@ Examples:
 
 **Pass/Fail: Pass**
 
-- Search Box - On large screens a search box appears to the right of the top menu. Users can enter a single word to search within the title or description of a product. Users can click enter or the magnifying glass icon to enter the search. The products list is then filtered by the search term and resulting products are displayed with the number of results displayed above. If no products are found '0 products found' is displayed. On smaller screens the search box is contained in the burger dropdown menu.
+**Search Box** - On large screens a search box appears to the right of the top menu. Users can enter a single word to search within the title or description of a product. Users can click enter or the magnifying glass icon to enter the search. The products list is then filtered by the search term and resulting products are displayed with the number of results displayed above. If no products are found '0 products found' is displayed. On smaller screens the search box is contained in the burger dropdown menu.
 
 **Expected Result**:
 1. User can enter a search word into the search box
@@ -788,7 +789,7 @@ Examples:
 
 **Pass/Fail: Pass**
 
-- Profile Icon: On large screens the profile icon is to the right of the search box. This contains a dropdown menu which opens when clicked. For a user who is not logged in the options in the dropdown are links to the Register page and the Login page. For a user who is logged in the dropdown options are Add a Product, My Profile and Logout. For a user who is not logged in the dropdown options are Register and Login. On smaller screens the profile icon appears centrally to the right of the shopping basket.
+**Profile Icon**: On large screens the profile icon is to the right of the search box. This contains a dropdown menu which opens when clicked. For a user who is not logged in the options in the dropdown are links to the Register page and the Login page. For a user who is logged in the dropdown options are Add a Product, My Profile and Logout. For a user who is not logged in the dropdown options are Register and Login. On smaller screens the profile icon appears centrally to the right of the shopping basket.
 
 **Expected Result**:
 1. Profile icon dropdown menu opens as expected
@@ -811,7 +812,7 @@ Examples:
 
 **Pass/Fail: Pass**
 
-- Shopping Basket with total cost indicator: On large screens the shopping basket appears on the top right of the menu. When clicked the icon opens up the current basket page. Beside the basket is an indicator of the total cost of the items currently in the basket, also coloured red to match the basket. 
+**Shopping Basket** icon with total cost indicator: On large screens the shopping basket appears on the top right of the menu. When clicked the icon opens up the current basket page. Beside the basket is an indicator of the total cost of the items currently in the basket, also coloured red to match the basket. 
 
 **Expected Result**:
 1. When clicked the icon opens up the full current basket page. 
@@ -829,7 +830,7 @@ Examples:
 
 **Pass/Fail: Pass**
 
-- Header with navbar sticks to the top of the screen as the user scolls on larger screens but not on smaller screens where space is limited
+**Header** with navbar sticks to the top of the screen as the user scolls on larger screens but not on smaller screens where space is limited
 
 **Expected Result**:
 - Navigation menu remains displayed when scrolling for large screens but scrolls with smaller screens
@@ -845,7 +846,7 @@ Examples:
 ![](documentation/screenshots/scroll1.png)
 ![](documentation/screenshots/scroll2.png)
 
-* A banner is at the top of each page under the navbar, coloured in the crimson brand colour to draw attention to special information - the free delivery threshold and an embedded link to special offers/special items tagged items
+**A banner** is at the top of each page under the navbar, coloured in the crimson brand colour to draw attention to special information - the free delivery threshold and an embedded link to special offers/special items tagged items
 
 **Expected Result**:
 1. Banner displays correctly
@@ -864,7 +865,7 @@ Examples:
 
 **Pass/Fail: Pass**
 
-* Footer
+**Footer**
 - The footer is divided into three sections: Shop links to the shop products by category or tag, Quick Links to the main shop pages and a contact page, and a section with the social media and contact icons and newsletter links. The Facebook link links to a Facebook business page while the other social media links do not currently link directly to business pages as the business is not currently live. The subscribe button is to submit the email address in the input field below
 
 **Expected Result**:
@@ -891,8 +892,8 @@ Click on each link in footer in turn and check correct page opens
 
 **Pass/Fail: Pass**
 
-#### Home Page
-- Under the title is a carousel featuring images of three main product categories with links in the image title to the relevant category page
+### Home Page
+**Carousel**: Under the title is a carousel featuring images of three main product categories with links in the image title to the relevant category page
 
 **Expected Result**:
 - Carousel is functioning with three images displaying
@@ -905,7 +906,8 @@ Click on each link in footer in turn and check correct page opens
 
 ![](documentation/screenshots/carousel.png)
 **Pass/Fail: Pass**
-- Under the carousel is some introductory text about the store and an embedded link to the Order page where Users can order a custom item
+
+- Under the carousel is some **introductory text** about the store and an embedded link to the Order page where Users can order a custom item
 
 **Expected Result**:
 - Link to order form links correctly
@@ -919,7 +921,7 @@ Click on each link in footer in turn and check correct page opens
 ![](documentation/screenshots/home-order.png)
 
 **Pass/Fail: Pass**
-- Below the text are two CTA buttons one to the main Shop page and the other to the About page with more information about the store. 
+- Below the text are **two CTA buttons** one to the main Shop page and the other to the About page with more information about the store. 
 ![](documentation/screenshots/home-order.png)
 
 **Expected Result**:
@@ -935,7 +937,8 @@ Click on each link in footer in turn and check correct page opens
 ![](documentation/screenshots/home-cta.png)
 
 **Pass/Fail: Pass**
-#### About Page
+
+### About Page
 - Features a photograph of the store owner with information about the history of the store. 
 - CTA button to the Shop page
 
@@ -952,18 +955,17 @@ Click on each link in footer in turn and check correct page opens
 
 **Pass/Fail: Pass**
 
+### Shop Page - Products
 
-#### Shop Page - Products
-
-
-**Expected Result**:
+**Expected Results**:
 1. When all products is selected in the navigation menu the products are listed in rows of four on extra-large screens, three on large screens, two on medium and one on small screens
 2. Above the products list on the left on medium screens and up and is text specifying the number of products. 
 3. Above the products list on the right is a sort selector box to sort products by category, price, name
 4. The number of products text and sort selector box appear in the centre above the products list on small screens
 5. Each product image in the product list links to its product detail page
-6. Edit/delete buttons are visible to superuser/administrator under the product price
-7. Category badges are visible above the products list
+6. Product category label inside product card lnks to list of all products of that category
+7. Edit/delete buttons are visible only to superuser/administrator under the product price
+8. Category badges are visible above the products list
 
 **Testing Steps**:
 1. Navigate to Shop page by clicking on All Products in Shop navbar dropdown menu
@@ -971,7 +973,8 @@ Click on each link in footer in turn and check correct page opens
 3. Click on product images to open product detail
 4. If logged as Administrator check that edit/delete buttons are visible
 5. If not logged as Administrator check that edit/delete buttons are not visible
-5. Login/Logout as Administrator to check the visibility of edit/delete buttons
+6. Login/Logout as Administrator to check the visibility of edit/delete buttons
+7. Click on category label
 
 **Actual Result**:
 1. When all products is selected in the navigation menu the products are listed in rows of four on extra-large screens, three on large screens, two on medium and one on small screens
@@ -979,8 +982,9 @@ Click on each link in footer in turn and check correct page opens
 3. Above the products list on the right is a sort selector box to sort products by category, price, name
 4. The number of products text and sort selector box appear in the centre above the products list on small screens
 5. Each product image in the product list links to its product detail page
-6. Edit/delete buttons are visible to superuser/administrator under the product price
-7. Category badges are visible above the products list
+6. Product category label inside product card lnks to list of all products of that category
+7. Edit/delete buttons are visible to superuser/administrator under the product price
+8. Category badges are visible above the products list
 
 ![](documentation/screenshots/all-products-lg.png)
 ![](documentation/screenshots/all-products-md.png)
@@ -989,8 +993,9 @@ Click on each link in footer in turn and check correct page opens
 
 **Pass/Fail: Pass**
 
-#### Product Detail Page
-- This page features a large image of the product and product detail information specific to each product as not all fields apply to all products.
+### Product Detail Page
+
+**Product Details**- This page features a large image of the product and product detail information specific to each product as not all fields apply to all products.
 
 **Expected Result**:
 1. Each product detail page features a large image of the product
@@ -999,18 +1004,21 @@ Click on each link in footer in turn and check correct page opens
 
 **Testing Steps**:
 1. Navigate to the Product detail page by clicking on an item in the products page
-2. Check disply fields are not empty
+2. Check display fields are not empty
 
 **Actual Results**:
 1. Product detail page features a large image of the product
 2. Product details can be seen on the page as appropriate with no empty fields
-3. If the item is available to be custom ordered (currently only the various blankets), this is viewable in the description with a link to the custom order page
+3. Items available to be custom ordered (currently only the various blankets) have this field in the product detail page. 
+4. Link to the custom order page is working correctly
 
-![](documentation/screenshots/a#.png)
+![](documentation/screenshots/product-detail.png)
+![](documentation/screenshots/can-custom.png)
+![](documentation/screenshots/can-custom.png)
 
 **Pass/Fail: Pass**
 
-- Category label
+**Category label**
 
 **Expected Result**:
 - Category label can be clicked to view more of this category
@@ -1020,129 +1028,333 @@ Click on each link in footer in turn and check correct page opens
 
 **Actual Result**:
 - Category label can be clicked to view more of this category
-![](documentation/screenshots/a#.png)
+
+![](documentation/screenshots/category.png)
+![](documentation/screenshots/category-linked.png)
+
 **Pass/Fail: Pass**
 
-- Edit/Delete buttons
+**Edit/Delete buttons**
 
 **Expected Result**:
 1. Edit/delete buttons are visible to superuser/administrator under the product name
 2. Edit/delete buttons are not visible to user who is not a superuser/administrator
-3. Edit button when clicked opens Edit product form
-4. Delete button when clicked deletes product
+3. Edit button when clicked opens Update product form
+4. Cancel button returns user to Shop page
+5. User is able to complete and submit form when required fields are filled
+6. Empty required fields yield error message and form cannot be submitted
+7. Update Product button function updates product information
+8. Delete button when clicked deletes product
+9. Success message displays after update or delete function is completed
 
 **Testing Steps**:
 1. Navigate to product detail page when not logged in as administrator
 2. Repeat step 1 after logging in as administrator
 For these steps please create a test product by clicking on the Profile item in the navbar and then clicking Add a Product and completing the fields
 3. Open the test product created in product detail view
-3. Click on Edit button
-4. Click on delete (for test product only)
-
+4. Click on Edit button
+5. Leave fields empty and click Update Product
+5. Complete product information fields correctly
+6. Click Cancel button
+7. Repeat steps 1-4 and click Update Product
+8. Navigate to Shop page by clicking on Shop link
+9. Locate test product and click Delete
 
 **Actual Result**:
 1. Edit/delete buttons are visible to superuser/administrator under the product name
 2. Edit/delete buttons are not visible to user who is not a superuser/administrator
-3. Edit button when clicked opens Edit product form
-4. Delete button when clicked deletes product
-![](documentation/screenshots/a#.png)
+3. Edit button when clicked opens Update product form
+4. Cancel button returns user to Shop page
+5. User is able to complete and submit form when required fields are filled
+6. Empty required fields yield error message and form cannot be submitted
+7. Update Product button function updates product information
+8. Delete button when clicked deletes product
+9. Success message displays after update or delete function is completed
+
+![](documentation/screenshots/update-product.png)
+![](documentation/screenshots/delete-product.png)
+
 **Pass/Fail: Pass**
 
-- Quantity selector box
+**Quantity selector box**
 
 **Expected Result**:
 1. The + and - selector buttons increase/decrease quantity number inside the box. 
 2. Users can also enter number or use arrows inside box to increase/decrease quantity of item
 
-![](documentation/screenshots/a#.png)
-- CTA buttons
+**Testing Steps**:
+1. Click on Shop link in navbar
+2. Click on item to test
+3. Click on quantity selector box + and - in turn
+4. Click on add to basket
+5. Click on basket icon
+
+**Actual Result**:
+1. The + and - selector buttons increase/decrease quantity number inside the box. 
+2. Users can also enter number or use arrows inside box to increase/decrease quantity of item
+
+![](documentation/screenshots/quantity.png)
+
+**CTA buttons: Shop/Add to Basket**
 **Expected Result**:
 1. Shop button returns users to the All Products Shop page
 2. The Add to Basket button adds the selected number in the input box of items to the shopping basket correctly
 3. Add to basket button adds the number of items selected in the box to the basket
 
-![](documentation/screenshots/non-admin-profile-menu.png)
-**Testing Steps**:
-**Actual Result**:
-**Pass/Fail: Pass**
-![](documentation/screenshots/non-admin-profile-menu.png)
-#### Order Page - Custom Order
-**Expected Result**:
-**Testing Steps**:
-**Actual Result**:
-**Pass/Fail: Pass**
-- This page features a form for the user to request a quote to custom order a throw or blanket to their size and colour specifications
-- At the top of the page is a carousel of pattern images from which customer can select the design they wish to order in the form
-- Below the carousel is a form for user to input name, email, choice of sizes/material/up to four colour choices and a design. Default options are set for size and material and a default of 'mix' for design if the user has no preference. Name, email and main colour are required fields for the user to input.  Further details can also be entered in a message box.
-- A request quote button clearly indicates the purpose of the form and submits the form.
+![](documentation/screenshots/shop-add.png)
 
-![](documentation/screenshots/non-admin-profile-menu.png)
-#### Add a Product Page
-**Expected Result**:
 **Testing Steps**:
+1. Click on All Products in Shop drowdown in navbar
+2. Click on product to open product detail
+3. Click on Shop button
+4. Repeat steps 1-3
+5. Click on the quantity selector to change the quantity of items then click Add to Basket
+6. Click on the basket item to confirm change has been made
+
 **Actual Result**:
+1. Shop button returns users to the All Products Shop page
+2. The Add to Basket button adds the selected number in the input box of items to the shopping basket correctly
+3. Add to basket button adds the number of items selected in the box to the basket
+![](documentation/screenshots/update-basket.png)
+![](documentation/screenshots/basket-add.png)
+
 **Pass/Fail: Pass**
-- The Add a Product page can only be accessed by the administrator/superuser and is only visible in the navbar menu is te user is logged in as administrator or superuser.
+
+### Order Page - Custom Order
+- This page features a form for the user to request a quote to custom order a throw or blanket to their size and colour specifications. At the top of the page is a carousel of pattern images from which customer can select the design they wish to order in the form. Below the carousel is a form for user to input name, email, choice of sizes/material/up to four colour choices and a design. Default options are set for size and material and a default of 'mix' for design if the user has no preference. Name, email and main colour are required fields for the user to input.  Further details can also be entered in a message box. A request quote button clearly indicates the purpose of the form and submits the form.
+
+**Expected Result**:
+1. Carousel functions with all images displaying
+2. User can input text into form input boxes and empty fields display error message
+3. Request quote button submits form
+4. Form appears in admin panel
+
+**Testing Steps**:
+1. Click on Order link in navbar menu
+2. Complete form fields, leaving empty first
+3. Click Request Quote
+
+**Actual Result**:
+1. Carousel functions with all images displaying
+2. User can input text into form input boxes and empty fields display error message
+3. Request quote button submits form
+4. Form appears in admin panel
+
+**Pass/Fail: Pass**
+
+![](documentation/screenshots/custom-order-form.png)
+![](documentation/screenshots/custom-order-msg.png)
+
+### Add a Product Page
+
+- This page can only be accessed by the administrator/superuser and is only visible in the navbar menu if the user is logged in as administrator or superuser.
 - This page features a form for the administrator/superuser to add a product with fields from the product model: category options, name, size options, description, optional tag, price, material (with default acrylic), machine wash checkbox with default checked, image selection box, up to four colour selction boxes with at least one required, pattern name, deigner and whether the item can be custom ordered with no as default.
 - The form to edit a product accessed by the admistrator from the products or product detail page is the same form as for add a product with the fields auto completed which can be changed by the administrator.
-![](documentation/screenshots/non-admin-profile-menu.png)
-#### My Profile Page
-**Expected Result**:
+
+**Acceptance Criteria**
+1: Administrator can click on Add a Product to bring up add a product form
+2: Administrator can add a product, save by clicking add product button and view product on site
+
 **Testing Steps**:
+When logged in as Administrator
+1. Click on Profile icon in navbar
+2. Click on Add Product
+3. Complete product information fields incorrectly
+4. Complete product information fields correctly
+5. Click Cancel button
+6. Repeat steps 1-4 and click Add Product
+7. Navigate to Shop page by clicking on Shop link
+
+**Expected Result**:
+1. Invalid entries/missing fields are highlighted
+2. Cancel button returns user to Shop page
+3. Add Product button adds a Product to the Shop page
+4. Success message displays
+5. If no image added, placeholder image displays
+
 **Actual Result**:
+![](documentation/screenshots/test-add.png)
+![](documentation/screenshots/test-add2.png)
+
 **Pass/Fail: Pass**
+
+### My Profile Page
 - The link to this page can only be seen if a user is logged in
 - On the left the default delivery information is displayed if the user has selected save my information during the chackout process.
 - The user can change the default information by entering information into the fields
 - A green update button is below the delivery information form which can be clicked to submit and save changed information
 - This page can only be accessed by the user who is signed in
 - On the right the user's order history is displayed in a table with order number, date of order, items ordered and the order total. The Order number is truncated but on hover the full number can be viewed. On click the full past order confirmation is displayed
-![](documentation/screenshots/non-admin-profile-menu.png)
-#### Contact Page
+
 **Expected Result**:
+1. Link is only visible if user is logged in and can only be accessed by this user
+2. User's saved delivery information is visible
+3. Default delivery information can be changed and saved
+4. The update button functions to save and update infomation
+5. User's order history is displayed
+6. When the order number is hovered over the full number is visible
+7. When the order number is clicked the past order confirmation is opened
+
 **Testing Steps**:
+1. When not logged in click on Profile icon in navbar
+2. Repeat step 1 after logging in
+3. Click My Profile in Profile dropdown menu
+3. Complete or change delivery information
+4. Click update
+5. Log out
+6. Repeat steps 2-3
+7. Hover over order number
+8. Click on order number
+
 **Actual Result**:
+
+1. Link is only visible if user is logged in and can only be accessed by this user
+2. User's saved delivery information is visible
+3. Default delivery information can be changed and saved
+4. The update button functions to save and update infomation
+5. User's order history is displayed
+6. When the order number is hovered over the full number is visible
+7. When the order number is clicked the past order confirmation is opened
+![](documentation/screenshots/non-admin-profile-menu.png)
+![](documentation/screenshots/logged-in.png)
+![](documentation/screenshots/profile-order.png)
+
 **Pass/Fail: Pass**
+
+### Contact Page
 - Accessed from envelope icon in footer and Contact link in Quick Links in footer
 - Features a form with input fields: name, subject, email address and text box for a message
 - All fields are required so that site owner has the necessary information to reply
 - At the bottom of the form is a Send button to submit the message
-![](documentation/screenshots/non-admin-profile-menu.png)
-#### Register Page
-**Expected Result**:
+
+**Acceptance Criteria**
+- User can click on contact envelope to send a message to Knits and Pieces
+
 **Testing Steps**:
+1. Click on envelope icon in footer
+2. Complete form fields first attempting to submit empty fields
+3. Click on Send
+
+**Expected Result**:
+1. When fields are incorrectly completed error messages display
+2. Message sent success message displays when message is sent
+3. Success message displays when form is submitted
+4. Message appears in admin panel
+
 **Actual Result**:
+1. When fields are incorrectly completed error messages display
+2. Error message displays when required fields are not completed
+3. Success message displays when form is submitted
+4. Message appears in admin panel
+
+![](documentation/screenshots/contact-success.png)
+
 **Pass/Fail: Pass**
+
+### Register Page
+
+
 - Features a form with input boxes for email and email confirmation, username, password and password confirmation
 - Two buttons, signup and back to login page
-![](documentation/screenshots/non-admin-profile-menu.png)
-#### Login Page
-**Expected Result**:
+**Acceptance Criteria**: User can register for an account with email and password
+
 **Testing Steps**:
+1. Make sure to be not logged in to the website and click on the profile icon in the navbar
+2. Click on the Register link in the dropdown menu
+3. In the form click on the back to login button
+4. Repeat steps 1 and 2
+5. Repeat steps 1 and 2 and click on sign in link
+6. Reapeat steps 1 and 2
+7. Click on the sign up button without entering anything in the first field
+8. Complete the first field and repeat step 7 for the other fields
+
+**Expected Result**:
+1. Back to Login button links to sign in page
+2. When information is incomplete or incorrect error message is displayed
+3. When registration is complete success message appears asking the user to confirm their email address
+
 **Actual Result**:
+1. Back to login and sign up links link correctly to sign in page
+2. Error message displays when no or invalid text is entered
+3. Success message asking user to confirm their email address appears when user has registered
+![](documentation/screenshots/signup-error.png)
+![](documentation/screenshots/signup-confirm-msg.png)
+![](documentation/screenshots/email-confirm.png)
+
 **Pass/Fail: Pass**
+
+
+### Login Page
+
 - Features a form with input boxes for required fields username and password
 - Two buttons are featured at the bottom of the form for home and sign in
-![](documentation/screenshots/non-admin-profile-menu.png)
-#### Basket Page
-**Expected Result**:
+
+**Acceptance Criteria**
+- When user clicks on login/logout they can access My Account page
+
 **Testing Steps**:
+1. When not logged in click on profile icon in navigation menu
+2. Click on login link
+3. Complete username and password boxes
+4. Click sign in button
+
+**Expected Result**:
+- User is signed in
+- User's information is automatically completed if they have checked the remember me box
+
 **Actual Result**:
+- User is signed in
+- User's information is automatically completed if they have checked the remember me box
+
+![](documentation/screenshots/sign-in.png)
+
 **Pass/Fail: Pass**
+
+### Logout Page
+**Acceptance Criteria**
+- When user clicks on logout they can access My Account logout page
+- User can sign out from the sign out form
+
+**Testing Steps**:
+1. When logged in click on profile icon in navigation menu
+2. Click on logout link
+3. Click Sign Out button
+
+**Expected Result**:
+1. Logout link in profile menu links to SIgn Out form
+2. User is signed out
+
+**Actual Result**:
+1. Logout link in profile menu links to SIgn Out form
+2. User is signed out
+
+![](documentation/screenshots/sign-out.png)
+
+**Pass/Fail: Pass**
+
+
+### Basket Page
 - Features summary information of products added to basket: image of products, title, size, price, delivery cost and total
 - A quantity selector box can be used to changed the quantity of basket items
 - Two buttons are visible to update quantity total and remove items in one go from the basket
 - Two CTA buttons are at the bottom of the form for users to return to the shop or checkout
 
-![](documentation/screenshots/non-admin-profile-menu.png)
-#### Checkout Page
 **Expected Result**:
 **Testing Steps**:
 **Actual Result**:
 **Pass/Fail: Pass**
+
+![](documentation/screenshots/non-admin-profile-menu.png)
+
+### Checkout Page
 - The Checkout page features input boxes for the necessary payment information inputs: name, email, phone number, street address, town or city, country, post code, country
 - At the bottom is the box for card payment information for Stripe. For testing purposes the number 4242 4242 4242 4242 is used
 - Two selectors are at the bottom to return to adjust the basket or complete order buttons to complete the payment process
+
+**Expected Result**:
+**Testing Steps**:
+**Actual Result**:
+**Pass/Fail: Pass**
 ![](documentation/screenshots/non-admin-profile-menu.png)
 #### Messages
 **Expected Result**:
