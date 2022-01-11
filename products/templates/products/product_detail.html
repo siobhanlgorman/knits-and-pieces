@@ -77,8 +77,11 @@
                     <p class="card-text small"><strong> Material:</strong> {{ product.get_material_display }}</p>
                     <p class="card-text small"><strong>Size:</strong> {{ product.item_sizes }}</p>
                     <p class="card-text small"><strong>Machine Wash:</strong>
-                        {% if product.machine_wash %}Yes{% endif %}{% if not product.machine_wash %}No {% endif %}</p>
+                    {% if product.machine_wash %}Yes{% endif %}{% if not product.machine_wash %}No {% endif %}</p>
+
+                    {% if product.designer %}
                     <p class="card-text small"><strong>Designed by:</strong> {{ product.designer }}</p>
+                    {% endif %}
                     {% if product.pattern_name %}
                     <p class="card-text small"><strong>Pattern name:</strong> {{ product.pattern_name }}</p>
                     {% endif %}
@@ -126,7 +129,7 @@
                     </div>
 
                     <div class="col-12">
-                        <a href="{% url 'products' %}" class="btn btn-grey rounded-0 mt-2">
+                        <a href="{% url 'products' %}?category=throws,bedcovers,baby_blankets,cushion_covers,hats,gloves,face_masks" class="btn btn-grey rounded-0 mt-2">
                             <span class="icon">
                                 <i class="fas fa-chevron-left"></i>
                             </span>

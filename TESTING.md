@@ -727,6 +727,7 @@ Examples:
 
 **Expected Result**:
 - All links to pages link to the corresponding pages
+- When the navigation page menu links are hovered over their colours are inverted to grey background and white font colour. 
 
 **Testing Steps**:
 1. Navigate to navbar menu
@@ -735,8 +736,10 @@ Examples:
 
 **Actual Result**:
 - All page links work as expected
+- Links change colour on hover
 ![](documentation/screenshots/navbar.png)
 ![](documentation/screenshots/navbar2.png)
+![](documentation/screenshots/hover-navbar.png)
 
 **Pass/Fail: Pass**
 
@@ -807,93 +810,140 @@ Examples:
 ![](documentation/screenshots/non-admin-profile-menu.png)
 
 **Pass/Fail: Pass**
-- Shopping Basket: On large screens the shopping basket appears on the top right of the menu. The basket is coloured red in keeping with the brand colur and to make it stand out in the menu. When clicked the icon opens up the current basket page. Beside the basket is an indicator of the total cost of the items currently in the basket, also coloured red to match the basket. On smaller screens the basket icon is positioned centrally to the left of the profile icon.
+
+- Shopping Basket with total cost indicator: On large screens the shopping basket appears on the top right of the menu. When clicked the icon opens up the current basket page. Beside the basket is an indicator of the total cost of the items currently in the basket, also coloured red to match the basket. 
+
 **Expected Result**:
+1. When clicked the icon opens up the full current basket page. 
+2. The indicator to the right of the basket icon indicates the total cost of the items currently in the basket
+3. The indicator updates as items are added to tbe basket
+
 **Testing Steps**:
+1. Click on a product in All Products
+2. Click on Add to Basket
+2. Check that basket total updates in basket icon
+
 **Actual Result**:
+1. Total amount in basket is updated when product is added and total displays in navbar
+![](documentation/screenshots/shopping-basket-icon.png)
+
 **Pass/Fail: Pass**
-- When the navigation page menu links are hovered over their colours are inverted to grey background and white font colour. 
+
+- Header with navbar sticks to the top of the screen as the user scolls on larger screens but not on smaller screens where space is limited
+
 **Expected Result**:
+- Navigation menu remains displayed when scrolling for large screens but scrolls with smaller screens
+
 **Testing Steps**:
+1. On desktop view Home Page or any page start to scroll from top of screen
+2. Repeat for mobile view
+
 **Actual Result**:
+- Navigation menu remains displayed when scrolling for large screens but scrolls with smaller screens
+
 **Pass/Fail: Pass**
-- Header with navbar sticks to the top of the screen as the user scolls on larger screens but not on smaller screens where
-**Expected Result**:
-**Testing Steps**:
-**Actual Result**:
-**Pass/Fail: Pass**
+![](documentation/screenshots/scroll1.png)
+![](documentation/screenshots/scroll2.png)
 
 * A banner is at the top of each page under the navbar, coloured in the crimson brand colour to draw attention to special information - the free delivery threshold and an embedded link to special offers/special items tagged items
+
 **Expected Result**:
+1. Banner displays correctly
+2. Delivery threshold displays correctly
+3. Link to special offers opens up filtered list of products with special tag
+
 **Testing Steps**:
+1. View website pages
+2. Click link in banner
+
 **Actual Result**:
-**Pass/Fail: Pass**
-* Footer
-- The footer is divided into three sections: Shop links to the shop products by category or tag, Quick Links to the main shop pages and a contact page, and a section with the social media and contact icons and newsletter links. 
-**Expected Result**:
-**Testing Steps**:
-**Actual Result**:
-**Pass/Fail: Pass**
-- When the user clicks on the Contact page link or the envelope icon the Contact page form opens. The two links to the contact contact page are only found in the footer as this is where the user expects to find them. 
-**Expected Result**:
-**Testing Steps**:
-**Actual Result**:
-**Pass/Fail: Pass**
-- The social media links include a direct link to FB business page while the other social media links do not currently link directly to business pagea as the business is not currently live. 
-**Expected Result**:
-**Testing Steps**:
-**Actual Result**:
-**Pass/Fail: Pass**
-- At the bottom is copyright information and a link to the developer's GitHub page. 
-**Expected Result**:
-**Testing Steps**:
-**Actual Result**:
-**Pass/Fail: Pass**
-- On medium and large screens the shop links are on the left, quick links on the right and social media, newsletter, copyright in the middle section. On smaller screens the Shop links are at the top, followed by newsletter and social media, then Quick Links and copyright at the bottom. 
-**Expected Result**:
-**Testing Steps**:
-**Actual Result**:
-**Pass/Fail: Pass**
-- The footer also features the brand logo image in the center which links to the home page.
-**Expected Result**:
-**Testing Steps**:
-**Actual Result**:
-**Pass/Fail: Pass**
-- The Subscribe section contains an embedded mailchimp signup form with CTA Subscribe button and an input box to enter the user's email address
-**Expected Result**:
-**Testing Steps**:
-**Actual Result**:
-**Pass/Fail: Pass**
-- A Page title features prominently on all pages in the title font and the brand colour.
-**Expected Result**:
-**Testing Steps**:
-**Actual Result**:
+- Banner displays correctly with delivery threshold
+- Link to special offers opens up filtered list of products with special tag
+
+![](documentation/screenshots/banner-with-link.png)
+
 **Pass/Fail: Pass**
 
+* Footer
+- The footer is divided into three sections: Shop links to the shop products by category or tag, Quick Links to the main shop pages and a contact page, and a section with the social media and contact icons and newsletter links. The Facebook link links to a Facebook business page while the other social media links do not currently link directly to business pages as the business is not currently live. The subscribe button is to submit the email address in the input field below
+
+**Expected Result**:
+1. All links open up correct corresponding pages: the categories links open up filtered products by category and the pages link to the website pages: Home, About
+2. The social media icons link to Knits and Pieces Facebook page, Twitter and Instagram main pages. 
+3. When the user clicks on the Contact page link or the envelope icon the Contact page form opens.
+4. The Subscribe button indicates the email form must be completed.
+5. The SGorman link opens the developer's GitHub page
+
+**Testing Steps**:
+Click on each link in footer in turn and check correct page opens
+
+**Actual Result**:
+1. Shop links to the shop products by category or tag
+2. Quick Links opens to the main shop pages
+3. Contact envelope icon opens the contact page form 
+4. Social media icons link to Knits and Pieces Facebook page, Twitter and Instagram main pages- The social media links include a direct link to FB business page 
+5. Logo opens the home page
+6. The Subscribe button indicates the email form must be completed.
+
+![](documentation/screenshots/footer.png)
+![](documentation/screenshots/subscribe.png)
+![](documentation/screenshots/social-media-icons.png)
+
+**Pass/Fail: Pass**
 
 #### Home Page
 - Under the title is a carousel featuring images of three main product categories with links in the image title to the relevant category page
+
 **Expected Result**:
+- Carousel is functioning with three images displaying
+
 **Testing Steps**:
+- Navigate to Home page
+
 **Actual Result**:
+- Carousel is functioning with three images displaying
+
+![](documentation/screenshots/carousel.png)
 **Pass/Fail: Pass**
 - Under the carousel is some introductory text about the store and an embedded link to the Order page where Users can order a custom item
+
 **Expected Result**:
+- Link to order form links correctly
+
 **Testing Steps**:
+- Click on 'order'
+
 **Actual Result**:
+- Link to order form links correctly
+
+![](documentation/screenshots/home-order.png)
+
 **Pass/Fail: Pass**
 - Below the text are two CTA buttons one to the main Shop page and the other to the About page with more information about the store. 
+![](documentation/screenshots/home-order.png)
+
 **Expected Result**:
+1. Shop button links to All Products page with category badge listed
+2. About Us button links to About page
+
 **Testing Steps**:
+- Click on each link in turn
+
 **Actual Result**:
+1. Shop button links to All Products page with category badge listed
+2. About Us button links to About page
+![](documentation/screenshots/home-cta.png)
+
 **Pass/Fail: Pass**
 #### About Page
 - Features a photograph of the store owner with information about the history of the store. 
 - CTA button to the Shop page
 **Expected Result**:
+- CTA button to the Shop page links correctly to open products page with category badges
 **Testing Steps**:
 **Actual Result**:
 **Pass/Fail: Pass**
+![](documentation/screenshots/about-page.png)
 - On larger screens the photo and text appear side by side which collapses to one underneath the other on smaller screens
 
 #### Shop Page - Products
@@ -901,6 +951,7 @@ Examples:
 **Testing Steps**:
 **Actual Result**:
 **Pass/Fail: Pass**
+![](documentation/screenshots/non-admin-profile-menu.png)
 - When all products is selected in the navigation menu the product are listed in rows of four on extra-large screens, three on large screens, two on medium and one on small screens
 - Above the products list on the left on medium screens and up is text specifying the number of products. 
 - Above the products list on the right is a sort selector box to sort products by category, price, name
@@ -908,12 +959,13 @@ Examples:
 - Each product image in the product list links to its product detail page
 - Edit/delete buttons are visible to superuser/administrator under the product price
 - When products listed have been selected by category in the navigation menu, category badges are seen from where the user can further sort the products
-
+![](documentation/screenshots/non-admin-profile-menu.png)
 #### Product Detail Page
 **Expected Result**:
 **Testing Steps**:
 **Actual Result**:
 **Pass/Fail: Pass**
+![](documentation/screenshots/non-admin-profile-menu.png)
 - Each product detail page features a large image of the product
 - Product details - name, price, description, colours(1-4), material, size, machine washable, designer
 - If the item is available to be custom ordered (currently only the various blankets), this is viewable in the description with a link to the custom order page
@@ -922,7 +974,7 @@ Examples:
 - A quantity selector box with + - selector to increase/decrease quantity of item. Usere can also enter number or use arrows inside box to increase/decrease quantity of item
 - Two buttons - one grey to return to main Shop page and one crimson to add item(s) to shopping basket
 - On larger screens the photo appears on the left and description to the right which collapses vertically into two coloumns on smaller screens
-
+![](documentation/screenshots/non-admin-profile-menu.png)
 #### Order Page - Custom Order
 **Expected Result**:
 **Testing Steps**:
@@ -933,6 +985,7 @@ Examples:
 - Below the carousel is a form for user to input name, email, choice of sizes/material/up to four colour choices and a design. Default options are set for size and material and a default of 'mix' for design if the user has no preference. Name, email and main colour are required fields for the user to input.  Further details can also be entered in a message box.
 - A request quote button clearly indicates the purpose of the form and submits the form.
 
+![](documentation/screenshots/non-admin-profile-menu.png)
 #### Add a Product Page
 **Expected Result**:
 **Testing Steps**:
@@ -941,7 +994,7 @@ Examples:
 - The Add a Product page can only be accessed by the administrator/superuser and is only visible in the navbar menu is te user is logged in as administrator or superuser.
 - This page features a form for the administrator/superuser to add a product with fields from the product model: category options, name, size options, description, optional tag, price, material (with default acrylic), machine wash checkbox with default checked, image selection box, up to four colour selction boxes with at least one required, pattern name, deigner and whether the item can be custom ordered with no as default.
 - The form to edit a product accessed by the admistrator from the products or product detail page is the same form as for add a product with the fields auto completed which can be changed by the administrator.
-
+![](documentation/screenshots/non-admin-profile-menu.png)
 #### My Profile Page
 **Expected Result**:
 **Testing Steps**:
@@ -953,7 +1006,7 @@ Examples:
 - A green update button is below the delivery information form which can be clicked to submit and save changed information
 - This page can only be accessed by the user who is signed in
 - On the right the user's order history is displayed in a table with order number, date of order, items ordered and the order total. The Order number is truncated but on hover the full number can be viewed. On click the full past order confirmation is displayed
-
+![](documentation/screenshots/non-admin-profile-menu.png)
 #### Contact Page
 **Expected Result**:
 **Testing Steps**:
@@ -963,7 +1016,7 @@ Examples:
 - Features a form with input fields: name, subject, email address and text box for a message
 - All fields are required so that site owner has the necessary information to reply
 - At the bottom of the form is a Send button to submit the message
-
+![](documentation/screenshots/non-admin-profile-menu.png)
 #### Register Page
 **Expected Result**:
 **Testing Steps**:
@@ -971,7 +1024,7 @@ Examples:
 **Pass/Fail: Pass**
 - Features a form with input boxes for email and email confirmation, username, password and password confirmation
 - Two buttons, signup and back to login page
-
+![](documentation/screenshots/non-admin-profile-menu.png)
 #### Login Page
 **Expected Result**:
 **Testing Steps**:
@@ -979,7 +1032,7 @@ Examples:
 **Pass/Fail: Pass**
 - Features a form with input boxes for required fields username and password
 - Two buttons are featured at the bottom of the form for home and sign in
-
+![](documentation/screenshots/non-admin-profile-menu.png)
 #### Basket Page
 **Expected Result**:
 **Testing Steps**:
@@ -990,7 +1043,7 @@ Examples:
 - Two buttons are visible to update quantity total and remove items in one go from the basket
 - Two CTA buttons are at the bottom of the form for users to return to the shop or checkout
 
-
+![](documentation/screenshots/non-admin-profile-menu.png)
 #### Checkout Page
 **Expected Result**:
 **Testing Steps**:
@@ -999,7 +1052,7 @@ Examples:
 - The Checkout page features input boxes for the necessary payment information inputs: name, email, phone number, street address, town or city, country, post code, country
 - At the bottom is the box for card payment information for Stripe. For testing purposes the number 4242 4242 4242 4242 is used
 - Two selectors are at the bottom to return to adjust the basket or complete order buttons to complete the payment process
-
+![](documentation/screenshots/non-admin-profile-menu.png)
 #### Messages
 **Expected Result**:
 **Testing Steps**:
