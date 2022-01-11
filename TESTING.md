@@ -948,39 +948,123 @@ Click on each link in footer in turn and check correct page opens
 
 **Actual Result**:
 - CTA button to the Shop page links correctly to open products page with category badges
+![](documentation/screenshots/about-page.png)
 
 **Pass/Fail: Pass**
-![](documentation/screenshots/about-page.png)
-- On larger screens the photo and text appear side by side which collapses to one underneath the other on smaller screens
+
 
 #### Shop Page - Products
+
+
 **Expected Result**:
+1. When all products is selected in the navigation menu the products are listed in rows of four on extra-large screens, three on large screens, two on medium and one on small screens
+2. Above the products list on the left on medium screens and up and is text specifying the number of products. 
+3. Above the products list on the right is a sort selector box to sort products by category, price, name
+4. The number of products text and sort selector box appear in the centre above the products list on small screens
+5. Each product image in the product list links to its product detail page
+6. Edit/delete buttons are visible to superuser/administrator under the product price
+7. Category badges are visible above the products list
+
 **Testing Steps**:
+1. Navigate to Shop page by clicking on All Products in Shop navbar dropdown menu
+2. Check view on large, medium and small sized screens
+3. Click on product images to open product detail
+4. If logged as Administrator check that edit/delete buttons are visible
+5. If not logged as Administrator check that edit/delete buttons are not visible
+5. Login/Logout as Administrator to check the visibility of edit/delete buttons
+
 **Actual Result**:
+1. When all products is selected in the navigation menu the products are listed in rows of four on extra-large screens, three on large screens, two on medium and one on small screens
+2. Above the products list on the left on medium screens and up and is text specifying the number of products. 
+3. Above the products list on the right is a sort selector box to sort products by category, price, name
+4. The number of products text and sort selector box appear in the centre above the products list on small screens
+5. Each product image in the product list links to its product detail page
+6. Edit/delete buttons are visible to superuser/administrator under the product price
+7. Category badges are visible above the products list
+
+![](documentation/screenshots/all-products-lg.png)
+![](documentation/screenshots/all-products-md.png)
+![](documentation/screenshots/all-products-sm.png)
+![](documentation/screenshots/all-products-non-admin.png)
+
 **Pass/Fail: Pass**
-![](documentation/screenshots/non-admin-profile-menu.png)
-- When all products is selected in the navigation menu the product are listed in rows of four on extra-large screens, three on large screens, two on medium and one on small screens
-- Above the products list on the left on medium screens and up is text specifying the number of products. 
-- Above the products list on the right is a sort selector box to sort products by category, price, name
-- The number of products text and sort selector box appear in the centre above the products list on small screens
-- Each product image in the product list links to its product detail page
-- Edit/delete buttons are visible to superuser/administrator under the product price
-- When products listed have been selected by category in the navigation menu, category badges are seen from where the user can further sort the products
-![](documentation/screenshots/non-admin-profile-menu.png)
+
 #### Product Detail Page
+- This page features a large image of the product and product detail information specific to each product as not all fields apply to all products.
+
 **Expected Result**:
+1. Each product detail page features a large image of the product
+2. Product details can be seen on the page as appropriate - name, price, description, colours(1-4), material, size, machine washable, designer. Can custom design for example is only visible on throws which can be custom ordered. No empty fields should be seen. Also tags ('special offer' etc) are not on all products
+3. If the item is available to be custom ordered (currently only the various blankets), this is viewable in the description with a link to the custom order page
+
+**Testing Steps**:
+1. Navigate to the Product detail page by clicking on an item in the products page
+2. Check disply fields are not empty
+
+**Actual Results**:
+1. Product detail page features a large image of the product
+2. Product details can be seen on the page as appropriate with no empty fields
+3. If the item is available to be custom ordered (currently only the various blankets), this is viewable in the description with a link to the custom order page
+
+![](documentation/screenshots/a#.png)
+
+**Pass/Fail: Pass**
+
+- Category label
+
+**Expected Result**:
+- Category label can be clicked to view more of this category
+
+**Testing Steps**:
+- Click on category label within Product Detail page
+
+**Actual Result**:
+- Category label can be clicked to view more of this category
+![](documentation/screenshots/a#.png)
+**Pass/Fail: Pass**
+
+- Edit/Delete buttons
+
+**Expected Result**:
+1. Edit/delete buttons are visible to superuser/administrator under the product name
+2. Edit/delete buttons are not visible to user who is not a superuser/administrator
+3. Edit button when clicked opens Edit product form
+4. Delete button when clicked deletes product
+
+**Testing Steps**:
+1. Navigate to product detail page when not logged in as administrator
+2. Repeat step 1 after logging in as administrator
+For these steps please create a test product by clicking on the Profile item in the navbar and then clicking Add a Product and completing the fields
+3. Open the test product created in product detail view
+3. Click on Edit button
+4. Click on delete (for test product only)
+
+
+**Actual Result**:
+1. Edit/delete buttons are visible to superuser/administrator under the product name
+2. Edit/delete buttons are not visible to user who is not a superuser/administrator
+3. Edit button when clicked opens Edit product form
+4. Delete button when clicked deletes product
+![](documentation/screenshots/a#.png)
+**Pass/Fail: Pass**
+
+- Quantity selector box
+
+**Expected Result**:
+1. The + and - selector buttons increase/decrease quantity number inside the box. 
+2. Users can also enter number or use arrows inside box to increase/decrease quantity of item
+
+![](documentation/screenshots/a#.png)
+- CTA buttons
+**Expected Result**:
+1. Shop button returns users to the All Products Shop page
+2. The Add to Basket button adds the selected number in the input box of items to the shopping basket correctly
+3. Add to basket button adds the number of items selected in the box to the basket
+
+![](documentation/screenshots/non-admin-profile-menu.png)
 **Testing Steps**:
 **Actual Result**:
 **Pass/Fail: Pass**
-![](documentation/screenshots/non-admin-profile-menu.png)
-- Each product detail page features a large image of the product
-- Product details - name, price, description, colours(1-4), material, size, machine washable, designer
-- If the item is available to be custom ordered (currently only the various blankets), this is viewable in the description with a link to the custom order page
-- Category label can be clicked to view more of this category
-- Edit/delete buttons are visible to superuser/administrator under the product name
-- A quantity selector box with + - selector to increase/decrease quantity of item. Usere can also enter number or use arrows inside box to increase/decrease quantity of item
-- Two buttons - one grey to return to main Shop page and one crimson to add item(s) to shopping basket
-- On larger screens the photo appears on the left and description to the right which collapses vertically into two coloumns on smaller screens
 ![](documentation/screenshots/non-admin-profile-menu.png)
 #### Order Page - Custom Order
 **Expected Result**:
