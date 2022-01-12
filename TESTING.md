@@ -175,18 +175,21 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - User is signed in
 - User's information is automatically completed if they have checked the remember me box
 
+
 **Actual Result**:
 - User is signed in
 - User's information is automatically completed if they have checked the remember me box
+- During testing it was confusing to rememeber which user was logged in so the username was added to the title in the My Profile page
 
 ![](documentation/screenshots/sign-in.png)
+![](documentation/screenshots/username-profile.png)
 
 **Pass/Fail: Pass**
 
 *  As a registered shopper I want to be able to easily recover my password if I forget it so that I can recover access to my account [#11](https://github.com/siobhanlgorman/knits-and-pieces/issues/11)
 
 **Acceptance Criteria**
-- User can recover/change password from user profile
+- User can recover/change password
 
 **Testing Steps**:
 1. Click on profile icon in navigation menu
@@ -1340,26 +1343,79 @@ When logged in as Administrator
 - Two CTA buttons are at the bottom of the form for users to return to the shop or checkout
 
 * Summary information
+
 **Expected Result**:
 - Summary information of items in basket clearly displayed and updated: image of products, title, size, price, delivery cost and total
 
+**Testing Steps**:
+1. Click on Shop link in navbar then All Products in dropdown
+2. Click on item to test purchase
+4. Click on add to basket
+5. Click on basket icon to open basket and view contents
 
-* Qantity Selector box
+**Actual Result**:
+- Summary information of items in basket clearly displayed and updated: image of products, title, size, price, delivery cost and total
+
+**Pass/Fail: Pass**
+
+* Quantity Selector box
+
 **Expected Result**:
 - A quantity selector box can be used to changed the quantity of basket items
-
-* CTA Buttons: Update/Remove
-**Expected Result**:
-- Update button updates quantity total to number selcted in quantity selector box
-- Subtotal and Grand totals are updated
-- remove items in one go from the basket
-- Two CTA buttons are at the bottom of the form for users to return to the shop or checkout
+- Selector does not go below 1
 
 **Testing Steps**:
+1. First complete steps 1 - 5 above to add product to basket and view contents
+2. Click on quantity selector box + and - in turn, 
+
+**Actual Result**:
+- A quantity selector box can be used to changed the quantity of basket items
+- Selector does not go below 1
+
+**Pass/Fail: Pass**
+
+* Buttons: Update/Remove
+
+**Expected Result**:
+1. Update button updates quantity total to number selcted in quantity selector box
+2. Subtotal and Grand totals are updated
+3. remove items in one go from the basket
+4. Success messages are displayed when update and remove actions are performed
+
+**Testing Steps**:
+1. Complete steps above to add product to basket
+2. Change the quantity of item in basket using quantity selector
+3. Click on update and check subtotal and grand total
+4. Click on remove and check that item has been removed
+
+**Actual Result**:
+1. Update button updates quantity total to number selcted in quantity selector box
+2. Subtotal and Grand totals are updated
+3. Remove button removes items in one go from the basket
+4. Success messages are displayed when update and remove actions are performed
+![](documentation/screenshots/update-basket.png)
+![](documentation/screenshots/remove.png)
+
 **Actual Result**:
 **Pass/Fail: Pass**
 
-![](documentation/screenshots/non-admin-profile-menu.png)
+
+* Buttons: Shop/Checkout
+
+**Expected Result**:
+1. The Shop button returns the user to the Shop page
+2. The Checkout button opens the Checkout and payment page
+
+**Testing Steps**:
+1. Complete steps above to add product to basket
+2. Click the Shop button
+3. Return to the Basket page by clicking on the basket icon in the navbar
+4. Click on the Checkout button
+
+
+**Actual Result**:
+1. The Shop button returns the user to the Shop page
+2. The Checkout button opens the Checkout and payment page
 
 ### Checkout Page
 - The Checkout page features input boxes for the necessary payment information inputs: name, email, phone number, street address, town or city, country, post code, country
@@ -1367,18 +1423,77 @@ When logged in as Administrator
 - Two selectors are at the bottom to return to adjust the basket or complete order buttons to complete the payment process
 
 **Expected Result**:
+1. User can complete payment process and submit order
+2. User cannot checkout without completing required fields
+3. Logged in user's email address is prefilled
+
 **Testing Steps**:
+1. With items in basket and in basket page (follow previous steps) click Checkout button
+2. Attempt to checkout without completing form fields correctly
+3. Complete fields correctly
+4. Complete card payment field with fake card details
+5. Complete card payment with card number 4242 4242 4242 4242 
+
+**Expected Result**:
+1. Error message shows when fields are incorrectly completed
+2. Error message shows when card number does not use test card number
+3. Success message and order confirmation message displayed to user when order is completed
+4. Email confirmation sent to user
+5. Payment success shown in Stripe dashboard
+6. Stripe webhooks show payment intent and charge success
+7. Order email confirmation received by customer
+
+**Actual Result**:
+![](documentation/screenshots/checkout-invalid.png)
+![](documentation/screenshots/correct-card.png)
+![](documentation/screenshots/order-complete.png)
+![](documentation/screenshots/stripe-success.png)
+![](documentation/screenshots/stripe-webhooks.png)
+![](documentation/screenshots/order-email-conf.png)
+
+
 **Actual Result**:
 **Pass/Fail: Pass**
-![](documentation/screenshots/non-admin-profile-menu.png)
+![](documentation/screenshots/checkout.png)
+![](documentation/screenshots/checkout-invalid.png)
+![](documentation/screenshots/jack.png)
+
+* To fully test the complete experience from registration to payment a new user Jack was created and taken through the full process. Two small bugs were fouund during this process (See Bugs section) Screenshots below:
+![](documentation/screenshots/jack-signin.png)
+![](documentation/screenshots/jack.png)
+![](documentation/screenshots/jack1.png)
+![](documentation/screenshots/jack2.png)
+![](documentation/screenshots/jack3.png)
+![](documentation/screenshots/jack4.png)
+![](documentation/screenshots/jack5.png)
+![](documentation/screenshots/jack6.png)
+![](documentation/screenshots/jack7.png)
+![](documentation/screenshots/jack8.png)
+![](documentation/screenshots/jack9.png)
+![](documentation/screenshots/jack10.png)
+![](documentation/screenshots/jack11.png)
+![Jack Profile bug](documentation/screenshots/jack12.png)
+![Second Order Checkbox](documentation/screenshots/jack14.png)
+![Order confirmation Bug](documentation/screenshots/jack15.png)
+![Updated delivery info in profile](documentation/screenshots/jack16.png)
+![Jack Stripe payment](documentation/screenshots/jack-stripe.png) 
+![Jack Stripe payment](documentation/screenshots/jack-email-conf1.png) 
+
+
 #### Messages
 **Expected Result**:
+- Feedback Messages are displayed after every user interaction on the website
 **Testing Steps**:
+- This has been thoroughly tested as part of the User Story testing and Features testing above
 **Actual Result**:
-**Pass/Fail: Pass**
-- Feedback messages are shown whenever the user interacts with the site.
-???????
+- Feedback Messages are displayed after every user interaction on the website
 
+Sample screenshots
+![](documentation/screenshots/custom-order-msg.png)
+![](documentation/screenshots/updated-success-msg.png)
+![](documentation/screenshots/signup-confirm-msg.png)
+
+**Pass/Fail: Pass**
 
 ## Browser Compatibility
 ## Responsiveness
@@ -1391,7 +1506,9 @@ When logged in as Administrator
 6. Error after adding countryfield - could not migrate. Folder still looking for max value of 2. Eventually deleted all orders in the database as they were created wth countries longer than 2 letters. Then the migration worked.
 7. After creating profile and linking to order history two orders being created in db with two different numbers. Fix - corrected stripe billing and shipping name fields. Due to subsequent ongoing issues with duplicate orders being created and non-recognition of two name fields in billing and shipping information, the order model field was reverted to full name and first and last name fields removed as they can be accessed from using the full name method
 8. Remove button bug with W3C validator - two ids as element on mobile and desktop views at same time (hidden on one). Fix: Id changed to data-id
-9. Error when scrolling in empty basket relating to btt button javascript
+9. During testing bug found relating to checkbox - address saved to profile whether checkbox checked or not
+10. During testing bug found that address line 2 in order confirmation saved as address line 1
+11. Stripe time is wrong - possibly due to registering while in Spain (+ 1hour) - as yet unfixed - fixed but some screenshots may show 1 hour time difference
 
 ![#](documentation/screenshots/##.png)
 ## Code Validation
