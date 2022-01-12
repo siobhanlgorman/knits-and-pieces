@@ -1339,7 +1339,22 @@ When logged in as Administrator
 - Two buttons are visible to update quantity total and remove items in one go from the basket
 - Two CTA buttons are at the bottom of the form for users to return to the shop or checkout
 
+* Summary information
 **Expected Result**:
+- Summary information of items in basket clearly displayed and updated: image of products, title, size, price, delivery cost and total
+
+
+* Qantity Selector box
+**Expected Result**:
+- A quantity selector box can be used to changed the quantity of basket items
+
+* CTA Buttons: Update/Remove
+**Expected Result**:
+- Update button updates quantity total to number selcted in quantity selector box
+- Subtotal and Grand totals are updated
+- remove items in one go from the basket
+- Two CTA buttons are at the bottom of the form for users to return to the shop or checkout
+
 **Testing Steps**:
 **Actual Result**:
 **Pass/Fail: Pass**
