@@ -1518,6 +1518,7 @@ Sample screenshots
 8. Remove button bug with W3C validator - two ids as element on mobile and desktop views at same time (hidden on one). Fix: Id changed to data-id
 9. During testing bug found relating to checkbox - address saved to profile whether checkbox checked or not
 10. During testing bug found that address line 2 in order confirmation saved as address line 1 - FIxed found error in checkout_success.html
+![Order confirmation Bug](documentation/screenshots/jack15.png)
 11. Stripe time is wrong - possibly due to registering while in Spain (+ 1hour) - as yet unfixed - fixed but some screenshots may show 1 hour time difference
 
 ![#](documentation/screenshots/##.png)
