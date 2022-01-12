@@ -145,6 +145,5 @@ class Product(models.Model):
     can_custom_design = models.BooleanField(
         default=False, null=True, blank=True)
 
-
     def __str__(self):
         return self.name

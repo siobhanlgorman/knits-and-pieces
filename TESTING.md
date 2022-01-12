@@ -1620,10 +1620,8 @@ Sign Out Page
 
 The following files were checked:
 
-
 * Bag app:
 - bag_tools.py
-- admin.py
 - apps.py
 - contexts.py
 - urls.py
