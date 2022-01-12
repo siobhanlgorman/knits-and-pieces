@@ -1512,10 +1512,45 @@ Sample screenshots
 
 ![#](documentation/screenshots/##.png)
 ## Code Validation
+
 ### HTML Validation
+
 HTML was validated by [The WEC Markup Validation Service](https://validator.w3.org/)
 
 No errors or warnings were found:
+* Bag app:
+- bag/templates/bag/bag-total.html
+- bag/templates/bag/bag.html
+- bag/checkout-buttons.html
+
+
+* Checkout app:
+- confirmation_email_body.txt
+- confirmation_email_subject.txt
+- checkout_success.html
+- checkout.html
+
+* Contact app
+- contact.html
+
+* Custom app
+- custom.html
+
+* Home app
+- index.html
+- about.html
+
+* Knits and Pieces
+
+* Products app
+- custom_clearable_file_input.html
+- add_product.html
+- edit_product.html
+- product_detail.html
+- products.html
+
+* Profiles app
+- profile.html
 
 Home Page: 
 
@@ -1553,20 +1588,83 @@ Sign Out Page
 
 ### CSS Validation
 
-![](documentation/screenshots/css_valid1.png)
-![](documentation/screenshots/css_valid2.png)
-![](documentation/screenshots/css_valid.png)
+* checkout app
+- checkout.css
+![](documentation/screenshots/#.png)
+
 
 ### PEP 8 Validation
 
 The following files were checked:
 
-* **#/views.py**
 
-![](documentation/screenshots/pep8_views2.png)
+* Bag app:
+- bag_tools.py
+- admin.py
+- apps.py
+- contexts.py
+- urls.py
+- views.py
+
+* Checkout app:
+- admin.py
+- apps.py
+- forms.py
+- models.py
+- signals.py
+- urls.py
+- views.py
+- webhook_handler.py
+- webhooks.py
+
+* Contact app
+- admin.py
+- apps.py
+- forms.py
+- models.py
+- urls.py
+- views.py
 
 
-* **#/views.py**
+* Custom app
+- admin.py
+- apps.py
+- forms.py
+- models.py
+
+- urls.py
+- views.py
+
+* Home app
+* Knits and Pieces
+- settings.py
+- urls.py
+- views.py
+- wsgi.py
+
+* Products app
+- admin.py
+- apps.py
+- forms.py
+- models.py
+- urls.py
+- views.py
+- widgets.py
+
+* Profiles app
+- admin.py
+- apps.py
+- forms.py
+- models.py
+- urls.py
+- views.py
+
+
+
+![](documentation/screenshots/#.png)
+
+
+
 
 ![](documentation/screenshots/pep8_views.png)
 
@@ -1585,6 +1683,14 @@ The following files were checked:
 * **admin.py**
 
 ![](documentation/screenshots/pep8_admin.png)
+
+
+### JS??????????
+* Checkout app
+- stripe_elements.js
+
+
+
 
 ## Lighthouse Scores
 ## Accessibility
