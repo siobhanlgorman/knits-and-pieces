@@ -5,17 +5,11 @@ html {
 
 /* set body height, colour, font */
 body {
-    /* min-height: 100vh;
-    display: flex;
-    flex-direction: column; */
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #3a3a3a;
 }
 
-main {
-    /* flex-grow: 1; */
-}
 
 .logo-img {
     height: 50px;
