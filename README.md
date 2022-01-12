@@ -112,7 +112,8 @@ Using the Agile approach Epics (Github Milestones) were created and broken down 
 Research on short and long-tail keywords was conducted via google searches to find the search words and phrases thatm most related to a site like Knits and Pieces. Handmade was particularly crucial to a good search result when incorporated with the product categories and craft type. Keywords were incorporated into the meta tags and headings where appropriate while not overloading the site content and maintaining the usefulness of the site.
 - Web Marketing
 Paid web advertising is not currently within the scope of this project. However a newsletter link has been added to the website as an easy way for a small business such as Knits and Pieces to reach customers and keep them up to date with new products, special offers and to keep the ecommerce store fresh.
-Newsletter
+
+- Facebook Business Page
 A Facebook business page was set up for the purposes of this project. This is another method for a small business to reach new customers and retain existing customers. The site is viewable whether or not a user has an account with Facebook. Since the business is not currently live this site may have been taken down. Screenshots are provided in case the link is no longer valid. [Link to Facebook business page](https://www.facebook.com/Knits-and-Pieces-111739761381732)
 
 View of Facebook business page to site owner with Facebook account:
@@ -122,6 +123,9 @@ View of Facebook Business page to prospective customer without Facebook account:
 ![Facebook Business Page Customer's view](documentation/screenshots/fb-page2.png)
 
 A future intention to increase the site's usefulness to customers is to add a craft blog to the site with links to videos on interesting stitches and patterns and links to othe interesting websites and YouTube videos. This would evoke a positive emotional response in customers and in turn build trust and loyalty to the business. It would also provide a means to keep the site up to date, relevant and fresh in customers' minds. 
+
+- Privacy Policy
+A privacy policy is a legal requirement because of GDPR legislation. This also benefits the website as it looks professional and more importantly inspires trust in the website user. A link to the privacy policy is included in the footer.
 
 ### Scope
 * Requirements
