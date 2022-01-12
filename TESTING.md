@@ -492,7 +492,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 1. User receives success/error messages when completing order/payment
 2. User can view order history in personalised profile when logged in
 3. Email confirmation is received with all order details
-4. Padlock appears in site address bar indicating secure payment process
+4. Padlock appears in site address bar indicating secure payment process and padlock in checkout button
 
 **Testing Steps**:
 1. With items in basket and in basket page (follow previous steps) click Checkout button
@@ -507,7 +507,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Expected Result**:
 1. Error message shows when fields are incorrectly completed
 2. Error message shows when card number does not use test card number
-3. Padlock symbol appears in address bar during checkout process
+3. Padlock symbol appears in address bar during checkout process and padlock is on checkout button
 4. Success message and order confirmation message displayed to user when order is completed
 5. Email confirmation sent to user
 6. Payment success shown in Stripe dashboard
@@ -516,6 +516,16 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 9. Order appears in user's secure profile page
 
 **Actual Result**:
+1. Error message shows when fields are incorrectly completed
+2. Error message shows when card number does not use test card number
+3. Padlock symbol appears in address bar during checkout process and padlock is on checkout button
+4. Success message and order confirmation message displayed to user when order is completed
+5. Email confirmation sent to user
+6. Payment success shown in Stripe dashboard
+7. Stripe webhooks show payment intent and charge success
+8. Order email confirmation received by customer
+9. Order appears in user's secure profile page
+
 ![](documentation/screenshots/secure-checkout.png)
 ![](documentation/screenshots/profile-order.png)
 
@@ -1507,7 +1517,7 @@ Sample screenshots
 7. After creating profile and linking to order history two orders being created in db with two different numbers. Fix - corrected stripe billing and shipping name fields. Due to subsequent ongoing issues with duplicate orders being created and non-recognition of two name fields in billing and shipping information, the order model field was reverted to full name and first and last name fields removed as they can be accessed from using the full name method
 8. Remove button bug with W3C validator - two ids as element on mobile and desktop views at same time (hidden on one). Fix: Id changed to data-id
 9. During testing bug found relating to checkbox - address saved to profile whether checkbox checked or not
-10. During testing bug found that address line 2 in order confirmation saved as address line 1
+10. During testing bug found that address line 2 in order confirmation saved as address line 1 - FIxed found error in checkout_success.html
 11. Stripe time is wrong - possibly due to registering while in Spain (+ 1hour) - as yet unfixed - fixed but some screenshots may show 1 hour time difference
 
 ![#](documentation/screenshots/##.png)
@@ -1552,6 +1562,16 @@ No errors or warnings were found:
 * Profiles app
 - profile.html
 
+* Allauth:
+- base.html
+- account/base.html
+- login.html
+- logout.html
+- signup.html
+
+
+
+
 Home Page: 
 
 ![](documentation/screenshots/home_valid.png)
@@ -1588,6 +1608,8 @@ Sign Out Page
 
 ### CSS Validation
 
+
+- base.css
 * checkout app
 - checkout.css
 ![](documentation/screenshots/#.png)
@@ -1688,6 +1710,9 @@ The following files were checked:
 ### JS??????????
 * Checkout app
 - stripe_elements.js
+
+* Products app
+- quantity_input_script.js
 
 
 

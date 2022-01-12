@@ -1,4 +1,5 @@
 """Imports"""
+import json
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.views.decorators.http import require_POST
@@ -6,7 +7,6 @@ from django.contrib import messages
 from django.conf import settings
 
 import stripe
-import json
 
 from products.models import Product
 from profiles.models import UserProfile
