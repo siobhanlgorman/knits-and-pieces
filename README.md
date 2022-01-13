@@ -325,6 +325,13 @@ Green was used to highlight edit or update buttons with red for remove/delete
 - At the bottom is the box for card payment information for Stripe. For testing purposes the number 4242 4242 4242 4242 is used
 - Two selectors are at the bottom to return to adjust the basket or complete order buttons to complete the payment process
 
+#### 404 page
+A 404 page was created to handle users' navigational errors and to direct them back to the website. The navigation menu and logo are visible on the page
+![](documentation/screenshots/404.png)
+
+#### 500 page
+A 500 server error page was created to handle internal server errors
+![](documentation/screenshots/500.png
 #### Messages
 - Feedback messages are shown whenever the user interacts with the site.
 
