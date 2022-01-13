@@ -12,16 +12,16 @@
 {% block content %}
     
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
+        <div class="row text-center title-container">
+            <div class="col">
                 <hr>
-                <h2 class="title-font display-colour mb-4">Add a Product</h2>
+                <h2 class="title-font display-colour">Add a Product</h2>
                 <hr>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12 col-md-6">
+        <div class="row justify-content-center pt-2">
+            <div class="col-10 col-lg-8 form-border-style pt-2">
                 <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}

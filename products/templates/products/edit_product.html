@@ -2,36 +2,34 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <hr>
-                <h2 class="title-font display-colour mb-4">Edit Product</h2>
-                <h5 class="text-muted">Edit a Product</h5>
-                <hr>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {{ form | crispy }}
-                    <div class="text-right">
-                        <a class="btn btn-grey rounded-0" href="{% url 'products' %}">Cancel</a>
-                        <button class="btn update-btn rounded-0" type="submit">Update Product</button>
-                    </div>
-                </form>
-            </div>            
+<div class="container">
+    <div class="row text-center title-container">
+        <div class="col">
+            <hr>
+            <h1 class="title-font display-colour">Edit Product</h1>
+            <hr>
         </div>
     </div>
+    <div class="row justify-content-center pt-2">
+        <div class="col-10 col-lg-8 form-border-style pt-2">
+            <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2"
+                enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div class="text-right">
+                    <a class="btn btn-grey rounded-0" href="{% url 'products' %}">Cancel</a>
+                    <button class="btn update-btn rounded-0" type="submit">Update Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}

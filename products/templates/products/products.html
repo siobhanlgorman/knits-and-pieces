@@ -4,9 +4,7 @@
 {% block page_header %}
 
 <div class="container header-container">
-    
 </div>
-
 
 {% endblock %}
 
@@ -19,15 +17,12 @@
     </div>
     <div class="row">
         <div class="col text-center mt3">
-
             {% for c in current_categories %}
             <a class="badge badge-pill" href="{% url 'products' %}?category={{ c.name }}">
                 <span>{{c.friendly_name}}</span>
             </a>
             {% endfor %}
-
             <hr class="w-50 mb-1">
-
         </div>
     </div>
     <div class="row">
@@ -107,16 +102,12 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 {% endfor %}
-
             </div>
         </div>
-
     </div>
-
 </div>
 <div class="btt-button shadow-sm rounded-0 border" id="btt-button">
     <a class="btt-link d-flex h-100">
@@ -129,11 +120,12 @@
 {% block postloadjs %}
 {{ block.super }}
 
-<script> 
-    let mybutton = document.getElementById("btt-button");  
+<script>
+    let mybutton = document.getElementById("btt-button");
     window.onscroll = function () {
         scrollFunction();
     };
+
     function scrollFunction() {
         if (
             document.body.scrollTop > 20 ||
@@ -143,14 +135,14 @@
         } else {
             mybutton.style.display = "none";
         }
-    }    
+    }
     mybutton.addEventListener("click", backToTop);
+
     function backToTop() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
 </script>
-
 
 <!-- captures change event from sort selector, either resets sort value to default or gets new sort value and replaces GET values in url , jQuery code from Code Insitute Boutique Ado -->
 
@@ -158,23 +150,18 @@
     $('#sort-selector').change(function () {
         var selector = $(this);
         var currentUrl = new URL(window.location);
-
         var selectedVal = selector.val();
         if (selectedVal != "reset") {
             var sort = selectedVal.split("_")[0];
             var direction = selectedVal.split("_")[1];
-
             currentUrl.searchParams.set("sort", sort);
             currentUrl.searchParams.set("direction", direction);
-
             window.location.replace(currentUrl);
         } else {
             currentUrl.searchParams.delete("sort");
             currentUrl.searchParams.delete("direction");
             window.location.replace(currentUrl);
-
         }
-
     })
 </script>
 {% endblock %}
