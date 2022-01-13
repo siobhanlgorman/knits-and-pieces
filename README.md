@@ -144,7 +144,6 @@ The website consists of  pages: Home, Shop, About, Custom Order, Profile
 For this project the PostgresSql database was used from the outset. Since fixtures were not being used and the number of products was relatively small this meant the products could be added to the deployed database from the beginning and so saving some time.
 
 #### Models
-
 There are eight models in this project (excluding those which are automatically created by Django). Four models have been specifically customised for the purposes of this ecommerce store: Product, Tag, ContactForm and CustomOrderForm
 
 - Products App Models
@@ -174,7 +173,6 @@ In the Contact App there is a custom ContactForm model for the customer to send 
 The Custom App has a specifically customised CustomOrder model for a customer to request a quote to have a particular product (Blanket) made to order in a choice of colours, sizes and patterns. It was originally intended to link this to the Product model but in as this was being added later in development it was not possible as some of the fields should have been separate models from the beginning and linked via foreign keys. Due to time constraints and lack of expertise in the planning stage this was not foreseen and could not have been undertaken in the later stages of the project.
 
 ![Custom Order Model](documentation/screenshots/custom-order-model.png)
-
 
 ### Skeleton
 #### Wireframes
