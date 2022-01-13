@@ -1528,84 +1528,61 @@ Sample screenshots
 
 HTML was validated by [The WEC Markup Validation Service](https://validator.w3.org/)
 
-No errors or warnings were found:
-* Bag app:
-- bag/templates/bag/bag-total.html
-- bag/templates/bag/bag.html
-- bag/checkout-buttons.html
-
-
-* Checkout app:
-- confirmation_email_body.txt
-- confirmation_email_subject.txt
-- checkout_success.html
-- checkout.html
-
-* Contact app
-- contact.html
-
-* Custom app
-- custom.html
-
 * Home app
 - index.html
+![#](documentation/validation/v-html-home.png)
 - about.html
-
-* Knits and Pieces
+![#](documentation/validation/v-html-about.png)
+- privacy.html
+![#](documentation/validation/v-html-privacy.png)
 
 * Products app
 - custom_clearable_file_input.html
 - add_product.html
+![#](documentation/validation/v-html-privacy.png)
+
 - edit_product.html
+![#](documentation/validation/v-html-privacy.png)
+
 - product_detail.html
+![#](documentation/validation/v-html-privacy.png)
+
 - products.html
+![#](documentation/validation/v-html-products.png)
 
 * Profiles app
+
 - profile.html
-
-* Allauth:
-- base.html
-- account/base.html
-- login.html
-- logout.html
-- signup.html
+![#](documentation/validation/v-html-profile.png)
 
 
+Custom app
 
-
-Home Page: 
-
-![](documentation/screenshots/home_valid.png)
-
-About Page:
-
-![](documentation/screenshots/about_valid.png)
-
-Custom Order Page
-
-![](documentation/screenshots/custom_valid.png)
+- custom.html
+![#](documentation/validation/v-html-custom.png)
 
 Contact Page
 
-![](documentation/screenshots/contact_valid.png)
+- contact.html
+![#](documentation/validation/v-html-contact.png)
 
 Register Page
 
-![](documentation/screenshots/register_valid.png)
+- signup.html
+![#](documentation/validation/v-html-register.png)
 
 Sign In Page
 
-![](documentation/screenshots/signin_valid.png)
+- login.html
+![#](documentation/validation/v-html-login.png)
 
 Sign Out Page
-![](documentation/screenshots/signout_valid.png)
-Confirmation Email Page
-![](documentation/screenshots/signout_valid.png)
-Sign Out Page
-![](documentation/screenshots/signout_valid.png)
-Sign Out Page
-![](documentation/screenshots/signout_valid.png)
 
+- logout.html
+![#](documentation/validation/v-html-logout.png)
+
+Confirmation Email Page ???
+![](documentation/screenshots/#.png)
 
 ### CSS Validation
 
