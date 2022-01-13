@@ -1507,6 +1507,18 @@ Sample screenshots
 
 ## Browser Compatibility
 ## Responsiveness
+The project was developed on Google Chrome and no issues were detected. Chrome Dev tools was used throughout development to test responsiveness and then after deployment was additionally tested on android Moto G8 plus, IPhone SE2
+
+![](documentation/screenshots/iphone1.png)
+![](documentation/screenshots/iphone2.png)
+![](documentation/screenshots/moto1.png)
+
+Additional tests were conducted on Mozilla Firefox and Microsoft Edge with no issues detected
+![](documentation/screenshots/edge.png)
+![](documentation/screenshots/firefox.png)
+
+
+
 ## Bugs and Fixes
 1. Toast success message doesn't display if same item is added again to basket. Fix: Error in if statement in bag/views.py
 2. Image media url not working. FIx - add media context processor in settings.py
@@ -1639,31 +1651,42 @@ The following files were checked:
 ![#](documentation/validation/v-checkout-apps.png)
 - forms.py
 ![#](documentation/validation/v-checkout-forms.png)
+
 - models.py
 ![#](documentation/validation/v-checkout-models.png)
+
 - signals.py
 ![#](documentation/validation/v-checkout-signals.png)
+
 - urls.py
 ![#](documentation/validation/v-checkout-urls.png)
+
 - views.py
 ![#](documentation/validation/v-checkout-views.png)
+
 - webhook_handler.py
 ![#](documentation/validation/v-fail-webhookhandler.png)
 ![#](documentation/validation/v-checkout-webhookhandler.png)
+
 - webhooks.py
 ![#](documentation/validation/v-fail-webhooks.png)
 
 * Contact app
 - admin.py
 ![#](documentation/validation/v-contact-admin.png)
+
 - apps.py
 ![#](documentation/validation/v-contact-apps.png)
+
 - forms.py
 ![#](documentation/validation/v-contact-forms.png)
+
 - models.py
 ![#](documentation/validation/v-contact-models.png)
+
 - urls.py
 ![#](documentation/validation/v-contact-urls.png)
+
 - views.py
 ![#](documentation/validation/v-contact-views.png)
 
@@ -1674,13 +1697,17 @@ The following files were checked:
 
 - apps.py
 ![#](documentation/validation/v-custom-apps.png)
+
 - forms.py
 ![#](documentation/validation/v-custom-forms.png)
+
 - models.py
 ![#](documentation/validation/v-custom-models.png)
 
+
 - urls.py
 ![#](documentation/validation/v-custom-urls.png)
+
 - views.py
 ![#](documentation/validation/v-custom-views.png)
 
@@ -1750,8 +1777,6 @@ JS Hint???
 
 * Profiles app
 - countryfield.js
-
-
 
 
 ## Lighthouse Scores
