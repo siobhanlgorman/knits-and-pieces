@@ -78,7 +78,7 @@
             <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="{#}" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="{% url 'products' %}" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-expanded="false">
               Shop
             </a>
@@ -121,7 +121,7 @@
             </form>
           </li>
           <li class="nav-item dropdown d-none d-lg-inline-block">
-            <a class="nav-link drop-down-toggle" data-toggle="dropdown" aria-haspopup="true"
+            <a href="{% url 'profile' %}" class="nav-link drop-down-toggle" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               <div class="text-center">
                 <div><span class="icon"><i class="fas fa-user"></i></span></div>
