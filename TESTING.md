@@ -1710,8 +1710,8 @@ The following files were checked:
 * Checkout app
 - stripe_elements.js
 
-* Products app
-- quantity_input_script.js
+* Profiles app
+- countryfield.js
 
 
 
