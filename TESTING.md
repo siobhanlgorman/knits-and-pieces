@@ -1519,14 +1519,14 @@ Sample screenshots
 9. During testing bug found relating to checkbox - address saved to profile whether checkbox checked or not
 10. During testing bug found that address line 2 in order confirmation saved as address line 1 - FIxed found error in checkout_success.html
 ![Order confirmation Bug](documentation/screenshots/jack15.png)
-11. Stripe time is wrong - possibly due to registering while in Spain (+ 1hour) - as yet unfixed - fixed but some screenshots may show 1 hour time difference
+11. Stripe time is wrong - possibly due to registering while in Spain (+ 1hour) - fixed but some screenshots may show 1 hour time difference
+12. Chrome on android no longer seems to update changes on refreshing pages: fixed by clearing last week's browsing history
 
-![#](documentation/screenshots/##.png)
 ## Code Validation
 
 ### HTML Validation
 
-HTML was validated by [The WEC Markup Validation Service](https://validator.w3.org/)
+HTML was validated by [The W3C Markup Validation Service](https://validator.w3.org/)
 
 * Home app
 - index.html
@@ -1537,26 +1537,39 @@ HTML was validated by [The WEC Markup Validation Service](https://validator.w3.o
 ![#](documentation/validation/v-html-privacy.png)
 
 * Products app
-- custom_clearable_file_input.html
+
+Add a Product Page
 - add_product.html
 ![#](documentation/validation/v-html-privacy.png)
 
+Edit a Product Page
 - edit_product.html
 ![#](documentation/validation/v-html-privacy.png)
 
+Product Detail Page
 - product_detail.html
 ![#](documentation/validation/v-html-privacy.png)
+
+Shop Page
 
 - products.html
 ![#](documentation/validation/v-html-products.png)
 
-* Profiles app
+Shopping Basket Page
+- bag.html
+![#](documentation/validation/v-html-bag.png)
+
+
+Checkout Page
+- checkout.html
+![#](documentation/validation/v-html-checkout.png)
+
+* Profile Page
 
 - profile.html
 ![#](documentation/validation/v-html-profile.png)
 
-
-Custom app
+Custom Order Page
 
 - custom.html
 ![#](documentation/validation/v-html-custom.png)
@@ -1585,12 +1598,20 @@ Confirmation Email Page ???
 ![](documentation/screenshots/#.png)
 
 ### CSS Validation
+CSS was validated by [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 
+- About Page
+![#](documentation/validation/v-css-about.png)
+- Home Page
+![#](documentation/validation/v-css-home.png)
+Custom Order Page
+![#](documentation/validation/v-css-custom.png)
+Contact Page
+![#](documentation/validation/v-css-contact.png)
 
+No errors were found on checking the two CSS files:
 - base.css
-* checkout app
 - checkout.css
-![](documentation/screenshots/#.png)
 
 
 ### PEP 8 Validation
@@ -1599,91 +1620,131 @@ The following files were checked:
 
 * Bag app:
 - bag_tools.py
+![#](documentation/validation/bag-tools.png)
+
 - apps.py
+![#](documentation/validation/bag-apps.png)
+
 - contexts.py
+![#](documentation/validation/contexts.png)
 - urls.py
+![#](documentation/validation/bag-urls.png)
 - views.py
+![#](documentation/validation/bag-views.png)
 
 * Checkout app:
 - admin.py
+![#](documentation/validation/v-checkoutcheckout-admin.png)
 - apps.py
+![#](documentation/validation/v-checkout-apps.png)
 - forms.py
+![#](documentation/validation/v-checkout-forms.png)
 - models.py
+![#](documentation/validation/v-checkout-models.png)
 - signals.py
+![#](documentation/validation/v-checkout-signals.png)
 - urls.py
+![#](documentation/validation/v-checkout-urls.png)
 - views.py
+![#](documentation/validation/v-checkout-views.png)
 - webhook_handler.py
+![#](documentation/validation/v-fail-webhookhandler.png)
+![#](documentation/validation/v-checkout-webhookhandler.png)
 - webhooks.py
+![#](documentation/validation/v-fail-webhooks.png)
 
 * Contact app
 - admin.py
+![#](documentation/validation/v-contact-admin.png)
 - apps.py
+![#](documentation/validation/v-contact-apps.png)
 - forms.py
+![#](documentation/validation/v-contact-forms.png)
 - models.py
+![#](documentation/validation/v-contact-models.png)
 - urls.py
+![#](documentation/validation/v-contact-urls.png)
 - views.py
+![#](documentation/validation/v-contact-views.png)
 
 
 * Custom app
 - admin.py
+![#](documentation/validation/v-custom-admin.png)
+
 - apps.py
+![#](documentation/validation/v-custom-apps.png)
 - forms.py
+![#](documentation/validation/v-custom-forms.png)
 - models.py
+![#](documentation/validation/v-custom-models.png)
 
 - urls.py
+![#](documentation/validation/v-custom-urls.png)
 - views.py
+![#](documentation/validation/v-custom-views.png)
 
 * Home app
 * Knits and Pieces
 - settings.py
+![#](documentation/validation/v-fail-knits-settings.png)
+
 - urls.py
+![#](documentation/validation/v-home-urls.png)
+
 - views.py
-- wsgi.py
+![#](documentation/validation/v-home-views.png)
+
+- apps.py
+![#](documentation/validation/v-home-apps.png)
+
 
 * Products app
 - admin.py
+![#](documentation/validation/v-products-admin.png)
+
 - apps.py
+![#](documentation/validation/v-products-apps.png)
+
 - forms.py
+![#](documentation/validation/v-products-forms.png)
+
 - models.py
+![#](documentation/validation/v-products-models.png)
+
 - urls.py
+![#](documentation/validation/v-products-urls.png)
+
 - views.py
+![#](documentation/validation/v-products-views.png)
+
 - widgets.py
+![#](documentation/validation/v-products-widgets.png)
+
 
 * Profiles app
 - admin.py
+![#](documentation/validation/v-profiles-admin.png)
+
 - apps.py
+![#](documentation/validation/v-profiles-apps.png)
+
 - forms.py
+![#](documentation/validation/v-profiles-forms.png)
+
 - models.py
+![#](documentation/validation/v-profiles-models.png)
+
 - urls.py
+![#](documentation/validation/v-profiles-urls.png)
+
 - views.py
-
-
-
-![](documentation/screenshots/#.png)
-
-
-
-
-![](documentation/screenshots/pep8_views.png)
-
-* **models.py**
-
-![](documentation/screenshots/pep8_models.png)
-
-* **forms.py**
-
-![](documentation/screenshots/pep8_forms.png)
-
-* **urls.py**
-
-![](documentation/screenshots/pep8_urls.png)
-
-* **admin.py**
-
-![](documentation/screenshots/pep8_admin.png)
+![#](documentation/validation/v-profiles-views.png)
 
 
 ### JS??????????
+JS Hint???
+
 * Checkout app
 - stripe_elements.js
 
