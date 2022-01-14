@@ -16,10 +16,9 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 3. View list of products
 4. Click on category label link
 
-
 **Expected Result**:
 - Shop page opens
-- Products diplay
+- Products display
 - Image and summary detail are visible
 - Link works as expected
 
@@ -35,6 +34,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 * **As a shopper I want to be able to view individual products with all relevant details so that I can select some to purchase [#2](https://github.com/siobhanlgorman/knits-and-pieces/issues/2)**
 
 **Acceptance Criteria**: User can click on product image or text in Shop page to open full page detail
+
 **Testing Steps**:
 1. Without logging in from the Shop page (see User Story test #1), click on a product image
 2. Click on category label link
@@ -186,7 +186,6 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Expected Result**:
 - User is signed in when information fields are completed
 - User's information is automatically completed if they have checked the remember me box
-
 
 **Actual Result**:
 - User is signed in
@@ -1527,18 +1526,16 @@ Sample screenshots
 **Pass/Fail: Pass**
 
 ## Browser Compatibility
-## Responsiveness
-The project was developed on Google Chrome and no issues were detected. Chrome Dev tools was used throughout development to test responsiveness and then after deployment was additionally tested on android Moto G8 plus, IPhone SE2
-
-![](documentation/screenshots/iphone1.png)
-![](documentation/screenshots/iphone2.png)
-![](documentation/screenshots/moto1.png)
-
 Additional tests were conducted on Mozilla Firefox and Microsoft Edge with no issues detected
 ![](documentation/screenshots/edge.png)
 ![](documentation/screenshots/firefox.png)
 
+## Responsiveness
+The project was developed on Google Chrome and no issues were detected. Chrome Development tools was used throughout development to test responsiveness and then after deployment was additionally tested on android Moto G8 plus, IPhone SE2
 
+![](documentation/screenshots/iphone1.png)
+![](documentation/screenshots/iphone2.png)
+![](documentation/screenshots/moto1.png)
 
 ## Bugs and Fixes
 1. Toast success message doesn't display if same item is added again to basket. Fix: Error in if statement in bag/views.py

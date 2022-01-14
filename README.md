@@ -40,72 +40,72 @@ Using the Agile approach Epics (Github Milestones) were created and broken down 
 
 User Stories were sorted into four priority levels with 1 as top priority and 4 as least prioritised. User Stories with Priority 1 were allocated a label of 'must-have', 2 as 'should-have', 3 as 'could-have'. These User Stories were divided into three Iterations (Github Projects). For the purposes of this project a timeframe was not assigned although in a real world environment it would be. Those User Stories allocated Priority 4 which would be 'won't have' were not placed in the table but are included in [Future Features](#future-features). Several stories marked as 'could-have' were not completed due to time constraints (#5, #7, #29 #30) but remain in the Project board.
 
-| User Story ID | As A/An            | I want to be able to                                                       | So that I can                                                                                                 |   | #   | Priority | Iteration |
+| User Story ID | As A/An | I want to be able to | So that I can | | # | Priority | Iteration |
 |---------------|--------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|---|-----|----------|----------:|
-| EPIC          |                    | Enable users to view and navigate the site                                 |                                                                                                               |   |     |          |           |
-|             1 |                    | Viewing and Navigation                                                     |                                                                                                               |   |     |          |           |
-|           1.1 | Shopper            | View a list of products                                                    | Select some to purchase                                                                                       |   | [#1](https://github.com/siobhanlgorman/knits-and-pieces/issues/1)  |        1 |         1 |
-|           1.2 | Shopper            | View individual products with all relevant details                         | See the price, description, material, product image and size                                                  |   | [#2](https://github.com/siobhanlgorman/knits-and-pieces/issues/2)  |        1 |         1 |
-|           1.3 | Shopper            | Easily identify special information about products eg discounts            | Take advantage of special information on products I'd like to purchase                                        |   | [#3](https://github.com/siobhanlgorman/knits-and-pieces/issues/3)  |        3 |         1 |
-|           1.4 | Shopper            | Easily view the total of my purchases at any time                          | Keep track of how much I am spending                                                                          |   | [#4](https://github.com/siobhanlgorman/knits-and-pieces/issues/4)  |        2 |         2 |
-|           1.5 | Shopper            | Easily view the number of purchases in my basket at any time               | Know how many items I have already added to my basket                                                         |   | [#5](https://github.com/siobhanlgorman/knits-and-pieces/issues/5)  |        3 | 2         |
-|           1.6 | Shopper            | View more information about the store                                      | Increase my confidence that the store is genuine, trustworthy and reliable to purchase from                   |   | [#6](https://github.com/siobhanlgorman/knits-and-pieces/issues/6)  |        1 | 2         |
-|           1.7 | Shopper            | View reviews of a product                                                  | decide whether the product is good enough to purchase                                                          |   | [#7](https://github.com/siobhanlgorman/knits-and-pieces/issues/7)  |        3 | 2         |
-|               |                    |                                                                            |                                                                                                               |   |     |          |           |
-|           1.8 | Shopper            | View store's social media pages                                            | View the site content in different places that I use                                                          |   | [#8](https://github.com/siobhanlgorman/knits-and-pieces/issues/8)  |        1 | 1         |
-|               |                    |                                                                            |                                                                                                               |   |     |          |           |
-|           1.9 | Shopper            | View the average rating of a product                                       | See how good the quality of the product and service is                                                        |   |     |        3 |         2 |
-|          1.1O | Shopper            | View a list of FAQs                                                        | Easily find the answer to common questions                                                                    |   |     |        4 |         F |
-|          1.11 | Shopper            | View Blog posts                                                            | Read interesting articles related to the products and the website                                             |   |     |        4 |         F |
-|          1.12 | Registered Shopper | Save my liked products to a wishlist in my profile                         | Decide which of my liked products I will buy                                                                  |   |     |        4 |         F |
-| EPIC          |                    | Enable users to create and manage their account                            |                                                                                                               |   |     |          |           |
-|             2 |                    | Registration and User Accounts                                             |                                                                                                               |   |     |          |           |
-|           2.1 | Shopper            | Easily register for an account                                             | Have a personal account and be able to view my profile                                                        |   | [#9](https://github.com/siobhanlgorman/knits-and-pieces/issues/9)  |        1 |         1 |
-|           2.2 | Registered Shopper | Easily login and logout                                                    | Access my personal account information                                                                        |   | [#10](https://github.com/siobhanlgorman/knits-and-pieces/issues/10) |        1 |         1 |
-|           2.3 | Registered Shopper | Easily recover my password if I forget it                                  | Recover access to my account                                                                                  |   | [#11](https://github.com/siobhanlgorman/knits-and-pieces/issues/11) |        1 |         1 |
-|           2.4 | Registered Shopper | Receive an email confirmation after registering                            | Verify my account information/ registration was successful                                                    |   | [#12](https://github.com/siobhanlgorman/knits-and-pieces/issues/12) |        1 |         1 |
-|           2.5 | Registered Shopper | Have a personalised user profile                                           | View my personal order history and order confirmations and save my payment information                        |   | [#13](https://github.com/siobhanlgorman/knits-and-pieces/issues/13) |        1 |         3 |
-|           2.6 | Shopper            | Social media registration                                                  | Streamline registration for multiple accounts                                                                 |   |     |        3 |         F |
-| EPIC          |                    | Enable users to sort and search for products                               |                                                                                                               |   |     |          |           |
-|             3 |                    | Sorting and Searching                                                      |                                                                                                               |   |     |          |           |
-|           3.1 | Shopper            | Sort the list of available products                                        | Easily identify the best rated, best priced and items sorted by category                                      |   | [#14](https://github.com/siobhanlgorman/knits-and-pieces/issues/14) |        1 |         2 |
-|           3.2 | Shopper            | Sort a specific category of items                                          | Find the best priced, best rated product in a specific category or sort the products in that category by name |   | [#15](https://github.com/siobhanlgorman/knits-and-pieces/issues/15) |        1 |         2 |
-|           3.3 | Shopper            | Sort multiple categories of products simultaneously                        | Find the best priced, best rated products across broad categories                                             |   | [#16](https://github.com/siobhanlgorman/knits-and-pieces/issues/16) |        1 |         2 |
-|           3.4 | Shopper            | Search for a product by name or description                                | Find a specific product to purchase                                                                           |   | [#17](https://github.com/siobhanlgorman/knits-and-pieces/issues/17) |        1 |         2 |
-|           3.5 | Shopper            | Easily see what I have searched for and the number of results              | Quickly see how many products are available                                                                   |   | [#18](https://github.com/siobhanlgorman/knits-and-pieces/issues/18) |        2 |         2 |
-| EPIC          |                    | Enable users to select and purchase products securely                      |                                                                                                               |   |     |          |           |
-|             4 |                    | Purchasing and Checkout                                                    |                                                                                                               |   |     |          |           |
-|           4.1 | Shopper            | Easily select the quantity of a product when purchasing it                 | Check that I am ordering the correct quantity that I intended                                                 |   | [#19](https://github.com/siobhanlgorman/knits-and-pieces/issues/19) |        1 |         1 |
-|           4.2 | Shopper            | View items in my basket to be purchased                                    | See the total cost of my items and all the items I will receive                                               |   | [#20](https://github.com/siobhanlgorman/knits-and-pieces/issues/20) |        1 |         3 |
-|           4.3 | Shopper            | Adjust the quantity of individual items in my basket                       | Easily make changes to my purchase before checkout                                                            |   | [#21](https://github.com/siobhanlgorman/knits-and-pieces/issues/21) |        1 |         3 |
-|           4.4 | Shopper            | Easily enter my payment information                                        | Checkout quickly and easily                                                                                   |   | [#22](https://github.com/siobhanlgorman/knits-and-pieces/issues/22) |        1 |         3 |
-|           4.5 | Shopper            | Feel that my personal and payment information is safe and secure           | Be confident in providing the necessary information to make a purchase                                        |   | [#23](https://github.com/siobhanlgorman/knits-and-pieces/issues/23) |        1 |         3 |
-|           4.6 | Shopper            | View an order confirmation after checkout                                  | Verify that the order is correct and as intended                                                              |   | [#24](https://github.com/siobhanlgorman/knits-and-pieces/issues/24) |        1 |         2 |
-|           4.7 | Shopper            | Receive an email confirmation after checking out                           | Have a record of my purchases                                                                                 |   | [#25](https://github.com/siobhanlgorman/knits-and-pieces/issues/25) |        1 |         2 |
-| EPIC          |                    | Set up adminstration to manage the site users and content                  |                                                                                                               |   |     |          |           |
-|             5 |                    | Admin and Store Management                                                 |                                                                                                               |   |     |          |           |
-|           5.1 | Store Owner        | Add a product                                                              | Add new items to my store                                                                                     |   | [#26](https://github.com/siobhanlgorman/knits-and-pieces/issues/26) |        1 |         3 |
-|           5.2 | Store Owner        | Edit/Update a product                                                      | Change product prices, descriptions, images and product criteria                                              |   | [#27](https://github.com/siobhanlgorman/knits-and-pieces/issues/27) |        1 |         3 |
-|           5.3 | Store Owner        | Delete a product                                                           | Remove items that are no longer for sale                                                                      |   | [#28](https://github.com/siobhanlgorman/knits-and-pieces/issues/28) |        1 |         3 |
-|           5.4 | Store Owner        | Add a blog post                                                            | Share articles related to my products to broaden interest in my site                                          |   |     |        4 |         F |
-|           5.5 | Store Owner        | Edit/Update a blog post                                                    | Control the blog content                                                                                      |   |     |        4 |         F |
-|           5.6 | Store Owner        | Delete a blog post/comment                                                 | Remove content that is not appropraite                                                                        |   |     |        4 |         F |
-|           5.7 | Store Owner        | Approve comments on blog posts                                             | Control the site content                                                                                      |   |     |        4 |         F |
-| EPIC          |                    | Enable users to interact with the online store                             |                                                                                                               |   |     |          |           |
-|             6 |                    | User Interaction                                                           |                                                                                                               |   |     |          |           |
-|           1.8 | Shopper            | Like a product                                                             | Pick out and view the products that I like                                                                    |   | [#29](https://github.com/siobhanlgorman/knits-and-pieces/issues/29) |        3 |         3 |
-|           6.1 | Registered Shopper | Review a product that I have bought                                        | So that I can share my opinion of my purchase on the website                                                  |   | [#30](https://github.com/siobhanlgorman/knits-and-pieces/issues/30)|        3 | 3         |
-|           6.2 | Shopper            | Request a quote for a custom order                                         | Purchase an item that meets my needs                                                                          |   | [#31](https://github.com/siobhanlgorman/knits-and-pieces/issues/31) |        3 | 3         |
-|           6.3 | Shopper            | Easily contact the store owner with any queries about the products         | Find the answer to my questions                                                                               |   | [#32](https://github.com/siobhanlgorman/knits-and-pieces/issues/32) |        2 | 3         |
-|           6.4 | Shopper            | Feedback from the website when I perform an interaction                    | confirm an interaction has taken place and if an error has occurred                                           |   | [#33](https://github.com/siobhanlgorman/knits-and-pieces/issues/33) |        1 | 1         |
-|               |                    |                                                                            |                                                                                                               |   |     |          |           |
-|               |                    | Other Future Features                                                      |                                                                                                               |   |     |          |           |
-|           7.1 | Shopper            | View the blog posts                                                        | Find out more information about the products, the website and related topics                                  |   |     |        4 |         F |
-|           7.2 | Shopper            | Comment on a blog post                                                     | Interact with the site content                                                                                |   |     |        4 |         F |
-|           7.3 | Registered Shopper | Update/Delete my blog comments                                             | Control my own contribution to the site                                                                       |   |     |        4 |         F |
-|           7.4 | Registered Shopper | Update/Delete my reviews                                                   | Control my own contribution to the site                                                                       |   |     |        3 |         3 |
-|           4.8 | Shopper            | Cancel orders that have not been shipped                                   | Change my mind about a purchase                                                                               |   |     |        4 |         F |
-|           5.8 | Store Owner        | Keep account of current stock numbers and link to available stock for sale | Only sell products which I can supply                                                                         |   |     |          |           |
+| EPIC | | Enable users to view and navigate the site | | | | | |
+| 1 | | Viewing and Navigation | | | | | |
+| 1.1 | Shopper | View a list of products | Select some to purchase | | [#1](https://github.com/siobhanlgorman/knits-and-pieces/issues/1) | 1 | 1 |
+| 1.2 | Shopper | View individual products with all relevant details | See the price, description, material, product image and size | | [#2](https://github.com/siobhanlgorman/knits-and-pieces/issues/2) | 1 | 1 |
+| 1.3 | Shopper | Easily identify special information about products eg discounts | Take advantage of special information on products I'd like to purchase | | [#3](https://github.com/siobhanlgorman/knits-and-pieces/issues/3) | 3 | 1 |
+| 1.4 | Shopper | Easily view the total of my purchases at any time | Keep track of how much I am spending | | [#4](https://github.com/siobhanlgorman/knits-and-pieces/issues/4) | 2 | 2 |
+| 1.5 | Shopper | Easily view the number of purchases in my basket at any time | Know how many items I have already added to my basket | | [#5](https://github.com/siobhanlgorman/knits-and-pieces/issues/5) | 3 | 2 |
+| 1.6 | Shopper | View more information about the store | Increase my confidence that the store is genuine, trustworthy and reliable to purchase from | | [#6](https://github.com/siobhanlgorman/knits-and-pieces/issues/6) | 1 | 2 |
+| 1.7 | Shopper | View reviews of a product | decide whether the product is good enough to purchase | | [#7](https://github.com/siobhanlgorman/knits-and-pieces/issues/7) | 3 | 2 |
+| | | | | | | | |
+| 1.8 | Shopper | View store's social media pages | View the site content in different places that I use | | [#8](https://github.com/siobhanlgorman/knits-and-pieces/issues/8) | 1 | 1 |
+| | | | | | | | |
+| 1.9 | Shopper | View the average rating of a product | See how good the quality of the product and service is | | | 3 | 2 |
+| 1.1O | Shopper | View a list of FAQs | Easily find the answer to common questions | | | 4 | F |
+| 1.11 | Shopper | View Blog posts | Read interesting articles related to the products and the website | | | 4 | F |
+| 1.12 | Registered Shopper | Save my liked products to a wishlist in my profile | Decide which of my liked products I will buy | | | 4 | F |
+| EPIC | | Enable users to create and manage their account | | | | | |
+| 2 | | Registration and User Accounts | | | | | |
+| 2.1 | Shopper | Easily register for an account | Have a personal account and be able to view my profile | | [#9](https://github.com/siobhanlgorman/knits-and-pieces/issues/9) | 1 | 1 |
+| 2.2 | Registered Shopper | Easily login and logout | Access my personal account information | | [#10](https://github.com/siobhanlgorman/knits-and-pieces/issues/10) | 1 | 1 |
+| 2.3 | Registered Shopper | Easily recover my password if I forget it | Recover access to my account | | [#11](https://github.com/siobhanlgorman/knits-and-pieces/issues/11) | 1 | 1 |
+| 2.4 | Registered Shopper | Receive an email confirmation after registering | Verify my account information/ registration was successful | | [#12](https://github.com/siobhanlgorman/knits-and-pieces/issues/12) | 1 | 1 |
+| 2.5 | Registered Shopper | Have a personalised user profile | View my personal order history and order confirmations and save my payment information | | [#13](https://github.com/siobhanlgorman/knits-and-pieces/issues/13) | 1 | 3 |
+| 2.6 | Shopper | Social media registration | Streamline registration for multiple accounts | | | 3 | F |
+| EPIC | | Enable users to sort and search for products | | | | | |
+| 3 | | Sorting and Searching | | | | | |
+| 3.1 | Shopper | Sort the list of available products | Easily identify the best rated, best priced and items sorted by category | | [#14](https://github.com/siobhanlgorman/knits-and-pieces/issues/14) | 1 | 2 |
+| 3.2 | Shopper | Sort a specific category of items | Find the best priced, best rated product in a specific category or sort the products in that category by name | | [#15](https://github.com/siobhanlgorman/knits-and-pieces/issues/15) | 1 | 2 |
+| 3.3 | Shopper | Sort multiple categories of products simultaneously | Find the best priced, best rated products across broad categories | | [#16](https://github.com/siobhanlgorman/knits-and-pieces/issues/16) | 1 | 2 |
+| 3.4 | Shopper | Search for a product by name or description | Find a specific product to purchase | | [#17](https://github.com/siobhanlgorman/knits-and-pieces/issues/17) | 1 | 2 |
+| 3.5 | Shopper | Easily see what I have searched for and the number of results | Quickly see how many products are available | | [#18](https://github.com/siobhanlgorman/knits-and-pieces/issues/18) | 2 | 2 |
+| EPIC | | Enable users to select and purchase products securely | | | | | |
+| 4 | | Purchasing and Checkout | | | | | |
+| 4.1 | Shopper | Easily select the quantity of a product when purchasing it | Check that I am ordering the correct quantity that I intended | | [#19](https://github.com/siobhanlgorman/knits-and-pieces/issues/19) | 1 | 1 |
+| 4.2 | Shopper | View items in my basket to be purchased | See the total cost of my items and all the items I will receive | | [#20](https://github.com/siobhanlgorman/knits-and-pieces/issues/20) | 1 | 3 |
+| 4.3 | Shopper | Adjust the quantity of individual items in my basket | Easily make changes to my purchase before checkout | | [#21](https://github.com/siobhanlgorman/knits-and-pieces/issues/21) | 1 | 3 |
+| 4.4 | Shopper | Easily enter my payment information | Checkout quickly and easily | | [#22](https://github.com/siobhanlgorman/knits-and-pieces/issues/22) | 1 | 3 |
+| 4.5 | Shopper | Feel that my personal and payment information is safe and secure | Be confident in providing the necessary information to make a purchase | | [#23](https://github.com/siobhanlgorman/knits-and-pieces/issues/23) | 1 | 3 |
+| 4.6 | Shopper | View an order confirmation after checkout | Verify that the order is correct and as intended | | [#24](https://github.com/siobhanlgorman/knits-and-pieces/issues/24) | 1 | 2 |
+| 4.7 | Shopper | Receive an email confirmation after checking out | Have a record of my purchases | | [#25](https://github.com/siobhanlgorman/knits-and-pieces/issues/25) | 1 | 2 |
+| EPIC | | Set up adminstration to manage the site users and content | | | | | |
+| 5 | | Admin and Store Management | | | | | |
+| 5.1 | Store Owner | Add a product | Add new items to my store | | [#26](https://github.com/siobhanlgorman/knits-and-pieces/issues/26) | 1 | 3 |
+| 5.2 | Store Owner | Edit/Update a product | Change product prices, descriptions, images and product criteria | | [#27](https://github.com/siobhanlgorman/knits-and-pieces/issues/27) | 1 | 3 |
+| 5.3 | Store Owner | Delete a product | Remove items that are no longer for sale | | [#28](https://github.com/siobhanlgorman/knits-and-pieces/issues/28) | 1 | 3 |
+| 5.4 | Store Owner | Add a blog post | Share articles related to my products to broaden interest in my site | | | 4 | F |
+| 5.5 | Store Owner | Edit/Update a blog post | Control the blog content | | | 4 | F |
+| 5.6 | Store Owner | Delete a blog post/comment | Remove content that is not appropraite | | | 4 | F |
+| 5.7 | Store Owner | Approve comments on blog posts | Control the site content | | | 4 | F |
+| EPIC | | Enable users to interact with the online store | | | | | |
+| 6 | | User Interaction | | | | | |
+| 1.8 | Shopper | Like a product | Pick out and view the products that I like | | [#29](https://github.com/siobhanlgorman/knits-and-pieces/issues/29) | 3 | 3 |
+| 6.1 | Registered Shopper | Review a product that I have bought | So that I can share my opinion of my purchase on the website | | [#30](https://github.com/siobhanlgorman/knits-and-pieces/issues/30)| 3 | 3 |
+| 6.2 | Shopper | Request a quote for a custom order | Purchase an item that meets my needs | | [#31](https://github.com/siobhanlgorman/knits-and-pieces/issues/31) | 3 | 3 |
+| 6.3 | Shopper | Easily contact the store owner with any queries about the products | Find the answer to my questions | | [#32](https://github.com/siobhanlgorman/knits-and-pieces/issues/32) | 2 | 3 |
+| 6.4 | Shopper | Feedback from the website when I perform an interaction | confirm an interaction has taken place and if an error has occurred | | [#33](https://github.com/siobhanlgorman/knits-and-pieces/issues/33) | 1 | 1 |
+| | | | | | | | |
+| | | Other Future Features | | | | | |
+| 7.1 | Shopper | View the blog posts | Find out more information about the products, the website and related topics | | | 4 | F |
+| 7.2 | Shopper | Comment on a blog post | Interact with the site content | | | 4 | F |
+| 7.3 | Registered Shopper | Update/Delete my blog comments | Control my own contribution to the site | | | 4 | F |
+| 7.4 | Registered Shopper | Update/Delete my reviews | Control my own contribution to the site | | | 3 | 3 |
+| 4.8 | Shopper | Cancel orders that have not been shipped | Change my mind about a purchase | | | 4 | F |
+| 5.8 | Store Owner | Keep account of current stock numbers and link to available stock for sale | Only sell products which I can supply | | | | |
 
 #### SEO and Web Marketing
 - SEO 
@@ -141,7 +141,7 @@ The time frame for this project was extremely short and broken up with Christmas
 ### Structure
 
 ????
-The website consists of  pages: Home, Shop, About, Custom Order, Profile
+The website consists of pages: Home, Shop, About, Custom Order, Profile
 ### Database
 For this project the PostgresSql database was used from the outset. Since fixtures were not being used and the number of products was relatively small this meant the products could be added to the deployed database from the beginning and so saving some time.
 #### Models
@@ -184,7 +184,7 @@ The Custom App has a specifically customised CustomOrder model for a customer to
 ![Custom Order Model](documentation/screenshots/custom-order-model.png)
 ### Skeleton
 #### Wireframes
-- The wireframes can be seen [here](https://github.com/siobhanlgorman/knits-and-pieces/tree/main/documentation/wireframes))
+- The wireframes can be seen [here](https://github.com/siobhanlgorman/knits-and-pieces/tree/main/documentation/wireframes)
 
 * [Home Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/home-page.png)
 * [About Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/about-page.png)
@@ -197,9 +197,12 @@ The Custom App has a specifically customised CustomOrder model for a customer to
 * [Register Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/register-page.png)
 * [Sign In Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/signin-page.png)
 * [Sign Out Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/signout-page.png)
+
 ### Surface
+
 #### Overall Design Choice
-- The emphasis is to look professional and modern and to showcase the high quality artisan goods for sale. Research on websites selling similar handmade goods often have either a very traditional and amateur look or a very cluttered look. The more upmarket sites have a clean, elegant look with a plain background to highlight the colorful products. Minimal colours are used in keeping with this clean and fresh look and make the site attractive to draw user's eye. For this project minimal colours were used to highlight the colourful products against a plain background. Image backgrounds were removed to focus on the products and to look professionally created.  
+- The emphasis is to look professional and modern and to showcase the high quality artisan goods for sale. Research on websites selling similar handmade goods often have either a very traditional and amateur look or a very cluttered look. The more upmarket sites have a clean, elegant look with a plain background to highlight the colorful products. Minimal colours are used in keeping with this clean and fresh look and make the site attractive to draw user's eye. For this project minimal colours were used to highlight the colourful products against a plain background. Image backgrounds were removed to focus on the products and to look professionally created. 
+
 #### Colours
 Colours for the site were chosen by colour picking a main colour from a product image using [Coolors](https://coolors.co/). The main colour selected was crimson and shades of grey chosen to contrast with beige for the footer. However during development contrast issues arose so the shades of colours used were adjusted to fix the issues without changing colours completely.
 
@@ -219,12 +222,20 @@ Green was used to highlight edit or update buttons with red for remove/delete
 - The crimson colour was used for the main titles on pages.
 
 - Charcoal was used for the main font colour as it is less harsh on a white background than black - #3a3a3a
+
 #### Typography
+
 - [Cinzel](https://fonts.google.com/specimen/Cinzel) was used for Titles and special text where the intention was to highlight the Knits and Pieces brand. This font is fancy, elegant and commanding
 - [Roboto](https://fonts.google.com/specimen/Roboto) was used for the body font
+
 #### Images
+
 - The images used for the website were all taken and edited by this developer as the ecommerce products are all the developer's own. The approach was to create transparent backgrounds to highlight the products and their colours in isolation and against a plain white background. This was a learning experience and proved more time-consuming than anticipated. As a result some images could be improved given more time but are satisfactory for the purposes of this project. [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) was used to remove the backgrounds, crop and resize the images. [Removebg](https://www.remove.bg/upload) was also used where the size reduction did not compromise the quality.
+
 #### Accessibility
+
+WAVE
+
 ????? Test this somewhere?
 ## Features
 ### Existing Features
@@ -276,7 +287,7 @@ Green was used to highlight edit or update buttons with red for remove/delete
 #### Order Page - Custom Order
 - This page features a form for the user to request a quote to custom order a throw or blanket to their size and colour specifications
 - At the top of the page is a carousel of pattern images from which customer can select the design they wish to order in the form
-- Below the carousel is a form for user to input name, email, choice of sizes/material/up to four colour choices and a design. Default options are set for size and material and a default of 'mix' for design if the user has no preference. Name, email and main colour are required fields for the user to input.  Further details can also be entered in a message box.
+- Below the carousel is a form for user to input name, email, choice of sizes/material/up to four colour choices and a design. Default options are set for size and material and a default of 'mix' for design if the user has no preference. Name, email and main colour are required fields for the user to input. Further details can also be entered in a message box.
 - A request quote button clearly indicates the purpose of the form and submits the form.
 #### Add a Product Page
 - The Add a Product page can only be accessed by the administrator/superuser and is only visible in the navbar menu is te user is logged in as administrator or superuser.
@@ -314,7 +325,7 @@ A 404 page was created to handle users' navigational errors and to direct them b
 ![](documentation/screenshots/404.png)
 #### 500 page
 A 500 server error page was created to handle internal server errors
-![](documentation/screenshots/500.png
+![](documentation/screenshots/500.png)
 #### Messages
 - Feedback messages are shown whenever the user interacts with the site.
 ### Future Features
@@ -335,11 +346,11 @@ A 500 server error page was created to handle internal server errors
 ### Frameworks
 * [Django 3.2.8](https://docs.djangoproject.com/en/3.2/)
 * Django supporting libraries:
-  - [allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) for authentication, registration, account management as well as 3rd party (social) account authentication
-  - [crispy-forms](https://django-crispy-forms.readthedocs.io/) to style the forms
-  - [gunicorn](https://gunicorn.org/) as the server for Heroku
-  - [psycopg2](https://pypi.org/project/psycopg2/)as an adaptor for Python and PostgreSQL databases
-  - [dj-database](https://pypi.org/project/dj-database-url/) to parse the database URL from the environment variables in Heroku
+ - [allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) for authentication, registration, account management as well as 3rd party (social) account authentication
+ - [crispy-forms](https://django-crispy-forms.readthedocs.io/) to style the forms
+ - [gunicorn](https://gunicorn.org/) as the server for Heroku
+ - [psycopg2](https://pypi.org/project/psycopg2/)as an adaptor for Python and PostgreSQL databases
+ - [dj-database](https://pypi.org/project/dj-database-url/) to parse the database URL from the environment variables in Heroku
 ## Database
 * Heroku Postgres was used for the production database
 * Postgres was used for the development database also
@@ -366,7 +377,7 @@ A 500 server error page was created to handle internal server errors
 Photo Editing
 * [Paint3D] was used to style the images and create transparent backgrounds
 * [Paint] was used to resize images
-* [TinyPNG] was used to resize images for the website
+* [TinyPNG](https://tinypng.com/) was used to resize images for the website
 * [removebg](https://www.remove.bg/upload) was also used to remove backgrounds from images
 ## Testing
 Please see separate Testing.md file [here](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/TESTING.md)
@@ -412,9 +423,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 * Point to postgres db in settings.py by commenting out the `DATABASES` section in settings.py and replace with:
 ```
 DATABASES = {
-  'default': 
-  dj_database_url.parse(os.environ.get("DATABASE_URL"))
-  }`
+ 'default': 
+ dj_database_url.parse(os.environ.get("DATABASE_URL"))
+ }`
 ```
 
 * Make migrations to postgres db
@@ -433,6 +444,8 @@ ALLOWED_HOSTS = ['knits-and-pieces.herokuapp.com', 'localhost']
 
 **Note**
 At final deployment stage the requirements.txt file contains the following:
+LINK TO FILE
+You can install these ....
 ![Requirements](documentation/screenshots/requirements.png)
 
 At final deployment stage the heroku config vars file contains the following:
@@ -465,7 +478,7 @@ The live site link is https://knits-and-pieces.herokuapp.com/
 ## Credits
 
 - Boutique Ado was relied on heavily for the basis of the project with customisation as much as possible and custom models
-- The Logo was created from ![Free Logo Design](https://www.freelogodesign.org/)
-- The favicon was created from ![Favicon.io](https://favicon.io/favicon-converter/)
+- The Logo was created from [Free Logo Design](https://www.freelogodesign.org/)
+- The favicon was created from [Favicon.io](https://favicon.io/favicon-converter/)
 * [Stack Overflow](https://stackoverflow.com/) and [Slack](https://slack.com/) were used for general queries
 ## Acknowledgements

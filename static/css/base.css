@@ -1,6 +1,7 @@
 /* set html element height for h-100 class and vertical centering */
 html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 /* set body height, colour, font */
@@ -144,6 +145,19 @@ a.social:focus {
 .carousel-control-prev,
 .carousel-indicators {
     filter: invert(75%);
+}
+
+/* toasts */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.toast-header,
+.toast-body {
+    background-color: white;
 }
 
 /* all links */
