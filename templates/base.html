@@ -72,10 +72,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item {% if request.path == '/' %}active{% endif %}">
             <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown {% if '/products/' in request.path %}active{% endif %}">
             <a class="nav-link dropdown-toggle" href="{% url 'products' %}" id="navbarDropdown" role="button"
               data-toggle="dropdown" aria-expanded="false">
               Shop
@@ -97,11 +97,11 @@
               <li><a class="dropdown-item" href="{% url 'products' %}?tag=special_offer,last_few">Don't Miss</a></li>
             </ul>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'about' %}">About<span class="sr-only">(current)</span></a>
+          <li class="nav-item {% if '/about/' in request.path %}active{% endif %}">
+            <a class="nav-link" href="{% url 'about' %}">About <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'custom' %}">Order<span class="sr-only">(current)</span></a>
+          <li class="nav-item {% if '/custom/' in request.path %}active{% endif %}">
+            <a class="nav-link" href="{% url 'custom' %}">Order <span class="sr-only">(current)</span></a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">

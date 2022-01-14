@@ -54,7 +54,6 @@ a.social:focus {
 
 .title-font {
     font-family: 'Cinzel', serif;
-    text-transform: uppercase;
 }
 
 .display-colour {
@@ -78,6 +77,8 @@ a.social:focus {
 .logo-font {
     text-transform: uppercase;
 }
+
+/* navigation menu */
 
 .navbar {
     padding: 0;
@@ -230,6 +231,7 @@ footer a:focus {
 .btn-grey {
     background-color: #636363;
     color: #fff;
+    padding: .375rem .75rem;
 }
 
 #user-options>div>div>span>i {
@@ -239,6 +241,7 @@ footer a:focus {
 .btn-red {
     background: #d20f35;
     color: white;
+    padding: .375rem .75rem;
 }
 
 .btn-red:hover,
@@ -269,12 +272,14 @@ footer a:focus {
 .delete-button {
     background-color: #d20f35;
     color: #fff;
+    padding: .375rem .75rem;
 }
 
 .update-btn,
 .edit-btn {
     background-color: #218739;
     color: #fff;
+    padding: .375rem .75rem;
 }
 
 .update-btn:hover,
@@ -457,14 +462,9 @@ footer a:focus {
     }
 } */
 
-/* fixed top navbar only on medium and up */
+/* medium and up */
 /* @media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
+
     }
 } */
 
@@ -481,5 +481,11 @@ footer a:focus {
 @media screen and (max-width: 767px) {
     .sticky-top {
         position: relative !important;
+    }
+    #banner h4 {
+        padding-top: 0.5rem;
+    }
+    .title-container h1 {
+        font-size: 2rem;
     }
 }
