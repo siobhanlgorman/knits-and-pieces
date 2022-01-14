@@ -120,7 +120,7 @@ a.social:focus {
     position: relative;
     margin: auto;
     background-color: white;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 .carousel-caption a {
