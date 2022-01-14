@@ -1368,7 +1368,6 @@ When logged in as Administrator
 
 **Pass/Fail: Pass**
 
-
 ### Basket Page
 - Features summary information of products added to basket: image of products, title, size, price, delivery cost and total
 - A quantity selector box can be used to changed the quantity of basket items
@@ -1431,7 +1430,6 @@ When logged in as Administrator
 
 **Actual Result**:
 **Pass/Fail: Pass**
-
 
 * Buttons: Shop/Checkout
 
