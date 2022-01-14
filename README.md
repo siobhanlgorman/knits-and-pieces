@@ -341,8 +341,8 @@ A 500 server error page was created to handle internal server errors
   - [psycopg2](https://pypi.org/project/psycopg2/)as an adaptor for Python and PostgreSQL databases
   - [dj-database](https://pypi.org/project/dj-database-url/) to parse the database URL from the environment variables in Heroku
 ## Database
-* Heroku Postgres for the production database
-* Postgres for the development database
+* Heroku Postgres was used for the production database
+* Postgres was used for the development database also
 ## Other Technologies
 * [Amazon Web Services](https://aws.amazon.com/) was used to host the static files and media
 * [Gitpod](https://github.com//) as the IDE
@@ -372,7 +372,7 @@ Photo Editing
 Please see separate Testing.md file [here](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/TESTING.md)
 ## Deployment
 ### Heroku Deployment
-#### 2. Create your Heroku app
+#### 1. Create your Heroku app
 * Navigate to the Heroku website
 * In the Heroku browser window, create an account by entering your email address and a password
 * Activate the account through the authentication email sent to your email account
@@ -380,9 +380,8 @@ Please see separate Testing.md file [here](https://github.com/siobhanlgorman/kni
 * Enter a name for the application which must be unique, in this case the app name is 'favoureats'
 * Select a region, in this case Europe
 * Click create app
-
-install psycopg2 and djdatabase and add to requirements
-2. Add postgres database to app resources in heroku and copy db url
+* Install psycopg2 and djdatabase in the IDE and add to requirements
+* Add postgres database to app resources in heroku and copy db url
 #### 3. Create the Database
 * Install psycopg2 and djdatabase in the workspace and add to requirements.txt
 * In the Heroku dashboard click on the Resources tab
@@ -404,7 +403,7 @@ import dj_database_url
 if os.path.isfile("env.py"):
 import env
 ```
-* Reference SECRET_KEY in settings.py
+* Reference Django SECRET_KEY in settings.py
 ```
 SECRET_KEY = os.environ.get('SECRET_KEY')
 ```
@@ -421,9 +420,7 @@ DATABASES = {
 * Make migrations to postgres db
 * Install gunicorn in the workspace and add to requirements
 * Create Procfile: `web: gunicorn knits_and_pieces.wsgi:application`
- 
-
-* Add heroku hostname to allowed_hosts in settings.py and local host so gitpod will still work
+* Add Heroku hostname to allowed_hosts in settings.py and local host so gitpod will still work
 ```
 ALLOWED_HOSTS = ['knits-and-pieces.herokuapp.com', 'localhost']
 ```
@@ -431,13 +428,10 @@ ALLOWED_HOSTS = ['knits-and-pieces.herokuapp.com', 'localhost']
 * Click Deploy tab in Heroku
 * In the 'Deployment method' section select 'Github' and click the 'connect to Github' button to confirm.
 * In the 'search' box enter the Github repository name for the project: favoureats: https://github.com/siobhanlgorman/knits-and-pieces
-
 * In the IDE when development is complete change the debug setting to: `DEBUG = False` in settings.py
 * Click deploy branch
 
-
-`````
-```````
+**Note**
 At final deployment stage the requirements.txt file contains the following:
 ![Requirements](documentation/screenshots/requirements.png)
 
@@ -464,7 +458,6 @@ The live site link is https://knits-and-pieces.herokuapp.com/
 * Open the terminal.
 * Change the current working directory to the desired destination location.
 * Type the git clone command with the copied URL: 
-
 `https://github.com/siobhanlgorman/knits-and-pieces.git`.
 * Press enter to create the local clone.
 * For the project to run an env.py file must be created as detailed above. As this is not stored in Github it will not be cloned with the rest of the files.
@@ -472,8 +465,7 @@ The live site link is https://knits-and-pieces.herokuapp.com/
 ## Credits
 
 - Boutique Ado was relied on heavily for the basis of the project with customisation as much as possible and custom models
-
-- The Logo created from ![Free Logo Design](https://www.freelogodesign.org/)
-- The favicon was created from ![Free Logo Design](https://www.freelogodesign.org/)
+- The Logo was created from ![Free Logo Design](https://www.freelogodesign.org/)
+- The favicon was created from ![Favicon.io](https://favicon.io/favicon-converter/)
 * [Stack Overflow](https://stackoverflow.com/) and [Slack](https://slack.com/) were used for general queries
 ## Acknowledgements

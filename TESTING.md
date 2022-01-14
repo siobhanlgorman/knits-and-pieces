@@ -6,48 +6,57 @@ Thorough testing was conducted by the developer and multiple users among friends
 
 For User Story testing first navigate to the [Knits and Pieces website](https://knits-and-pieces.herokuapp.com/)
 
-* As a shopper I want to be able to view a list of products so that I can select some to purchase [#1](https://github.com/siobhanlgorman/knits-and-pieces/issues/1)
+* **As a shopper I want to be able to view a list of products so that I can select some to purchase [#1](https://github.com/siobhanlgorman/knits-and-pieces/issues/1)**
 
 **Acceptance Criteria**: User can view list of products with image, title and price on Shop page
 
 **Testing Steps**:
-1. Click on Shop link in navigation menu to open dropdown menu
+1. Without logging in to the site click on the Shop link in navigation menu to open dropdown menu
 2. Click on All Products link to open up Shop page
-3. Click on Category link??
+3. View list of products
+4. Click on category label link
+
 
 **Expected Result**:
 - Shop page opens
 - Products diplay
 - Image and summary detail are visible
-- Links in product card work correctly??
+- Link works as expected
 
 **Actual Result**:
 - Shop page with list of individual products is displayed
+- Image and summary detail are visible
+- Link works as expected
 
 ![](documentation/screenshots/shop-page.png)
 
 **Pass/Fail: Pass**
 
-* As a shopper I want to be able to view individual products with all relevant details so that I can select some to purchase [#2](https://github.com/siobhanlgorman/knits-and-pieces/issues/2)
+* **As a shopper I want to be able to view individual products with all relevant details so that I can select some to purchase [#2](https://github.com/siobhanlgorman/knits-and-pieces/issues/2)**
 
 **Acceptance Criteria**: User can click on product image or text in Shop page to open full page detail
 **Testing Steps**:
-1. From the Shop page (see User Story test #1), click on a product image
+1. Without logging in from the Shop page (see User Story test #1), click on a product image
+2. Click on category label link
+2. Click on embedded link to custom order page if visible
 
 **Expected Result**:
 - Product detail card opens when product image is clicked
 - Full product detail card is displayed
-- All links in card work correctly??????
+- All links in card work correctly
 
 **Actual Result**:
-- Product detail card displays
+- Product detail card opens when product image is clicked
+- Full product detail card is displayed
+- All links in card work correctly
+
 ![](documentation/screenshots/product-detail-page.png)
 
 **Pass/Fail: Pass**
 
-* As a shopper I want to be able to easily identify special information about products eg discounts so that I can see the price, description, material, product image and size [#3](https://github.com/siobhanlgorman/knits-and-pieces/issues/3)
+* **As a shopper I want to be able to easily identify special information about products eg discounts so that I can see the price, description, material, product image and size [#3](https://github.com/siobhanlgorman/knits-and-pieces/issues/3)**
 
-**Acceptance Criteria**:  Tag is visible on products tagged with special information e.g. 'last few remaining', 'special offer' etc on Shop page and Product Detail Page. Products with tags can be accessed from navigation meny and link in banner
+**Acceptance Criteria**:  Tag is visible on products tagged with special information e.g. 'last few remaining', 'special offer' etc on Shop page and Product Detail Page. Products with tags can be accessed from navigation menu and link in banner
 
 **Testing Steps**:
 1. Click on Shop link in navigation menu to open dropdown menu
@@ -56,26 +65,26 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 2. Click on Special Offers now in banner
 
 **Expected Result**:
-- Don't Miss link in navigation dropdown opens list of tagged products
-- Special Offers Now link in banner opens list of tagged products
+- Don't Miss link in navigation dropdown opens list of tagged products when clicked
+- Special Offers Now link in banner opens list of tagged products when clicked
 
 **Actual Result**:
 - Don't Miss link in navigation dropdown opens list of tagged products
 - Special Offers Now link in banner opens list of tagged products
 
-![](documentation/screenshots/don't-miss-link.png)
-![](documentation/screenshots/don't-miss-products.png)
+![](documentation/screenshots/dont-miss-link.png)
+![](documentation/screenshots/dont-miss-products.png)
 ![](documentation/screenshots/banner-link.png)
 
 **Pass/Fail: Pass**
 
-* As a shopper I want to be able to easily view the total in euros of my purchases at any time so that I can take advantage of special information on products I'd like to purchase [#4](https://github.com/siobhanlgorman/knits-and-pieces/issues/4)
+* **As a shopper I want to be able to easily view the total in euros of my purchases at any time so that I can take advantage of special information on products I'd like to purchase [#4](https://github.com/siobhanlgorman/knits-and-pieces/issues/4)**
 
 **Acceptance Criteria**
 - Basket total visible on basket icon from all pages with total amount in euros beside icon
 
 **Testing Steps**:
-1. Check basket icon and amount ar visible in navbar
+1. Without logging in check basket icon and amount are visible in navbar (0euro if basket is empty)
 2. Navigate to Shop page
 3. Click on product image to open product detail
 4. Click on add to basket
@@ -83,7 +92,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 6. Click on basket icon
 
 **Expected Result**:
-- Basket icon is visible in navbar
+- Basket icon is visible in navbar - set to 0 when basket is empty
 - Total amount updates as basket changes
 - When clicked basket icon opens Shopping Basket page
 
@@ -95,7 +104,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 **Pass/Fail: Pass**
 
-* As a shopper I want to be able to view more information about the store so that I can increase my confidence that the store is genuine, trustworthy and reliable to purchase from [#6](https://github.com/siobhanlgorman/knits-and-pieces/issues/6)
+* **As a shopper I want to be able to view more information about the store so that I can increase my confidence that the store is genuine, trustworthy and reliable to purchase from [#6](https://github.com/siobhanlgorman/knits-and-pieces/issues/6)**
 
 **Acceptance Criteria**
 - About page visible and linked in navigation
@@ -112,14 +121,14 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 **Pass/Fail: Pass**
 
-*  As a shopper I want to be able to view store's social media pages so that I can view the site content in different places that I use [#8](https://github.com/siobhanlgorman/knits-and-pieces/issues/8)
+*  **As a shopper I want to be able to view store's social media pages so that I can view the site content in different places that I use [#8](https://github.com/siobhanlgorman/knits-and-pieces/issues/8)**
 
 **Acceptance Criteria**
-- User can locate the store on facebook and other social media sites (or link to social media main site if no business page)
+- User can locate the store on Facebook and other social media sites (or links to social media main sites if no business page)
 
 **Testing Steps**:
 1. From any page navigate to the footer section
-2. In turn click on facebook, twitter, instagram icons
+2. In turn click on Facebook, Twitter and Instagram icons
 
 **Expected Result**:
 1. When clicked Facebook icon opens Knits and Pieces Facebook business page in a new tab
@@ -131,62 +140,65 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 **Pass/Fail: Pass**
 
-*  As a shopper I want to be able to easily register for an account so that I can have a personal account and be able to view my profile [#9](https://github.com/siobhanlgorman/knits-and-pieces/issues/9)
+* **As a shopper I want to be able to easily register for an account so that I can have a personal account and be able to view my profile [#9](https://github.com/siobhanlgorman/knits-and-pieces/issues/9)**
 
 **Acceptance Criteria**: User can register for an account with email and password
 
 **Testing Steps**:
 1. Make sure to be not logged in to the website and click on the profile icon in the navbar
 2. Click on the Register link in the dropdown menu
-3. In the form click on the back to login button
+3. In the register form click on the back to login button to check link
 4. Repeat steps 1 and 2
-5. Repeat steps 1 and 2 and click on sign in link
-6. Reapeat steps 1 and 2
-7. Click on the sign up button without entering anything in the first field
-8. Complete the first field and repeat step 7 for the other fields
+5. Click on the sign up button without entering anything in the first field
+6. Complete the first field and repeat step 5 for the other fields
+7. With all fields complete click sign up
 
 **Expected Result**:
 1. Back to Login button links to sign in page
 2. When information is incomplete or incorrect error message is displayed
 3. When registration is complete success message appears asking the user to confirm their email address
+4. Email is sent to user's email address with link to confirm email address
+5. Link to confirm email address functions correctly
 
 **Actual Result**:
 1. Back to login and sign up links link correctly to sign in page
 2. Error message displays when no or invalid text is entered
 3. Success message asking user to confirm their email address appears when user has registered
+4. Email is sent to user's email address with link to confirm email address
+5. Link to confirm email address functions correctly
 ![](documentation/screenshots/signup-error.png)
 ![](documentation/screenshots/signup-confirm-msg.png)
 ![](documentation/screenshots/email-confirm.png)
 
 **Pass/Fail: Pass**
 
-*  As a registered shopper I want to be able to easily login and logout so that I can access my personal account information [#10](https://github.com/siobhanlgorman/knits-and-pieces/issues/10)
+*  **As a registered shopper I want to be able to easily login and logout so that I can access my personal account information [#10](https://github.com/siobhanlgorman/knits-and-pieces/issues/10)**
 
 **Acceptance Criteria**
 - When user clicks on login/logout they can access My Account page
 
 **Testing Steps**:
-1. Click on profile icon in navigation menu
+1. When not logged in click on profile icon in navigation menu
 2. Click on login link
 3. Complete username and password boxes
 4. Click sign in button
 
 **Expected Result**:
-- User is signed in
+- User is signed in when information fields are completed
 - User's information is automatically completed if they have checked the remember me box
 
 
 **Actual Result**:
 - User is signed in
 - User's information is automatically completed if they have checked the remember me box
-- During testing it was confusing to rememeber which user was logged in so the username was added to the title in the My Profile page
+- During testing it was apparent that it would be useful to easily see which user was logged in so the username was added to the title in the My Profile page
 
 ![](documentation/screenshots/sign-in.png)
 ![](documentation/screenshots/username-profile.png)
 
 **Pass/Fail: Pass**
 
-*  As a registered shopper I want to be able to easily recover my password if I forget it so that I can recover access to my account [#11](https://github.com/siobhanlgorman/knits-and-pieces/issues/11)
+*  **As a registered shopper I want to be able to easily recover my password if I forget it so that I can recover access to my account [#11](https://github.com/siobhanlgorman/knits-and-pieces/issues/11)**
 
 **Acceptance Criteria**
 - User can recover/change password
@@ -203,7 +215,8 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - User is able to log in with new password
 
 **Actual Result**:
-
+- Password is successfully changed and success message appears
+- User is able to log in with new password
 ![](documentation/screenshots/password-reset.png)
 ![](documentation/screenshots/change-password.png)
 ![](documentation/screenshots/password-changed.png)
@@ -211,7 +224,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 **Pass/Fail: Pass**
 
-*  As a registered shopper I want to be able to receive an email confirmation after registering so that I can verify my account information/ registration was successful [#12](https://github.com/siobhanlgorman/knits-and-pieces/issues/12)
+*  **As a registered shopper I want to be able to receive an email confirmation after registering so that I can verify my account information/ registration was successful [#12](https://github.com/siobhanlgorman/knits-and-pieces/issues/12)**
 
 **Acceptance Criteria**
 - Email is sent to user account with confirmation link
@@ -246,26 +259,34 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 **Pass/Fail: Pass**
 
-*  As a registered shopper I want to be able to have a personalised user profile so that I can view my personal order history and order confirmations and save my payment information [#13](https://github.com/siobhanlgorman/knits-and-pieces/issues/13)
+*  **As a registered shopper I want to be able to have a personalised user profile so that I can view my personal order history and order confirmations and save my payment information [#13](https://github.com/siobhanlgorman/knits-and-pieces/issues/13)**
 
 **Acceptance Criteria**
 1: User clicks on my profile icon in navigation to open profile
 2: User can view delivery details and order history in my profile
 
 **Testing Steps**:
-1. Click on profile icon in navigation menu
+1. When not logged in click on profile icon in navigation menu
+2. Type https://knits-and-pieces.herokuapp.com/profile/ into the address bar
+2. Log in and repeat step 1
 2. Click on My Profile
 
 **Expected Result**:
 - User can view order history and delivery information for their own account when they click on My Profile
+- If not logged in My Profile link is not visible
+- When not logged in if user navigates to https://knits-and-pieces.herokuapp.com/profile/ they are redirected to the Sign In page
 
 **Actual Result**:
 - User can view order history and delivery information for their own account when they click on My Profile
-![Profile Page](documentation/screenshots/profile-page.png)
+- If not logged in My Profile link is not visible
+- When not logged in if user navigates to https://knits-and-pieces.herokuapp.com/profile/ they are redirected to the Sign In page
+![Profile Page](documentation/screenshots/jack-new-profile.png)
+![Profile Page](documentation/screenshots/non-admin-profile-menu.png)
+![Profile Page](documentation/screenshots/non-logged-in-profile.png)
 
 **Pass/Fail: Pass**
 
-*  As a shopper I want to be able to sort the list of available products so that I can easily identify the best rated, best priced and items sorted by category [#14](https://github.com/siobhanlgorman/knits-and-pieces/issues/14)
+*  **As a shopper I want to be able to sort the list of available products so that I can easily identify the best rated, best priced and items sorted by category [#14](https://github.com/siobhanlgorman/knits-and-pieces/issues/14)**
 
 **Acceptance Criteria**
 - User can sort all products by price and name from the navigation menu
@@ -327,6 +348,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 **Expected Result**:
 1. List of products appears with all category badges listed above
+2. When a badge is clicked products are filtered to that category
 2. When sort options are selected products are sorted by option and listed in correct ascending/descending order
 
 **Actual Result**:
@@ -336,7 +358,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 **Pass/Fail: Pass**
 
-*  As a shopper I want to be able to search for a product by name or description so that I can find a specific product to purchase [#17](https://github.com/siobhanlgorman/knits-and-pieces/issues/17)
+*  **As a shopper I want to be able to search for a product by name or description so that I can find a specific product to purchase [#17](https://github.com/siobhanlgorman/knits-and-pieces/issues/17)**
 
 **Acceptance Criteria**
 - User can search for product and results show found within name and description
@@ -349,14 +371,16 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Expected Result**:
 - Search results are listed with number of products found stated above list
 - Results show search within title and descriptions
+- When empty search is entered error message displays
 
 **Actual Result**:
 ![](documentation/screenshots/hat-search.png)
 ![](documentation/screenshots/red-search.png)
+![](documentation/screenshots/search-error.png)
 
 **Pass/Fail: Pass**
 
-*  As a shopper I want to be able to easily see what I have searched for and the number of results so that I can quickly see how many products are available [#18](https://github.com/siobhanlgorman/knits-and-pieces/issues/18)
+*  **As a shopper I want to be able to easily see what I have searched for and the number of results so that I can quickly see how many products are available [#18](https://github.com/siobhanlgorman/knits-and-pieces/issues/18)**
 
 **Acceptance Criteria**
 - Search page displays search item and number of results found above the display of search items
@@ -369,20 +393,17 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Expected Result**:
 1. Above products found list the search term and number of results is printed
 2. If no results are found this is stated
-3. If empty search is entered error message is displayed
 
 **Actual Result**:
 1. Search term and number of results are printed including if none found
-2. Error message displays if search is empty
-3. Note that badges do not currently display for search results list which could be investigated for a later version
+2. Note that badges do not currently display for search results list which could be investigated for a later version
 
-![](documentation/screenshots/search-error.png)
 ![](documentation/screenshots/search-results.png)
 ![](documentation/screenshots/search-none.png)
 
 **Pass/Fail: Pass**
 
-*  As a shopper I want to be able to easily select the quantity of a product when purchasing it so that I can check that I am ordering the correct quantity that I intended [#19](https://github.com/siobhanlgorman/knits-and-pieces/issues/19)
+*  **As a shopper I want to be able to easily select the quantity of a product when purchasing it so that I can check that I am ordering the correct quantity that I intended [#19](https://github.com/siobhanlgorman/knits-and-pieces/issues/19)**
 
 **Acceptance Criteria**
 - User can select quantity of product to add to bag when looking at the product detail page
@@ -405,7 +426,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 **Pass/Fail: Pass**
 
-*  As a shopper I want to be able to view items in my basket to be purchased so that I can see the total cost of my items and all the items I will receive [#20](https://github.com/siobhanlgorman/knits-and-pieces/issues/20)
+*  **As a shopper I want to be able to view items in my basket to be purchased so that I can see the total cost of my items and all the items I will receive [#20](https://github.com/siobhanlgorman/knits-and-pieces/issues/20)**
 
 **Acceptance Criteria**
 - Total cost of items in basket is viewable in navbar from all pages
@@ -427,7 +448,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 **Pass/Fail: Pass**
 
-*  As a shopper I want to be able to adjust the quantity of individual items in my basket so that I can easily make changes to my purchase before checkout [#21](https://github.com/siobhanlgorman/knits-and-pieces/issues/21)
+*  **As a shopper I want to be able to adjust the quantity of individual items in my basket so that I can easily make changes to my purchase before checkout [#21](https://github.com/siobhanlgorman/knits-and-pieces/issues/21)**
 
 **Acceptance Criteria**
 1: User can click on quantity selector box in shopping basket
@@ -454,8 +475,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 **Pass/Fail: Pass**
 
-*  As a shopper I want to be able to easily enter my payment information so that I can checkout quickly and easily [#22](https://github.com/siobhanlgorman/knits-and-pieces/issues/22)
-
+*  **As a shopper I want to be able to easily enter my payment information so that I can checkout quickly and easily [#22](https://github.com/siobhanlgorman/knits-and-pieces/issues/22)**
 **Acceptance Criteria**
 1: User clicks on checkout to complete payment form
 2: Success message visible on completion of payment process
@@ -486,7 +506,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 **Pass/Fail: Pass**
 
-*  As a shopper I want to be able to feel that my personal and payment information is safe and secure so that I can be confident in providing the necessary information to make a purchase [#23](https://github.com/siobhanlgorman/knits-and-pieces/issues/23)
+*  **As a shopper I want to be able to feel that my personal and payment information is safe and secure so that I can be confident in providing the necessary information to make a purchase [#23](https://github.com/siobhanlgorman/knits-and-pieces/issues/23)**
 
 **Acceptance Criteria**
 1. User receives success/error messages when completing order/payment
@@ -531,7 +551,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 **Pass/Fail: Pass**
 
-*  As a shopper I want to be able to view an order confirmation after checkout so that I can verify that the order is correct and as intended [#24](https://github.com/siobhanlgorman/knits-and-pieces/issues/24)
+*  **As a shopper I want to be able to view an order confirmation after checkout so that I can verify that the order is correct and as intended [#24](https://github.com/siobhanlgorman/knits-and-pieces/issues/24)**
 
 **Acceptance Criteria**
 This user story has been tested as part of User Stories [22] and [23]
@@ -542,11 +562,11 @@ Please see [22] and [23]
 **Actual Result**:
 ![](documentation/screenshots/order-complete.png)
 
-*  As a shopper I want to be able to receive an email confirmation after checking out so that I can have a record of my purchases [#25](https://github.com/siobhanlgorman/knits-and-pieces/issues/25)
+*  **As a shopper I want to be able to receive an email confirmation after checking out so that I can have a record of my purchases [#25](https://github.com/siobhanlgorman/knits-and-pieces/issues/25)**
 
 **Acceptance Criteria**
-User receives email confirmation in terminal with name, order information
-This user story has been tested as part of User Stories [22] and [23]
+- User receives email confirmation in terminal with name, order information
+- This user story has been tested as part of User Stories [22] and [23]
 
 **Testing Steps**:
 Please see [22] and [23]
@@ -559,7 +579,7 @@ Please see [22] and [23]
 
 **Pass/Fail: Pass**
 
-*  As a store owner I want to be able to add a product so that I can add new items to my store [#26](https://github.com/siobhanlgorman/knits-and-pieces/issues/26)
+*  **As a store owner I want to be able to add a product so that I can add new items to my store [#26](https://github.com/siobhanlgorman/knits-and-pieces/issues/26)**
 
 **Acceptance Criteria**
 1: Administrator can click on Add a Product to bring up add a product form
@@ -588,31 +608,36 @@ When logged in as Administrator
 
 **Pass/Fail: Pass**
 
-*  As a store owner I want to be able to edit/update a product so that I can change product prices, descriptions, images and product criteria [#27](https://github.com/siobhanlgorman/knits-and-pieces/issues/27)
+*  **As a store owner I want to be able to edit/update a product so that I can change product prices, descriptions, images and product criteria [#27](https://github.com/siobhanlgorman/knits-and-pieces/issues/27)**
 
 **Acceptance Criteria**
 1: Administrator can click on edit in product detail page to open up edit form
 2: Administrator can edit and then click update product to save changes
 
 **Testing Steps**:
-1. Click on All Products link in Shop dropdown navbar menu
-2. Click on Edit button on product
-3. In Edit Product form edit fields as required
-4. Click on Update Product button
-5. Check product details have changed by clicking to open product detail view from All Products page
-6. Open up product detail page by clicking on product in All Products page
-7. Repeat steps 2 - 5
+1. When not logged in as admin/superuser click on All Products link in Shop dropdown navbar menu
+2. View a product to check edit/remove buttons not visible
+3. Log in as admin
+4. Click on Edit button on product
+5. In Edit Product form edit fields as required
+6. Click on Update Product button
+7. Check product details have changed by clicking to open product detail view from All Products page
+9. Log out
+10. Repeat steps 1-8 for product detail page by clicking on a product in the Shop to open up the detail page
+11. Repeat steps 1-4 and click cancel
 
 **Expected Result**:
-- Product fields are updated
-- Success message is displayed
+- Edit/Remove buttons are not visible to non-admin users
+- Product fields are updated when edit form is completed and Update PRoduct button is clicked
+- Success message is displayed when product is updated
+- When cancel button is clicked user is returned to Shop page
 
 **Actual Result**:
 ![](documentation/screenshots/update-product.png)
 
 **Pass/Fail: Pass**
 
-*  As a store owner I want to be able to delete a product so that I can remove items that are no longer for sale [#28](https://github.com/siobhanlgorman/knits-and-pieces/issues/28)
+*  **As a store owner I want to be able to delete a product so that I can remove items that are no longer for sale [#28](https://github.com/siobhanlgorman/knits-and-pieces/issues/28)**
 
 **Acceptance Criteria**
 - Administrator can click on delete in product detail page to delete a product
@@ -637,8 +662,7 @@ When logged in as Administrator
 
 **Pass/Fail: Pass**
 
-*  As a shopper I want to be able to request a quote for a custom order so that I can purchase an item that meets my needs [#31](https://github.com/siobhanlgorman/knits-and-pieces/issues/31)
-
+*  **As a shopper I want to be able to request a quote for a custom order so that I can purchase an item that meets my needs [#31](https://github.com/siobhanlgorman/knits-and-pieces/issues/31)**
 **Acceptance Criteria**
 - User can click to open custom order form and submit request for quote
 
@@ -666,33 +690,37 @@ When logged in as Administrator
 
 **Pass/Fail: Pass**
 
-*  As a shopper I want to be able to easily contact the store owner with any queries about the products so that I can find the answer to my questions [#32](https://github.com/siobhanlgorman/knits-and-pieces/issues/32)
+*  **As a shopper I want to be able to easily contact the store owner with any queries about the products so that I can find the answer to my questions [#32](https://github.com/siobhanlgorman/knits-and-pieces/issues/32)**
 
 **Acceptance Criteria**
 - User can click on contact envelope to send a message to Knits and Pieces
+- User can click on Contact link in Quick Liks section in footer
 
 **Testing Steps**:
 1. Click on envelope icon in footer
 2. Complete form fields first attempting to submit empty fields
 3. Click on Send
+4. Click on Contact link in footer
 
 **Expected Result**:
-1. When fields are incorrectly completed error messages display
-2. Message sent success message displays when message is sent
-3. Success message displays when form is submitted
-4. Message appears in admin panel
+1. Links to form in footer open up contact form
+2. When fields are incorrectly completed error messages display
+3. Message sent success message displays when message is sent
+4. Success message displays when form is submitted
+5. Contact Message appears in admin panel
 
 **Actual Result**:
-1. When fields are incorrectly completed error messages display
-2. Error message displays when required fields are not completed
-3. Success message displays when form is submitted
-4. Message appears in admin panel
+1. Links to form in footer open up contact form
+2. When fields are incorrectly completed error messages display
+3. Message sent success message displays when message is sent
+4. Success message displays when form is submitted
+5. Contact Message appears in admin panel
 
 ![](documentation/screenshots/contact-success.png)
 
 **Pass/Fail: Pass**
 
-*  As a shopper I want to be able to receive feedback from the website when I perform an interaction so that I can confirm an interaction has taken place and if an error has occurred [#33](https://github.com/siobhanlgorman/knits-and-pieces/issues/33)
+*  **As a shopper I want to be able to receive feedback from the website when I perform an interaction so that I can confirm an interaction has taken place and if an error has occurred [#33](https://github.com/siobhanlgorman/knits-and-pieces/issues/33)**
 
 **Acceptance Criteria**
 - Messages appears when user interacts with website
@@ -712,13 +740,6 @@ Examples:
 **Pass/Fail: Pass**
 
 ## Features Testing
-
-**Expected Result**:
-**Testing Steps**:
-**Actual Result**:
-**Pass/Fail: Pass**
-
-![](documentation/screenshots/#.png)
 
 ### Navbar:
 
@@ -742,6 +763,7 @@ Examples:
 **Expected Result**:
 - All links to pages link to the corresponding pages
 - When the navigation page menu links are hovered over their colours are inverted to grey background and white font colour. 
+- The text of the active page link is dark grey indicating the current active page
 
 **Testing Steps**:
 1. Navigate to navbar menu
@@ -751,6 +773,7 @@ Examples:
 **Actual Result**:
 - All page links work as expected
 - Links change colour on hover
+- The text of the active page link is dark grey indicating the current active page
 ![](documentation/screenshots/navbar.png)
 ![](documentation/screenshots/navbar2.png)
 ![](documentation/screenshots/hover-navbar.png)
