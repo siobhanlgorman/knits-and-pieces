@@ -1818,3 +1818,4 @@ The following JavaScript files were checked with [JS Hint](https://jshint.com/)
 
 ## Lighthouse Scores
 ## Accessibility
+The website was tested for accessibility at [Wave](https://wave.webaim.org/report#/https://knits-and-pieces.herokuapp.com/)
