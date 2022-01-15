@@ -1,10 +1,15 @@
 # Knits and Pieces
+
 ![Mock up](documentation/screenshots/mockup.png)
 
 View the live site [here](https://knits-and-pieces.herokuapp.com)
+
 ## UX Design
+
 ### Strategy
+
 #### Agile Planning
+
 User stories (Issues) with acceptance criteria and tasks are each linked to an Epic (Milestone) and placed in an Iteration kanban board (Projects 1, 2 and 3). No dates have been included due to the tight timeline and the Christmas hoilday in the middle but these would be required in a working environment. Each user story is labelled with a must-have should-have, could-have or won't have label to show prioritisation. See the table of User Stories [here](#user-stories)
 
 #### Project Goal
@@ -32,7 +37,6 @@ The goal of the project is to create an online store for this developer's handma
 - To navigate easily through the website
 - To be able to pay securely for items
 - To be confident that the site is genuine and trustworthy
-
 
 #### User Stories
 
@@ -108,20 +112,25 @@ User Stories were sorted into four priority levels with 1 as top priority and 4 
 | 5.8 | Store Owner | Keep account of current stock numbers and link to available stock for sale | Only sell products which I can supply | | | | |
 
 #### SEO and Web Marketing
+
 - SEO 
 
 Research on short and long-tail keywords was conducted via google searches to find the search words and phrases that most related to a site like Knits and Pieces. Handmade was particularly crucial to a good search result when incorporated with the product categories and craft type. Keywords were incorporated into the meta tags and headings where appropriate while not overloading the site content and maintaining the usefulness of the site.
+
 - Web Marketing
 
 Paid web advertising is not currently within the scope of this project. However a newsletter link has been added to the website as an easy way for a small business such as Knits and Pieces to reach customers and keep them up to date with new products, special offers and to keep the ecommerce store fresh.
+
 - Facebook Business Page
 
 A Facebook business page was set up for the purposes of this project. This is another method for a small business to reach new customers and retain existing customers. The site is viewable whether or not a user has an account with Facebook. Since the business is not currently live this site may have been taken down. Screenshots are provided in case the link is no longer valid. [Link to Facebook business page](https://www.facebook.com/Knits-and-Pieces-111739761381732)
 
 View of Facebook business page to site owner with Facebook account:
+
 ![Facebook Business Page Owner's View](documentation/screenshots/fbpage.png)
 
 View of Facebook Business page to prospective customer without Facebook account:
+
 ![Facebook Business Page Customer's view](documentation/screenshots/fb-page2.png)
 
 - In future a feature such a craft blog would be a useful addition to this type of website which would increase the site's usefulness to customers with links to videos on interesting stitches and patterns. This would evoke a positive emotional response in customers and in turn build trust and loyalty to the business. It would also provide a means to keep the site up to date, relevant and fresh in customers' minds. 
@@ -129,22 +138,30 @@ View of Facebook Business page to prospective customer without Facebook account:
 - Privacy Policy
 
 A privacy policy is a legal requirement because of GDPR legislation. This also benefits the website as it looks professional and more importantly inspires trust in the website user. A link to the privacy policy page is included in the footer.
+
 ### Scope
+
 - Requirements
 
 The approach taken was to create a minimum viable product which in this case was to create a functioning ecommerce store with the ability to view and purchase a product via a seamless payment facility (in this case Stripe).
 
 The User Stories were prioritised as described [above](#user-stories) and shown in the table with functional requirements prioritised as 1
+
 * Constraints
 
 The time frame for this project was extremely short and broken up with Christmas holidays. In addition, the time to learn and become familiar with the languages and tools necessary to have a good understanding of the development process was short. As a result there are many improvements to be made in the future but a basic and functioning ecommerce store has been created which fulfils the requirements.
+
 ### Structure
 
 ????
 The website consists of pages: Home, Shop, About, Custom Order, Profile
+
 ### Database
+
 For this project the PostgresSql database was used from the outset. Since fixtures were not being used and the number of products was relatively small this meant the products could be added to the deployed database from the beginning and so saving some time.
+
 #### Models
+
 There are eight models in this project (excluding those which are automatically created by Django). Four models have been specifically customised for the purposes of this ecommerce store: Product, Tag, ContactForm and CustomOrderForm
 
 - Products App Models
@@ -182,28 +199,43 @@ In the Contact App there is a custom ContactForm model for the customer to send 
 The Custom App has a specifically customised CustomOrder model for a customer to request a quote to have a particular product (Blanket) made to order in a choice of colours, sizes and patterns. It was originally intended to link this to the Product model but in as this was being added later in development it was not possible as some of the fields should have been separate models from the beginning and linked via foreign keys. Due to time constraints and lack of expertise in the planning stage this was not foreseen and could not have been undertaken in the later stages of the project.
 
 ![Custom Order Model](documentation/screenshots/custom-order-model.png)
+
 ### Skeleton
+
 #### Wireframes
+
 - The wireframes can be seen [here](https://github.com/siobhanlgorman/knits-and-pieces/tree/main/documentation/wireframes)
 
 * [Home Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/home-page.png)
+
 * [About Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/about-page.png)
+
 * [Bag Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/bag-page.png)
+
 * [Checkout Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/checkout-page.png)
+
 * [Contact Form Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/contact-form-page.png)
+
 * [Custom Order Form Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/custom-order-form.png)
+
 * [Products Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/products-page.png)
+
 * [Product Detail Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/product-detail-page.png)
+
 * [Register Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/register-page.png)
+
 * [Sign In Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/signin-page.png)
+
 * [Sign Out Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/signout-page.png)
 
 ### Surface
 
 #### Overall Design Choice
+
 - The emphasis is to look professional and modern and to showcase the high quality artisan goods for sale. Research on websites selling similar handmade goods often have either a very traditional and amateur look or a very cluttered look. The more upmarket sites have a clean, elegant look with a plain background to highlight the colorful products. Minimal colours are used in keeping with this clean and fresh look and make the site attractive to draw user's eye. For this project minimal colours were used to highlight the colourful products against a plain background. Image backgrounds were removed to focus on the products and to look professionally created. 
 
 #### Colours
+
 Colours for the site were chosen by colour picking a main colour from a product image using [Coolors](https://coolors.co/). The main colour selected was crimson and shades of grey chosen to contrast with beige for the footer. However during development contrast issues arose so the shades of colours used were adjusted to fix the issues without changing colours completely.
 
 ![Main colours](documentation/screenshots/pp5-colours.png)
@@ -237,97 +269,218 @@ Green was used to highlight edit or update buttons with red for remove/delete
 WAVE
 
 ????? Test this somewhere?
+
 ## Features
+
 ### Existing Features
+
 #### Features on All Pages:
+
 #### Navbar
+
 - Logo - Ball of wool in crimson brand colour. links to home page. Sits on left as is usual.
+![](documentation/screenshots/logo.png)
 - Page Links: On large screens the main page links are on the left: Home, Shop, About and Order pages. - On medium screens and smaller the main page links are compressed into a burger menu icon on the right which opens into a dropdown menu on the right
+![](documentation/screenshots/navbar.png)
+![](documentation/screenshots/navbar2.png)
+
 - The Shop page link features a dropdown menu. Users can choose to view all products or to sort or filter products by price, name or category. Categories which can be chosen from the menu are grouped together into broad categories that a customer might choose to see together: throws and blankets, hats and gloves, cushion covers and facemasks. When a category is selected the specific category badges appear above the products listing to enable the customer to further sort by category
+![](documentation/screenshots/shop-dropdown.png)
+
 - Search Box - On large screens a search box appears to the right of the top menu. Users can enter a single word to search within the title or description of a product. Users can click enter or the magnifying glass icon to enter the search. The products list is then filtered by the search term and resulting products are displayed with the number of results displayed above. If no products are found '0 products found' is displayed. On smaller screens the search box is contained in the burger dropdown menu.
+![](documentation/screenshots/search-box.png)
+
+
 - Profile Icon: On large screens the profile icon is to the right of the search box. This contains a dropdown menu which opens when clicked. For a user who is not logged in the options in the dropdown are links to the Register page and the Login page. For a user who is logged in the dropdown options are Add a Product, My Profile and Logout. On smaller screens the profile icon appears centrally to the right of the shopping basket.
+![](documentation/screenshots/profile-not-logged.png)
+![](documentation/screenshots/profile-admin-loggedin.png)
+![](documentation/screenshots/profile-non-admin-loggedin.png)
+
 - Shopping Basket: On large screens the shopping basket appears on the top right of the menu. The basket is coloured red in keeping with the brand colur and to make it stand out in the menu. When clicked the icon opens up the current basket page. Beside the basket is an indicator of the total cost of the items currently in the basket, also coloured red to match the basket. On smaller screens the basket icon is positioned centrally to the left of the profile icon.
+![](documentation/screenshots/shopping-basket-icon.png)
+![](documentation/screenshots/shopping-basket-icon-mob.png)
+
 - When the navigation page menu links are hovered over their colours are inverted to grey background and white font colour. 
-- Header with navbar sticks to the top of the screen as the user scolls on larger screens but not on smaller screens where
+![](documentation/screenshots/hover-navbar.png)
+
+- Header with navbar sticks to the top of the screen as the user scolls on larger screens but not on smaller screens where space is less so the header scrolls
+![](documentation/screenshots/scroll1.png)
+![](documentation/screenshots/scroll2.png)
+
 - A banner is at the top of each page under the navbar, coloured in the crimson brand colour to draw attention to special information - the free delivery threshold and an embedded link to special offers/special items tagged items
+![](documentation/screenshots/banner-link.png)
+
 #### Footer
 - The footer is divided into three sections: Shop links to the shop products by category or tag, Quick Links to the main shop pages and a contact page, and a section with the social media and contact icons and newsletter links. 
-- When the user clicks on the Contact page link or the envelope icon the Contact page form opens. The two links to the contact contact page are only found in the footer as this is where the user expects to find them. 
+![](documentation/screenshots/footer.png)
+
+- When the user clicks on the Contact page link or the envelope icon the Contact page form opens. The two links to the contact page are only found in the footer as this is where the user expects to find them. 
+![](documentation/screenshots/contact.png)
+
 - The social media links include a direct link to FB business page while the other social media links do not currently link directly to business pagea as the business is not currently live. 
+![](documentation/screenshots/contact.png)
+
 - At the bottom is copyright information and a link to the developer's GitHub page. 
+![](documentation/screenshots/copyright.png)
+
 - On medium and large screens the shop links are on the left, quick links on the right and social media, newsletter, copyright in the middle section. On smaller screens the Shop links are at the top, followed by newsletter and social media, then Quick Links and copyright at the bottom. 
+![](documentation/screenshots/footer-mob.png)
+
 - The footer also features the brand logo image in the center which links to the home page.
+
 - The Subscribe section contains an embedded mailchimp signup form with CTA Subscribe button and an input box to enter the user's email address
+![](documentation/screenshots/subscribe.png)
+
 - A Page title features prominently on all pages in the title font and the brand colour.
+![](documentation/screenshots/title.png)
+
 #### Home Page
-- Under the title is a carousel featuring images of three main product categories with links in the image title to the relevant category page
+
+- Under the title is a carousel featuring images of three main product categories with links in the image title to the relevant category page 
+![](documentation/screenshots/carousel.png)
 - Under the carousel is some introductory text about the store and an embedded link to the Order page where Users can order a custom item
 - Below the text are two CTA buttons one to the main Shop page and the other to the About page with more information about the store. 
+![](documentation/screenshots/home-page.png)
 #### About Page
 - Features a photograph of the store owner with information about the history of the store. 
 - CTA button to the Shop page
 - On larger screens the photo and text appear side by side which collapses to one underneath the other on smaller screens
+![](documentation/screenshots/about-page.png)
+![](documentation/screenshots/about-page2.png)
+
 #### Shop Page/ All Products
 - When all products is selected in the navigation menu the product are listed in rows of four on extra-large screens, three on large screens, two on medium and one on small screens
-- Above the products list on the left on medium screens and up is text specifying the number of products. 
-- Above the products list on the right is a sort selector box to sort products by category, price, name
-- The number of products text and sort selector box appear in the centre above the products list on small screens
+
+- Above the products list on the left on medium screens and up is text specifying the number of products. ![]
+- Above the products list on the right is a sort selector box to sort products by category, price, name![]
+- The number of products text and sort selector box appear in the centre above the products list on small ![]
 - Each product image in the product list links to its product detail page
-- Edit/delete buttons are visible to superuser/administrator under the product price
 - When products listed have been selected by category in the navigation menu, category badges are seen from where the user can further sort the products
+![](documentation/screenshots/all-products-lg.png)
+![](documentation/screenshots/all-products-md.png)
+![](documentation/screenshots/all-products-sm.png)
+
+- Edit/delete buttons are visible to superuser/administrator under the product price but not to a non-admin user
+![](documentation/screenshots/all-products-non-admin.png)
+
 #### Product Detail Page
+
 - Each product detail page features a large image of the product
 - Product details - name, price, description, colours(1-4), material, size, machine washable, designer
 - If the item is available to be custom ordered (currently only the various blankets), this is viewable in the description with a link to the custom order page
+![](documentation/screenshots/custom-order-link.png)
 - Category label can be clicked to view more of this category
+![](documentation/screenshots/category.png)
 - Edit/delete buttons are visible to superuser/administrator under the product name
-- A quantity selector box with + - selector to increase/decrease quantity of item. Usere can also enter number or use arrows inside box to increase/decrease quantity of item
+![](documentation/screenshots/update-product.png)
+- A quantity selector box with + - selector to increase/decrease quantity of item. User can also enter number or use arrows inside box to increase/decrease quantity of item
+![](documentation/screenshots/quantity.png)
 - Two buttons - one grey to return to main Shop page and one crimson to add item(s) to shopping basket
+![](documentation/screenshots/shop-add.png)
 - On larger screens the photo appears on the left and description to the right which collapses vertically into two coloumns on smaller screens
+
+![](documentation/screenshots/product-detail.png)
+![](documentation/screenshots/product-detail2.png)
+![](documentation/screenshots/can-custom.png)
+
 #### Order Page - Custom Order
+
 - This page features a form for the user to request a quote to custom order a throw or blanket to their size and colour specifications
 - At the top of the page is a carousel of pattern images from which customer can select the design they wish to order in the form
 - Below the carousel is a form for user to input name, email, choice of sizes/material/up to four colour choices and a design. Default options are set for size and material and a default of 'mix' for design if the user has no preference. Name, email and main colour are required fields for the user to input. Further details can also be entered in a message box.
 - A request quote button clearly indicates the purpose of the form and submits the form.
+![](documentation/screenshots/custom-order-form.png)
+![](documentation/screenshots/custom-order-msg.png)
+
 #### Add a Product Page
-- The Add a Product page can only be accessed by the administrator/superuser and is only visible in the navbar menu is te user is logged in as administrator or superuser.
-- This page features a form for the administrator/superuser to add a product with fields from the product model: category options, name, size options, description, optional tag, price, material (with default acrylic), machine wash checkbox with default checked, image selection box, up to four colour selction boxes with at least one required, pattern name, deigner and whether the item can be custom ordered with no as default.
-- The form to edit a product accessed by the admistrator from the products or product detail page is the same form as for add a product with the fields auto completed which can be changed by the administrator.
+- The Add a Product page can only be accessed by the administrator/superuser and is only visible in the navbar Profile dropdown menu if the user is logged in as administrator or superuser.
+![](documentation/screenshots/profile-admin-loggedin.png)
+
+- This page features a form for the administrator/superuser to add a product with fields from the product model: category options, name, size options, description, optional tag, price, material (with default acrylic), machine wash checkbox with default checked, image selection box, up to four colour selction boxes with at least one required, pattern name, deigner and whether the item can be custom ordered with no as default.![]
+- The form to edit a product accessed by the admistrator from the products or product detail page is the same form as for add a product with the fields auto completed which can be changed by the administrator.![]
+![](documentation/screenshots/add-product-form.png)
+
 #### My Profile Page
 - The link to this page can only be seen if a user is logged in
+![](documentation/screenshots/non-admin-profile-menu.png)
 - On the left the default delivery information is displayed if the user has selected save my information during the chackout process.
+![](documentation/screenshots/profile-page.png)
 - The user can change the default information by entering information into the fields
-- A green update button is below the delivery information form which can be clicked to submit and save changed information
-- This page can only be accessed by the user who is signed in
+- An update information button is below the delivery information form which can be clicked to submit and save changed information
 - On the right the user's order history is displayed in a table with order number, date of order, items ordered and the order total. The Order number is truncated but on hover the full number can be viewed. On click the full past order confirmation is displayed
+![](documentation/screenshots/profile-order.png)
+
 #### Contact Page
 - Accessed from envelope icon in footer and Contact link in Quick Links in footer
+![](documentation/screenshots/contact.png)
 - Features a form with input fields: name, subject, email address and text box for a message
+![](documentation/screenshots/contact-form.png)
 - All fields are required so that site owner has the necessary information to reply
 - At the bottom of the form is a Send button to submit the message
+
 #### Register Page
 - Features a form with input boxes for email and email confirmation, username, password and password confirmation
-- Two buttons, signup and back to login page
+![](documentation/screenshots/register-page.png)
+
+- Two buttons, signup and back to login page![](documentation/screenshots/contact.png)
+
 #### Login Page
+
 - Features a form with input boxes for required fields username and password
+![](documentation/screenshots/signin.png)
 - Two buttons are featured at the bottom of the form for home and sign in
+
+#### Logout Page
+
+- Features a form with input boxes for required fields username and password
+![](documentation/screenshots/sign-out.png)
+
+- Features a button to click at the bottom of the form to sign out
+
 #### Basket Page
+
 - Features summary information of products added to basket: image of products, title, size, price, delivery cost and total
+
+![](documentation/screenshots/basket.png)
+
 - A quantity selector box can be used to changed the quantity of basket items
+
+![](documentation/screenshots/basket-quantity.png)
+
+- Two CTA buttons are at the bottom of the form for users to return to the shop or checkout
+
+![](documentation/screenshots/basket-cta.png)
+
 - Two buttons are visible to update quantity total and remove items in one go from the basket
-- Two CTA buttons are at the bottom of the form for users to return to the shop pr checkout
+
 #### Checkout Page
+
 - The Checkout page features input boxes for the necessary payment information inputs: name, email, phone number, street address, town or city, country, post code, country
+![](documentation/screenshots/checkout.png)
+
 - At the bottom is the box for card payment information for Stripe. For testing purposes the number 4242 4242 4242 4242 is used
 - Two selectors are at the bottom to return to adjust the basket or complete order buttons to complete the payment process
+
 #### 404 page
+
 A 404 page was created to handle users' navigational errors and to direct them back to the website. The navigation menu and logo are visible on the page
+
 ![](documentation/screenshots/404.png)
+
 #### 500 page
+
 A 500 server error page was created to handle internal server errors
+
 ![](documentation/screenshots/500.png)
+
 #### Messages
+
 - Feedback messages are shown whenever the user interacts with the site.
+![](documentation/screenshots/custom-order-msg.png)
+![](documentation/screenshots/updated-success-msg.png)
+![](documentation/screenshots/signup-confirm-msg.png)
+![](documentation/screenshots/error-msg.png)
+
 ### Future Features
 - craft blog with users able to comment
 - user reviews of products and with CRUD function
@@ -335,15 +488,20 @@ A 500 server error page was created to handle internal server errors
 - link product availablility to stock levels/inventory would be required for a reql-world business
 - postage according to country/limiting country
 - FAQs section
+
 ## Languages and Technologies
+
 ### Languages
+
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) was used to build the front-end website
 * [CSS](https://en.wikipedia.org/wiki/CSS) was used to style the HTML and add responsiveness
 * [JavaScript](https://www.javascript.com/) (no custom JS) was used with Bootstrap to provide interaction on the front-end
 * [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) was used to style the website, add responsiveness and interactivity
 * [Python](https://www.python.org/) was used to code the back end of the project
 * [PyPI](https://pypi.org/) to install the python packages
+
 ### Frameworks
+
 * [Django 3.2.8](https://docs.djangoproject.com/en/3.2/)
 * Django supporting libraries:
  - [allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) for authentication, registration, account management as well as 3rd party (social) account authentication
@@ -351,10 +509,14 @@ A 500 server error page was created to handle internal server errors
  - [gunicorn](https://gunicorn.org/) as the server for Heroku
  - [psycopg2](https://pypi.org/project/psycopg2/)as an adaptor for Python and PostgreSQL databases
  - [dj-database](https://pypi.org/project/dj-database-url/) to parse the database URL from the environment variables in Heroku
+
 ## Database
+
 * Heroku Postgres was used for the production database
 * Postgres was used for the development database also
+
 ## Other Technologies
+
 * [Amazon Web Services](https://aws.amazon.com/) was used to host the static files and media
 * [Gitpod](https://github.com//) as the IDE
 * [Git](https://git-scm.com/) used for version control via the terminal in Gitpod
@@ -381,9 +543,13 @@ Photo Editing
 * [removebg](https://www.remove.bg/upload) was also used to remove backgrounds from images
 ## Testing
 Please see separate Testing.md file [here](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/TESTING.md)
+
 ## Deployment
+
 ### Heroku Deployment
+
 #### 1. Create your Heroku app
+
 * Navigate to the Heroku website
 * In the Heroku browser window, create an account by entering your email address and a password
 * Activate the account through the authentication email sent to your email account
@@ -393,12 +559,16 @@ Please see separate Testing.md file [here](https://github.com/siobhanlgorman/kni
 * Click create app
 * Install psycopg2 and djdatabase in the IDE and add to requirements
 * Add postgres database to app resources in heroku and copy db url
+
 #### 3. Create the Database
+
 * Install psycopg2 and djdatabase in the workspace and add to requirements.txt
 * In the Heroku dashboard click on the Resources tab
 * Scroll down to Add-Ons, search for and select 'Heroku Postgres'
 * In the Settings tab, scroll down to 'Reveal Config Vars' and copy the text in the box beside DATABASE_URL.
+
 #### 4. Set up Environment Variables
+
 * In Gitpod create a new env.py file in the top level directory
 * Add env.py to the .gitignore file
 * In env.py import the os library
@@ -419,7 +589,9 @@ import env
 SECRET_KEY = os.environ.get('SECRET_KEY')
 ```
 * DISABLE_COLLECTSTATIC = 1 should be set until aws is set up to host media and static when this should be removed in config vars
+
 #### 5. Connect the workspace to the Postgres Database
+
 * Point to postgres db in settings.py by commenting out the `DATABASES` section in settings.py and replace with:
 ```
 DATABASES = {
@@ -427,7 +599,6 @@ DATABASES = {
  dj_database_url.parse(os.environ.get("DATABASE_URL"))
  }`
 ```
-
 * Make migrations to postgres db
 * Install gunicorn in the workspace and add to requirements
 * Create Procfile: `web: gunicorn knits_and_pieces.wsgi:application`
@@ -435,7 +606,8 @@ DATABASES = {
 ```
 ALLOWED_HOSTS = ['knits-and-pieces.herokuapp.com', 'localhost']
 ```
-#### Deploy from Heroku: 
+#### Deploy from Heroku:
+
 * Click Deploy tab in Heroku
 * In the 'Deployment method' section select 'Github' and click the 'connect to Github' button to confirm.
 * In the 'search' box enter the Github repository name for the project: favoureats: https://github.com/siobhanlgorman/knits-and-pieces
@@ -443,6 +615,7 @@ ALLOWED_HOSTS = ['knits-and-pieces.herokuapp.com', 'localhost']
 * Click deploy branch
 
 **Note**
+
 At final deployment stage the requirements.txt file contains the following:
 LINK TO FILE
 You can install these ....
@@ -454,6 +627,7 @@ At final deployment stage the heroku config vars file contains the following:
 The live site link is https://knits-and-pieces.herokuapp.com/
 
 ### Local Deployment: Forking and Cloning
+
 #### Forking the Repository
 
 * To fork the project navigate to the favoureats repository at https://github.com/siobhanlgorman/knits-and-pieces
@@ -465,6 +639,7 @@ The live site link is https://knits-and-pieces.herokuapp.com/
 
 
 #### Cloning the Repository
+
 * On Github navigate to the main page of Favoureats at https://github.com/siobhanlgorman/knits-and-pieces
 * Above the list of files click the Code dropdown code menu.
 * Select the https option and copy the link.
@@ -481,4 +656,5 @@ The live site link is https://knits-and-pieces.herokuapp.com/
 - The Logo was created from [Free Logo Design](https://www.freelogodesign.org/)
 - The favicon was created from [Favicon.io](https://favicon.io/favicon-converter/)
 * [Stack Overflow](https://stackoverflow.com/) and [Slack](https://slack.com/) were used for general queries
+
 ## Acknowledgements

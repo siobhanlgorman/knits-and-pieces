@@ -702,6 +702,7 @@ When logged in as Administrator
 4. Success message displays when form is submitted
 5. Contact Message appears in admin panel
 
+![](documentation/screenshots/contact-form.png)
 ![](documentation/screenshots/contact-success.png)
 
 **Pass/Fail: Pass**
@@ -722,6 +723,7 @@ Examples:
 ![](documentation/screenshots/custom-order-msg.png)
 ![](documentation/screenshots/search-error.png)
 ![](documentation/screenshots/updated-success.png)
+![](documentation/screenshots/error-msg.png)
 
 **Pass/Fail: Pass**
 
@@ -1799,15 +1801,20 @@ The following files were checked:
 ![#](documentation/validation/v-profiles-views.png)
 
 
-### JS??????????
-JS Hint???
+### JS
+The following JavaScript files were checked with [JS Hint](https://jshint.com/)
 
 * Checkout app
 - stripe_elements.js
+![#](documentation/validation/v-js-stripe_elements.png)
+
 
 * Profiles app
 - countryfield.js
+![#](documentation/validation/v-js-countryfields.png)
 
+- custom_storages.py
+![#](documentation/validation/v-customstorages.png)
 
 ## Lighthouse Scores
 ## Accessibility
