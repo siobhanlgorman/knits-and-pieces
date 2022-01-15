@@ -73,7 +73,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item {% if request.path == '/' %}active{% endif %}">
-            <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{% url 'hom' %}">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown {% if '/products/' in request.path %}active{% endif %}">
             <a class="nav-link dropdown-toggle" href="{% url 'products' %}" id="navbarDropdown" role="button"

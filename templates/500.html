@@ -1,15 +1,16 @@
 {% extends 'base.html' %}
-{% block content %}
+{% load static %}
 
+{% block content %}
 
 
 <div class="container h-100">
     <div class="row d-flex justify-content-md-center align-items-center text-center vh-100">
         <div class="col">
-        <h1>404</h1>
+        <h1>500</h1>
         <h2>
             Oops! There are some technical problems page with the server. Please try again later. Click <a
-                href="{% url 'home' %}"> here </a> for home!
+                href="{% url 'home' %}" class="text-crimson"> here </a> for home!
         </h2>
     </div>
     </div>
