@@ -490,10 +490,8 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 1. Error message shows when fields are incorrectly completed
 2. Error message shows when card number does not use test card number
 3. Success message and order confirmation message displayed to user when order is completed
-4. Email confirmation sent to user
-5. Payment success shown in Stripe dashboard
-6. Stripe webhooks show payment intent and charge success
-7. Order email confirmation received by customer
+4. Payment success shown in Stripe dashboard
+5. Stripe webhooks show payment intent and charge success
 
 **Actual Result**:
 ![](documentation/screenshots/checkout-invalid.png)
@@ -501,7 +499,6 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 ![](documentation/screenshots/order-complete.png)
 ![](documentation/screenshots/stripe-success.png)
 ![](documentation/screenshots/stripe-webhooks.png)
-![](documentation/screenshots/order-email-conf.png)
 
 **Pass/Fail: Pass**
 
@@ -510,40 +507,25 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Acceptance Criteria**
 1. User receives success/error messages when completing order/payment
 2. User can view order history in personalised profile when logged in
-3. Email confirmation is received with all order details
-4. Padlock appears in site address bar indicating secure payment process and padlock in checkout button
+3. Padlock appears in site address bar indicating secure payment process and padlock in checkout button
 
 **Testing Steps**:
-1. With items in basket and in basket page (follow previous steps) click Checkout button
-2. Attempt to checkout without completing form fields correctly
-3. Complete fields correctly
-4. Complete card payment field with fake card details
-5. Complete card payment with card number 4242 4242 4242 4242
+1. Complete steps to make test purchase as outlined above
 6. Click on profile icon in navbar
 7. Click on My Profile link
-8. Check user's email account
+
 
 **Expected Result**:
-1. Error message shows when fields are incorrectly completed
-2. Error message shows when card number does not use test card number
-3. Padlock symbol appears in address bar during checkout process and padlock is on checkout button
-4. Success message and order confirmation message displayed to user when order is completed
-5. Email confirmation sent to user
-6. Payment success shown in Stripe dashboard
-7. Stripe webhooks show payment intent and charge success
-8. Order email confirmation received by customer
-9. Order appears in user's secure profile page
+1. Padlock symbol appears in address bar during checkout process and padlock is on checkout button
+2. Success message and order confirmation message displayed to user when order is completed
+3. Email confirmation sent to user
+4. Order appears in user's secure profile page
 
 **Actual Result**:
-1. Error message shows when fields are incorrectly completed
-2. Error message shows when card number does not use test card number
-3. Padlock symbol appears in address bar during checkout process and padlock is on checkout button
-4. Success message and order confirmation message displayed to user when order is completed
-5. Email confirmation sent to user
-6. Payment success shown in Stripe dashboard
-7. Stripe webhooks show payment intent and charge success
-8. Order email confirmation received by customer
-9. Order appears in user's secure profile page
+1. Padlock symbol appears in address bar during checkout process and padlock is on checkout button
+2. Success message and order confirmation message displayed to user when order is completed
+3. Email confirmation sent to user
+4. Order appears in user's secure profile page
 
 ![](documentation/screenshots/secure-checkout.png)
 ![](documentation/screenshots/profile-order.png)
@@ -553,12 +535,15 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 *  **As a shopper I want to be able to view an order confirmation after checkout so that I can verify that the order is correct and as intended [#24](https://github.com/siobhanlgorman/knits-and-pieces/issues/24)**
 
 **Acceptance Criteria**
-This user story has been tested as part of User Stories [22] and [23]
+- Order confirmation message is visible with all order details on screen on completion of purchase
 **Testing Steps**:
-Please see [22] and [23]
+- Complete test purchase steps as outlined above
+
 **Expected Result**:
-Please see [22] and [23]
+- Order confirmation message is visible with all order details on screen on completion of purchase
+
 **Actual Result**:
+- Order confirmation message is visible with all order details on screen on completion of purchase
 ![](documentation/screenshots/order-complete.png)
 
 *  **As a shopper I want to be able to receive an email confirmation after checking out so that I can have a record of my purchases [#25](https://github.com/siobhanlgorman/knits-and-pieces/issues/25)**
@@ -568,12 +553,14 @@ Please see [22] and [23]
 - This user story has been tested as part of User Stories [22] and [23]
 
 **Testing Steps**:
-Please see [22] and [23]
+1. Follow steps outlined above to complete test purchase
+2. Check user's email
 
 **Expected Result**:
-Please see [22] and [23]
+- Order confirmation email received
 
 **Actual Result**:
+- Order confirmation email received
 ![](documentation/screenshots/order-email-conf.png)
 
 **Pass/Fail: Pass**
@@ -681,8 +668,8 @@ When logged in as Administrator
 **Actual Result**:
 1. User can submit custom order form
 2. Error messages display when fields are incorrectly completed when required
-2. Success message displays when order is sent
-3. Order is visible in admin panel
+3. Success message displays when order is sent
+4. Order is visible in admin panel
 
 ![](documentation/screenshots/custom-order-form.png)
 ![](documentation/screenshots/custom-order-msg.png)
@@ -733,8 +720,8 @@ This has been throughly tested in the User Story testing above
 **Actual Result**:
 Examples:
 ![](documentation/screenshots/custom-order-msg.png)
-![](documentation/screenshots/search-error-msg.png)
-![](documentation/screenshots/updated-success-msg.png)
+![](documentation/screenshots/search-error.png)
+![](documentation/screenshots/updated-success.png)
 
 **Pass/Fail: Pass**
 
@@ -896,7 +883,7 @@ Examples:
 - Banner displays correctly with delivery threshold
 - Link to special offers opens up filtered list of products with special tag
 
-![](documentation/screenshots/banner-with-link.png)
+![](documentation/screenshots/banner-link.png)
 
 **Pass/Fail: Pass**
 
@@ -957,7 +944,7 @@ Click on each link in footer in turn and check correct page opens
 
 **Pass/Fail: Pass**
 - Below the text are **two CTA buttons** one to the main Shop page and the other to the About page with more information about the store. 
-![](documentation/screenshots/home-order.png)
+![](documentation/screenshots/home-cta.png)
 
 **Expected Result**:
 1. Shop button links to All Products page with category badge listed
@@ -1018,7 +1005,7 @@ Click on each link in footer in turn and check correct page opens
 4. The number of products text and sort selector box appear in the centre above the products list on small screens
 5. Each product image in the product list links to its product detail page
 6. Product category label inside product card lnks to list of all products of that category
-7. Edit/delete buttons are visible to superuser/administrator under the product price
+7. Edit/delete buttons are visible to superuser/administrator only under the product price
 8. Category badges are visible above the products list
 
 ![](documentation/screenshots/all-products-lg.png)
@@ -1048,7 +1035,6 @@ Click on each link in footer in turn and check correct page opens
 4. Link to the custom order page is working correctly
 
 ![](documentation/screenshots/product-detail.png)
-![](documentation/screenshots/can-custom.png)
 ![](documentation/screenshots/can-custom.png)
 
 **Pass/Fail: Pass**
@@ -1251,7 +1237,7 @@ When logged in as Administrator
 6. When the order number is hovered over the full number is visible
 7. When the order number is clicked the past order confirmation is opened
 ![](documentation/screenshots/non-admin-profile-menu.png)
-![](documentation/screenshots/logged-in.png)
+![](documentation/screenshots/admin-logged-in.png)
 ![](documentation/screenshots/profile-order.png)
 
 **Pass/Fail: Pass**
@@ -1287,13 +1273,13 @@ When logged in as Administrator
 **Pass/Fail: Pass**
 
 ### Register Page
-
-
 - Features a form with input boxes for email and email confirmation, username, password and password confirmation
 - Two buttons, signup and back to login page
+
 **Acceptance Criteria**: User can register for an account with email and password
 
 **Testing Steps**:
+
 1. Make sure to be not logged in to the website and click on the profile icon in the navbar
 2. Click on the Register link in the dropdown menu
 3. In the form click on the back to login button
@@ -1304,11 +1290,13 @@ When logged in as Administrator
 8. Complete the first field and repeat step 7 for the other fields
 
 **Expected Result**:
+
 1. Back to Login button links to sign in page
 2. When information is incomplete or incorrect error message is displayed
 3. When registration is complete success message appears asking the user to confirm their email address
 
 **Actual Result**:
+
 1. Back to login and sign up links link correctly to sign in page
 2. Error message displays when no or invalid text is entered
 3. Success message asking user to confirm their email address appears when user has registered
@@ -1318,22 +1306,24 @@ When logged in as Administrator
 
 **Pass/Fail: Pass**
 
-
 ### Login Page
 
 - Features a form with input boxes for required fields username and password
 - Two buttons are featured at the bottom of the form for home and sign in
 
 **Acceptance Criteria**
+
 - When user clicks on login/logout they can access My Account page
 
 **Testing Steps**:
+
 1. When not logged in click on profile icon in navigation menu
 2. Click on login link
 3. Complete username and password boxes
 4. Click sign in button
 
 **Expected Result**:
+
 - User is signed in
 - User's information is automatically completed if they have checked the remember me box
 
@@ -1346,20 +1336,25 @@ When logged in as Administrator
 **Pass/Fail: Pass**
 
 ### Logout Page
+
 **Acceptance Criteria**
+
 - When user clicks on logout they can access My Account logout page
 - User can sign out from the sign out form
 
 **Testing Steps**:
+
 1. When logged in click on profile icon in navigation menu
 2. Click on logout link
 3. Click Sign Out button
 
 **Expected Result**:
+
 1. Logout link in profile menu links to SIgn Out form
 2. User is signed out
 
 **Actual Result**:
+
 1. Logout link in profile menu links to SIgn Out form
 2. User is signed out
 
@@ -1368,6 +1363,7 @@ When logged in as Administrator
 **Pass/Fail: Pass**
 
 ### Basket Page
+
 - Features summary information of products added to basket: image of products, title, size, price, delivery cost and total
 - A quantity selector box can be used to changed the quantity of basket items
 - Two buttons are visible to update quantity total and remove items in one go from the basket
@@ -1376,67 +1372,80 @@ When logged in as Administrator
 * Summary information
 
 **Expected Result**:
+
 - Summary information of items in basket clearly displayed and updated: image of products, title, size, price, delivery cost and total
 
 **Testing Steps**:
+
 1. Click on Shop link in navbar then All Products in dropdown
 2. Click on item to test purchase
 4. Click on add to basket
 5. Click on basket icon to open basket and view contents
 
 **Actual Result**:
+
 - Summary information of items in basket clearly displayed and updated: image of products, title, size, price, delivery cost and total
+![](documentation/screenshots/basket.png)
 
 **Pass/Fail: Pass**
 
 * Quantity Selector box
 
 **Expected Result**:
+
 - A quantity selector box can be used to changed the quantity of basket items
 - Selector does not go below 1
 
 **Testing Steps**:
+
 1. First complete steps 1 - 5 above to add product to basket and view contents
 2. Click on quantity selector box + and - in turn, 
 
 **Actual Result**:
+
 - A quantity selector box can be used to changed the quantity of basket items
 - Selector does not go below 1
+![](documentation/screenshots/basket-quantity.png)
 
 **Pass/Fail: Pass**
 
 * Buttons: Update/Remove
 
 **Expected Result**:
+
 1. Update button updates quantity total to number selcted in quantity selector box
 2. Subtotal and Grand totals are updated
 3. remove items in one go from the basket
 4. Success messages are displayed when update and remove actions are performed
 
 **Testing Steps**:
+
 1. Complete steps above to add product to basket
 2. Change the quantity of item in basket using quantity selector
 3. Click on update and check subtotal and grand total
 4. Click on remove and check that item has been removed
 
 **Actual Result**:
+
 1. Update button updates quantity total to number selcted in quantity selector box
 2. Subtotal and Grand totals are updated
 3. Remove button removes items in one go from the basket
 4. Success messages are displayed when update and remove actions are performed
 ![](documentation/screenshots/update-basket.png)
-![](documentation/screenshots/remove.png)
 
 **Actual Result**:
+
 **Pass/Fail: Pass**
 
 * Buttons: Shop/Checkout
 
 **Expected Result**:
+
 1. The Shop button returns the user to the Shop page
 2. The Checkout button opens the Checkout and payment page
 
 **Testing Steps**:
+
 1. Complete steps above to add product to basket
 2. Click the Shop button
 3. Return to the Basket page by clicking on the basket icon in the navbar
@@ -1444,10 +1453,13 @@ When logged in as Administrator
 
 
 **Actual Result**:
+
 1. The Shop button returns the user to the Shop page
 2. The Checkout button opens the Checkout and payment page
+![](documentation/screenshots/basket-cta.png)
 
 ### Checkout Page
+
 - The Checkout page features input boxes for the necessary payment information inputs: name, email, phone number, street address, town or city, country, post code, country
 - At the bottom is the box for card payment information for Stripe. For testing purposes the number 4242 4242 4242 4242 is used
 - Two selectors are at the bottom to return to adjust the basket or complete order buttons to complete the payment process
@@ -1478,36 +1490,36 @@ When logged in as Administrator
 ![](documentation/screenshots/correct-card.png)
 ![](documentation/screenshots/order-complete.png)
 ![](documentation/screenshots/stripe-success.png)
-![](documentation/screenshots/stripe-webhooks.png)
+![](documentation/screenshots/stripe-webhooks-success.png)
 ![](documentation/screenshots/order-email-conf.png)
 
 
 **Actual Result**:
-**Pass/Fail: Pass**
-![](documentation/screenshots/checkout.png)
-![](documentation/screenshots/checkout-invalid.png)
-![](documentation/screenshots/jack.png)
 
-* To fully test the complete experience from registration to payment a new user Jack was created and taken through the full process. Two small bugs were fouund during this process (See Bugs section) Screenshots below:
-![](documentation/screenshots/jack-signin.png)
-![](documentation/screenshots/jack.png)
-![](documentation/screenshots/jack1.png)
-![](documentation/screenshots/jack2.png)
-![](documentation/screenshots/jack3.png)
-![](documentation/screenshots/jack4.png)
-![](documentation/screenshots/jack5.png)
-![](documentation/screenshots/jack6.png)
-![](documentation/screenshots/jack7.png)
-![](documentation/screenshots/jack8.png)
-![](documentation/screenshots/jack9.png)
-![](documentation/screenshots/jack10.png)
-![](documentation/screenshots/jack11.png)
+**Pass/Fail: Pass**
+
+**Test Case**
+
+* To fully test the complete experience from registration to payment a new user Jack was created and taken through the full process. Two small bugs were found during this process (See Bugs section) Screenshots below:
+
+![sign in](documentation/screenshots/jack-signin.png)
+![profile](documentation/screenshots/jack1.png)
+![add product](documentation/screenshots/jack2.png)
+![update](documentation/screenshots/jack3.png)
+![add product](documentation/screenshots/jack4.png)
+![basket](documentation/screenshots/jack5.png)
+![update](documentation/screenshots/jack6.png)
+![checkout form](documentation/screenshots/jack7.png)
+![incomplete](documentation/screenshots/jack8.png)
+![complete](documentation/screenshots/jack9.png)
+![overlay](documentation/screenshots/jack10.png)
+![confirmation](documentation/screenshots/jack11.png)
 ![Jack Profile bug](documentation/screenshots/jack12.png)
 ![Second Order Checkbox](documentation/screenshots/jack14.png)
 ![Order confirmation Bug](documentation/screenshots/jack15.png)
 ![Updated delivery info in profile](documentation/screenshots/jack16.png)
 ![Jack Stripe payment](documentation/screenshots/jack-stripe.png) 
-![Jack Stripe payment](documentation/screenshots/jack-email-conf1.png) 
+![Jack email confirmation](documentation/screenshots/jack-email-conf1.png) 
 
 
 #### Messages
@@ -1550,7 +1562,7 @@ The project was developed on Google Chrome and no issues were detected. Chrome D
 10. During testing bug found that address line 2 in order confirmation saved as address line 1 - FIxed found error in checkout_success.html
 ![Order confirmation Bug](documentation/screenshots/jack15.png)
 11. Stripe time is wrong - possibly due to registering while in Spain (+ 1hour) - fixed but some screenshots may show 1 hour time difference
-12. Chrome on android no longer seems to update changes on refreshing pages: fixed by clearing last week's browsing history
+12. Chrome on android no longer seems to update changes on refreshing pages: fixed by clearing last week's browsing history each time checking on Moto G8+
 
 ## Code Validation
 
@@ -1650,21 +1662,21 @@ The following files were checked:
 
 * Bag app:
 - bag_tools.py
-![#](documentation/validation/bag-tools.png)
+![#](documentation/validation/v-bag-tools.png)
 
 - apps.py
-![#](documentation/validation/bag-apps.png)
+![#](documentation/validation/v-bag-apps.png)
 
 - contexts.py
-![#](documentation/validation/contexts.png)
+![#](documentation/validation/v-contexts.png)
 - urls.py
-![#](documentation/validation/bag-urls.png)
+![#](documentation/validation/v-bag-urls.png)
 - views.py
-![#](documentation/validation/bag-views.png)
+![#](documentation/validation/v-bag-views.png)
 
 * Checkout app:
 - admin.py
-![#](documentation/validation/v-checkoutcheckout-admin.png)
+![#](documentation/validation/v-checkout-admin.png)
 - apps.py
 ![#](documentation/validation/v-checkout-apps.png)
 - forms.py

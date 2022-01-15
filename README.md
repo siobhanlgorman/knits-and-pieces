@@ -375,8 +375,8 @@ A 500 server error page was created to handle internal server errors
 * [JSHint](https://jshint.com/) was used to check for errors in Javascript
 * [Coolors](https://coolors.co) was used to generate the colour palettes
 Photo Editing
-* [Paint3D] was used to style the images and create transparent backgrounds
-* [Paint] was used to resize images
+* [Paint3D](https://www.microsoft.com/en-us/p/paint-3d/) was used to style the images and create transparent backgrounds
+* [Paint](https://support.microsoft.com/en-us/windows/get-microsoft-paint-a6b9578c-ed1c-5b09-0699-4ed8115f9aa9) was used to resize images
 * [TinyPNG](https://tinypng.com/) was used to resize images for the website
 * [removebg](https://www.remove.bg/upload) was also used to remove backgrounds from images
 ## Testing
