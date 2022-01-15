@@ -111,7 +111,7 @@
                 <input class="form-control my-2 my-sm-0" type="text" name="q" placeholder="Search Shop"
                   aria-label="Search box">
                 <div class="input-group-append search-icon">
-                  <button class="form-control btn btn-outline-secondary my-2 my-sm-0" type="submit">
+                  <button class="form-control btn btn-outline-secondary my-2 my-sm-0" type="submit" value="Search">
                     <span class="icon">
                       <i class="fas fa-search"></i>
                     </span>
@@ -124,7 +124,7 @@
             <a href="{% url 'profile' %}" class="nav-link drop-down-toggle" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               <div class="text-center">
-                <div><span class="icon"><i class="fas fa-user"></i></span></div>
+                <div><span class="icon"><i class="fas fa-user"></i></span><span class="sr-only">User Menu</span></div>
               </div>
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-options">
@@ -250,11 +250,11 @@
                           </div>
                         </div>
 
-                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                        <div class="indicates-required text-dark"><span class="asterisk">*</span> indicates required</div>
                         <div class="mc-field-group">
-                          <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                          <label for="mce-EMAIL" class="text-dark">Email Address <span class="asterisk">*</span>
                           </label>
-                          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                          <input type="email" value="email" name="EMAIL" class="required email" id="mce-EMAIL">
                         </div>
                         <div id="mce-responses" class="clear foot">
                           <div class="response" id="mce-error-response" style="display:none"></div>

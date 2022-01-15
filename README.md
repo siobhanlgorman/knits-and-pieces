@@ -550,7 +550,7 @@ Please see separate Testing.md file [here](https://github.com/siobhanlgorman/kni
 
 #### 1. Create your Heroku app
 
-* Navigate to the Heroku website
+* Navigate to the [Heroku](https://www.heroku.com/) website
 * In the Heroku browser window, create an account by entering your email address and a password
 * Activate the account through the authentication email sent to your email account
 * Click the new button and select create a new app from the dropdown menu
