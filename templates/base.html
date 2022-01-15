@@ -111,10 +111,11 @@
                 <input class="form-control my-2 my-sm-0" type="text" name="q" placeholder="Search Shop"
                   aria-label="Search box">
                 <div class="input-group-append search-icon">
-                  <button class="form-control btn btn-outline-secondary my-2 my-sm-0" type="submit" value="Search">
+                  <button class="form-control btn btn-outline-secondary my-2 my-sm-0" type="submit" value="Search" aria-label="search">
                     <span class="icon">
-                      <i class="fas fa-search"></i>
+                      <i class="fas fa-search" aria-hidden="true"></i>
                     </span>
+                    <span class="sr-only">search</span>
                   </button>
                 </div>
               </div>
@@ -245,16 +246,16 @@
                       <div id="mc_embed_signup_scroll">
                         <div class="optionalParent">
                           <div class="col d-flex justify-content-center">
-                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                            <input aria-label="subscribe" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
                               class="button rounded-0">
                           </div>
                         </div>
 
-                        <div class="indicates-required text-dark"><span class="asterisk">*</span> indicates required</div>
+                        <div class="indicates-required text-dark font-weight-bold"><span class="asterisk">*</span> indicates required</div>
                         <div class="mc-field-group">
-                          <label for="mce-EMAIL" class="text-dark">Email Address <span class="asterisk">*</span>
+                          <label for="mce-EMAIL" class="text-dark font-weight-bold">Email Address <span class="asterisk">*</span>
                           </label>
-                          <input type="email" value="email" name="EMAIL" class="required email" id="mce-EMAIL">
+                          <input aria-label="email" type="email" value="email" name="EMAIL" class="required email" id="mce-EMAIL">
                         </div>
                         <div id="mce-responses" class="clear foot">
                           <div class="response" id="mce-error-response" style="display:none"></div>
