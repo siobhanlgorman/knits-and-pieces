@@ -132,6 +132,7 @@ a.social:focus {
     padding: 2px 8px;
     margin: 2px;
     transition: all 0.2s ease-in-out;
+    font-size: 1.5rem;
 }
 
 .carousel-caption a:hover,

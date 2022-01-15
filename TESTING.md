@@ -1766,6 +1766,7 @@ The following files were checked:
 ![#](documentation/validation/v-checkout-views.png)
 
 - webhook_handler.py
+The following files contain lines too long which cannot be broken.
 ![#](documentation/validation/v-fail-webhookhandler.png)
 ![#](documentation/validation/v-checkout-webhookhandler.png)
 
@@ -1815,6 +1816,7 @@ The following files were checked:
 * Home app
 * Knits and Pieces
 - settings.py
+Long lines were noted in the settings.py files. This refers to lines which are built in to Django settings. This is a known Django error and it is acceptable not to force a line break in these cases.
 ![#](documentation/validation/v-fail-knits-settings.png)
 
 - urls.py
@@ -1847,6 +1849,7 @@ The following files were checked:
 ![#](documentation/validation/v-products-views.png)
 
 - widgets.py
+Long lines were noted in this file which refer to a long variable name which cannot be broken.
 ![#](documentation/validation/v-products-widgets.png)
 
 
@@ -1885,6 +1888,6 @@ The following JavaScript files were checked with [JS Hint](https://jshint.com/)
 - custom_storages.py
 ![#](documentation/validation/v-customstorages.png)
 
-## Lighthouse Scores
+
 ## Accessibility
-The website was tested for accessibility at [Wave](https://wave.webaim.org/report#/https://knits-and-pieces.herokuapp.com/)
+The website was tested for accessibility at [Wave](https://wave.webaim.org/report#/https://knits-and-pieces.herokuapp.com/). Some issues were highlighted mostly relating to the mailchimp form and these were corrected. Some empty labels and buttons were also corrected.
