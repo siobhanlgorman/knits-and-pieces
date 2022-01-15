@@ -476,8 +476,11 @@ footer a:focus {
     padding: 10px;
 }
 
-#mc_embedsignu .mc-field-group {
+#mc_embedsignup .mc-field-group {
     width: 100%;
+}
+#mc_embed_signup #mce-success-response {
+    color: #3a3a3a;
 }
 
 /* -------------------------------- Media Queries */
