@@ -153,8 +153,15 @@ The time frame for this project was extremely short and broken up with Christmas
 
 ### Structure
 
-????
-The website consists of pages: Home, Shop, About, Custom Order, Profile
+The website consists of ten main pages:
+- A Home page welcoming the user to the site
+- An About page with more information about the business
+- An Order page where the user can custom order a product from specified options
+- A Contact page where the user can send a message to the Knits and Pieces business
+- A Profile page where the logged in user can view their delivery details and order history
+- The Accounts pages for Login/Logout and Register forms
+- A Basket page where products selected for purchase can be stored and viewed
+- A Checkout Page where delivery and payment information is entered
 
 ### Database
 
