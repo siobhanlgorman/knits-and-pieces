@@ -271,12 +271,6 @@ Green was used to highlight edit or update buttons with red for remove/delete
 
 - The images used for the website were all taken and edited by this developer as the ecommerce products are all the developer's own. The approach was to create transparent backgrounds to highlight the products and their colours in isolation and against a plain white background. This was a learning experience and proved more time-consuming than anticipated. As a result some images could be improved given more time but are satisfactory for the purposes of this project. [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) was used to remove the backgrounds, crop and resize the images. [Removebg](https://www.remove.bg/upload) was also used where the size reduction did not compromise the quality.
 
-#### Accessibility
-
-WAVE
-
-????? Test this somewhere?
-
 ## Features
 
 ### Existing Features
@@ -286,76 +280,106 @@ WAVE
 #### Navbar
 
 - Logo - Ball of wool in crimson brand colour. links to home page. Sits on left as is usual.
+
 ![](documentation/screenshots/logo.png)
+
 - Page Links: On large screens the main page links are on the left: Home, Shop, About and Order pages. - On medium screens and smaller the main page links are compressed into a burger menu icon on the right which opens into a dropdown menu on the right
+
 ![](documentation/screenshots/navbar.png)
+
 ![](documentation/screenshots/navbar2.png)
 
 - The Shop page link features a dropdown menu. Users can choose to view all products or to sort or filter products by price, name or category. Categories which can be chosen from the menu are grouped together into broad categories that a customer might choose to see together: throws and blankets, hats and gloves, cushion covers and facemasks. When a category is selected the specific category badges appear above the products listing to enable the customer to further sort by category
+
 ![](documentation/screenshots/shop-dropdown.png)
 
 - Search Box - On large screens a search box appears to the right of the top menu. Users can enter a single word to search within the title or description of a product. Users can click enter or the magnifying glass icon to enter the search. The products list is then filtered by the search term and resulting products are displayed with the number of results displayed above. If no products are found '0 products found' is displayed. On smaller screens the search box is contained in the burger dropdown menu.
+
 ![](documentation/screenshots/search-box.png)
 
 
 - Profile Icon: On large screens the profile icon is to the right of the search box. This contains a dropdown menu which opens when clicked. For a user who is not logged in the options in the dropdown are links to the Register page and the Login page. For a user who is logged in the dropdown options are Add a Product, My Profile and Logout. On smaller screens the profile icon appears centrally to the right of the shopping basket.
+
 ![](documentation/screenshots/profile-not-logged.png)
+
 ![](documentation/screenshots/profile-admin-loggedin.png)
+
 ![](documentation/screenshots/profile-non-admin-loggedin.png)
 
 - Shopping Basket: On large screens the shopping basket appears on the top right of the menu. The basket is coloured red in keeping with the brand colur and to make it stand out in the menu. When clicked the icon opens up the current basket page. Beside the basket is an indicator of the total cost of the items currently in the basket, also coloured red to match the basket. On smaller screens the basket icon is positioned centrally to the left of the profile icon.
+
 ![](documentation/screenshots/shopping-basket-icon.png)
+
 ![](documentation/screenshots/shopping-basket-icon-mob.png)
 
 - When the navigation page menu links are hovered over their colours are inverted to grey background and white font colour. 
+
 ![](documentation/screenshots/hover-navbar.png)
 
 - Header with navbar sticks to the top of the screen as the user scolls on larger screens but not on smaller screens where space is less so the header scrolls
+
 ![](documentation/screenshots/scroll1.png)
+
 ![](documentation/screenshots/scroll2.png)
 
 - A banner is at the top of each page under the navbar, coloured in the crimson brand colour to draw attention to special information - the free delivery threshold and an embedded link to special offers/special items tagged items
+
 ![](documentation/screenshots/banner-link.png)
 
 #### Footer
 - The footer is divided into three sections: Shop links to the shop products by category or tag, Quick Links to the main shop pages and a contact page, and a section with the social media and contact icons and newsletter links. 
+
 ![](documentation/screenshots/footer.png)
 
 - When the user clicks on the Contact page link or the envelope icon the Contact page form opens. The two links to the contact page are only found in the footer as this is where the user expects to find them. 
+
 ![](documentation/screenshots/contact.png)
 
 - The social media links include a direct link to FB business page while the other social media links do not currently link directly to business pagea as the business is not currently live. 
+
 ![](documentation/screenshots/contact.png)
 
 - At the bottom is copyright information and a link to the developer's GitHub page. 
+
 ![](documentation/screenshots/copyright.png)
 
 - On medium and large screens the shop links are on the left, quick links on the right and social media, newsletter, copyright in the middle section. On smaller screens the Shop links are at the top, followed by newsletter and social media, then Quick Links and copyright at the bottom. 
+
 ![](documentation/screenshots/footer-mob.png)
 
 - The footer also features the brand logo image in the center which links to the home page.
 
 - The Subscribe section contains an embedded mailchimp signup form with CTA Subscribe button and an input box to enter the user's email address
+
 ![](documentation/screenshots/subscribe.png)
 
 - A Page title features prominently on all pages in the title font and the brand colour.
+
 ![](documentation/screenshots/title.png)
 
 #### Home Page
 
 - Under the title is a carousel featuring images of three main product categories with links in the image title to the relevant category page 
+
 ![](documentation/screenshots/carousel.png)
+
 - Under the carousel is some introductory text about the store and an embedded link to the Order page where Users can order a custom item
 - Below the text are two CTA buttons one to the main Shop page and the other to the About page with more information about the store. 
+
 ![](documentation/screenshots/home-page.png)
+
 #### About Page
+
 - Features a photograph of the store owner with information about the history of the store. 
 - CTA button to the Shop page
 - On larger screens the photo and text appear side by side which collapses to one underneath the other on smaller screens
+
 ![](documentation/screenshots/about-page.png)
+
 ![](documentation/screenshots/about-page2.png)
 
 #### Shop Page/ All Products
+
 - When all products is selected in the navigation menu the product are listed in rows of four on extra-large screens, three on large screens, two on medium and one on small screens
 
 - Above the products list on the left on medium screens and up is text specifying the number of products. ![]
@@ -363,11 +387,15 @@ WAVE
 - The number of products text and sort selector box appear in the centre above the products list on small ![]
 - Each product image in the product list links to its product detail page
 - When products listed have been selected by category in the navigation menu, category badges are seen from where the user can further sort the products
+
 ![](documentation/screenshots/all-products-lg.png)
+
 ![](documentation/screenshots/all-products-md.png)
+
 ![](documentation/screenshots/all-products-sm.png)
 
 - Edit/delete buttons are visible to superuser/administrator under the product price but not to a non-admin user
+
 ![](documentation/screenshots/all-products-non-admin.png)
 
 #### Product Detail Page
@@ -375,19 +403,31 @@ WAVE
 - Each product detail page features a large image of the product
 - Product details - name, price, description, colours(1-4), material, size, machine washable, designer
 - If the item is available to be custom ordered (currently only the various blankets), this is viewable in the description with a link to the custom order page
+
 ![](documentation/screenshots/custom-order-link.png)
+
 - Category label can be clicked to view more of this category
+
 ![](documentation/screenshots/category.png)
+
 - Edit/delete buttons are visible to superuser/administrator under the product name
+
 ![](documentation/screenshots/update-product.png)
+
 - A quantity selector box with + - selector to increase/decrease quantity of item. User can also enter number or use arrows inside box to increase/decrease quantity of item
+
 ![](documentation/screenshots/quantity.png)
+
 - Two buttons - one grey to return to main Shop page and one crimson to add item(s) to shopping basket
+
 ![](documentation/screenshots/shop-add.png)
+
 - On larger screens the photo appears on the left and description to the right which collapses vertically into two coloumns on smaller screens
 
 ![](documentation/screenshots/product-detail.png)
+
 ![](documentation/screenshots/product-detail2.png)
+
 ![](documentation/screenshots/can-custom.png)
 
 #### Order Page - Custom Order
@@ -396,37 +436,51 @@ WAVE
 - At the top of the page is a carousel of pattern images from which customer can select the design they wish to order in the form
 - Below the carousel is a form for user to input name, email, choice of sizes/material/up to four colour choices and a design. Default options are set for size and material and a default of 'mix' for design if the user has no preference. Name, email and main colour are required fields for the user to input. Further details can also be entered in a message box.
 - A request quote button clearly indicates the purpose of the form and submits the form.
+
 ![](documentation/screenshots/custom-order-form.png)
+
 ![](documentation/screenshots/custom-order-msg.png)
 
 #### Add a Product Page
 - The Add a Product page can only be accessed by the administrator/superuser and is only visible in the navbar Profile dropdown menu if the user is logged in as administrator or superuser.
+
 ![](documentation/screenshots/profile-admin-loggedin.png)
 
-- This page features a form for the administrator/superuser to add a product with fields from the product model: category options, name, size options, description, optional tag, price, material (with default acrylic), machine wash checkbox with default checked, image selection box, up to four colour selction boxes with at least one required, pattern name, deigner and whether the item can be custom ordered with no as default.![]
-- The form to edit a product accessed by the admistrator from the products or product detail page is the same form as for add a product with the fields auto completed which can be changed by the administrator.![]
+- This page features a form for the administrator/superuser to add a product with fields from the product model: category options, name, size options, description, optional tag, price, material (with default acrylic), machine wash checkbox with default checked, image selection box, up to four colour selction boxes with at least one required, pattern name, deigner and whether the item can be custom ordered with no as default.
+- The form to edit a product accessed by the admistrator from the products or product detail page is the same form as for add a product with the fields auto completed which can be changed by the administrator.
+
 ![](documentation/screenshots/add-product-form.png)
 
 #### My Profile Page
 - The link to this page can only be seen if a user is logged in
+
 ![](documentation/screenshots/non-admin-profile-menu.png)
-- On the left the default delivery information is displayed if the user has selected save my information during the chackout process.
+
+- On the left the default delivery information is displayed if the user has selected save my information during the checkout process.
+
 ![](documentation/screenshots/profile-page.png)
+
 - The user can change the default information by entering information into the fields
 - An update information button is below the delivery information form which can be clicked to submit and save changed information
 - On the right the user's order history is displayed in a table with order number, date of order, items ordered and the order total. The Order number is truncated but on hover the full number can be viewed. On click the full past order confirmation is displayed
+
 ![](documentation/screenshots/profile-order.png)
 
 #### Contact Page
 - Accessed from envelope icon in footer and Contact link in Quick Links in footer
+
 ![](documentation/screenshots/contact.png)
+
 - Features a form with input fields: name, subject, email address and text box for a message
+
 ![](documentation/screenshots/contact-form.png)
+
 - All fields are required so that site owner has the necessary information to reply
 - At the bottom of the form is a Send button to submit the message
 
 #### Register Page
 - Features a form with input boxes for email and email confirmation, username, password and password confirmation
+
 ![](documentation/screenshots/register-page.png)
 
 - Two buttons, signup and back to login page![](documentation/screenshots/contact.png)
@@ -434,12 +488,15 @@ WAVE
 #### Login Page
 
 - Features a form with input boxes for required fields username and password
+
 ![](documentation/screenshots/signin.png)
+
 - Two buttons are featured at the bottom of the form for home and sign in
 
 #### Logout Page
 
 - Features a form with input boxes for required fields username and password
+
 ![](documentation/screenshots/sign-out.png)
 
 - Features a button to click at the bottom of the form to sign out
@@ -463,6 +520,7 @@ WAVE
 #### Checkout Page
 
 - The Checkout page features input boxes for the necessary payment information inputs: name, email, phone number, street address, town or city, country, post code, country
+
 ![](documentation/screenshots/checkout.png)
 
 - At the bottom is the box for card payment information for Stripe. For testing purposes the number 4242 4242 4242 4242 is used
@@ -483,9 +541,13 @@ A 500 server error page was created to handle internal server errors
 #### Messages
 
 - Feedback messages are shown whenever the user interacts with the site.
+
 ![](documentation/screenshots/custom-order-msg.png)
+
 ![](documentation/screenshots/updated-success-msg.png)
+
 ![](documentation/screenshots/signup-confirm-msg.png)
+
 ![](documentation/screenshots/error-msg.png)
 
 ### Future Features
@@ -548,7 +610,9 @@ Photo Editing
 * [Paint](https://support.microsoft.com/en-us/windows/get-microsoft-paint-a6b9578c-ed1c-5b09-0699-4ed8115f9aa9) was used to resize images
 * [TinyPNG](https://tinypng.com/) was used to resize images for the website
 * [removebg](https://www.remove.bg/upload) was also used to remove backgrounds from images
+
 ## Testing
+
 Please see separate Testing.md file [here](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/TESTING.md)
 
 ## Deployment
@@ -622,6 +686,7 @@ ALLOWED_HOSTS = ['knits-and-pieces.herokuapp.com', 'localhost']
 * Click deploy branch
 
 #### Connect AWS
+
 AWS has been used in this project to host the static and media files. Sign up for a free account and then follow these steps to set up a unique S3 bucket for the website.
 * From the S3 buckets section of the management console select create bucket
 * Select name to match Heroku app name, region and allow public access
@@ -755,3 +820,5 @@ The live site link is https://knits-and-pieces.herokuapp.com/
 * [Stack Overflow](https://stackoverflow.com/) and [Slack](https://slack.com/) were used for general queries
 
 ## Acknowledgements
+
+I would like to thank my mentor Tim Nelson for his endless time, patience and encouragement throughout the course.
