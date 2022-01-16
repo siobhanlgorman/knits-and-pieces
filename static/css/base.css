@@ -27,16 +27,13 @@ body>footer>div.container-fluid.text-center>div>div.col-md-6.mt-md-0.mt-3>div:nt
 
 footer {
     flex-shrink: 0;
+    background-color: #F4F3EE;
 }
 
 .page-footer {
     border-top: 1px solid #ba0d30;
     padding-top: 1rem;
     margin-top: 1rem;
-}
-
-footer {
-    background-color: #F4F3EE;
 }
 
 footer i {
@@ -454,7 +451,6 @@ footer a:focus {
 
 /* Mailchimp */
 #mc_embed_signup {
-    /* background: #fff; */
     clear: left;
     font: 14px 'Roboto', sans-serif;
 }
@@ -484,20 +480,20 @@ footer a:focus {
     color: #3a3a3a;
 }
 
+#mc_embed_signup .mc-field-group label {
+    display: block;
+    margin-bottom: 3px;
+    margin: auto;
+    width: 80%;
+}
+#mc_embed_signup .mc-field-group input {
+    display: block;
+    width: 80%;
+    padding: 8px 0;
+    text-indent: 2%;
+    margin: auto;
+
 /* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-/* @media (min-width: 1200px) {
-    .container-fluid {
-        max-width: 80%;
-    }
-} */
-
-/* medium and up */
-/* @media (min-width: 992px) {
-
-    }
-} */
 
 @media (max-width: 992px) {
     #banner h4 {
