@@ -1682,6 +1682,7 @@ The project was developed on Google Chrome and no issues were detected. Chrome D
 11. Stripe time is wrong - possibly due to registering while in Spain (+ 1hour) - fixed but some screenshots may show 1 hour time difference
 12. Chrome on android no longer seems to update changes on refreshing pages: fixed by clearing last week's browsing history each time checking on Moto G8+
 
+
 ## Code Validation
 
 ### HTML Validation
