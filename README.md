@@ -595,7 +595,7 @@ import env
 ```
 SECRET_KEY = os.environ.get('SECRET_KEY')
 ```
-* DISABLE_COLLECTSTATIC = 1 should be set until aws is set up to host media and static when this should be removed in config vars
+* DISABLE_COLLECTSTATIC = 1 should be set until AWS is set up to host media and static then the DISABLE_COLLECTSTATIC variable should be removed in config vars
 
 #### 5. Connect the workspace to the Postgres Database
 
@@ -621,11 +621,101 @@ ALLOWED_HOSTS = ['knits-and-pieces.herokuapp.com', 'localhost']
 * In the IDE when development is complete change the debug setting to: `DEBUG = False` in settings.py
 * Click deploy branch
 
+#### Connect AWS
+AWS has been used in this project to host the static and media files. Sign up for a free account and then follow these steps to set up a unique S3 bucket for the website.
+* From the S3 buckets section of the management console select create bucket
+* Select name to match Heroku app name, region and allow public access
+* Permissions - CORS configuration should be set to the following:
+```
+[
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
+```
+* Create a Bucket Policy using the Policy Generator and add to the bucket. Permissions - Bucket Policy should be set to the following with the last line reflecting the name of your AWS Bucket ARN details and /* at the end:
+```
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1641040295032",
+    "Statement": [
+        {
+            "Sid": "Stmt1641040291820",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::knits-and-pieces/*"
+        }
+    ]
+}
+```
+* Navigate to the **IAM** section of AWS
+    - Create a *New Group* and select your current S3 Bucket details to attach.
+    - Create a *New Policy* and a *New User* in the IAM section and then attach these to the Group just created.
+* Allow access to all resources in this bucket
+* In the **Access Control List** allow access to everyone
+* Download the csv file with access key and secret key and add to Heroku config vars and add the variable USE_AWS = True
+* Remove the variable DISABLE_COLLECTSTATIC from the config vars
+* Connect Django to AWS by installing boto3 and django-storages with the following command
+```
+pip3 install boto3 django-storages``` and add to the installed apps section of settings.py
+```
+* Create file custom_storages.py to tell django where to collect static files in production
+```
+from django.conf import settings
+from storages.backends.s3boto3 import S3Boto3Storage
+
+
+class StaticStorage(S3Boto3Storage):
+    location = settings.STATICFILES_LOCATION
+
+
+class MediaStorage(S3Boto3Storage):
+    location = settings.MEDIAFILES_LOCATION
+```
+
+* Add the following lines to settings.py to connect the bucket:
+if 'USE_AWS' in os.environ:
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+    # Bucket config
+    AWS_STORAGE_BUCKET_NAME = 'knits-and-pieces'
+    AWS_S3_REGION_NAME = 'eu-west-1'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+```
+* Push to Gihub and deploy branch from Heroku and static files should now be collected in the AWS bucket
+* In AWS S3 bucket create media folder. Inside the media folder click upload and select files to upload
+
 **Note**
 
 At final deployment stage the requirements.txt file contains the following:
 LINK TO FILE
-You can install these ....
+You can install these requirements by typing ```python3 install -r requirements.txt```
 ![Requirements](documentation/screenshots/requirements.png)
 
 At final deployment stage the heroku config vars file contains the following:

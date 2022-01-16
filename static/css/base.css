@@ -486,14 +486,17 @@ footer a:focus {
     margin: auto;
     width: 80%;
 }
+
 #mc_embed_signup .mc-field-group input {
     display: block;
     width: 80%;
     padding: 8px 0;
     text-indent: 2%;
     margin: auto;
+}
 
 /* -------------------------------- Media Queries */
+
 
 @media (max-width: 992px) {
     #banner h4 {
