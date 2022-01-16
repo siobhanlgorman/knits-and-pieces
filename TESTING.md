@@ -1940,4 +1940,4 @@ The following JavaScript files were checked with [JS Hint](https://jshint.com/)
 
 ## Accessibility
 
-The website was tested for accessibility at [Wave](https://wave.webaim.org/report#/https://knits-and-pieces.herokuapp.com/). Some issues were highlighted mostly relating to the mailchimp form and these were corrected. Some empty labels and buttons were also corrected.
+The website was tested for accessibility at [Wave](https://wave.webaim.org/report#/https://knits-and-pieces.herokuapp.com/). Some issues were highlighted mostly relating to the mailchimp form and these were corrected. Some empty labels and buttons were also corrected. No errors remain.

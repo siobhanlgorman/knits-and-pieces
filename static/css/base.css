@@ -16,7 +16,6 @@ body {
     width: 50px;
 }
 
-
 body>header>nav>a:hover {
     background-color: transparent;
 }
