@@ -1814,7 +1814,6 @@ Product Detail Page
 ![#](documentation/validation/v-html-privacy.png)
 
 Shop Page
-
 - products.html
 
 ![#](documentation/validation/v-html-products.png)
@@ -1827,48 +1826,42 @@ Shopping Basket Page
 
 Checkout Page
 - checkout.html
+- checkout_success.html
 
 ![#](documentation/validation/v-html-checkout.png)
 
-* Profile Page
+![#](documentation/validation/v-html-checkout_success.png)
 
+Profile Page
 - profile.html
 
 ![#](documentation/validation/v-html-profile.png)
 
 Custom Order Page
-
 - custom.html
 
 ![#](documentation/validation/v-html-custom.png)
 
 Contact Page
-
 - contact.html
 
 ![#](documentation/validation/v-html-contact.png)
 
 Register Page
-
 - signup.html
 
 ![#](documentation/validation/v-html-register.png)
 
 Sign In Page
-
 - login.html
 
 ![#](documentation/validation/v-html-login.png)
 
 Sign Out Page
-
 - logout.html
 
 ![#](documentation/validation/v-html-logout.png)
 
-Confirmation Email Page ???
-
-![](documentation/screenshots/#.png)
 
 ### CSS Validation
 
@@ -2113,11 +2106,16 @@ The following JavaScript files were checked with [JS Hint](https://jshint.com/)
 
 ## Accessibility
 
-The website was tested for accessibility at [Wave](https://wave.webaim.org/report#/https://knits-and-pieces.herokuapp.com/). There were many more errors in this section than expected, relating to skipped heading levels, empty labels, justified text and contrast issues. The tool was very useful in highlighting errors that had not been identified in testing or with other tools used during development and was a great learning experience. All errors and alerts have been fixed for all pages except the pages with forms rendered by Django Crispy Forms where WAVE cannot read the labels properly.
+The website was tested for accessibility at [Wave](https://wave.webaim.org/report#/https://knits-and-pieces.herokuapp.com/). There were many more errors in this section than expected, relating to skipped heading levels, empty labels, justified text and contrast issues. The tool was very useful in highlighting errors that had not been identified in testing or with other tools used during development and was a great learning experience. All errors and alerts have been fixed for all pages except the pages with forms rendered by Django Crispy Forms where WAVE cannot read the labels auto-generated properly: bag, checkout and profile.
 
 ![#](documentation/validation/wave-report.png)
 ![#](documentation/validation/wave-about.png)
 ![#](documentation/validation/wave-products.png)
-![#](documentation/validation/wave-productdetaal.png)
+![#](documentation/validation/wave-productdetail.png)
 ![#](documentation/validation/wave-custom.png)
 ![#](documentation/validation/wave-contact.png)
+![#](documentation/validation/wave-bag.png)
+![#](documentation/validation/wave-add.png)
+![#](documentation/validation/wave-edit.png)
+![#](documentation/validation/wave-checkout.png)
+![#](documentation/validation/wave-profile.png)
