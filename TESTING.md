@@ -2,7 +2,7 @@
 
 ## Manual Testing
 
-Thorough testing was conducted by the developer and multiple users among friends and family especially with order creation, updating totals, editing line items. Bugs were found and fixed as detailed below in Bugs section. Testing steps and results are detailed as follows.
+Thorough testing was conducted by the developer and multiple users among friends and family especially with order creation, updating totals, editing line items. Bugs were found and fixed as detailed below in [Bugs](#bugs-and-fixes) section. Testing steps and results are detailed as follows.
 
 ## User Stories Testing
 
@@ -535,17 +535,20 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Expected Result**:
 - Items are updated in basket and navbar as expected with totals corresponding correctly
 - Success message is displayed
-- Error message appears when decimal or negative is entered
+- Error message appears when decimal and negative numbers are entered
 
 **Actual Result**:
 - Items are updated in basket and navbar as expected with totals corresponding correctly
 - Success message is displayed when integers are entered
+- 500 error displays when decimal is entered (see [Bug report](#bug) and fix)
 
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/basket-quantity.png)
 
 ![](documentation/screenshots/updated-success.png)
+
+![](documentation/screenshots/500.png)
 
 
 *  **As a shopper I want to be able to easily enter my payment information so that I can checkout quickly and easily [#22](https://github.com/siobhanlgorman/knits-and-pieces/issues/22)**
@@ -1692,7 +1695,7 @@ When logged in as Administrator
 
 **Test Case**
 
-* To fully test the complete experience from registration to payment a new user Jack was created and taken through the full process. Two small bugs were found during this process (See Bugs section) Screenshots below:
+* To fully test the complete experience from registration to payment a new user Jack was created and taken through the full process. Two bugs were found during this process (See [Bugs](#bugs-and-fixes) section) Screenshots below:
 
 ![sign in](documentation/screenshots/jack-signin.png)
 
