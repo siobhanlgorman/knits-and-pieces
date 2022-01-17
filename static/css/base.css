@@ -167,6 +167,10 @@ a.social:focus {
     border-width:2px !important;
 }
 
+.text-green {
+    color: #1F7F35;
+}
+
 /* all links */
 
 a {
