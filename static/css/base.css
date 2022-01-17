@@ -39,6 +39,10 @@ footer i {
     color: #d20f35;
 }
 
+footer h2 {
+    font-size: 20px;
+}
+
 a.social:hover,
 a.social:active,
 a.social:focus {
@@ -167,9 +171,7 @@ a.social:focus {
     border-width:2px !important;
 }
 
-.data-animation {
 
-}
 /* all links */
 
 a {
@@ -357,6 +359,14 @@ footer a:focus {
     color: #D20F35;
 }
 
+.product-name {
+    font-size: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.75rem;
+}
+
 /* badge for categories */
 
 .badge {
@@ -430,7 +440,7 @@ footer a:focus {
     color: #d20f35;
 }
 
-.design-carousel .carousel-caption h5 {
+.design-carousel .carousel-caption h2 {
     color: #3a3a3a;
     font-family: 'Cinzel', serif;
     background-color: #fff;
@@ -439,6 +449,7 @@ footer a:focus {
     margin: 2px;
     padding: 2px 8px;
     margin: 2px;
+    font-size: 1.25rem;
 }
 
 .form-border-style {

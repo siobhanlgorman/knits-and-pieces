@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="row">
-                <h3 class="col card-title font-weight-bold text-left">{{ product.name }}</h3>
+                <h1 class="col card-title font-weight-bold text-left">{{ product.name }}</h1>
             </div>
             <div class="row">
                 {% if request.user.is_superuser %}
@@ -63,10 +63,10 @@
             </div>
             <div class="row">
                 <div class="col card-body pb-0">
-                    <h5 class="card-text font-weight-bold">€{{ product.price }}</h5>
+                    <h2 class="card-text lead font-weight-bold">€{{ product.price }}</h2>
                     <hr>
                     <p class="font-weight-bold">Description:</p> 
-                    <p class="card-text small">{{ product.description }}</p>
+                    <p class="card-text">{{ product.description }}</p>
                     <hr>
                     <p class="font-weight-bold">Details:</p>
                     <p class="card-text small"><strong> Main Colour(s)</strong>: {{ product.get_colour1_display }}
@@ -86,8 +86,8 @@
                     <p class="card-text small"><strong>Pattern name:</strong> {{ product.pattern_name }}</p>
                     {% endif %}
                     {% if product.can_custom_design %}
-                    <p class="card-text info-text small"><strong>Contact us <a class="text-crimson" href="{% url 'custom' %}">here</a> if you
-                            would like to request a custom order of this item in your choice of colours or
+                    <p class="card-text info-text small"><strong>Contact us if you
+                            would like to request a <a class="text-crimson" href="{% url 'custom' %}">custom order</a> of this item in your choice of colours or
                             sizes.</strong></p>
                     {% endif %}
                     <hr>

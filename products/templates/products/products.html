@@ -31,7 +31,7 @@
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
                         <select id="sort-selector"
-                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}" aria-label="sort-selector">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
                             </option>
                             <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
@@ -52,7 +52,7 @@
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="text-muted mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
-                        <span class=""><a href="{% url 'products' %}">All Products</a> | </span>
+                        <span><a href="{% url 'products' %}">All Products</a> | </span>
                         {% endif %}
                         {{ products|length }} Products{% if search_term %} found for
                         "{{ search_term }}"{% endif %}
@@ -74,7 +74,7 @@
                                 alt="{{ product.name }}"></a>
                         {% endif %}
                         <div class="card-body pb-1">
-                            <h5 class="mb-0 font-weight-bold">{{ product.name }}</h5>
+                            <h2 class="mb-0 font-weight-bold product-name">{{ product.name }}</h2>
                         </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
@@ -90,12 +90,12 @@
                                         </a>
                                     </p>
                                     {% endif %}
-                                    <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                                    <h3 class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</h3>
                                     {% if request.user.is_superuser %}
                                     <small>
-                                        <a class="edit-btn text-light p-1"
+                                        <a class="edit-btn p-1"
                                             href="{% url 'edit_product' product.id %}">Edit</a>
-                                        <a class="delete-button bg-danger text-light p-1"
+                                        <a class="delete-button bg-danger p-1"
                                             href="{% url 'delete_product' product.id %}">Delete</a>
                                     </small>
                                     {% endif %}
