@@ -465,13 +465,16 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 2. Click on item to test
 3. Click on quantity selector box + and - in turn
 4. Click on add to basket
-5. Click on basket icon
+5. Enter a value into the box, including decimal numbers and negative numbers
+6. Click on add to basket button
 
 **Expected Result**:
 - Product quantity is updated in basket as selected
+- Error message appears when decimal or negative is entered
 
 **Actual Result**:
-- Product quantity is updated as selected
+- Product quantity is updated as selected when integer
+- Validation errors show when decimal or negative number is entered into the box
 
 **Pass/Fail: Pass**
 
@@ -480,6 +483,10 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 ![](documentation/screenshots/basket-add-success.png)
 
 ![](documentation/screenshots/basket-add.png)
+
+![](documentation/screenshots/decimal-error.png)
+
+![](documentation/screenshots/negative-error.png)
 
 
 *  **As a shopper I want to be able to view items in my basket to be purchased so that I can see the total cost of my items and all the items I will receive [#20](https://github.com/siobhanlgorman/knits-and-pieces/issues/20)**
@@ -520,16 +527,19 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 3. Click on add to basket
 4. Click on + and - selectors in turn
 5. Click on update
-6. Check total in basket and total in navbar
-7. Click on remove
+5. Enter a value into the box, including decimal numbers and negative numbers
+6. Click on update
+7. Check total in basket and total in navbar
+8. Click on remove
 
 **Expected Result**:
 - Items are updated in basket and navbar as expected with totals corresponding correctly
 - Success message is displayed
+- Error message appears when decimal or negative is entered
 
 **Actual Result**:
 - Items are updated in basket and navbar as expected with totals corresponding correctly
-- Success message os displayed
+- Success message is displayed when integers are entered
 
 **Pass/Fail: Pass**
 
@@ -1773,6 +1783,10 @@ The project was developed on Google Chrome and no issues were detected. Chrome D
 
 ![Order confirmation Bug](documentation/screenshots/jack15.png)
 
+11. During testing found that if a decimal is entered into the quantity box in the shopping basket a 500 error is shown although form validation does not allow this when trying to add a decimal value of the product from the product page . Fix: change `form.submit());` to `form[0].requestSubmit();` .This proved a good test for my custom 500 error handling page too.
+
+![Order confirmation Bug](documentation/screenshots/500.png)
+
 11. Stripe time is wrong - possibly due to registering while in Spain (+ 1hour) - fixed by authenticating Stipe account and adjusting settings but some screenshots may show 1 hour time difference
 12. Chrome on android no longer seems to update changes on refreshing pages: fixed by clearing last week's browsing history each time checking on Moto G8+
 
@@ -2108,14 +2122,45 @@ The following JavaScript files were checked with [JS Hint](https://jshint.com/)
 
 The website was tested for accessibility at [Wave](https://wave.webaim.org/report#/https://knits-and-pieces.herokuapp.com/). There were many more errors in this section than expected, relating to skipped heading levels, empty labels, justified text and contrast issues. The tool was very useful in highlighting errors that had not been identified in testing or with other tools used during development and was a great learning experience. All errors and alerts have been fixed for all pages except the pages with forms rendered by Django Crispy Forms where WAVE cannot read the labels auto-generated properly: bag, checkout and profile.
 
+- Home page
 ![#](documentation/validation/wave-report.png)
+
+- About Page
+
 ![#](documentation/validation/wave-about.png)
+
+- Shop Page (All Products)
+
 ![#](documentation/validation/wave-products.png)
+
+- Product Detail Page
+
 ![#](documentation/validation/wave-productdetail.png)
+
+- Custom Order Page
+
 ![#](documentation/validation/wave-custom.png)
+
+- Contact Page
+
 ![#](documentation/validation/wave-contact.png)
+
+- Shoping Basket Page
+
 ![#](documentation/validation/wave-bag.png)
+
+- Add a Product Page
+
 ![#](documentation/validation/wave-add.png)
+
+- Edit a Product Page
+
 ![#](documentation/validation/wave-edit.png)
+
+- Checkout Page
+
 ![#](documentation/validation/wave-checkout.png)
+
+- Profile Page
+
 ![#](documentation/validation/wave-profile.png)
