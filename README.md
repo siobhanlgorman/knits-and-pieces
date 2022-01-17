@@ -489,7 +489,7 @@ Green was used to highlight edit or update buttons with red for remove/delete
 
 - Features a form with input boxes for required fields username and password
 
-![](documentation/screenshots/signin.png)
+![](documentation/screenshots/sign-in.png)
 
 - Two buttons are featured at the bottom of the form for home and sign in
 
@@ -533,13 +533,13 @@ Green was used to highlight edit or update buttons with red for remove/delete
 
 A 404 page was created to handle users' navigational errors and to direct them back to the website. The navigation menu and logo are visible on the page
 
-![](documentation/screenshots/404.png)
+![](documentation/validation/404.png)
 
 #### 500 page
 
 A 500 server error page was created to handle internal server errors
 
-![](documentation/screenshots/500.png)
+![](documentation/validation/500.png)
 
 #### Messages
 
@@ -547,7 +547,7 @@ A 500 server error page was created to handle internal server errors
 
 ![](documentation/screenshots/custom-order-msg.png)
 
-![](documentation/screenshots/updated-success-msg.png)
+![](documentation/screenshots/updated-success.png)
 
 ![](documentation/screenshots/signup-confirm-msg.png)
 
