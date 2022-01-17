@@ -77,7 +77,9 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/dont-miss-link.png)
+
 ![](documentation/screenshots/dont-miss-products.png)
+
 ![](documentation/screenshots/banner-link.png)
 
 * **As a shopper I want to be able to easily view the total in euros of my purchases at any time so that I can take advantage of special information on products I'd like to purchase [#4](https://github.com/siobhanlgorman/knits-and-pieces/issues/4)**
@@ -105,6 +107,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/basket-total.png)
+
 ![](documentation/screenshots/shopping-basket-page.png)
 
 
@@ -178,7 +181,9 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/signup-error.png)
+
 ![](documentation/screenshots/signup-confirm-msg.png)
+
 ![](documentation/screenshots/email-confirm.png)
 
 
@@ -206,6 +211,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/sign-in.png)
+
 ![](documentation/screenshots/username-profile.png)
 
 
@@ -232,8 +238,11 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/password-reset.png)
+
 ![](documentation/screenshots/change-password.png)
+
 ![](documentation/screenshots/password-changed.png)
+
 ![](documentation/screenshots/jack-signin.png)
 
 
@@ -268,8 +277,11 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/email-confirm.png)
+
 ![](documentation/screenshots/email-confirm2.png)
+
 ![](documentation/screenshots/email-confirmed.png)
+
 ![](documentation/screenshots/logged-in.png)
 
 
@@ -298,7 +310,9 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![Profile Page](documentation/screenshots/jack-new-profile.png)
+
 ![Profile Page](documentation/screenshots/non-admin-profile-menu.png)
+
 ![Profile Page](documentation/screenshots/non-logged-in-profile.png)
 
 
@@ -323,6 +337,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![Sort By Price](documentation/screenshots/by-price.png)
+
 ![Sort by Name](documentation/screenshots/by-name.png)
 
 
@@ -351,6 +366,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![Sort Hats](documentation/screenshots/sort-hats.png)
+
 ![Sort Masks](documentation/screenshots/sort-masks.png)
 
 
@@ -379,7 +395,9 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/multiple-cat.png)
+
 ![](documentation/screenshots/sort-by-name.png)
+
 ![](documentation/screenshots/sort-by-cat.png)
 
 
@@ -406,7 +424,9 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/hat-search.png)
+
 ![](documentation/screenshots/red-search.png)
+
 ![](documentation/screenshots/search-error.png)
 
 
@@ -431,6 +451,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/search-results.png)
+
 ![](documentation/screenshots/search-none.png)
 
 
@@ -455,7 +476,9 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/update-basket.png)
+
 ![](documentation/screenshots/basket-add-success.png)
+
 ![](documentation/screenshots/basket-add.png)
 
 
@@ -481,6 +504,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/basket-total-icon.png)
+
 ![](documentation/screenshots/full-basket-page.png)
 
 
@@ -510,6 +534,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/basket-quantity.png)
+
 ![](documentation/screenshots/updated-success.png)
 
 
@@ -544,9 +569,13 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/checkout-invalid.png)
+
 ![](documentation/screenshots/correct-card.png)
+
 ![](documentation/screenshots/order-complete.png)
+
 ![](documentation/screenshots/stripe-success.png)
+
 ![](documentation/screenshots/stripe-webhooks.png)
 
 
@@ -577,6 +606,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/secure-checkout.png)
+
 ![](documentation/screenshots/profile-order.png)
 
 
@@ -594,6 +624,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Actual Result**:
 
 - Order confirmation message is visible with all order details on screen on completion of purchase
+
 ![](documentation/screenshots/order-complete.png)
 
 **Pass/Fail: Pass**
@@ -648,6 +679,7 @@ When logged in as Administrator
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/test-add.png)
+
 ![](documentation/screenshots/test-add2.png)
 
 
@@ -740,6 +772,7 @@ When logged in as Administrator
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/custom-order-form.png)
+
 ![](documentation/screenshots/custom-order-msg.png)
 
 
@@ -773,6 +806,7 @@ When logged in as Administrator
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/contact-form.png)
+
 ![](documentation/screenshots/contact-success.png)
 
 
@@ -795,8 +829,11 @@ This has been throughly tested in the User Story testing above
 
 Examples:
 ![](documentation/screenshots/custom-order-msg.png)
+
 ![](documentation/screenshots/search-error.png)
+
 ![](documentation/screenshots/updated-success.png)
+
 ![](documentation/screenshots/error-msg.png)
 
 
@@ -840,7 +877,9 @@ Examples:
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/navbar.png)
+
 ![](documentation/screenshots/navbar2.png)
+
 ![](documentation/screenshots/hover-navbar.png)
 
 
@@ -863,6 +902,7 @@ Examples:
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/shop-dropdown.png)
+
 ![](documentation/screenshots/categories.png)
 
 
@@ -887,7 +927,9 @@ Examples:
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/search-error.png)
+
 ![](documentation/screenshots/search-results.png)
+
 ![](documentation/screenshots/search-none.png)
 
 
@@ -912,6 +954,7 @@ Examples:
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/logged-in.png)
+
 ![](documentation/screenshots/non-admin-profile-menu.png)
 
 
@@ -950,6 +993,7 @@ Examples:
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/scroll1.png)
+
 ![](documentation/screenshots/scroll2.png)
 
 **A banner** is at the top of each page under the navbar, coloured in the crimson brand colour to draw attention to special information - the free delivery threshold and an embedded link to special offers/special items tagged items
@@ -996,7 +1040,9 @@ Click on each link in footer in turn and check correct page opens
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/footer.png)
+
 ![](documentation/screenshots/subscribe.png)
+
 ![](documentation/screenshots/social-media-icons.png)
 
 
@@ -1032,6 +1078,7 @@ Click on each link in footer in turn and check correct page opens
 ![](documentation/screenshots/home-order.png)
 
 - Below the text are **two CTA buttons** one to the main Shop page and the other to the About page with more information about the store. 
+
 ![](documentation/screenshots/home-cta.png)
 
 **Expected Result**:
@@ -1103,8 +1150,11 @@ Click on each link in footer in turn and check correct page opens
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/all-products-lg.png)
+
 ![](documentation/screenshots/all-products-md.png)
+
 ![](documentation/screenshots/all-products-sm.png)
+
 ![](documentation/screenshots/all-products-non-admin.png)
 
 
@@ -1130,6 +1180,7 @@ Click on each link in footer in turn and check correct page opens
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/product-detail.png)
+
 ![](documentation/screenshots/can-custom.png)
 
 
@@ -1147,6 +1198,7 @@ Click on each link in footer in turn and check correct page opens
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/category.png)
+
 ![](documentation/screenshots/category-linked.png)
 
 
@@ -1190,6 +1242,7 @@ For these steps please create a test product by clicking on the Profile item in 
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/update-product.png)
+
 ![](documentation/screenshots/delete-product.png)
 
 
@@ -1236,6 +1289,7 @@ For these steps please create a test product by clicking on the Profile item in 
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/update-basket.png)
+
 ![](documentation/screenshots/basket-add.png)
 
 
@@ -1262,6 +1316,7 @@ For these steps please create a test product by clicking on the Profile item in 
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/custom-order-form.png)
+
 ![](documentation/screenshots/custom-order-msg.png)
 
 ### Add a Product Page
@@ -1301,6 +1356,7 @@ When logged in as Administrator
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/test-add.png)
+
 ![](documentation/screenshots/test-add2.png)
 
 
@@ -1333,7 +1389,6 @@ When logged in as Administrator
 8. Click on order number
 
 **Actual Result**:
-
 1. Link is only visible if user is logged in and can only be accessed by this user
 2. User's saved delivery information is visible
 3. Default delivery information can be changed and saved
@@ -1345,7 +1400,9 @@ When logged in as Administrator
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/non-admin-profile-menu.png)
+
 ![](documentation/screenshots/admin-logged-in.png)
+
 ![](documentation/screenshots/profile-order.png)
 
 
@@ -1412,7 +1469,9 @@ When logged in as Administrator
 **Pass/Fail: Pass**
 
 ![](documentation/screenshots/signup-error.png)
+
 ![](documentation/screenshots/signup-confirm-msg.png)
+
 ![](documentation/screenshots/email-confirm.png)
 
 
@@ -1572,18 +1631,21 @@ When logged in as Administrator
 
 1. The Shop button returns the user to the Shop page
 2. The Checkout button opens the Checkout and payment page
+
 ![](documentation/screenshots/basket-cta.png)
 
 ### Checkout Page
 
 - The Checkout page features input boxes for the necessary payment information inputs: name, email, phone number, street address, town or city, country, post code, country
 - At the bottom is the box for card payment information for Stripe. For testing purposes the number 4242 4242 4242 4242 is used
-- Two selectors are at the bottom to return to adjust the basket or complete order buttons to complete the payment process
+- Two CTA buttons are at the bottom to return to adjust the basket or complete order buttons to complete the payment process
 
 **Expected Result**:
 1. User can complete payment process and submit order
 2. User cannot checkout without completing required fields
 3. Logged in user's email address is prefilled
+4. On completion of payment a success message displays and a summary of the order
+5. A link displays at bottom to redirect user to Don't Miss tagged items (Specials) which functions correctly
 
 **Testing Steps**:
 1. With items in basket and in basket page (follow previous steps) click Checkout button
@@ -1591,6 +1653,7 @@ When logged in as Administrator
 3. Complete fields correctly
 4. Complete card payment field with fake card details
 5. Complete card payment with card number 4242 4242 4242 4242 
+6. Click Check out our specials link
 
 **Expected Result**:
 1. Error message shows when fields are incorrectly completed
@@ -1600,13 +1663,19 @@ When logged in as Administrator
 5. Payment success shown in Stripe dashboard
 6. Stripe webhooks show payment intent and charge success
 7. Order email confirmation received by customer
+8. Link to Don't Miss tagged items (Specials) functions correctly
 
 **Actual Result**:
 ![](documentation/screenshots/checkout-invalid.png)
+
 ![](documentation/screenshots/correct-card.png)
+
 ![](documentation/screenshots/order-complete.png)
+
 ![](documentation/screenshots/stripe-success.png)
+
 ![](documentation/screenshots/stripe-webhooks-success.png)
+
 ![](documentation/screenshots/order-email-conf.png)
 
 **Pass/Fail: Pass**
@@ -1616,22 +1685,39 @@ When logged in as Administrator
 * To fully test the complete experience from registration to payment a new user Jack was created and taken through the full process. Two small bugs were found during this process (See Bugs section) Screenshots below:
 
 ![sign in](documentation/screenshots/jack-signin.png)
+
 ![profile](documentation/screenshots/jack1.png)
+
 ![add product](documentation/screenshots/jack2.png)
+
 ![update](documentation/screenshots/jack3.png)
+
 ![add product](documentation/screenshots/jack4.png)
+
 ![basket](documentation/screenshots/jack5.png)
+
 ![update](documentation/screenshots/jack6.png)
+
 ![checkout form](documentation/screenshots/jack7.png)
+
 ![incomplete](documentation/screenshots/jack8.png)
+
 ![complete](documentation/screenshots/jack9.png)
+
 ![overlay](documentation/screenshots/jack10.png)
+
 ![confirmation](documentation/screenshots/jack11.png)
+
 ![Jack Profile bug](documentation/screenshots/jack12.png)
+
 ![Second Order Checkbox](documentation/screenshots/jack14.png)
+
 ![Order confirmation Bug](documentation/screenshots/jack15.png)
+
 ![Updated delivery info in profile](documentation/screenshots/jack16.png)
-![Jack Stripe payment](documentation/screenshots/jack-stripe.png) 
+
+![Jack Stripe payment](documentation/screenshots/jack-stripe.png)
+
 ![Jack email confirmation](documentation/screenshots/jack-email-conf1.png) 
 
 
@@ -1648,14 +1734,18 @@ When logged in as Administrator
 
 Sample screenshots
 ![](documentation/screenshots/custom-order-msg.png)
+
 ![](documentation/screenshots/updated-success-msg.png)
+
 ![](documentation/screenshots/signup-confirm-msg.png)
 
 
 ## Browser Compatibility
 
 Additional tests were conducted on Mozilla Firefox and Microsoft Edge with no issues detected
+
 ![](documentation/screenshots/edge.png)
+
 ![](documentation/screenshots/firefox.png)
 
 ## Responsiveness
@@ -1663,23 +1753,27 @@ Additional tests were conducted on Mozilla Firefox and Microsoft Edge with no is
 The project was developed on Google Chrome and no issues were detected. Chrome Development tools was used throughout development to test responsiveness and then after deployment was additionally tested on android Moto G8 plus, IPhone SE2
 
 ![](documentation/screenshots/iphone1.png)
+
 ![](documentation/screenshots/iphone2.png)
+
 ![](documentation/screenshots/moto1.png)
 
 ## Bugs and Fixes
 
 1. Toast success message doesn't display if same item is added again to basket. Fix: Error in if statement in bag/views.py
-2. Image media url not working. FIx - add media context processor in settings.py
-3. Can-custom design - displaying text by default - FIX incorrect format of if statement
-4. Zip code error - indefinite number of numbers and error message pointing to order - error in views.py keys had values which were strings not variables ('' around the variables) - FIX '' removed
+2. Image media url not working. Fix: add media context processor in settings.py
+3. Can-custom design - displaying text by default - Fix: incorrect format of if statement
+4. Zip code error - indefinite number of numbers and error message pointing to order - error in views.py keys had values which were strings not variables ('' around the variables) - Fix: '' removed
 5. Checkout_success no reverse match found although payment in stripe succeeded. Discovered order number not being generated. Fix: Narrowed issue down to order generation in models.py update total function and found indentation errors.
-6. Error after adding countryfield - could not migrate. Folder still looking for max value of 2. Eventually deleted all orders in the database as they were created wth countries longer than 2 letters. Then the migration worked.
-7. After creating profile and linking to order history two orders being created in db with two different numbers. Fix - corrected stripe billing and shipping name fields. Due to subsequent ongoing issues with duplicate orders being created and non-recognition of two name fields in billing and shipping information, the order model field was reverted to full name and first and last name fields removed as they can be accessed from using the full name method
+6. Error after adding countryfield - could not migrate. Folder still looking for max value of 2. Fix: deleted all orders in the database as they were created wth countries longer than 2 letters. Then the migration worked.
+7. After creating profile and linking to order history two orders being created in db with two different numbers. Fix: corrected stripe billing and shipping name fields. Due to subsequent ongoing issues with duplicate orders being created and non-recognition of two name fields in billing and shipping information, the order model field was reverted to full name and first and last name fields removed as they can be accessed from using the full name method
 8. Remove button bug with W3C validator - two ids as element on mobile and desktop views at same time (hidden on one). Fix: Id changed to data-id
 9. During testing bug found relating to checkbox - address saved to profile whether checkbox checked or not
-10. During testing bug found that address line 2 in order confirmation saved as address line 1 - FIxed found error in checkout_success.html
+10. During testing bug found that address line 2 in order confirmation saved as address line 1 - Fix: found duplication error in checkout_success.html
+
 ![Order confirmation Bug](documentation/screenshots/jack15.png)
-11. Stripe time is wrong - possibly due to registering while in Spain (+ 1hour) - fixed but some screenshots may show 1 hour time difference
+
+11. Stripe time is wrong - possibly due to registering while in Spain (+ 1hour) - fixed by authenticating Stipe account and adjusting settings but some screenshots may show 1 hour time difference
 12. Chrome on android no longer seems to update changes on refreshing pages: fixed by clearing last week's browsing history each time checking on Moto G8+
 
 
@@ -1691,71 +1785,89 @@ HTML was validated by [The W3C Markup Validation Service](https://validator.w3.o
 
 * Home app
 - index.html
+
 ![#](documentation/validation/v-html-home.png)
+
 - about.html
+
 ![#](documentation/validation/v-html-about.png)
+
 - privacy.html
+
 ![#](documentation/validation/v-html-privacy.png)
 
 * Products app
 
 Add a Product Page
 - add_product.html
+
 ![#](documentation/validation/v-html-privacy.png)
 
 Edit a Product Page
 - edit_product.html
+
 ![#](documentation/validation/v-html-privacy.png)
 
 Product Detail Page
 - product_detail.html
+
 ![#](documentation/validation/v-html-privacy.png)
 
 Shop Page
 
 - products.html
+
 ![#](documentation/validation/v-html-products.png)
 
 Shopping Basket Page
 - bag.html
+
 ![#](documentation/validation/v-html-bag.png)
 
 
 Checkout Page
 - checkout.html
+
 ![#](documentation/validation/v-html-checkout.png)
 
 * Profile Page
 
 - profile.html
+
 ![#](documentation/validation/v-html-profile.png)
 
 Custom Order Page
 
 - custom.html
+
 ![#](documentation/validation/v-html-custom.png)
 
 Contact Page
 
 - contact.html
+
 ![#](documentation/validation/v-html-contact.png)
 
 Register Page
 
 - signup.html
+
 ![#](documentation/validation/v-html-register.png)
 
 Sign In Page
 
 - login.html
+
 ![#](documentation/validation/v-html-login.png)
 
 Sign Out Page
 
 - logout.html
+
 ![#](documentation/validation/v-html-logout.png)
 
 Confirmation Email Page ???
+
 ![](documentation/screenshots/#.png)
 
 ### CSS Validation
@@ -1763,12 +1875,19 @@ Confirmation Email Page ???
 CSS was validated by [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 
 - About Page
+
 ![#](documentation/validation/v-css-about.png)
+
 - Home Page
+
 ![#](documentation/validation/v-css-home.png)
+
 Custom Order Page
+
 ![#](documentation/validation/v-css-custom.png)
+
 Contact Page
+
 ![#](documentation/validation/v-css-contact.png)
 
 No errors were found on checking the two CSS files:
@@ -1782,142 +1901,193 @@ The following files were checked:
 
 * Bag app:
 - bag_tools.py
+
 ![#](documentation/validation/v-bag-tools.png)
 
 - apps.py
+
 ![#](documentation/validation/v-bag-apps.png)
 
 - contexts.py
+
 ![#](documentation/validation/v-contexts.png)
+
 - urls.py
+
 ![#](documentation/validation/v-bag-urls.png)
+
 - views.py
+
 ![#](documentation/validation/v-bag-views.png)
 
 * Checkout app:
 - admin.py
+
 ![#](documentation/validation/v-checkout-admin.png)
+
 - apps.py
+
 ![#](documentation/validation/v-checkout-apps.png)
+
 - forms.py
+
 ![#](documentation/validation/v-checkout-forms.png)
 
 - models.py
+
 ![#](documentation/validation/v-checkout-models.png)
 
 - signals.py
+
 ![#](documentation/validation/v-checkout-signals.png)
 
 - urls.py
+
 ![#](documentation/validation/v-checkout-urls.png)
 
 - views.py
+
 ![#](documentation/validation/v-checkout-views.png)
 
 - webhook_handler.py
+
 The following files contain lines too long which cannot be broken.
+
 ![#](documentation/validation/v-fail-webhookhandler.png)
+
 ![#](documentation/validation/v-checkout-webhookhandler.png)
 
 - webhooks.py
+
 ![#](documentation/validation/v-fail-webhooks.png)
 
 * Contact app
 - admin.py
+
 ![#](documentation/validation/v-contact-admin.png)
 
 - apps.py
+
 ![#](documentation/validation/v-contact-apps.png)
 
 - forms.py
+
 ![#](documentation/validation/v-contact-forms.png)
 
 - models.py
+
 ![#](documentation/validation/v-contact-models.png)
 
 - urls.py
+
 ![#](documentation/validation/v-contact-urls.png)
 
 - views.py
+
 ![#](documentation/validation/v-contact-views.png)
 
 * Custom app
 - admin.py
+
 ![#](documentation/validation/v-custom-admin.png)
 
 - apps.py
+
 ![#](documentation/validation/v-custom-apps.png)
 
 - forms.py
+
 ![#](documentation/validation/v-custom-forms.png)
 
 - models.py
+
 ![#](documentation/validation/v-custom-models.png)
 
 
 - urls.py
+
 ![#](documentation/validation/v-custom-urls.png)
 
 - views.py
+
 ![#](documentation/validation/v-custom-views.png)
 
 * Home app
 * Knits and Pieces
 - settings.py
+
 Long lines were noted in the settings.py files. This refers to lines which are built in to Django settings. This is a known Django error and it is acceptable not to force a line break in these cases.
+
 ![#](documentation/validation/v-fail-knits-settings.png)
 
 - urls.py
+
 ![#](documentation/validation/v-home-urls.png)
 
 - views.py
+
 ![#](documentation/validation/v-home-views.png)
 
 - apps.py
+
 ![#](documentation/validation/v-home-apps.png)
 
 
 * Products app
 - admin.py
+
 ![#](documentation/validation/v-products-admin.png)
 
 - apps.py
+
 ![#](documentation/validation/v-products-apps.png)
 
 - forms.py
+
 ![#](documentation/validation/v-products-forms.png)
 
 - models.py
+
 ![#](documentation/validation/v-products-models.png)
 
 - urls.py
+
 ![#](documentation/validation/v-products-urls.png)
 
 - views.py
+
 ![#](documentation/validation/v-products-views.png)
 
 - widgets.py
+
 Long lines were noted in this file which refer to a long variable name which cannot be broken.
+
 ![#](documentation/validation/v-products-widgets.png)
 
 
 * Profiles app
 - admin.py
+
 ![#](documentation/validation/v-profiles-admin.png)
 
 - apps.py
+
 ![#](documentation/validation/v-profiles-apps.png)
 
 - forms.py
+
 ![#](documentation/validation/v-profiles-forms.png)
 
 - models.py
+
 ![#](documentation/validation/v-profiles-models.png)
 
 - urls.py
+
 ![#](documentation/validation/v-profiles-urls.png)
 
 - views.py
+
 ![#](documentation/validation/v-profiles-views.png)
 
 
@@ -1927,14 +2097,17 @@ The following JavaScript files were checked with [JS Hint](https://jshint.com/)
 
 * Checkout app
 - stripe_elements.js
+
 ![#](documentation/validation/v-js-stripe_elements.png)
 
 
 * Profiles app
 - countryfield.js
+
 ![#](documentation/validation/v-js-countryfields.png)
 
 - custom_storages.py
+
 ![#](documentation/validation/v-customstorages.png)
 
 

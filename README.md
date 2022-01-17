@@ -525,6 +525,9 @@ Green was used to highlight edit or update buttons with red for remove/delete
 
 - At the bottom is the box for card payment information for Stripe. For testing purposes the number 4242 4242 4242 4242 is used
 - Two selectors are at the bottom to return to adjust the basket or complete order buttons to complete the payment process
+- After checking out a success message and order confirmation are displayed with a button to redirect user to Don't Miss tagged items (Specials)
+
+![](documentation/screenshots/order-complete.png)
 
 #### 404 page
 

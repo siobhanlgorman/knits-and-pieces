@@ -69,24 +69,24 @@
                     <p class="card-text">{{ product.description }}</p>
                     <hr>
                     <p class="font-weight-bold">Details:</p>
-                    <p class="card-text small"><strong> Main Colour(s)</strong>: {{ product.get_colour1_display }}
+                    <p class="card-text"><strong> Main Colour(s)</strong>: {{ product.get_colour1_display }}
                         {% if product.colour2 %}, {{ product.get_colour2_display }}{% endif %}
                         {% if product.colour3 %}, {{ product.get_colour3_display }}{% endif %}
                         {% if product.colour4 %}, {{ product.get_colour4_display }}{% endif %}
                     </p>
-                    <p class="card-text small"><strong> Material:</strong> {{ product.get_material_display }}</p>
-                    <p class="card-text small"><strong>Size:</strong> {{ product.item_sizes }}</p>
-                    <p class="card-text small"><strong>Machine Wash:</strong>
+                    <p class="card-text"><strong> Material:</strong> {{ product.get_material_display }}</p>
+                    <p class="card-text"><strong>Size:</strong> {{ product.item_sizes }}</p>
+                    <p class="card-text"><strong>Machine Wash:</strong>
                     {% if product.machine_wash %}Yes{% endif %}{% if not product.machine_wash %}No {% endif %}</p>
 
                     {% if product.designer %}
-                    <p class="card-text small"><strong>Designed by:</strong> {{ product.designer }}</p>
+                    <p class="card-text"><strong>Designed by:</strong> {{ product.designer }}</p>
                     {% endif %}
                     {% if product.pattern_name %}
-                    <p class="card-text small"><strong>Pattern name:</strong> {{ product.pattern_name }}</p>
+                    <p class="card-text"><strong>Pattern name:</strong> {{ product.pattern_name }}</p>
                     {% endif %}
                     {% if product.can_custom_design %}
-                    <p class="card-text info-text small"><strong>Contact us if you
+                    <p class="card-text info-text"><strong>Contact us if you
                             would like to request a <a class="text-crimson" href="{% url 'custom' %}">custom order</a> of this item in your choice of colours or
                             sizes.</strong></p>
                     {% endif %}
