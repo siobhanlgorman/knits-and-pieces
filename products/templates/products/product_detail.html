@@ -23,8 +23,7 @@
                 <img class="product-detail-img card-img-top img-fluid" src="{{ product.image1.url }}"
                     alt="{{ product.name }}">
                 {% else %}
-                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}red_logo2.png" alt="{{ product.name }}"
-                    alt="{{ product.name }}">
+                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}red_logo2.png" alt="red text Knits and Pieces">
                 {% endif %}
             </div>
         </div>
@@ -65,7 +64,7 @@
                 <div class="col card-body pb-0">
                     <h2 class="card-text lead font-weight-bold">€{{ product.price }}</h2>
                     <hr>
-                    <p class="font-weight-bold">Description:</p> 
+                    <p class="font-weight-bold text-yellow">Description:</p> 
                     <p class="card-text">{{ product.description }}</p>
                     <hr>
                     <p class="font-weight-bold">Details:</p>
