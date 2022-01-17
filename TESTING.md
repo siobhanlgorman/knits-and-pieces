@@ -2123,7 +2123,7 @@ The following JavaScript files were checked with [JS Hint](https://jshint.com/)
 
 ## Accessibility
 
-The website was tested for accessibility at [Wave](https://wave.webaim.org/report#/https://knits-and-pieces.herokuapp.com/). There were many more errors in this section than expected, relating to skipped heading levels, empty labels, justified text and contrast issues. The tool was very useful in highlighting errors that had not been identified in testing or with other tools used during development and was a great learning experience. All errors and alerts have been fixed for all pages except the pages with forms rendered by Django Crispy Forms where WAVE cannot read the labels auto-generated properly: bag, checkout and profile.
+The website was tested for accessibility at [Wave](https://wave.webaim.org/report#/https://knits-and-pieces.herokuapp.com/). There were many more errors in this section than expected, relating to skipped heading levels, empty labels, justified text and contrast issues. The tool was very useful in highlighting errors that had not been identified in testing or with other tools used during development and was a great learning experience. All errors and alerts have been fixed for all pages except the pages with forms rendered by Django Crispy Forms where WAVE cannot read the labels auto-generated properly: bag, checkout and profile. Also WAVE cannot read the form in the edit a product page and an alt tag cannot be added to the image field manually.
 
 - Home page
 ![#](documentation/validation/wave-report.png)
