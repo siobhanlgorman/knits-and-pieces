@@ -5,6 +5,7 @@ html {
 }
 
 /* set body height, colour, font */
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -121,7 +122,6 @@ a.social:focus {
     position: relative;
     margin: auto;
     background-color: white;
-    /* padding-top: 30px; */
 }
 
 .carousel-caption a {
@@ -170,7 +170,6 @@ a.social:focus {
 .border-2 {
     border-width:2px !important;
 }
-
 
 /* all links */
 
@@ -460,6 +459,7 @@ footer a:focus {
 /* Product Detail Page */
 
 /* Mailchimp */
+
 #mc_embed_signup {
     clear: left;
     font: 14px 'Roboto', sans-serif;
@@ -518,6 +518,7 @@ footer a:focus {
 }
 
 /* unstick header on smaller screens */
+
 @media screen and (max-width: 767px) {
     .sticky-top {
         position: relative !important;

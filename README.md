@@ -298,7 +298,7 @@ Green was used to highlight edit or update buttons with red for remove/delete
 ![](documentation/screenshots/search-box.png)
 
 
-- Profile Icon: On large screens the profile icon is to the right of the search box. This contains a dropdown menu which opens when clicked. For a user who is not logged in the options in the dropdown are links to the Register page and the Login page. For a user who is logged in the dropdown options are Add a Product, My Profile and Logout. On smaller screens the profile icon appears centrally to the right of the shopping basket.
+- Profile Icon: On large screens the profile icon is to the right of the search box. This contains a dropdown menu which opens when clicked. For a user who is not logged in the options in the dropdown are links to the Register page and the Login page. For a user who is logged in the dropdown options are Add a Product, My Profile and Logout. On smaller screens the profile icon appears centrally to the right of the shopping basket. The User profile page can only be accessed by the currently logged in user.
 
 ![](documentation/screenshots/profile-not-logged.png)
 
