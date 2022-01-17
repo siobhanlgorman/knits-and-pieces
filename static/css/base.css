@@ -158,10 +158,6 @@ a.social:focus {
     top: 72px;
 }
 
-.toast {
-    border-style: solid 20px;
-}
-
 .toast-header,
 .toast-body {
     background-color: white;

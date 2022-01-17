@@ -24,15 +24,15 @@
     <div class="row">
         <div class="col title-font text-crimson text-center">
             <hr>
-            <h2 class="title-font mb-4">
+            <h1 class="title-font mb-4">
                 Checkout
-            </h2>
+            </h1>
             <hr>
         </div>
     </div>
     <div class="row">
         <div class="col-12 col-lg-6 order-lg-last mb-5">
-            <p>Order Summary ({{ product_count }})</p>
+            <p class="font-weight-bold">Order Summary ({{ product_count }})</p>
             <div class="row">
                 <div class="col-7 offset-2">
                     <p class="mb-1 mt-0 small">Item</p>
@@ -46,9 +46,9 @@
                 <div class="col-2 mb-1">
                     <a href="{% url 'product_detail' item.product.id %}">
                         {% if item.product.image1 %}
-                        <img class="w-100" src="{{ item.product.image1.url }}" alt="{{ product.name }}">
+                        <img class="w-100" src="{{ item.product.image1.url }}" alt="{{ item.product.name }}">
                         {% else %}
-                        <img class="w-100" src="{{ MEDIA_URL }}red_logo2.png" alt="{{ product.name }}">
+                        <img class="w-100" src="{{ MEDIA_URL }}red_logo2.png" alt="{{ item.product.name }}">
                         {% endif %}
                     </a>
                 </div>
