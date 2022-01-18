@@ -548,7 +548,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![](documentation/screenshots/updated-success.png)
 
-![](documentation/screenshots/500.png)
+![](documentation/validation/500.png)
 
 
 *  **As a shopper I want to be able to easily enter my payment information so that I can checkout quickly and easily [#22](https://github.com/siobhanlgorman/knits-and-pieces/issues/22)**
@@ -589,7 +589,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![](documentation/screenshots/stripe-success.png)
 
-![](documentation/screenshots/stripe-webhooks.png)
+![](documentation/screenshots/stripe-webhooks-success.png)
 
 
 *  **As a shopper I want to be able to feel that my personal and payment information is safe and secure so that I can be confident in providing the necessary information to make a purchase [#23](https://github.com/siobhanlgorman/knits-and-pieces/issues/23)**
@@ -1748,7 +1748,7 @@ When logged in as Administrator
 Sample screenshots
 ![](documentation/screenshots/custom-order-msg.png)
 
-![](documentation/screenshots/updated-success-msg.png)
+![](documentation/screenshots/updated-success.png)
 
 ![](documentation/screenshots/signup-confirm-msg.png)
 
@@ -1963,7 +1963,7 @@ The following files were checked:
 
 The following files contain lines too long which cannot be broken.
 
-![#](documentation/validation/v-fail-webhookhandler.png)
+![#](documentation/validation/v-fail-webhook-handler.png)
 
 ![#](documentation/validation/v-checkout-webhookhandler.png)
 
@@ -2123,7 +2123,7 @@ The following JavaScript files were checked with [JS Hint](https://jshint.com/)
 
 ## Accessibility
 
-The website was tested for accessibility at [Wave](https://wave.webaim.org/report#/https://knits-and-pieces.herokuapp.com/). There were many more errors in this section than expected, relating to skipped heading levels, empty labels, justified text and contrast issues. The tool was very useful in highlighting errors that had not been identified in testing or with other tools used during development and was a great learning experience. All errors and alerts have been fixed for all pages except the pages with forms rendered by Django Crispy Forms where WAVE cannot read the labels auto-generated properly: bag, checkout and profile. Also WAVE cannot read the form in the edit a product page and an alt tag cannot be added to the image field manually.
+The website was tested for accessibility at [Wave](https://wave.webaim.org/report#/https://knits-and-pieces.herokuapp.com/). There were many more errors in this section than expected, relating to skipped heading levels, empty labels, justified text and contrast issues. The tool was very useful in highlighting errors that had not been identified in testing or with other tools used during development and was a great learning experience. All errors and alerts have been fixed for all pages except the pages with forms rendered by Django Crispy Forms where WAVE cannot read the labels auto-generated properly: bag, checkout and profile. Also WAVE cannot read the form in the edit a product page and an alt tag cannot be added to the image field manually. I tested these pages manually with Windows in-built screen reader and the form fields were read correctly.
 
 - Home page
 ![#](documentation/validation/wave-report.png)
@@ -2148,7 +2148,7 @@ The website was tested for accessibility at [Wave](https://wave.webaim.org/repor
 
 ![#](documentation/validation/wave-contact.png)
 
-- Shoping Basket Page
+- Shopping Basket Page
 
 ![#](documentation/validation/wave-bag.png)
 
@@ -2163,6 +2163,10 @@ The website was tested for accessibility at [Wave](https://wave.webaim.org/repor
 - Checkout Page
 
 ![#](documentation/validation/wave-checkout.png)
+
+- Checkout Success Page
+
+![#](documentation/validation/wave-checkout-success.png)
 
 - Profile Page
 
