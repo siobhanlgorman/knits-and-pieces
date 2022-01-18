@@ -1997,13 +1997,18 @@ CSS was validated by [The W3C CSS Validation Service](https://jigsaw.w3.org/css-
 
 ![#](documentation/validation/v-css-home.png)
 
-Custom Order Page
+- Custom Order Page
 
 ![#](documentation/validation/v-css-custom.png)
 
-Contact Page
+- Contact Page
 
 ![#](documentation/validation/v-css-contact.png)
+
+- Profile Page
+
+![#](documentation/validation/v-css-profile.png)
+
 
 No errors were found on checking the two CSS files:
 - base.css
