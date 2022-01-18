@@ -1834,7 +1834,11 @@ Sample screenshots
 
 Additional tests were conducted on Mozilla Firefox and Microsoft Edge with no issues detected
 
+- Edge:
+
 ![](documentation/screenshots/edge.png)
+
+- Firefox:
 
 ![](documentation/screenshots/firefox.png)
 
@@ -1842,7 +1846,11 @@ Additional tests were conducted on Mozilla Firefox and Microsoft Edge with no is
 
 The project was developed on Google Chrome and no issues were detected. Chrome Development tools was used throughout development to test responsiveness and then after deployment was additionally tested on android Moto G8 plus, IPhone SE2
 
+- IPhone SE2:
+
 ![](documentation/screenshots/iphone1.png)
+
+- Moto G8+:
 
 ![](documentation/screenshots/moto1.png)
 
@@ -1856,7 +1864,7 @@ The project was developed on Google Chrome and no issues were detected. Chrome D
 6. Error after adding countryfield - could not migrate. Error still looking for max value of 2. Fix: deleted all orders in the database as they were created wth countries longer than 2 letters. Then the migration worked.
 7. After creating profile and linking to order history two orders being created in db with two different numbers. Fix: corrected stripe billing and shipping name fields. Due to subsequent ongoing issues with duplicate orders being created and non-recognition of two name fields in billing and shipping information, the order model field was reverted to full name and first and last name fields removed as they can be accessed from using the full name method
 8. Remove button bug with W3C validator - two ids as element on mobile and desktop viewed at same time (although one is hidden at a time depending on whether mobile or desktop view). Fix: Id changed to data-id in bag/quantity_form.html
-9. During testing bug found relating to checkbox - address saved to profile whether checkbox checked or not. This has not yet been resolved
+9. During testing bug was found relating to checkbox - address saved to profile whether checkbox checked or not. Not yet fixed: This has not yet been resolved
 10. During testing bug found that address line 2 in order confirmation saved as address line 1 - Fix: found duplication error in checkout_success.html
 11. During accessibility testing it was found that the alt tag in the edit product page could not be found. Fix: adjustments were made to the products/forms.py:
 
