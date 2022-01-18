@@ -2132,9 +2132,6 @@ Long lines were noted in this file which refer to a long variable name which can
 
 
 * Profiles app
-- admin.py
-
-![#](documentation/validation/v-profiles-admin.png)
 
 - apps.py
 
