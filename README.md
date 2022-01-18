@@ -155,7 +155,7 @@ The time frame for this project was extremely short and broken up with Christmas
 
 ### Structure
 
-The website consists of twelve main pages:
+The website consists of fourteen main pages:
 - A Home page welcoming the user to the site
 - An About page with more information about the business
 - An Order page where the user can custom order a product from specified options
@@ -170,11 +170,11 @@ The website consists of twelve main pages:
 
 ### Database
 
-For this project the PostgresSql database was used from the outset. Since fixtures were not being used and the number of products was relatively small this meant the products could be added to the deployed database from the beginning and so saving some time.
+For this project the PostgreSql database was used from the outset. Since fixtures were not being used and the number of products was relatively small this meant the products could be added to the deployed database from the beginning and so saving some time.
 
 #### Models
 
-There are eight models in this project (excluding those which are automatically created by Django). Four models have been specifically customised for the purposes of this ecommerce store: Product, Tag, ContactForm and CustomOrderForm
+There are eight models in this project (excluding those which are automatically created by Django). Four custom models have been specifically designed and implemented for the purposes of this ecommerce store: Product, Tag, ContactForm and CustomOrder
 
 - Products App Models
 
@@ -234,11 +234,19 @@ The Custom App has a specifically customised CustomOrder model for a customer to
 
 * [Product Detail Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/product-detail-page.png)
 
+* [Profile Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/profile.png)
+
 * [Register Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/register-page.png)
 
 * [Sign In Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/signin-page.png)
 
 * [Sign Out Page](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/signout-page.png)
+
+* [Add Product](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/add-product.png)
+
+* [Edit Product](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/documentation/wireframes/edit-product.png)
+
+
 
 ### Surface
 
@@ -564,15 +572,17 @@ A 500 server error page was created to handle internal server errors
 
 ![](documentation/screenshots/signup-confirm-msg.png)
 
+- to generate an error message, when logged in but not as admin, type for example products/add to the end of the url
+
 ![](documentation/screenshots/error-msg.png)
 
 ### Future Features
 
-- craft blog with users able to comment
-- user reviews of products and with CRUD function
+- A craft blog with users able to comment
+- User reviews of products and with CRUD function
 - Likes/favourites and a wishlist in the user profile
-- link product availablility to stock levels/inventory would be required for a real-world business
-- postage according to country/limiting country
+- Link product availablility to stock levels/inventory would be required for a real-world business
+- Postage calculations specific to country of destination and limiting country destinations
 - FAQs section
 
 ## Languages and Technologies
@@ -585,6 +595,8 @@ A 500 server error page was created to handle internal server errors
 * [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) was used to style the website, add responsiveness and interactivity
 * [Python](https://www.python.org/) was used to code the back end of the project
 * [PyPI](https://pypi.org/) to install the python packages
+* [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) was used to connect the project to AWS
+
 
 ### Frameworks
 
@@ -595,6 +607,10 @@ A 500 server error page was created to handle internal server errors
   - [gunicorn](https://gunicorn.org/) as the server for Heroku
   - [psycopg2](https://pypi.org/project/psycopg2/)as an adaptor for Python and PostgreSQL databases
   - [dj-database](https://pypi.org/project/dj-database-url/) to parse the database URL from the environment variables in Heroku
+  - [django-storages](https://django-storages.readthedocs.io/en/latest/) was used for backend storage with AWS
+  - [django-countries](https://pypi.org/project/django-countries/) was used to provide a country field for the Order model
+  - [Pillow](https://pillow.readthedocs.io/en/stable/) was used to manage images for Python
+
 
 ## Database
 
@@ -608,6 +624,7 @@ A 500 server error page was created to handle internal server errors
 * [Git](https://git-scm.com/) used for version control via the terminal in Gitpod
 * [GitHub](https://github.com/) used to store the code in the repository
 * [Heroku](https://www.heroku.com/) was used as the cloud based platform for deployment
+* [Stripe](https://stripe.com/en-ie) was used to handle payment transactions
 * [Fontawesome](https://fontawesome.com/) for icons
 * [Google Fonts](https://fonts.google.com/) for the fonts
 * [Balsamiq](https://balsamiq.com/) for the wireframes
