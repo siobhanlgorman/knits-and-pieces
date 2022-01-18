@@ -1703,40 +1703,83 @@ When logged in as Administrator
 
 * To fully test the complete experience from registration to payment a new user Jack was created and taken through the full process. Two bugs were found during this process (See [Bugs](#bugs-and-fixes) section) Screenshots below:
 
+1. Jack signs in
+
 ![sign in](documentation/screenshots/jack-signin.png)
+
+2. Jack's email verification
+
+![sign in](documentation/screenshots/jack-verify.png)
+
+3. Jack's email is verified
+
+![sign in](documentation/screenshots/jack-verify2.png)
+
+4. Jack's initial profile
 
 ![profile](documentation/screenshots/jack1.png)
 
+5. Jack adds a product to his basket
+
 ![add product](documentation/screenshots/jack2.png)
+
+6. Jack updates the quantity
 
 ![update](documentation/screenshots/jack3.png)
 
+7. Jack adds another product
+
 ![add product](documentation/screenshots/jack4.png)
+
+8. Jack's basket
 
 ![basket](documentation/screenshots/jack5.png)
 
+9. Jack updates the basket quantity
+
 ![update](documentation/screenshots/jack6.png)
+
+10. Jack starts to check out
 
 ![checkout form](documentation/screenshots/jack7.png)
 
+11. Jack doesn't fill in the required fields
+
 ![incomplete](documentation/screenshots/jack8.png)
+
+12. Jack fills in the required fields
 
 ![complete](documentation/screenshots/jack9.png)
 
+13. Process underway
+
 ![overlay](documentation/screenshots/jack10.png)
+
+14. Order Confirmation
 
 ![confirmation](documentation/screenshots/jack11.png)
 
+15. Jack's information saved to profile - bug discovered
+
 ![Jack Profile bug](documentation/screenshots/jack12.png)
+
+16. Jack places another order
 
 ![Second Order Checkbox](documentation/screenshots/jack14.png)
 
+17. Address bug discovered
+
 ![Order confirmation Bug](documentation/screenshots/jack15.png)
+
+18. Jack's updated profile info
 
 ![Updated delivery info in profile](documentation/screenshots/jack16.png)
 
+19. Stripe payment confirmation
+
 ![Jack Stripe payment](documentation/screenshots/jack-stripe.png)
 
+20. Jack's order email confirmation
 ![Jack email confirmation](documentation/screenshots/jack-email-conf1.png) 
 
 
@@ -1800,8 +1843,6 @@ Additional tests were conducted on Mozilla Firefox and Microsoft Edge with no is
 The project was developed on Google Chrome and no issues were detected. Chrome Development tools was used throughout development to test responsiveness and then after deployment was additionally tested on android Moto G8 plus, IPhone SE2
 
 ![](documentation/screenshots/iphone1.png)
-
-![](documentation/screenshots/iphone2.png)
 
 ![](documentation/screenshots/moto1.png)
 
@@ -2224,6 +2265,18 @@ Also WAVE could read the form in the edit a product page and an alt tag cannot b
 - Checkout Success Page
 
 ![#](documentation/validation/wave-checkout-success.png)
+
+- Register Page
+
+![#](documentation/validation/wave-register.png)
+
+- Sign In Page
+
+![#](documentation/validation/wave-login.png)
+
+- Sign Out Page
+
+![#](documentation/validation/wave-logout.png)
 
 - Profile Page
 
