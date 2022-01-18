@@ -1060,6 +1060,7 @@ Click on each link in footer in turn and check correct page opens
 
 
 ### Home Page
+
 **Carousel**: Under the title is a carousel featuring images of three main product categories with links in the image title to the relevant category page
 
 **Expected Result**:
@@ -1111,6 +1112,7 @@ Click on each link in footer in turn and check correct page opens
 
 
 ### About Page
+
 - Features a photograph of the store owner with information about the history of the store. 
 - CTA button to the Shop page
 
@@ -1307,6 +1309,7 @@ For these steps please create a test product by clicking on the Profile item in 
 
 
 ### Order Page - Custom Order
+
 - This page features a form for the user to request a quote to custom order a throw or blanket to their size and colour specifications. At the top of the page is a carousel of pattern images from which customer can select the design they wish to order in the form. Below the carousel is a form for user to input name, email, choice of sizes/material/up to four colour choices and a design. Default options are set for size and material and a default of 'mix' for design if the user has no preference. Name, email and main colour are required fields for the user to input.  Further details can also be entered in a message box. A request quote button clearly indicates the purpose of the form and submits the form.
 
 **Expected Result**:
@@ -1374,6 +1377,7 @@ When logged in as Administrator
 
 
 ### My Profile Page
+
 - The link to this page can only be seen if a user is logged in
 - On the left the default delivery information is displayed if the user has selected save my information during the chackout process.
 - The user can change the default information by entering information into the fields
@@ -1420,6 +1424,7 @@ When logged in as Administrator
 
 
 ### Contact Page
+
 - Accessed from envelope icon in footer and Contact link in Quick Links in footer
 - Features a form with input fields: name, subject, email address and text box for a message
 - All fields are required so that site owner has the necessary information to reply
@@ -1451,6 +1456,7 @@ When logged in as Administrator
 
 
 ### Register Page
+
 - Features a form with input boxes for email and email confirmation, username, password and password confirmation
 - Two buttons, signup and back to login page
 
@@ -1752,6 +1758,34 @@ Sample screenshots
 
 ![](documentation/screenshots/signup-confirm-msg.png)
 
+![](documentation/screenshots/signup-confirm-msg.png)
+
+## Custom Error Handling Pages
+
+* 404 page
+**Expected Result**:
+- Custom 404 page is displayed
+
+**Testing Steps**:
+- A non-existent address was typed into the address bar in this case https://knits-and-pieces.herokuapp.com/d
+
+**Actual Result**:
+- Custom 404 page is displayed
+
+![](documentation/validation/404.png)
+
+* 500 page
+
+**Expected Result**:
+- Custom 500 page is displayed
+
+**Testing Steps**:
+- This page displayed when another error was being tested (See [Bugs](#bugs-and-fixes) section)
+
+**Actual Result**:
+- Custom 500 page is displayed
+
+![](documentation/validation/500.png)
 
 ## Browser Compatibility
 
@@ -1775,20 +1809,42 @@ The project was developed on Google Chrome and no issues were detected. Chrome D
 
 1. Toast success message doesn't display if same item is added again to basket. Fix: Error in if statement in bag/views.py
 2. Image media url not working. Fix: add media context processor in settings.py
-3. Can-custom design - displaying text by default - Fix: incorrect format of if statement
-4. Zip code error - indefinite number of numbers and error message pointing to order - error in views.py keys had values which were strings not variables ('' around the variables) - Fix: '' removed
+3. Can-custom design - displaying text by default not just if product can be custom designed - Fix: incorrect format of if statement in product_detail.html
+4. Zip code error in stripe card payment form (Checkout)- indefinite number of numbers and error message pointing to order - error in views.py keys had values which were strings not variables ('' around the variables) - Fix: '' removed
 5. Checkout_success no reverse match found although payment in stripe succeeded. Discovered order number not being generated. Fix: Narrowed issue down to order generation in models.py update total function and found indentation errors.
-6. Error after adding countryfield - could not migrate. Folder still looking for max value of 2. Fix: deleted all orders in the database as they were created wth countries longer than 2 letters. Then the migration worked.
+6. Error after adding countryfield - could not migrate. Error still looking for max value of 2. Fix: deleted all orders in the database as they were created wth countries longer than 2 letters. Then the migration worked.
 7. After creating profile and linking to order history two orders being created in db with two different numbers. Fix: corrected stripe billing and shipping name fields. Due to subsequent ongoing issues with duplicate orders being created and non-recognition of two name fields in billing and shipping information, the order model field was reverted to full name and first and last name fields removed as they can be accessed from using the full name method
-8. Remove button bug with W3C validator - two ids as element on mobile and desktop views at same time (hidden on one). Fix: Id changed to data-id
-9. During testing bug found relating to checkbox - address saved to profile whether checkbox checked or not
+8. Remove button bug with W3C validator - two ids as element on mobile and desktop viewed at same time (although one is hidden at a time depending on whether mobile or desktop view). Fix: Id changed to data-id in bag/quantity_form.html
+9. During testing bug found relating to checkbox - address saved to profile whether checkbox checked or not. This has not yet been resolved
 10. During testing bug found that address line 2 in order confirmation saved as address line 1 - Fix: found duplication error in checkout_success.html
+11. During accessibility testing it was found that the alt tag in the edit product page could not be found. Fix: adjustments were made to the products/forms.py:
+
+```
+ def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        categories = Category.objects.all()
+        friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
+
+        try:
+            alt_name = str(self.__getitem__('name')).split('"')[5]
+        except:
+            alt_name = 'product image'
+
+        self.fields['category'].choices = friendly_names
+
+        for field_name, field in self.fields.items():
+            field.widget.attrs['class'] = 'border-black rounded-0'
+            field.widget.attrs['alt'] = alt_name
+```
+
+and the following added to the products/custom_clearable_file_input.html:
+`alt="{{ widget.attrs.alt }}"`
 
 ![Order confirmation Bug](documentation/screenshots/jack15.png)
 
 11. During testing found that if a decimal is entered into the quantity box in the shopping basket a 500 error is shown although form validation does not allow this when trying to add a decimal value of the product from the product page . Fix: change `form.submit());` to `form[0].requestSubmit();` .This proved a good test for my custom 500 error handling page too.
 
-![Order confirmation Bug](documentation/screenshots/500.png)
+![Order confirmation Bug](documentation/validation/500.png)
 
 11. Stripe time is wrong - possibly due to registering while in Spain (+ 1hour) - fixed by authenticating Stipe account and adjusting settings but some screenshots may show 1 hour time difference
 12. Chrome on android no longer seems to update changes on refreshing pages: fixed by clearing last week's browsing history each time checking on Moto G8+
@@ -2123,7 +2179,11 @@ The following JavaScript files were checked with [JS Hint](https://jshint.com/)
 
 ## Accessibility
 
-The website was tested for accessibility at [Wave](https://wave.webaim.org/report#/https://knits-and-pieces.herokuapp.com/). There were many more errors in this section than expected, relating to skipped heading levels, empty labels, justified text and contrast issues. The tool was very useful in highlighting errors that had not been identified in testing or with other tools used during development and was a great learning experience. All errors and alerts have been fixed for all pages except the pages with forms rendered by Django Crispy Forms where WAVE cannot read the labels auto-generated properly: bag, checkout and profile. Also WAVE cannot read the form in the edit a product page and an alt tag cannot be added to the image field manually. I tested these pages manually with Windows in-built screen reader and the form fields were read correctly.
+The website was tested for accessibility at [Wave](https://wave.webaim.org/report#/https://knits-and-pieces.herokuapp.com/). There were many more errors in this section than expected, relating to skipped heading levels, empty labels, justified text and contrast issues. The tool was very useful in highlighting errors that had not been identified in testing or with other tools used during development and was a great learning experience. 
+
+All errors and alerts have been fixed for all pages except the pages with forms rendered by Django Crispy Forms where WAVE cannot read the labels auto-generated properly: bag, checkout and profile.  I tested these pages manually with Windows in-built screen reader and the form fields were read correctly. 
+
+Also WAVE could read the form in the edit a product page and an alt tag cannot be added to the image field manually. Some adjustments were made to the products/forms.py with the help of Code Institute Tutors [Bugs](#bugs-and-fixes) section.
 
 - Home page
 ![#](documentation/validation/wave-report.png)
