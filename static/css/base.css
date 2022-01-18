@@ -164,10 +164,10 @@ a.social:focus {
 }
 
 .border-2 {
-    border-width:2px !important;
+    border-width: 4px !important;
 }
 
-/* all links */
+/* Links */
 
 a {
     color: #3a3a3a;
@@ -228,6 +228,7 @@ footer a:focus {
 }
 
 /* keep fontawesome icons consistent (from Bulma/Boutique Ado)*/
+
 .icon {
     align-items: center;
     display: inline-flex;
@@ -320,7 +321,7 @@ footer a:focus {
     padding: 0.25rem 0.5rem;
 }
 
-/* shopping basket icon and total badge */
+/* Shopping basket icon and total badge */
 
 .basket-icon .basket-label {
     display: inline-block;
@@ -332,14 +333,14 @@ footer a:focus {
     color: #d20f35;
 }
 
-/* product image size to fit card without stretch on main shop page */
+/* Product image size to fit card without stretch on main shop page */
 
 .all-products-img {
     height: 25vh;
     object-fit: contain;
 }
 
-/* product tag */
+/* Product tag */
 
 .product-tag {
     background-color: #FFBC0A;
@@ -362,7 +363,7 @@ footer a:focus {
     font-size: 1.75rem;
 }
 
-/* badge for categories */
+/* Badge for categories */
 
 .badge {
     background-color: #d20f35;
@@ -513,7 +514,7 @@ footer a:focus {
     }
 }
 
-/* unstick header on smaller screens */
+/* Unstick header on smaller screens */
 
 @media screen and (max-width: 767px) {
     .sticky-top {

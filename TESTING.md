@@ -830,7 +830,7 @@ When logged in as Administrator
 - Messages appears when user interacts with website
 
 **Testing Steps**:
-This has been throughly tested in the User Story testing above
+- This has been throughly tested in the User Story testing above
 
 **Expected Result**:
 - Messages are displayed corresponding to user interaction
@@ -1194,7 +1194,7 @@ Click on each link in footer in turn and check correct page opens
 
 **Pass/Fail: Pass**
 
-![](documentation/screenshots/product-detail.png)
+![](documentation/screenshots/product-detail-page.png)
 
 ![](documentation/screenshots/can-custom.png)
 

@@ -10,7 +10,7 @@ View the live site [here](https://knits-and-pieces.herokuapp.com)
 
 #### Agile Planning
 
-User stories (Issues) with acceptance criteria and tasks are each linked to an Epic (Milestone) and placed in an Iteration kanban board (Projects 1, 2 and 3). No dates have been included due to the tight timeline and the Christmas hoilday in the middle but these would be required in a working environment. Each user story is labelled with a must-have should-have, could-have or won't have label to show prioritisation. See the table of User Stories [here](#user-stories)
+User stories (Issues) with acceptance criteria and tasks are each linked to an Epic (Milestone) and placed in an Iteration kanban board (Projects 1, 2 and 3). No dates have been included due to the tight timeline and the Christmas holiday in the middle of the project development. Each user story is labelled with a "must-have", "should-have", "could-have" or "won't have" label of different colours to show their prioritisation for the project. See the table of User Stories [here](#user-stories).
 
 #### Project Goal
 
@@ -21,13 +21,13 @@ The goal of the project is to create an online store for this developer's handma
 - People who like colourful, handmade, good quality items. 
 - People who like knitted and crocheted items.
 - People who want to order custom made throws and blankets in colours of their choosing.
-- People looking for unique gifts
+- People looking for unique gifts in their choice of colours
 
 #### Business Goals
 
 - To create a professional online store
 - To provide an easy and secure means to purchase items.
-- To increase the customer base
+- To increase the customer base of the existing business
 - To create a brand for the store and increase brand awareness
 
 #### Customer Goals
@@ -40,9 +40,9 @@ The goal of the project is to create an online store for this developer's handma
 
 #### User Stories
 
-Using the Agile approach Epics (Github Milestones) were created and broken down into several User Stories (Github Issues). User Stories were fleshed out with Acceptance Criteria and Tasks assigned to each. Acceptance criteria were used in measuring testing outcomes. Due to the time constraints and knowledge level of this developer it was not possible in every case to decide the tasks in advance of carrying out the work although this would be the ideal in a workplace environment. 
+Using the Agile approach Epics (Github Milestones) were created and broken down into User Stories (Github Issues). User Stories were fleshed out with Acceptance Criteria and Tasks assigned to each. Acceptance criteria were used in measuring testing outcomes (see [TESTING.md](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/TESTING.md) ). Due to the time constraints and knowledge level of this developer it was not possible in every case to decide the tasks in advance of carrying out the work although this would be the ideal in a workplace environment. In some case these were completed during the development process. 
 
-User Stories were sorted into four priority levels with 1 as top priority and 4 as least prioritised. User Stories with Priority 1 were allocated a label of 'must-have', 2 as 'should-have', 3 as 'could-have'. These User Stories were divided into three Iterations (Github Projects). For the purposes of this project a timeframe was not assigned although in a real world environment it would be. Those User Stories allocated Priority 4 which would be 'won't have' were not placed in the table but are included in [Future Features](#future-features). Several stories marked as 'could-have' were not completed due to time constraints (#5, #7, #29 #30) but remain in the Project board.
+User Stories were sorted into four priority levels with 1 as top priority and 4 as least prioritised. User Stories with Priority 1 were allocated a label of 'must-have', 2 as 'should-have', 3 as 'could-have'. These User Stories were divided into three Iterations (Github Projects). For the purposes of this project a timeframe was not assigned although in a real world environment it would be. Those User Stories allocated Priority 4 which would be 'won't have' were not placed in the table but are included in [Future Features](#future-features). Several stories marked as 'could-have' were not completed due to time constraints (#5, #7, #29, #30) but remain in the Project board.
 
 | User Story ID | As A/An | I want to be able to | So that I can | | # | Priority | Iteration |
 |---------------|--------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|---|-----|----------|----------:|
@@ -115,7 +115,7 @@ User Stories were sorted into four priority levels with 1 as top priority and 4 
 
 - SEO 
 
-Research on short and long-tail keywords was conducted via google searches to find the search words and phrases that most related to a site like Knits and Pieces. Handmade was particularly crucial to a good search result when incorporated with the product categories and craft type. Keywords were incorporated into the meta tags and headings where appropriate while not overloading the site content and maintaining the usefulness of the site.
+Research on short and long-tail keywords was conducted via google searches to find the search words and phrases that most related to a site like Knits and Pieces. "Handmade" was found to be particularly useful to a good search result when incorporated with the product categories ("hats", "throws", "facemasks") and craft type ("knitted", "crocheted"). Keywords were incorporated into the meta tags and headings where appropriate while not overloading the site content and maintaining the usefulness of the site.
 
 - Web Marketing
 
@@ -139,11 +139,13 @@ View of Facebook Business page to prospective customer without Facebook account:
 
 A privacy policy is a legal requirement because of GDPR legislation. This also benefits the website as it looks professional and more importantly inspires trust in the website user. A link to the privacy policy page is included in the footer.
 
+![Privacy](documentation/screenshots/privacy.png)
+
 ### Scope
 
 - Requirements
 
-The approach taken was to create a minimum viable product which in this case was to create a functioning ecommerce store with the ability to view and purchase a product via a seamless payment facility (in this case Stripe).
+The approach taken was to create a minimum viable product to create a functioning ecommerce store with the ability to view and purchase a product via a seamless payment facility (in this case Stripe).
 
 The User Stories were prioritised as described [above](#user-stories) and shown in the table with functional requirements prioritised as 1
 
@@ -153,13 +155,16 @@ The time frame for this project was extremely short and broken up with Christmas
 
 ### Structure
 
-The website consists of ten main pages:
+The website consists of twelve main pages:
 - A Home page welcoming the user to the site
 - An About page with more information about the business
 - An Order page where the user can custom order a product from specified options
+- The main Shop page which shows all products
+- The Product detail page which has the detailed information of the selected product
 - A Contact page where the user can send a message to the Knits and Pieces business
 - A Profile page where the logged in user can view their delivery details and order history
 - The Accounts pages for Login/Logout and Register forms
+- The Add and Edit Product pages where the business administrator can add and edit products to the store
 - A Basket page where products selected for purchase can be stored and viewed
 - A Checkout Page where delivery and payment information is entered
 
@@ -197,9 +202,9 @@ In the Profiles app there is a UserProfile model which uses the Django default U
 
 - Contact App
 
-In the Contact App there is a custom ContactForm model for the customer to send a message to the Knits and Pieces store.
+In the Contact App there is a custom Contact model for the customer to send a message to the Knits and Pieces store.
 
-![Contact Form Model](documentation/screenshots/contactform-model.png)
+![Contact Model](documentation/screenshots/contactform-model.png)
 
 - Custom App
 
@@ -243,7 +248,7 @@ The Custom App has a specifically customised CustomOrder model for a customer to
 
 #### Colours
 
-Colours for the site were chosen by colour picking a main colour from a product image using [Coolors](https://coolors.co/). The main colour selected was crimson and shades of grey chosen to contrast with beige for the footer. However during development contrast issues arose so the shades of colours used were adjusted to fix the issues without changing colours completely.
+Colours for the site were chosen by colour picking a main colour from a product image (maroon throw) using [Coolors](https://coolors.co/). The main colour selected was crimson and shades of grey chosen to contrast with beige for the footer. However during development contrast issues arose so the shades of colours used were adjusted to fix the issues without changing colours completely. The main colour was also used to design the logo and the favicon.
 
 ![Main colours](documentation/screenshots/pp5-colours.png)
 
@@ -256,7 +261,7 @@ Green was used to highlight edit or update buttons with red for remove/delete
 ![Red and Green buttons](documentation/screenshots/green-red-btns.png)
 
 
-- created a palette using [Coolors](https://coolors.co/d20f35-e36477-3a445c-728668-bbb19d)
+- The palettes were created using [Coolors](https://coolors.co/d20f35-e36477-3a445c-728668-bbb19d)
 
 - The crimson colour was used for the main titles on pages.
 
@@ -264,12 +269,13 @@ Green was used to highlight edit or update buttons with red for remove/delete
 
 #### Typography
 
-- [Cinzel](https://fonts.google.com/specimen/Cinzel) was used for Titles and special text where the intention was to highlight the Knits and Pieces brand. This font is fancy, elegant and commanding
-- [Roboto](https://fonts.google.com/specimen/Roboto) was used for the body font
+- [Cinzel](https://fonts.google.com/specimen/Cinzel) was used for Titles and special text where the intention was to highlight the Knits and Pieces brand. This font is fancy, elegant and commanding. It looks clean and contemporary although classical in design.
+
+- [Roboto](https://fonts.google.com/specimen/Roboto) was used for the body font as it has a clean, simple and slightly curvy look which is pleasant to read.
 
 #### Images
 
-- The images used for the website were all taken and edited by this developer as the ecommerce products are all the developer's own. The approach was to create transparent backgrounds to highlight the products and their colours in isolation and against a plain white background. This was a learning experience and proved more time-consuming than anticipated. As a result some images could be improved given more time but are satisfactory for the purposes of this project. [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) was used to remove the backgrounds, crop and resize the images. [Removebg](https://www.remove.bg/upload) was also used where the size reduction did not compromise the quality.
+- The images used for the website were all taken and edited by this developer as the products used are all the developer's own. The approach was to create transparent backgrounds to highlight the products and their colours in isolation and against a plain white background. This was a learning experience and proved more time-consuming than anticipated. As a result some images could still be improved given more time but are satisfactory for the purposes of this project. [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) was used to remove the backgrounds, crop and resize the images. [Removebg](https://www.remove.bg/upload) was also used where the size reduction did not compromise the quality.
 
 ## Features
 
@@ -279,17 +285,19 @@ Green was used to highlight edit or update buttons with red for remove/delete
 
 #### Navbar
 
-- Logo - Ball of wool in crimson brand colour. links to home page. Sits on left as is usual.
+- Logo: the logo is a ball of wool in the crimson brand colour, chosen to be instantly recognisable to site users. The logo links to the home page and is positioned on the left as this is where the user expects it to be. 
 
 ![](documentation/screenshots/logo.png)
 
-- Page Links: On large screens the main page links are on the left: Home, Shop, About and Order pages. - On medium screens and smaller the main page links are compressed into a burger menu icon on the right which opens into a dropdown menu on the right
+- Page Links: On large screens the main page links are on the left: Home, Shop, About and Order pages. On medium screens and smaller the main page links are compressed into a burger menu icon on the right which opens into a dropdown menu on the left.
 
 ![](documentation/screenshots/navbar.png)
 
 ![](documentation/screenshots/navbar2.png)
 
-- The Shop page link features a dropdown menu. Users can choose to view all products or to sort or filter products by price, name or category. Categories which can be chosen from the menu are grouped together into broad categories that a customer might choose to see together: throws and blankets, hats and gloves, cushion covers and facemasks. When a category is selected the specific category badges appear above the products listing to enable the customer to further sort by category
+![](documentation/screenshots/navbar3.png)
+
+- The Shop page link features a dropdown menu. Users can choose to view all products or to sort or filter products by price, name or category. Categories which can be chosen from the menu are grouped together into broad categories that a customer would choose to see together: throws and blankets, hats and gloves, cushion covers and facemasks. When a category is selected the specific category badges appear above the products listing to enable the customer to further sort by category.
 
 ![](documentation/screenshots/shop-dropdown.png)
 
@@ -316,7 +324,7 @@ Green was used to highlight edit or update buttons with red for remove/delete
 
 ![](documentation/screenshots/hover-navbar.png)
 
-- Header with navbar sticks to the top of the screen as the user scolls on larger screens but not on smaller screens where space is less so the header scrolls
+- The Header with the navbar sticks to the top of the screen as the user scolls on larger screens but not on smaller screens where space is less so the header does not obstruct the user's view.
 
 ![](documentation/screenshots/scroll1.png)
 
@@ -327,7 +335,8 @@ Green was used to highlight edit or update buttons with red for remove/delete
 ![](documentation/screenshots/banner-link.png)
 
 #### Footer
-- The footer is divided into three sections: Shop links to the shop products by category or tag, Quick Links to the main shop pages and a contact page, and a section with the social media and contact icons and newsletter links. 
+
+- The footer is divided into three sections: Shop links to the shop products by category or tag, Quick Links to the main shop pages and a contact page, and a section with the social media icon links, a contact icon and a newsletter subscribe link. 
 
 ![](documentation/screenshots/footer.png)
 
@@ -336,8 +345,6 @@ Green was used to highlight edit or update buttons with red for remove/delete
 ![](documentation/screenshots/contact.png)
 
 - The social media links include a direct link to FB business page while the other social media links do not currently link directly to business pagea as the business is not currently live. 
-
-![](documentation/screenshots/contact.png)
 
 - At the bottom is copyright information and a link to the developer's GitHub page. 
 
@@ -382,9 +389,9 @@ Green was used to highlight edit or update buttons with red for remove/delete
 
 - When all products is selected in the navigation menu the product are listed in rows of four on extra-large screens, three on large screens, two on medium and one on small screens
 
-- Above the products list on the left on medium screens and up is text specifying the number of products. ![]
-- Above the products list on the right is a sort selector box to sort products by category, price, name![]
-- The number of products text and sort selector box appear in the centre above the products list on small ![]
+- Above the products list on the left on medium screens and up is text specifying the number of products.
+- Above the products list on the right is a sort selector box to sort products by category, price, name
+- The number of products text and sort selector box appear in the centre above the products list on smaller screens
 - Each product image in the product list links to its product detail page
 - When products listed have been selected by category in the navigation menu, category badges are seen from where the user can further sort the products
 
@@ -406,7 +413,7 @@ Green was used to highlight edit or update buttons with red for remove/delete
 
 ![](documentation/screenshots/custom-order-link.png)
 
-- Category label can be clicked to view more of this category
+- The Category label can be clicked to view all the products in this category
 
 ![](documentation/screenshots/category.png)
 
@@ -414,17 +421,17 @@ Green was used to highlight edit or update buttons with red for remove/delete
 
 ![](documentation/screenshots/update-product.png)
 
-- A quantity selector box with + - selector to increase/decrease quantity of item. User can also enter number or use arrows inside box to increase/decrease quantity of item
+- A quantity selector box with + - selector to increase/decrease quantity of item. Users can also enter a whole number or use arrows inside box to increase/decrease the quantity of the item
 
 ![](documentation/screenshots/quantity.png)
 
-- Two buttons - one grey to return to main Shop page and one crimson to add item(s) to shopping basket
+- Two CTA buttons - one to return to the main Shop page and one to add the item(s) to shopping basket
 
 ![](documentation/screenshots/shop-add.png)
 
 - On larger screens the photo appears on the left and description to the right which collapses vertically into two coloumns on smaller screens
 
-![](documentation/screenshots/product-detail.png)
+![](documentation/screenshots/product-detail-page.png)
 
 ![](documentation/screenshots/product-detail2.png)
 
@@ -434,7 +441,7 @@ Green was used to highlight edit or update buttons with red for remove/delete
 
 - This page features a form for the user to request a quote to custom order a throw or blanket to their size and colour specifications
 - At the top of the page is a carousel of pattern images from which customer can select the design they wish to order in the form
-- Below the carousel is a form for user to input name, email, choice of sizes/material/up to four colour choices and a design. Default options are set for size and material and a default of 'mix' for design if the user has no preference. Name, email and main colour are required fields for the user to input. Further details can also be entered in a message box.
+- Below the carousel is a form for the user to input the name, email, choice of sizes/material/up to four colour choices and a design. Default options are set for size and material and a default of 'mix' for design if the user has no preference. Name, email and main colour are required fields for the user to input. Further details can also be entered in a message box.
 - A request quote button clearly indicates the purpose of the form and submits the form.
 
 ![](documentation/screenshots/custom-order-form.png)
@@ -442,17 +449,19 @@ Green was used to highlight edit or update buttons with red for remove/delete
 ![](documentation/screenshots/custom-order-msg.png)
 
 #### Add a Product Page
-- The Add a Product page can only be accessed by the administrator/superuser and is only visible in the navbar Profile dropdown menu if the user is logged in as administrator or superuser.
+
+- The Add Product page can only be accessed by the administrator/superuser and is only visible in the navbar Profile dropdown menu if the user is logged in as administrator or superuser.
 
 ![](documentation/screenshots/profile-admin-loggedin.png)
 
 - This page features a form for the administrator/superuser to add a product with fields from the product model: category options, name, size options, description, optional tag, price, material (with default acrylic), machine wash checkbox with default checked, image selection box, up to four colour selction boxes with at least one required, pattern name, deigner and whether the item can be custom ordered with no as default.
-- The form to edit a product accessed by the admistrator from the products or product detail page is the same form as for add a product with the fields auto completed which can be changed by the administrator.
+- The form to edit a product can be accessed only by the administrator from the products or product detail page. This is the same form as to add a product with the fields auto completed which can be changed by the administrator.
 
 ![](documentation/screenshots/add-product-form.png)
 
 #### My Profile Page
-- The link to this page can only be seen if a user is logged in
+
+- The link to this page can only be seen if a user is logged in.
 
 ![](documentation/screenshots/non-admin-profile-menu.png)
 
@@ -467,7 +476,8 @@ Green was used to highlight edit or update buttons with red for remove/delete
 ![](documentation/screenshots/profile-order.png)
 
 #### Contact Page
-- Accessed from envelope icon in footer and Contact link in Quick Links in footer
+
+- This page is accessed from the envelope icon in footer and the Contact link in Quick Links in footer
 
 ![](documentation/screenshots/contact.png)
 
@@ -479,11 +489,14 @@ Green was used to highlight edit or update buttons with red for remove/delete
 - At the bottom of the form is a Send button to submit the message
 
 #### Register Page
+
 - Features a form with input boxes for email and email confirmation, username, password and password confirmation
 
 ![](documentation/screenshots/register-page.png)
 
-- Two buttons, signup and back to login page![](documentation/screenshots/contact.png)
+- Two buttons, signup and back to login page
+
+![](documentation/screenshots/contact.png)
 
 #### Login Page
 
@@ -503,7 +516,7 @@ Green was used to highlight edit or update buttons with red for remove/delete
 
 #### Basket Page
 
-- Features summary information of products added to basket: image of products, title, size, price, delivery cost and total
+- Features summary information of products added to the shopping basket: image of products, title, size, price, delivery cost and total
 
 ![](documentation/screenshots/basket.png)
 
@@ -554,10 +567,11 @@ A 500 server error page was created to handle internal server errors
 ![](documentation/screenshots/error-msg.png)
 
 ### Future Features
+
 - craft blog with users able to comment
 - user reviews of products and with CRUD function
 - Likes/favourites and a wishlist in the user profile
-- link product availablility to stock levels/inventory would be required for a reql-world business
+- link product availablility to stock levels/inventory would be required for a real-world business
 - postage according to country/limiting country
 - FAQs section
 
@@ -576,11 +590,11 @@ A 500 server error page was created to handle internal server errors
 
 * [Django 3.2.8](https://docs.djangoproject.com/en/3.2/)
 * Django supporting libraries:
- - [allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) for authentication, registration, account management as well as 3rd party (social) account authentication
- - [crispy-forms](https://django-crispy-forms.readthedocs.io/) to style the forms
- - [gunicorn](https://gunicorn.org/) as the server for Heroku
- - [psycopg2](https://pypi.org/project/psycopg2/)as an adaptor for Python and PostgreSQL databases
- - [dj-database](https://pypi.org/project/dj-database-url/) to parse the database URL from the environment variables in Heroku
+  - [allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) for authentication, registration, account management as well as 3rd party (social) account authentication
+  - [crispy-forms](https://django-crispy-forms.readthedocs.io/) to style the forms
+  - [gunicorn](https://gunicorn.org/) as the server for Heroku
+  - [psycopg2](https://pypi.org/project/psycopg2/)as an adaptor for Python and PostgreSQL databases
+  - [dj-database](https://pypi.org/project/dj-database-url/) to parse the database URL from the environment variables in Heroku
 
 ## Database
 
@@ -597,15 +611,15 @@ A 500 server error page was created to handle internal server errors
 * [Fontawesome](https://fontawesome.com/) for icons
 * [Google Fonts](https://fonts.google.com/) for the fonts
 * [Balsamiq](https://balsamiq.com/) for the wireframes
-* [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) for inspection during development to check reponsiveness, contrast and JS errors in the console
-* [Favicon.io](https://favicon.io/favicon-converter/) for the favicon
+* [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) was used to inspect the website during development to check reponsiveness, contrast and JS errors in the console
+* [Favicon.io](https://favicon.io/favicon-converter/) was used to generate the favicon
 * [Techsini](https://techsini.com/multi-mockup/index.php) was used for the site mockups
 * [Google Chrome](https://www.google.com/intl/en_ie/chrome/) for previewing the project in the browser
 * [Google Sheets](https://www.google.com/sheets/about/) - for the database model tables
-* [Freelogodesign](https://www.freelogodesign.org/) for the leaf logo
-* [W3C Markup Validation Service](https://validator.w3.org/)
-* [W3C CSS Validation Service(Jigsaw)](https://jigsaw.w3.org/css-validator/)
-* [PEP8](https://www.python.org/dev/peps/pep-0008/) to validate the Python code
+* [Freelogodesign](https://www.freelogodesign.org/) for the ball of wool logo
+* [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML
+* [W3C CSS Validation Service(Jigsaw)](https://jigsaw.w3.org/css-validator/) was used to validate the CSS
+* [PEP8](https://www.python.org/dev/peps/pep-0008/) was used to validate the Python code
 * [JSHint](https://jshint.com/) was used to check for errors in Javascript
 * [Coolors](https://coolors.co) was used to generate the colour palettes
 Photo Editing
@@ -613,10 +627,11 @@ Photo Editing
 * [Paint](https://support.microsoft.com/en-us/windows/get-microsoft-paint-a6b9578c-ed1c-5b09-0699-4ed8115f9aa9) was used to resize images
 * [TinyPNG](https://tinypng.com/) was used to resize images for the website
 * [removebg](https://www.remove.bg/upload) was also used to remove backgrounds from images
+* [Contrast Checker](https://webaim.org/resources/contrastchecker/) was used to check and adjust colours for contrast
 
 ## Testing
 
-Please see separate Testing.md file [here](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/TESTING.md)
+Please see separate TESTING.md file [here](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/TESTING.md)
 
 ## Deployment
 
@@ -628,7 +643,7 @@ Please see separate Testing.md file [here](https://github.com/siobhanlgorman/kni
 * In the Heroku browser window, create an account by entering your email address and a password
 * Activate the account through the authentication email sent to your email account
 * Click the new button and select create a new app from the dropdown menu
-* Enter a name for the application which must be unique, in this case the app name is 'favoureats'
+* Enter a name for the application which must be unique, in this case the app name is 'knits-and-pieces'
 * Select a region, in this case Europe
 * Click create app
 * Install psycopg2 and djdatabase in the IDE and add to requirements
@@ -684,7 +699,7 @@ ALLOWED_HOSTS = ['knits-and-pieces.herokuapp.com', 'localhost']
 
 * Click Deploy tab in Heroku
 * In the 'Deployment method' section select 'Github' and click the 'connect to Github' button to confirm.
-* In the 'search' box enter the Github repository name for the project: favoureats: https://github.com/siobhanlgorman/knits-and-pieces
+* In the 'search' box enter the Github repository name for the project: knits-and-pieces: https://github.com/siobhanlgorman/knits-and-pieces
 * In the IDE when development is complete change the debug setting to: `DEBUG = False` in settings.py
 * Click deploy branch
 
@@ -753,40 +768,49 @@ class MediaStorage(S3Boto3Storage):
 
 * Add the following lines to settings.py to connect the bucket:
 if 'USE_AWS' in os.environ:
-    # Cache control
+
+```
+    
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    # Bucket config
+    
     AWS_STORAGE_BUCKET_NAME = 'knits-and-pieces'
     AWS_S3_REGION_NAME = 'eu-west-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+```
 
-    # Static and media files
+* In settings.py for Static and media files add the following:
+
+```
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
-
-    # Override static and media URLs in production
-    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+* To override static and media URLs in production add the following to settings.py:
 
 ```
-* Push to Gihub and deploy branch from Heroku and static files should now be collected in the AWS bucket
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+
+* Push to GitHub and deploy branch from Heroku and static files should now be collected in the AWS bucket
 * In AWS S3 bucket create media folder. Inside the media folder click upload and select files to upload
 
 **Note**
 
-At final deployment stage the requirements.txt file contains the following:
-LINK TO FILE
-You can install these requirements by typing ```python3 install -r requirements.txt```
+At final deployment stage the [requirements.txt](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/requirements.txt) file contains the following:
+
 ![Requirements](documentation/screenshots/requirements.png)
 
+You can install these requirements by typing ```python3 install -r requirements.txt```
+
 At final deployment stage the heroku config vars file contains the following:
+
 ![Config Vars](documentation/screenshots/config-vars.png)
 
 The live site link is https://knits-and-pieces.herokuapp.com/
@@ -795,7 +819,7 @@ The live site link is https://knits-and-pieces.herokuapp.com/
 
 #### Forking the Repository
 
-* To fork the project navigate to the favoureats repository at https://github.com/siobhanlgorman/knits-and-pieces
+* To fork the project navigate to the knits and pieces repository at https://github.com/siobhanlgorman/knits-and-pieces
 * Above the list of files click the dropdown code menu.
 * Select the https option and copy the link.
 * Open the terminal.
@@ -805,7 +829,7 @@ The live site link is https://knits-and-pieces.herokuapp.com/
 
 #### Cloning the Repository
 
-* On Github navigate to the main page of Favoureats at https://github.com/siobhanlgorman/knits-and-pieces
+* On Github navigate to the main page of Knits and Pieces at https://github.com/siobhanlgorman/knits-and-pieces
 * Above the list of files click the Code dropdown code menu.
 * Select the https option and copy the link.
 * Open the terminal.
