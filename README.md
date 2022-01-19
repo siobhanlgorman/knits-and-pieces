@@ -638,7 +638,7 @@ A 500 server error page was created to handle internal server errors
 * [PEP8](https://www.python.org/dev/peps/pep-0008/) was used to validate the Python code
 * [JSHint](https://jshint.com/) was used to check for errors in Javascript
 * [Coolors](https://coolors.co) was used to generate the colour palettes
-* [XML Sitemaps](https://www.xml-sitemaps.com/) was used to generate the sitemaps.xml for the project
+* [XML Sitemaps](https://www.xml-sitemaps.com/) was used to generate the sitemap.xml for the project
 * [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) was used to generate the Django Secret Key at the beginning of the project
 Photo Editing
 * [Paint3D](https://www.microsoft.com/en-us/p/paint-3d/) was used to style the images and create transparent backgrounds
