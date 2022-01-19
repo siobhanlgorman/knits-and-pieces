@@ -10,7 +10,7 @@ View the live site [here](https://knits-and-pieces.herokuapp.com)
 
 #### Agile Planning
 
-User stories (Issues) with acceptance criteria and tasks are each linked to an Epic (Milestone) and placed in an Iteration kanban board (Projects 1, 2 and 3). No dates have been included due to the tight timeline and the Christmas holiday in the middle of the project development. Each user story is labelled with a "must-have", "should-have", "could-have" or "won't have" label of different colours to show their prioritisation for the project. See the table of User Stories [here](#user-stories).
+User stories (Issues) with acceptance criteria and tasks are each linked to an Epic (Milestone) and placed in an Iteration kanban board (Projects 1, 2 and 3). No dates have been included due to the tight timeline and the Christmas holiday in the middle of the project development. Each user story in the kanban board is labelled with a "must-have", "should-have", "could-have" or "won't have" label of different colours to show their prioritisation for the project. See the table of User Stories [here](#user-stories).
 
 #### Project Goal
 
@@ -42,7 +42,7 @@ The goal of the project is to create an online store for this developer's handma
 
 Using the Agile approach Epics (Github Milestones) were created and broken down into User Stories (Github Issues). User Stories were fleshed out with Acceptance Criteria and Tasks assigned to each. Acceptance criteria were used in measuring testing outcomes (see [TESTING.md](https://github.com/siobhanlgorman/knits-and-pieces/blob/main/TESTING.md) ). Due to the time constraints and knowledge level of this developer it was not possible in every case to decide the tasks in advance of carrying out the work although this would be the ideal in a workplace environment. In some case these were completed during the development process. 
 
-User Stories were sorted into four priority levels with 1 as top priority and 4 as least prioritised. User Stories with Priority 1 were allocated a label of 'must-have', 2 as 'should-have', 3 as 'could-have'. These User Stories were divided into three Iterations (Github Projects). For the purposes of this project a timeframe was not assigned although in a real world environment it would be. Those User Stories allocated Priority 4 which would be 'won't have' were not placed in the table but are included in [Future Features](#future-features). Several stories marked as 'could-have' were not completed due to time constraints (#5, #7, #29, #30) but remain in the Project board.
+User Stories were sorted into four priority levels with 1 as top priority and 4 as least prioritised. User Stories with Priority 1 were allocated a label of 'must-have', 2 as 'should-have', 3 as 'could-have'. These User Stories were divided into three Iterations (Github Projects). For the purposes of this project a timeframe was not assigned although in a real world environment it would be. Those User Stories allocated Priority 4 which would be 'won't have' were not placed in the kanban board but are included in [Future Features](#future-features). User stories in the kanban board which were not to be implemented are marked "F" for Future Feature in the table below. Several stories marked as 'could-have' were not completed due to time constraints (#5, #7, #29, #30) but remain in the Project board.
 
 | User Story ID | As A/An | I want to be able to | So that I can | | # | Priority | Iteration |
 |---------------|--------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|---|-----|----------|----------:|
@@ -605,7 +605,7 @@ A 500 server error page was created to handle internal server errors
   - [allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) for authentication, registration, account management as well as 3rd party (social) account authentication
   - [crispy-forms](https://django-crispy-forms.readthedocs.io/) to style the forms
   - [gunicorn](https://gunicorn.org/) as the server for Heroku
-  - [psycopg2](https://pypi.org/project/psycopg2/)as an adaptor for Python and PostgreSQL databases
+  - [psycopg2](https://pypi.org/project/psycopg2/) as an adaptor for Python and PostgreSQL databases
   - [dj-database](https://pypi.org/project/dj-database-url/) to parse the database URL from the environment variables in Heroku
   - [django-storages](https://django-storages.readthedocs.io/en/latest/) was used for backend storage with AWS
   - [django-countries](https://pypi.org/project/django-countries/) was used to provide a country field for the Order model
@@ -614,26 +614,25 @@ A 500 server error page was created to handle internal server errors
 
 ## Database
 
-* Heroku Postgres was used for the production database
-* Postgres was used for the development database also
+* [Heroku Postgres](https://www.heroku.com/postgres) was used for the database in production and development
 
 ## Other Technologies
 
 * [Amazon Web Services](https://aws.amazon.com/) was used to host the static files and media
-* [Gitpod](https://github.com//) as the IDE
-* [Git](https://git-scm.com/) used for version control via the terminal in Gitpod
-* [GitHub](https://github.com/) used to store the code in the repository
+* [Gitpod](https://github.com//) was used as the IDE
+* [Git](https://git-scm.com/) was used for version control via the terminal in Gitpod
+* [GitHub](https://github.com/) was used to store the code in the repository
 * [Heroku](https://www.heroku.com/) was used as the cloud based platform for deployment
 * [Stripe](https://stripe.com/en-ie) was used to handle payment transactions
-* [Fontawesome](https://fontawesome.com/) for icons
-* [Google Fonts](https://fonts.google.com/) for the fonts
-* [Balsamiq](https://balsamiq.com/) for the wireframes
+* [Fontawesome](https://fontawesome.com/) was used for icons
+* [Google Fonts](https://fonts.google.com/) was used for the fonts
+* [Balsamiq](https://balsamiq.com/) was used for the wireframes
 * [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) was used to inspect the website during development to check reponsiveness, contrast and JS errors in the console
 * [Favicon.io](https://favicon.io/favicon-converter/) was used to generate the favicon
 * [Techsini](https://techsini.com/multi-mockup/index.php) was used for the site mockups
-* [Google Chrome](https://www.google.com/intl/en_ie/chrome/) for previewing the project in the browser
-* [Google Sheets](https://www.google.com/sheets/about/) - for the database model tables
-* [Freelogodesign](https://www.freelogodesign.org/) for the ball of wool logo
+* [Google Chrome](https://www.google.com/intl/en_ie/chrome/) was used for previewing the project in the browser
+* [Google Sheets](https://www.google.com/sheets/about/) was used for the database schema tables
+* [Freelogodesign](https://www.freelogodesign.org/) was used for the ball of wool logo
 * [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML
 * [W3C CSS Validation Service(Jigsaw)](https://jigsaw.w3.org/css-validator/) was used to validate the CSS
 * [PEP8](https://www.python.org/dev/peps/pep-0008/) was used to validate the Python code
@@ -668,7 +667,7 @@ Please see separate TESTING.md file [here](https://github.com/siobhanlgorman/kni
 
 #### 3. Create the Database
 
-* Install psycopg2 and djdatabase in the workspace and add to requirements.txt
+* Install psycopg2 and djdatabase in the workspace with the command  `pip3 install dj_database_url psycopg2` and add to requirements.txt
 * In the Heroku dashboard click on the Resources tab
 * Scroll down to Add-Ons, search for and select 'Heroku Postgres'
 * In the Settings tab, scroll down to 'Reveal Config Vars' and copy the text in the box beside DATABASE_URL.
@@ -706,8 +705,8 @@ DATABASES = {
  }`
 ```
 * Make migrations to postgres db
-* Install gunicorn in the workspace and add to requirements
-* Create Procfile: `web: gunicorn knits_and_pieces.wsgi:application`
+* Install gunicorn in the workspace and add to requirements with the command  `pip3 install django gunicorn`
+* Create Procfile with the following content: `web: gunicorn knits_and_pieces.wsgi:application`
 * Add Heroku hostname to allowed_hosts in settings.py and local host so gitpod will still work
 ```
 ALLOWED_HOSTS = ['knits-and-pieces.herokuapp.com', 'localhost']
@@ -861,7 +860,9 @@ The live site link is https://knits-and-pieces.herokuapp.com/
 - Boutique Ado was relied on heavily for the basis of the project with customisation as much as possible and custom models
 - The Logo was created from [Free Logo Design](https://www.freelogodesign.org/)
 - The favicon was created from [Favicon.io](https://favicon.io/favicon-converter/)
-* [Stack Overflow](https://stackoverflow.com/) and [Slack](https://slack.com/) were used for general queries
+- [Stack Overflow](https://stackoverflow.com/) and [Slack](https://slack.com/) were used for general queries and bug fixing
+- [geeksforgeeks](https://www.geekforgeek.org) was used for coding and styling issues
+- [OrdinaryCoders](https://www.ordinarycoders.com) was used for general coding and styling issues
 
 ## Acknowledgements
 

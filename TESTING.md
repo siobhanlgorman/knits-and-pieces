@@ -2010,9 +2010,10 @@ CSS was validated by [The W3C CSS Validation Service](https://jigsaw.w3.org/css-
 ![#](documentation/validation/v-css-profile.png)
 
 
-No errors were found on checking the two CSS files:
+No errors were found on checking the three CSS files:
 - base.css
 - checkout.css
+- profile.css
 
 
 ### PEP 8 Validation
