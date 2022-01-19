@@ -55,9 +55,7 @@ User Stories were sorted into four priority levels with 1 as top priority and 4 
 | 1.5 | Shopper | Easily view the number of purchases in my basket at any time | Know how many items I have already added to my basket | | [#5](https://github.com/siobhanlgorman/knits-and-pieces/issues/5) | 3 | 2 |
 | 1.6 | Shopper | View more information about the store | Increase my confidence that the store is genuine, trustworthy and reliable to purchase from | | [#6](https://github.com/siobhanlgorman/knits-and-pieces/issues/6) | 1 | 2 |
 | 1.7 | Shopper | View reviews of a product | decide whether the product is good enough to purchase | | [#7](https://github.com/siobhanlgorman/knits-and-pieces/issues/7) | 3 | 2 |
-| | | | | | | | |
 | 1.8 | Shopper | View store's social media pages | View the site content in different places that I use | | [#8](https://github.com/siobhanlgorman/knits-and-pieces/issues/8) | 1 | 1 |
-| | | | | | | | |
 | 1.9 | Shopper | View the average rating of a product | See how good the quality of the product and service is | | | 3 | 2 |
 | 1.1O | Shopper | View a list of FAQs | Easily find the answer to common questions | | | 4 | F |
 | 1.11 | Shopper | View Blog posts | Read interesting articles related to the products and the website | | | 4 | F |
@@ -689,7 +687,7 @@ import os
 import dj_database_url
 
 if os.path.isfile("env.py"):
-import env
+    import env
 ```
 * Reference Django SECRET_KEY in settings.py
 ```
@@ -853,7 +851,7 @@ The live site link is https://knits-and-pieces.herokuapp.com/
 * Open the terminal.
 * Change the current working directory to the desired destination location.
 * Type the git clone command with the copied URL: 
-`https://github.com/siobhanlgorman/knits-and-pieces.git`.
+`git clone https://github.com/siobhanlgorman/knits-and-pieces.git`
 * Press enter to create the local clone.
 * For the project to run an env.py file must be created as detailed above. As this is not stored in Github it will not be cloned with the rest of the files.
 

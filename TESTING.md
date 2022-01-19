@@ -31,7 +31,9 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![](documentation/screenshots/shop-page.png)
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass** ✅
+
+---
 
 * **As a shopper I want to be able to view individual products with all relevant details so that I can select some to purchase [#2](https://github.com/siobhanlgorman/knits-and-pieces/issues/2)**
 
@@ -52,9 +54,11 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - Full product detail card is displayed
 - All links in card work correctly
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/product-detail-page.png)
+
+---
 
 * **As a shopper I want to be able to easily identify special information about products eg discounts so that I can see the price, description, material, product image and size [#3](https://github.com/siobhanlgorman/knits-and-pieces/issues/3)**
 
@@ -74,13 +78,15 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - Don't Miss link in navigation dropdown opens list of tagged products
 - Special Offers Now link in banner opens list of tagged products
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/dont-miss-link.png)
 
 ![](documentation/screenshots/dont-miss-products.png)
 
 ![](documentation/screenshots/banner-link.png)
+
+---
 
 * **As a shopper I want to be able to easily view the total in euros of my purchases at any time so that I can take advantage of special information on products I'd like to purchase [#4](https://github.com/siobhanlgorman/knits-and-pieces/issues/4)**
 
@@ -104,12 +110,13 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - Basket icon is visible in navbar with amount corresponding to basket total visible
 - When clicked basket icon opens Shopping Basket page
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/basket-total.png)
 
 ![](documentation/screenshots/shopping-basket-page.png)
 
+---
 
 * **As a shopper I want to be able to view more information about the store so that I can increase my confidence that the store is genuine, trustworthy and reliable to purchase from [#6](https://github.com/siobhanlgorman/knits-and-pieces/issues/6)**
 
@@ -125,10 +132,11 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Actual Result**:
 - About Page opens when About link is clicked
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/about-page.png)
 
+---
 
 *  **As a shopper I want to be able to view store's social media pages so that I can view the site content in different places that I use [#8](https://github.com/siobhanlgorman/knits-and-pieces/issues/8)**
 
@@ -146,10 +154,11 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 **Actual Result**:
 - When icons are clicked Knits and Pieces Facebook business page opens and Twitter and Instagram main pages open in new tabs
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/fb-new-tab.png)
 
+---
 
 * **As a shopper I want to be able to easily register for an account so that I can have a personal account and be able to view my profile [#9](https://github.com/siobhanlgorman/knits-and-pieces/issues/9)**
 
@@ -178,7 +187,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 4. Email is sent to user's email address with link to confirm email address
 5. Link to confirm email address functions correctly
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/signup-error.png)
 
@@ -186,6 +195,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![](documentation/screenshots/email-confirm.png)
 
+---
 
 *  **As a registered shopper I want to be able to easily login and logout so that I can access my personal account information [#10](https://github.com/siobhanlgorman/knits-and-pieces/issues/10)**
 
@@ -208,12 +218,15 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - User's information is automatically completed if they have checked the remember me box
 - During testing it was apparent that it would be useful to easily see which user was logged in so the username was added to the title in the My Profile page
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/sign-in.png)
 
 ![](documentation/screenshots/username-profile.png)
 
+
+
+---
 
 *  **As a registered shopper I want to be able to easily recover my password if I forget it so that I can recover access to my account [#11](https://github.com/siobhanlgorman/knits-and-pieces/issues/11)**
 
@@ -235,7 +248,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - Password is successfully changed and success message appears
 - User is able to log in with new password
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/password-reset.png)
 
@@ -245,6 +258,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![](documentation/screenshots/jack-signin.png)
 
+---
 
 *  **As a registered shopper I want to be able to receive an email confirmation after registering so that I can verify my account information/ registration was successful [#12](https://github.com/siobhanlgorman/knits-and-pieces/issues/12)**
 
@@ -274,7 +288,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 3. Registration is confirmed with message.
 4. User logs in with provided login information
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/email-confirm.png)
 
@@ -284,6 +298,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![](documentation/screenshots/logged-in.png)
 
+---
 
 *  **As a registered shopper I want to be able to have a personalised user profile so that I can view my personal order history and order confirmations and save my payment information [#13](https://github.com/siobhanlgorman/knits-and-pieces/issues/13)**
 
@@ -307,7 +322,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - If not logged in My Profile link is not visible
 - When not logged in if user navigates to https://knits-and-pieces.herokuapp.com/profile/ they are redirected to the Sign In page
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![Profile Page](documentation/screenshots/jack-new-profile.png)
 
@@ -315,6 +330,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![Profile Page](documentation/screenshots/non-logged-in-profile.png)
 
+---
 
 *  **As a shopper I want to be able to sort the list of available products so that I can easily identify the best rated, best priced and items sorted by category [#14](https://github.com/siobhanlgorman/knits-and-pieces/issues/14)**
 
@@ -334,14 +350,15 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 1. Products appear arranged by price in ascending order when By Price is clicked
 2. Products appear arranged by name in ascending alphabetical order when By Name is clicked
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![Sort By Price](documentation/screenshots/by-price.png)
 
 ![Sort by Name](documentation/screenshots/by-name.png)
 
+---
 
-*  As a shopper I want to be able to sort a specific category of items so that I can find the best priced, best rated product in a specific category or sort the products in that category by name [#15](https://github.com/siobhanlgorman/knits-and-pieces/issues/15)
+*  **As a shopper I want to be able to sort a specific category of items so that I can find the best priced, best rated product in a specific category or sort the products in that category by name [#15](https://github.com/siobhanlgorman/knits-and-pieces/issues/15)**
 
 **Acceptance Criteria**
 1: User can select how to sort products from navigation
@@ -363,14 +380,15 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 1. All products appear listed with all correct category badges listed above
 2. When sort options are selected products are sorted by option and listed in correct ascending/descending order
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![Sort Hats](documentation/screenshots/sort-hats.png)
 
 ![Sort Masks](documentation/screenshots/sort-masks.png)
 
+---
 
-*  As a shopper I want to be able to sort multiple categories of products simultaneously so that I can find the best priced, best rated products across broad categories [#16](https://github.com/siobhanlgorman/knits-and-pieces/issues/16)
+*  **As a shopper I want to be able to sort multiple categories of products simultaneously so that I can find the best priced, best rated products across broad categories [#16](https://github.com/siobhanlgorman/knits-and-pieces/issues/16)**
 
 **Acceptance Criteria**: 
 1. User can sort products by multiple categories when they select from the navigation menu dropdown
@@ -392,7 +410,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 2. When a badge is clicked products are filtered to that category
 2. When sort options are selected products are sorted by option and listed in correct ascending/descending order
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/multiple-cat.png)
 
@@ -400,6 +418,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![](documentation/screenshots/sort-by-cat.png)
 
+---
 
 *  **As a shopper I want to be able to search for a product by name or description so that I can find a specific product to purchase [#17](https://github.com/siobhanlgorman/knits-and-pieces/issues/17)**
 
@@ -421,7 +440,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - Results show search within title and descriptions
 - When empty search is entered error message displays
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/hat-search.png)
 
@@ -429,6 +448,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![](documentation/screenshots/search-error.png)
 
+---
 
 *  **As a shopper I want to be able to easily see what I have searched for and the number of results so that I can quickly see how many products are available [#18](https://github.com/siobhanlgorman/knits-and-pieces/issues/18)**
 
@@ -448,12 +468,13 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 1. Search term and number of results are printed including if none found
 2. Note that badges do not currently display for search results list which could be investigated for a later version
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/search-results.png)
 
 ![](documentation/screenshots/search-none.png)
 
+---
 
 *  **As a shopper I want to be able to easily select the quantity of a product when purchasing it so that I can check that I am ordering the correct quantity that I intended [#19](https://github.com/siobhanlgorman/knits-and-pieces/issues/19)**
 
@@ -476,7 +497,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - Product quantity is updated as selected when integer
 - Validation errors show when decimal or negative number is entered into the box
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/update-basket.png)
 
@@ -488,6 +509,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![](documentation/screenshots/negative-error.png)
 
+---
 
 *  **As a shopper I want to be able to view items in my basket to be purchased so that I can see the total cost of my items and all the items I will receive [#20](https://github.com/siobhanlgorman/knits-and-pieces/issues/20)**
 
@@ -508,12 +530,13 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 1. Total cost of items in basket is viewable in navbar
 2. Basket icon opens when clicked to full basket page
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/basket-total-icon.png)
 
 ![](documentation/screenshots/full-basket-page.png)
 
+---
 
 *  **As a shopper I want to be able to adjust the quantity of individual items in my basket so that I can easily make changes to my purchase before checkout [#21](https://github.com/siobhanlgorman/knits-and-pieces/issues/21)**
 
@@ -542,7 +565,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 - Success message is displayed when integers are entered
 - 500 error displays when decimal is entered (see [Bug report](#bug) and fix)
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/basket-quantity.png)
 
@@ -550,6 +573,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![](documentation/validation/500.png)
 
+---
 
 *  **As a shopper I want to be able to easily enter my payment information so that I can checkout quickly and easily [#22](https://github.com/siobhanlgorman/knits-and-pieces/issues/22)**
 
@@ -579,7 +603,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 4. Payment success shown in Stripe dashboard
 5. Stripe webhooks show payment intent and charge success
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/checkout-invalid.png)
 
@@ -591,6 +615,7 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![](documentation/screenshots/stripe-webhooks-success.png)
 
+---
 
 *  **As a shopper I want to be able to feel that my personal and payment information is safe and secure so that I can be confident in providing the necessary information to make a purchase [#23](https://github.com/siobhanlgorman/knits-and-pieces/issues/23)**
 
@@ -616,12 +641,13 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 3. Email confirmation sent to user
 4. Order appears in user's secure profile page
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/secure-checkout.png)
 
 ![](documentation/screenshots/profile-order.png)
 
+---
 
 *  **As a shopper I want to be able to view an order confirmation after checkout so that I can verify that the order is correct and as intended [#24](https://github.com/siobhanlgorman/knits-and-pieces/issues/24)**
 
@@ -640,7 +666,9 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 ![](documentation/screenshots/order-complete.png)
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
+
+---
 
 *  **As a shopper I want to be able to receive an email confirmation after checking out so that I can have a record of my purchases [#25](https://github.com/siobhanlgorman/knits-and-pieces/issues/25)**
 
@@ -659,10 +687,11 @@ For User Story testing first navigate to the [Knits and Pieces website](https://
 
 - Order confirmation email received
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/order-email-conf.png)
 
+---
 
 *  **As a store owner I want to be able to add a product so that I can add new items to my store [#26](https://github.com/siobhanlgorman/knits-and-pieces/issues/26)**
 
@@ -689,12 +718,13 @@ When logged in as Administrator
 
 **Actual Result**:
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/test-add.png)
 
 ![](documentation/screenshots/test-add2.png)
 
+---
 
 *  **As a store owner I want to be able to edit/update a product so that I can change product prices, descriptions, images and product criteria [#27](https://github.com/siobhanlgorman/knits-and-pieces/issues/27)**
 
@@ -722,10 +752,11 @@ When logged in as Administrator
 
 **Actual Result**:
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/update-product.png)
 
+---
 
 *  **As a store owner I want to be able to delete a product so that I can remove items that are no longer for sale [#28](https://github.com/siobhanlgorman/knits-and-pieces/issues/28)**
 
@@ -751,11 +782,11 @@ When logged in as Administrator
 1. Product has been deleted
 2. Success message is displayed
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/delete-product.png)
 
-
+---
 
 *  **As a shopper I want to be able to request a quote for a custom order so that I can purchase an item that meets my needs [#31](https://github.com/siobhanlgorman/knits-and-pieces/issues/31)**
 
@@ -782,13 +813,13 @@ When logged in as Administrator
 3. Success message displays when order is sent
 4. Order is visible in admin panel
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/custom-order-form.png)
 
 ![](documentation/screenshots/custom-order-msg.png)
 
-
+---
 
 *  **As a shopper I want to be able to easily contact the store owner with any queries about the products so that I can find the answer to my questions [#32](https://github.com/siobhanlgorman/knits-and-pieces/issues/32)**
 
@@ -816,13 +847,13 @@ When logged in as Administrator
 4. Success message displays when form is submitted
 5. Contact Message appears in admin panel
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/contact-form.png)
 
 ![](documentation/screenshots/contact-success.png)
 
-
+---
 
 *  **As a shopper I want to be able to receive feedback from the website when I perform an interaction so that I can confirm an interaction has taken place and if an error has occurred [#33](https://github.com/siobhanlgorman/knits-and-pieces/issues/33)**
 
@@ -838,7 +869,7 @@ When logged in as Administrator
 **Actual Result**:
 - Messages are displayed corresponding to user interaction
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 Examples:
 ![](documentation/screenshots/custom-order-msg.png)
@@ -866,7 +897,7 @@ Examples:
 **Actual Result**:
 - Links to home page
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/logo.png)
 
@@ -887,7 +918,7 @@ Examples:
 - Links change colour on hover
 - The text of the active page link is dark grey indicating the current active page
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/navbar.png)
 
@@ -912,7 +943,7 @@ Examples:
 2. Badges are displayed correctly
 3. Badges when clicked further sort categories
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/shop-dropdown.png)
 
@@ -937,7 +968,7 @@ Examples:
 2. Error message displays if search is empty
 3. Note that badges do not currently display for search results list which could be investigated for a later version
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/search-error.png)
 
@@ -964,7 +995,7 @@ Examples:
 - Links which appear correspond to user who is logged in and not logged in
 - Links open to correct pages
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/logged-in.png)
 
@@ -986,7 +1017,7 @@ Examples:
 **Actual Result**:
 1. Total amount in basket is updated when product is added and total displays in navbar
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/shopping-basket-icon.png)
 
@@ -1003,7 +1034,7 @@ Examples:
 **Actual Result**:
 - Navigation menu remains displayed when scrolling for large screens but scrolls with smaller screens
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/scroll1.png)
 
@@ -1024,7 +1055,7 @@ Examples:
 - Banner displays correctly with delivery threshold
 - Link to special offers opens up filtered list of products with special tag
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/banner-link.png)
 
@@ -1050,7 +1081,7 @@ Click on each link in footer in turn and check correct page opens
 5. Logo opens the home page
 6. The Subscribe button indicates the email form must be completed.
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/footer.png)
 
@@ -1072,7 +1103,7 @@ Click on each link in footer in turn and check correct page opens
 **Actual Result**:
 - Carousel is functioning with three images displaying
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/carousel.png)
 
@@ -1087,7 +1118,7 @@ Click on each link in footer in turn and check correct page opens
 **Actual Result**:
 - Link to order form links correctly
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/home-order.png)
 
@@ -1106,7 +1137,7 @@ Click on each link in footer in turn and check correct page opens
 1. Shop button links to All Products page with category badge listed
 2. About Us button links to About page
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/home-cta.png)
 
@@ -1126,7 +1157,7 @@ Click on each link in footer in turn and check correct page opens
 **Actual Result**:
 - CTA button to the Shop page links correctly to open products page with category badges
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/about-page.png)
 
@@ -1162,7 +1193,7 @@ Click on each link in footer in turn and check correct page opens
 7. Edit/delete buttons are visible to superuser/administrator only under the product price
 8. Category badges are visible above the products list
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/all-products-lg.png)
 
@@ -1192,7 +1223,7 @@ Click on each link in footer in turn and check correct page opens
 3. Items available to be custom ordered (currently only the various blankets) have this field in the product detail page. 
 4. Link to the custom order page is working correctly
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/product-detail-page.png)
 
@@ -1210,7 +1241,7 @@ Click on each link in footer in turn and check correct page opens
 **Actual Result**:
 - Category label can be clicked to view more of this category
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/category.png)
 
@@ -1254,7 +1285,7 @@ For these steps please create a test product by clicking on the Profile item in 
 8. Delete button when clicked deletes product
 9. Success message displays after update or delete function is completed
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/update-product.png)
 
@@ -1301,7 +1332,7 @@ For these steps please create a test product by clicking on the Profile item in 
 2. The Add to Basket button adds the selected number in the input box of items to the shopping basket correctly
 3. Add to basket button adds the number of items selected in the box to the basket
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/update-basket.png)
 
@@ -1329,7 +1360,7 @@ For these steps please create a test product by clicking on the Profile item in 
 3. Request quote button submits form
 4. Form appears in admin panel
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/custom-order-form.png)
 
@@ -1369,7 +1400,7 @@ When logged in as Administrator
 4. Success message displays
 5. If no image added, placeholder image displays
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/test-add.png)
 
@@ -1414,7 +1445,7 @@ When logged in as Administrator
 6. When the order number is hovered over the full number is visible
 7. When the order number is clicked the past order confirmation is opened
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/non-admin-profile-menu.png)
 
@@ -1450,7 +1481,7 @@ When logged in as Administrator
 3. Success message displays when form is submitted
 4. Message appears in admin panel
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/contact-success.png)
 
@@ -1485,7 +1516,7 @@ When logged in as Administrator
 2. Error message displays when no or invalid text is entered
 3. Success message asking user to confirm their email address appears when user has registered
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/signup-error.png)
 
@@ -1519,7 +1550,7 @@ When logged in as Administrator
 - User is signed in
 - User's information is automatically completed if they have checked the remember me box
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/sign-in.png)
 
@@ -1547,7 +1578,7 @@ When logged in as Administrator
 1. Logout link in profile menu links to SIgn Out form
 2. User is signed out
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/sign-out.png)
 
@@ -1576,7 +1607,7 @@ When logged in as Administrator
 
 - Summary information of items in basket clearly displayed and updated: image of products, title, size, price, delivery cost and total
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/basket.png)
 
@@ -1598,7 +1629,7 @@ When logged in as Administrator
 - A quantity selector box can be used to changed the quantity of basket items
 - Selector does not go below 1
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/basket-quantity.png)
 
@@ -1626,7 +1657,7 @@ When logged in as Administrator
 3. Remove button removes items in one go from the basket
 4. Success messages are displayed when update and remove actions are performed
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 ![](documentation/screenshots/update-basket.png)
 
@@ -1697,7 +1728,7 @@ When logged in as Administrator
 
 ![](documentation/screenshots/order-email-conf.png)
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
 
 **Test Case**
 
@@ -1792,7 +1823,9 @@ When logged in as Administrator
 **Actual Result**:
 - Feedback Messages are displayed after every user interaction on the website
 
-**Pass/Fail: Pass**
+**Pass/Fail: Pass**✅
+
+---
 
 Sample screenshots
 ![](documentation/screenshots/custom-order-msg.png)
