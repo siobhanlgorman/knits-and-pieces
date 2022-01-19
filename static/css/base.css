@@ -307,9 +307,9 @@ footer a:focus {
 .update-btn:hover,
 .update-btn:active,
 .update-btn:focus,
-.edit-button:hover,
-.edit-button:active,
-.edit-button:focus {
+.edit-btn:hover,
+.edit-btn:active,
+.edit-btn:focus {
     background: #175e28;
     color: white !important;
 }
