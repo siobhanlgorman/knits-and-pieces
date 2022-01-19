@@ -20,7 +20,7 @@ class ProductForm(forms.ModelForm):
 
         try:
             alt_name = str(self.__getitem__('name')).split('"')[5]
-        except:
+        except Exception:
             alt_name = 'product image'
 
         self.fields['category'].choices = friendly_names
